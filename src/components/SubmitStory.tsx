@@ -32,9 +32,22 @@ const SubmitStory = ({ category }: SubmitStoryProps) => {
       return;
     }
     setLoading(true);
-    // Simulate submission for static site
-    await new Promise((r) => setTimeout(r, 800));
+    const { error } = await supabase
+      .from("story_submissions")
+      .insert({
+        name: result.data.name,
+        email: result.data.email,
+        headline: result.data.headline,
+        details: result.data.details,
+        category: category.toLowerCase(),
+      });
     setLoading(false);
+
+    if (error) {
+      toast.error("Something went wrong. Please try again.");
+      return;
+    }
+
     setSubmitted(true);
     toast.success("Story tip submitted! Our editors will review it.");
     setForm({ name: "", email: "", headline: "", details: "" });
