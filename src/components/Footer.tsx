@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { categories } from "@/data/stories";
 import { ArrowUpRight } from "lucide-react";
 import logoFull from "@/assets/logo-full.png";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const Footer = () => {
   return (
@@ -26,6 +27,7 @@ const Footer = () => {
               <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
+          <NewsletterSignup variant="inline" />
         </div>
 
         {/* Bottom: Compact link grid */}

@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TrendingTicker from "@/components/TrendingTicker";
 import FeaturedStories from "@/components/FeaturedStories";
 import CategoryHighlights from "@/components/CategoryHighlights";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
         <HeroSection />
         <TrendingTicker />
         <FeaturedStories />
+        <NewsletterSignup variant="banner" />
         <CategoryHighlights />
       </main>
       <Footer />
