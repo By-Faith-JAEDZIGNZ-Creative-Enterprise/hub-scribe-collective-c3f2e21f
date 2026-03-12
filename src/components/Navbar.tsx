@@ -16,14 +16,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src={logoFull}
-              alt="Hattiesburg Hub"
-              className="h-10 w-auto hidden sm:block"
-            />
-            <img
               src={logoSubmark}
               alt="Hattiesburg Hub"
-              className="h-9 w-auto block sm:hidden"
+              className="h-10 w-auto"
             />
           </Link>
 
