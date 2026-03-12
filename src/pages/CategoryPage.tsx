@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StoryCard from "@/components/StoryCard";
+import SubmitStory from "@/components/SubmitStory";
 import { stories, categories } from "@/data/stories";
 import { ArrowLeft } from "lucide-react";
 
@@ -55,6 +56,9 @@ const CategoryPage = () => {
             </p>
           )}
         </div>
+
+        {/* Submit a Story */}
+        <SubmitStory category={category.name} />
       </main>
       <Footer />
     </div>
