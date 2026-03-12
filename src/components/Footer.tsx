@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { categories } from "@/data/stories";
 import { ArrowUpRight } from "lucide-react";
+import logoFull from "@/assets/logo-full.png";
 
 const Footer = () => {
   return (
@@ -30,15 +31,13 @@ const Footer = () => {
         {/* Bottom: Compact link grid */}
         <div className="py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           {/* Logo */}
-          <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-md bg-primary/10 border border-primary/30 flex items-center justify-center">
-              <span className="font-display text-primary text-sm font-bold leading-none">H</span>
-            </div>
-            <span className="font-display text-sm font-semibold tracking-tight">
-              <span className="text-primary">Hattiesburg</span>
-              <span className="text-foreground/70 ml-1">Hub</span>
-            </span>
-          </div>
+          <Link to="/" className="flex items-center">
+            <img
+              src={logoFull}
+              alt="Hattiesburg Hub"
+              className="h-9 w-auto"
+            />
+          </Link>
 
           {/* Section links */}
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">

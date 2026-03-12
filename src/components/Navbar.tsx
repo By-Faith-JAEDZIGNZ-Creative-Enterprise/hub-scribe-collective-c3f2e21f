@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Search } from "lucide-react";
 import { categories } from "@/data/stories";
+import logoFull from "@/assets/logo-full.png";
+import logoSubmark from "@/assets/logo-submark.png";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -12,14 +14,17 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-md bg-primary/10 border border-primary/30 flex items-center justify-center glow-primary">
-              <span className="font-display text-primary text-lg font-bold leading-none">H</span>
-            </div>
-            <div className="font-display text-lg font-semibold tracking-tight">
-              <span className="text-primary">Hattiesburg</span>
-              <span className="text-foreground ml-1">Hub</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img
+              src={logoFull}
+              alt="Hattiesburg Hub"
+              className="h-10 w-auto hidden sm:block"
+            />
+            <img
+              src={logoSubmark}
+              alt="Hattiesburg Hub"
+              className="h-9 w-auto block sm:hidden"
+            />
           </Link>
 
           {/* Desktop Nav */}
