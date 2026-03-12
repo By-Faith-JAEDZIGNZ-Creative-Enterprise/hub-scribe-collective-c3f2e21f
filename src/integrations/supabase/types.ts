@@ -35,6 +35,39 @@ export type Database = {
         }
         Relationships: []
       }
+      story_submissions: {
+        Row: {
+          category: string
+          details: string
+          email: string
+          headline: string
+          id: string
+          name: string
+          reviewed: boolean
+          submitted_at: string
+        }
+        Insert: {
+          category: string
+          details: string
+          email: string
+          headline: string
+          id?: string
+          name: string
+          reviewed?: boolean
+          submitted_at?: string
+        }
+        Update: {
+          category?: string
+          details?: string
+          email?: string
+          headline?: string
+          id?: string
+          name?: string
+          reviewed?: boolean
+          submitted_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
