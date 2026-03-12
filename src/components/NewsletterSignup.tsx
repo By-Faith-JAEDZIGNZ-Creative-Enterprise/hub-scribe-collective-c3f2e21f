@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Mail, ArrowRight, Check } from "lucide-react";
+import { Mail, ArrowRight, Check, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { z } from "zod";
+import { supabase } from "@/integrations/supabase/client";
 
 const emailSchema = z.string().trim().email({ message: "Please enter a valid email" }).max(255);
 
@@ -12,14 +13,32 @@ interface NewsletterSignupProps {
 const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = emailSchema.safeParse(email);
     if (!result.success) {
       toast.error(result.error.errors[0].message);
       return;
     }
+
+    setLoading(true);
+    const { error } = await supabase
+      .from("newsletter_subscribers")
+      .insert({ email: result.data });
+
+    setLoading(false);
+
+    if (error) {
+      if (error.code === "23505") {
+        toast.info("You're already subscribed!");
+      } else {
+        toast.error("Something went wrong. Please try again.");
+      }
+      return;
+    }
+
     setSubmitted(true);
     toast.success("You're on the list! Welcome to the Hub.");
     setEmail("");
@@ -55,15 +74,16 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
                     placeholder="your@email.com"
                     maxLength={255}
                     required
-                    className="w-full pl-10 pr-4 py-3 bg-background/50 border border-border/50 rounded-lg font-body text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all"
+                    disabled={loading}
+                    className="w-full pl-10 pr-4 py-3 bg-background/50 border border-border/50 rounded-lg font-body text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all disabled:opacity-50"
                   />
                 </div>
                 <button
                   type="submit"
-                  disabled={submitted}
+                  disabled={submitted || loading}
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-lg font-display text-sm font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] disabled:opacity-70"
                 >
-                  {submitted ? <Check className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
+                  {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : submitted ? <Check className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
                 </button>
               </div>
             </form>
@@ -85,14 +105,15 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
           placeholder="your@email.com"
           maxLength={255}
           required
-          className="flex-1 px-4 py-2.5 bg-background/30 border border-border/30 rounded-md font-body text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all"
+          disabled={loading}
+          className="flex-1 px-4 py-2.5 bg-background/30 border border-border/30 rounded-md font-body text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all disabled:opacity-50"
         />
         <button
           type="submit"
-          disabled={submitted}
+          disabled={submitted || loading}
           className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground px-4 py-2.5 rounded-md font-display text-xs font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] disabled:opacity-70"
         >
-          {submitted ? <Check className="w-3.5 h-3.5" /> : "Subscribe"}
+          {loading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : submitted ? <Check className="w-3.5 h-3.5" /> : "Subscribe"}
         </button>
       </div>
     </form>
