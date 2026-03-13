@@ -194,7 +194,7 @@ export const stories: Story[] = [
     category: "sports",
     author: "Carla Simmons",
     date: "Feb 9, 2026",
-    image: "/featured-sports.jpg",
+    image: "/story-soccer-facility.jpg",
     slug: "usm-soccer-facility",
     content: "The University of Southern Mississippi has broken ground on a $3.2 million indoor training facility for the women's soccer program.\n\nThe 15,000-square-foot building will include a full-size turf field, film room, sports medicine suite, and player lounge. Head Coach Ramirez called it 'a game-changer for our program and our ability to recruit top talent.'"
   },
