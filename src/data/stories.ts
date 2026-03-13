@@ -147,7 +147,7 @@ export const stories: Story[] = [
     category: "culture",
     author: "Nina Cortez",
     date: "Feb 6, 2026",
-    image: "/featured-culture.jpg",
+    image: "/story-theatre-fences.jpg",
     slug: "southern-miss-fences-production",
     content: "The University of Southern Mississippi's Department of Theatre opens its spring season with August Wilson's 'Fences,' running February 20 through March 1 at the Mannoni Performing Arts Center.\n\nDirector Professor Charles Banks has assembled a cast that blends experienced upperclassmen with standout freshmen in what he calls 'one of the most important American plays ever written.'"
   },
