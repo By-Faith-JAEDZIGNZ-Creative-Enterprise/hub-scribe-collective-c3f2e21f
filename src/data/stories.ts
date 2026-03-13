@@ -255,7 +255,112 @@ export const stories: Story[] = [
     slug: "support-local-journalism",
     content: "When was the last time you read a story about your neighborhood—your actual neighborhood—in a major news outlet? For most of us, the answer is never.\n\nThat's why local journalism matters. It's the only form of media that holds our city council accountable, covers our school board meetings, and tells the stories of the people who live next door."
   },
+
+  // ── EXTERNAL / CURATED NEWS ──
+  {
+    id: "21",
+    title: "Cheapest Gas Stations in Hattiesburg",
+    excerpt: "CheapInsurance.com compiled a list of the cheapest gas stations in Hattiesburg, helping local drivers find the best fuel prices across the Hub City.",
+    category: "business",
+    author: "Laurel Leader-Call",
+    date: "Mar 13, 2026",
+    image: "/story-gas-stations.jpg",
+    slug: "cheapest-gas-stations-hattiesburg",
+    external: true,
+    externalUrl: "https://www.leader-call.com/news/state/cheapest-gas-stations-in-hattiesburg/article_a6d4b79d-b997-54ed-abfb-04f015edc2be.html"
+  },
+  {
+    id: "22",
+    title: "Hattiesburg Pharmacy Owner Pleads Guilty to Tax Offense",
+    excerpt: "Duke Kimbrell Rodgers, 68, of Rodgers Family Pharmacy pled guilty to failing to remit over $1.5 million in employee tax withholdings to the IRS over seven years, agreeing to pay more than $2 million in restitution.",
+    category: "community",
+    author: "Sethanie Smith, WJTV",
+    date: "Mar 10, 2026",
+    image: "/story-pharmacy-tax.jpg",
+    slug: "hattiesburg-pharmacy-owner-tax-offense",
+    external: true,
+    externalUrl: "https://www.wjtv.com/news/pine-belt/hattiesburg-pharmacy-owner-pleads-guilty-to-tax-offense/",
+    content: "A Hattiesburg man pled guilty to failing to pay over funds that were withheld from employee paychecks.\n\nAccording to court documents, Duke Kimbrell Rodgers, 68, conducted a business under the name Rodgers Family Pharmacy. From 2013 to 2020, prosecutors said Rodgers withheld more than $1,500,828.73 from his employees' pay for trust fund taxes. However, he failed to remit those funds to the government.\n\nIn addition, because of those withholdings and his failure to remit withholdings from his own paycheck, prosecutors said Rodgers submitted fraudulent personal tax forms that resulted in additional $629,831.00 loss.\n\nAs part of his plea, Rodgers agreed to pay restitution of more than $2 million to the Internal Revenue Service (IRS). Rodgers is scheduled to be sentenced on June 18, 2026. He faces a statutory maximum of five years imprisonment."
+  },
+  {
+    id: "23",
+    title: "One Dead, Thousands Without Power in Mississippi After Storms",
+    excerpt: "More than 50,000 were left without electricity after storms damaged power lines across Mississippi. One fatality and three injuries were reported in Lawrence County, with another cold front expected to bring freezing temperatures and possible snow.",
+    category: "community",
+    author: "Brian Broom, Clarion Ledger",
+    date: "Mar 12, 2026",
+    image: "/story-storms-power.jpg",
+    slug: "thousands-without-power-mississippi-storms",
+    external: true,
+    externalUrl: "https://www.clarionledger.com/story/weather/2026/03/12/thousands-without-power-in-ms-after-storms-snow-possible-next-week-mississippi/89114402007/",
+    content: "As storms moved out of the state overnight, one person is dead and thousands in Mississippi were left without power Thursday morning, March 12, and another cold front is expected to drop temperatures below freezing next week and bring a chance of snow to parts of the state.\n\nThere was one fatality and three injuries reported in Lawrence County, according Gov. Tate Reeves. 'Mississippi is praying for the family of the lost and for a speedy recovery of those injured,' Reeves wrote in a statement.\n\nAccording to PowerOutage.com, 53,200 tracked customers in Mississippi were without power as of 3:45 a.m. Thursday. Counties with the highest number of reported outages included Hinds County (6,686), Pike County (6,641), Lincoln County (4,465), Amite County (4,022), Lawrence County (2,539), and Jefferson Davis County (2,294)."
+  },
+  {
+    id: "24",
+    title: "Sixth Street District Opens Oseola McCarty House Museum",
+    excerpt: "The newest museum in Hattiesburg's Sixth Street Museum District honors Oseola McCarty, the humble washerwoman who donated most of her life savings for scholarships at the University of Southern Mississippi.",
+    category: "culture",
+    author: "WDAM",
+    date: "Mar 8, 2026",
+    image: "/story-mccarty-house.jpg",
+    slug: "mccarty-house-museum-opening",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/03/08/sixth-street-district-honors-hattiesburg-philanthropist-by-opening-mccarty-house/",
+    content: "The newest museum in the Sixth Street Museum District has opened, honoring a local woman who gained international fame for her philanthropic efforts.\n\nA ribbon was cut Saturday morning, March 7, to officially open the Oseola McCarty House. It tells the story of Oseola McCarty, the humble Hattiesburg washerwoman who donated most of her life savings for scholarships at the University of Southern Mississippi.\n\nThe house was McCarty's actual home on Miller Street until she died in 1999. The house was bought in 2017 by the Hattiesburg Convention Commission and moved to East Sixth Street in 2019. March 7, 2026, is McCarty's 118th birthday.\n\nThe museum depicts many aspects of McCarty's life and features photographs, storyboards, cast sculptures and holograms. The McCarty House is open by appointment from 10 a.m. to 4 p.m. Wednesday through Friday and from noon to 4 p.m. on Saturdays."
+  },
+  {
+    id: "25",
+    title: "Mississippi Could See Tornadoes Sunday and Snow on Monday",
+    excerpt: "Mississippi faces a wide range of weather conditions including severe storms with possible tornadoes Sunday night and below-freezing temperatures with snow possible in northern parts of the state Monday.",
+    category: "community",
+    author: "Brian Broom, Clarion Ledger",
+    date: "Mar 13, 2026",
+    image: "/story-tornadoes-weather.jpg",
+    slug: "mississippi-tornadoes-snow-forecast",
+    external: true,
+    externalUrl: "https://www.clarionledger.com/story/weather/2026/03/13/weather-forecast-storms-tornadoes-possible-in-mississippi-sunday-march-15-2026-snow-monday-march-16/89135017007/",
+    content: "Parts of Mississippi are still recovering from storms earlier this week that killed one and left thousands without power and now more storms are in the forecast along with freezing temperatures, possible severe weather with tornadoes and in extreme North Mississippi, possible snow.\n\nAccording to the National Weather Service, Mississippi faces the possibility of severe weather Sunday night, March 15. Roughly from the Interstate 20 corridor and north, there is a Slight Risk warning of severe storms. The primary risk is damaging wind with gusts up to 60 mph, but tornadoes can't be ruled out.\n\nTemperatures in much of the state are expected to fall below freezing on Monday night into Tuesday morning. Hattiesburg is forecast to stay above freezing at 33 degrees."
+  },
+  {
+    id: "26",
+    title: "What to Expect in Mississippi's State Primaries",
+    excerpt: "Mississippi voters choose nominees for Congress in a state primary Tuesday. Republican Sen. Cindy Hyde-Smith faces a primary challenge, and the entire U.S. House delegation is up for reelection.",
+    category: "opinion",
+    author: "Robert Yoon, Associated Press",
+    date: "Mar 10, 2026",
+    image: "/story-ms-primaries.jpg",
+    slug: "mississippi-state-primaries-2026",
+    external: true,
+    externalUrl: "https://www.pbs.org/newshour/politics/what-to-expect-in-mississippis-state-primaries",
+    content: "Mississippi voters will choose nominees for Congress in a state primary Tuesday. The state's junior Republican U.S. senator and the entire U.S. House delegation are up for reelection, and all but one have drawn multiple challengers from one or both major political parties hoping to replace them.\n\nRepublicans hold slim majorities on Capitol Hill, but control of either chamber in November likely won't come down to Mississippi, where no federal office has changed party hands since 2010.\n\nAt the top of the ballot, Republican U.S. Sen. Cindy Hyde-Smith faces a primary challenge in her bid for a second full term from physician and novelist Sarah Adlakha. The Democratic primary field includes Scott Colom, a state district attorney covering Clay, Lowndes, Noxubee and Oktibbeha counties."
+  },
+  {
+    id: "27",
+    title: "Mississippi House Passes Bill to Bypass ABC Warehouse Amid Alcohol Backlog",
+    excerpt: "The House passed the 'Emergency Alcohol Distribution Act' in a bipartisan 112-2 vote, allowing licensed permit holders to buy directly from manufacturers for two years while the state's ABC warehouse struggles with a software failure.",
+    category: "business",
+    author: "J.T. Mitchell, SuperTalk MS",
+    date: "Mar 13, 2026",
+    image: "/story-abc-alcohol.jpg",
+    slug: "mississippi-abc-alcohol-backlog-bill",
+    external: true,
+    externalUrl: "https://www.supertalk.fm/mississippi-house-passes-bill-to-bypass-abc-warehouse-amid-alcohol-backlog/",
+    content: "With less than a month remaining in Mississippi's legislative session, access to alcohol — or the lack thereof — has moved to the forefront at the capitol as the state battles what one lawmaker calls a 'total mess' of a backlog in wine and spirits.\n\nLocal liquor store owners, members of the state's hospitality industry, and restaurants have reported shortages in alcohol due to a conveyor belt software failure at the Mississippi Alcoholic Beverage Control's warehouse in Gluckstadt.\n\nUnder the plan, licensed alcohol permit holders would be allowed to buy alcohol directly from manufacturers or other authorized sellers — rather than going through ABC — for the next two years. The House passed the Emergency Alcohol Distribution Act in a bipartisan 112-2 vote."
+  },
+  {
+    id: "28",
+    title: "$6,000 Teacher Pay Raise Gains Mississippi Senate's Approval",
+    excerpt: "A surprise $6,000 teacher pay raise gained approval in the Mississippi Senate, raising salaries over three years for regular teachers, special education educators, assistant teachers, and college professors.",
+    category: "community",
+    author: "Heather Harrison, MS Free Press",
+    date: "Mar 11, 2026",
+    image: "/story-teacher-pay.jpg",
+    slug: "teacher-pay-raise-mississippi-senate",
+    external: true,
+    externalUrl: "https://www.mississippifreepress.org/6000-teacher-pay-raise-gains-mississippi-senates-approval/",
+    content: "A surprise $6,000 teacher pay raise gained approval in the Mississippi Senate on Wednesday after the chamber amended a bill that originally dealt with the sale or lease of unused school property.\n\nSenate Education Committee Chairman Sen. Dennis DeBar, R-Leakesville, presented an amendment to House Bill 1395 that adds language to raise salaries over the next three years by $6,000 for regular teachers, $2,000 for assistant teachers, $6,000 for licensed special education educators teaching special education classes — plus an additional $3,000 supplement — and $2,000 for college and university educators.\n\n'Today's a good day for teachers, teacher assistants, professors and special education teachers as well,' DeBar told reporters Wednesday after the Senate passed the pay raise. The Senate unanimously passed H.B. 1395."
+  },
 ];
 
-export const trendingStories = stories.slice(0, 5);
+export const trendingStories = stories.filter(s => s.external).slice(0, 5);
 export const featuredStories = stories.filter(s => s.featured);
