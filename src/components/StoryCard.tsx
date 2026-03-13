@@ -1,11 +1,26 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import type { Story } from "@/data/stories";
 
 interface StoryCardProps {
   story: Story;
   variant?: "default" | "large" | "horizontal";
 }
+
+const CardWrapper = ({ story, children, className }: { story: Story; children: React.ReactNode; className?: string }) => {
+  if (story.external && story.externalUrl) {
+    return (
+      <a href={story.externalUrl} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link to={`/story/${story.slug}`} className={className}>
+      {children}
+    </Link>
+  );
+};
 
 const categoryColors: Record<string, string> = {
   community: "bg-primary/15 text-primary",
