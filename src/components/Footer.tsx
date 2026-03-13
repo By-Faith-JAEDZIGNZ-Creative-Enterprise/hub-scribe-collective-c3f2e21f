@@ -18,11 +18,11 @@ const Footer = () => {
           <div className="relative mb-10">
             {/* Glow ring behind logo */}
             <div className="absolute inset-0 -m-8 bg-primary/[0.06] rounded-full blur-[60px] pointer-events-none" />
-            <Link to="/" className="relative block">
+            <Link to="/" className="relative block" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img
                 src={logoFull}
                 alt="Hattiesburg Hub"
-                className="h-20 md:h-28 w-auto drop-shadow-[0_0_30px_hsl(217,91%,60%,0.15)]"
+                className="h-28 md:h-36 w-auto drop-shadow-[0_0_30px_hsl(217,91%,60%,0.15)]"
               />
             </Link>
           </div>
