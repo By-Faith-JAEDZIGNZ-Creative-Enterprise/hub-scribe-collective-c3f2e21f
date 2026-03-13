@@ -42,7 +42,7 @@ export const stories: Story[] = [
     category: "community",
     author: "Marcus Williams",
     date: "Feb 15, 2026",
-    image: "/featured-community.jpg",
+    image: "/story-health-center.jpg",
     slug: "community-health-center-opens",
     content: "A new community health center opened its doors on Mobile Street this week, bringing much-needed primary care, dental services, and mental health support to South Hattiesburg neighborhoods that have historically lacked access to affordable healthcare."
   },
