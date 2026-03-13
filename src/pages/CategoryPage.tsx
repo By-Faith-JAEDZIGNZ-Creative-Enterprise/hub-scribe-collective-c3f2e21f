@@ -5,6 +5,7 @@ import StoryCard from "@/components/StoryCard";
 import SubmitStory from "@/components/SubmitStory";
 import { stories, categories } from "@/data/stories";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const CategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -21,6 +22,7 @@ const CategoryPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title={category.name} description={`Latest ${category.name.toLowerCase()} news and stories from Hattiesburg.`} path={`/category/${slug}`} />
       <Navbar />
       <main className="pt-16">
         {/* Category Header */}

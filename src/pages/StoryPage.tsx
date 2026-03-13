@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import StoryCard from "@/components/StoryCard";
 import { stories } from "@/data/stories";
 import { ArrowLeft, Clock, User } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const categoryColors: Record<string, string> = {
   community: "bg-primary/15 text-primary",
@@ -28,6 +29,7 @@ const StoryPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title={story.title} description={story.excerpt} path={`/story/${slug}`} type="article" publishedTime={story.date} author={story.author} image={story.image} />
       <Navbar />
       <main className="pt-16">
         {/* Article Header */}

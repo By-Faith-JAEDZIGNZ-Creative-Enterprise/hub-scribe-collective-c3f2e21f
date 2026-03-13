@@ -6,10 +6,12 @@ import CategoryHighlights from "@/components/CategoryHighlights";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import Footer from "@/components/Footer";
 import WelcomeLightbox from "@/components/WelcomeLightbox";
+import SEOHead from "@/components/SEOHead";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead path="/" />
       <WelcomeLightbox />
       <Navbar />
       <main className="pt-16">

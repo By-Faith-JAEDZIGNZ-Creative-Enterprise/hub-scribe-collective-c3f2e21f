@@ -4,6 +4,7 @@ import { ArrowRight, Mail, Phone, CheckCircle, Sparkles, User } from "lucide-rea
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import logoFull from "@/assets/logo-full.png";
+import SEOHead from "@/components/SEOHead";
 
 const SignupPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -59,6 +60,7 @@ const SignupPage = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col items-center justify-center relative overflow-hidden px-4">
+      <SEOHead title="Sign Up for Updates" description="Subscribe to Hattiesburg Hub for the latest local news, culture, and community stories." path="/signup" />
       {/* Ambient glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/[0.06] rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-secondary/[0.04] rounded-full blur-[120px] pointer-events-none" />
