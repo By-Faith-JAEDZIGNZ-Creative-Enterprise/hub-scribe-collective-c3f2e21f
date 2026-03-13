@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import StoryCard from "@/components/StoryCard";
 import { stories } from "@/data/stories";
 import { ArrowLeft, Clock, User } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const categoryColors: Record<string, string> = {
   community: "bg-primary/15 text-primary",

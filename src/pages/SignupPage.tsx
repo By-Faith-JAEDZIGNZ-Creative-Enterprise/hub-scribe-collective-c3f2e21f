@@ -4,6 +4,7 @@ import { ArrowRight, Mail, Phone, CheckCircle, Sparkles, User } from "lucide-rea
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import logoFull from "@/assets/logo-full.png";
+import SEOHead from "@/components/SEOHead";
 
 const SignupPage = () => {
   const [firstName, setFirstName] = useState("");

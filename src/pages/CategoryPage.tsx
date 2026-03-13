@@ -5,6 +5,7 @@ import StoryCard from "@/components/StoryCard";
 import SubmitStory from "@/components/SubmitStory";
 import { stories, categories } from "@/data/stories";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const CategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
