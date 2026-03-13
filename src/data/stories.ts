@@ -136,7 +136,7 @@ export const stories: Story[] = [
     category: "culture",
     author: "Jordan Blake",
     date: "Feb 14, 2026",
-    image: "/featured-culture.jpg",
+    image: "/story-mural-trail.jpg",
     slug: "mural-trail-unveiling",
     content: "The Hattiesburg Arts Council has officially unveiled a new downtown mural trail featuring twelve large-scale works by local and regional artists.\n\nThe self-guided walking route stretches from Town Square Park to the Saenger Theater district, with each mural exploring a different facet of Hattiesburg's identity—from its railroad heritage to its vibrant music scene.\n\n\"Public art changes the way people experience a city,\" said Arts Council director Ava Simmons. \"These walls now tell our story.\""
   },
