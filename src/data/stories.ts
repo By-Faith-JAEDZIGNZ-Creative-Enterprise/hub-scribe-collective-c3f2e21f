@@ -124,7 +124,7 @@ export const stories: Story[] = [
     category: "culture",
     author: "Jordan Blake",
     date: "Feb 22, 2026",
-    image: "/featured-culture.jpg",
+    image: "/story-music-festival.jpg",
     slug: "hub-city-music-festival-lineup",
     featured: true,
     content: "The Hub City Music Festival, now in its eighth year, has announced an expanded format for 2026 that will transform downtown Hattiesburg into a three-day celebration of Southern music, art, and culinary culture.\n\nThe festival, running June 12-14, will feature over 40 artists across four stages, including headliners from blues, gospel, R&B, and Southern rock genres.\n\nNew additions for 2026 include a culinary village featuring local restaurants, a spoken word and poetry stage, and a youth artist showcase."
