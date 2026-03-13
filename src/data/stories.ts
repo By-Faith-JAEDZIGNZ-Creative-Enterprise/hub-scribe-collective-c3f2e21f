@@ -89,7 +89,7 @@ export const stories: Story[] = [
     category: "business",
     author: "Sarah Chen",
     date: "Feb 12, 2026",
-    image: "/featured-business.jpg",
+    image: "/story-hardy-street.jpg",
     slug: "hardy-street-new-businesses",
     content: "The Hardy Street corridor is experiencing a commercial renaissance, with fourteen new businesses opening their doors in the first quarter of 2026 alone—a record for the historic stretch.\n\nNew arrivals include Groundwork Coffee Roasters, a specialty café sourcing beans from Mississippi farms; HubSpace, a co-working facility with 80 desks; and Revival Goods, a locally-sourced home décor shop.\n\n\"Hardy Street has always been the heartbeat of Hattiesburg commerce,\" said Chamber of Commerce president Diane Okafor. \"What we're seeing now is a new generation of entrepreneurs betting on this city.\""
   },
