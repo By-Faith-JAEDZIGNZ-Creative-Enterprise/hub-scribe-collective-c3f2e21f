@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Mail, Phone, CheckCircle, Sparkles } from "lucide-react";
+import { ArrowRight, Mail, Phone, CheckCircle, Sparkles, User } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import logoFull from "@/assets/logo-full.png";
 
 const SignupPage = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [submitting, setSubmitting] = useState(false);
@@ -19,7 +21,6 @@ const SignupPage = () => {
       return;
     }
 
-    // Basic validation
     if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       toast({ title: "Please enter a valid email", variant: "destructive" });
       return;
@@ -35,6 +36,8 @@ const SignupPage = () => {
       const { error } = await supabase.from("newsletter_subscribers").insert({
         email: email || `phone-only-${Date.now()}@placeholder.local`,
         phone_number: phone || null,
+        first_name: firstName.trim() || null,
+        last_name: lastName.trim() || null,
       });
 
       if (error) {
@@ -103,6 +106,30 @@ const SignupPage = () => {
             </p>
 
             <form onSubmit={handleSubmit} className="w-full space-y-3">
+              <div className="grid grid-cols-2 gap-3">
+                <div className="relative">
+                  <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                  <input
+                    type="text"
+                    placeholder="First name"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    maxLength={100}
+                    className="w-full bg-card border border-border rounded-lg pl-10 pr-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
+                  />
+                </div>
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Last name"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    maxLength={100}
+                    className="w-full bg-card border border-border rounded-lg px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
+                  />
+                </div>
+              </div>
+
               <div className="relative">
                 <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                 <input

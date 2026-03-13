@@ -44,7 +44,7 @@ const WelcomeLightbox = () => {
 
         <div className="relative px-6 pt-8 pb-6 flex flex-col items-center text-center">
           {/* Logo */}
-          <img src={logoSubmark} alt="Hattiesburg Hub" className="h-12 w-auto mb-5" />
+          <img src={logoSubmark} alt="Hattiesburg Hub" className="h-20 w-auto mb-5" />
 
           <div className="inline-flex items-center gap-1.5 bg-primary/[0.08] border border-primary/15 rounded-full px-3 py-1 mb-4">
             <Sparkles className="w-3 h-3 text-primary/70" />
