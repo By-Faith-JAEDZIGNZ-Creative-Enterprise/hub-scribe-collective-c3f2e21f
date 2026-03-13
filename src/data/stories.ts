@@ -64,7 +64,7 @@ export const stories: Story[] = [
     category: "community",
     author: "Marcus Williams",
     date: "Feb 5, 2026",
-    image: "/featured-community.jpg",
+    image: "/story-tech-literacy.jpg",
     slug: "library-tech-literacy-program",
     content: "The Hattiesburg Public Library announced a new free technology literacy program designed to help seniors and underserved residents build essential digital skills.\n\nThe 12-week course covers everything from basic computer navigation and email to online banking safety and telehealth appointments. Classes will be held at the main branch and two satellite locations."
   },
