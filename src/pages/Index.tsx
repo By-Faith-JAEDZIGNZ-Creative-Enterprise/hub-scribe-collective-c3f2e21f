@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TrendingTicker from "@/components/TrendingTicker";
+import LatestNews from "@/components/LatestNews";
 import FeaturedStories from "@/components/FeaturedStories";
 import CategoryHighlights from "@/components/CategoryHighlights";
 import NewsletterSignup from "@/components/NewsletterSignup";
@@ -17,6 +18,7 @@ const Index = () => {
       <main className="pt-16">
         <HeroSection />
         <TrendingTicker />
+        <LatestNews />
         <FeaturedStories />
         <NewsletterSignup variant="banner" />
         <CategoryHighlights />
