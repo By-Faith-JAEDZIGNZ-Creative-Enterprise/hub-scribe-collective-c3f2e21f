@@ -205,7 +205,7 @@ export const stories: Story[] = [
     category: "sports",
     author: "DeShawn Porter",
     date: "Jan 25, 2026",
-    image: "/featured-sports.jpg",
+    image: "/story-flag-football.jpg",
     slug: "youth-flag-football-league",
     content: "Hattiesburg Parks & Recreation has announced the addition of flag football to its youth sports lineup, offering divisions for ages 6-14 starting this spring.\n\nThe move comes in response to growing demand from parents seeking safer alternatives to tackle football. Registration is already at 60% capacity."
   },
