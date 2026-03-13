@@ -77,7 +77,7 @@ export const stories: Story[] = [
     category: "business",
     author: "Sarah Chen",
     date: "Feb 25, 2026",
-    image: "/featured-business.jpg",
+    image: "/story-tech-startup.jpg",
     slug: "local-tech-startup-funding",
     featured: true,
     content: "Pine Belt Innovations, a Hattiesburg-based agricultural technology startup, announced today that it has successfully closed a $5 million Series A funding round led by Southern Ventures Capital.\n\nThe company, founded in 2023 by University of Southern Mississippi graduates David Torres and Lisa Ngozi, has developed an AI-powered platform that helps small and mid-size farmers optimize crop yields while reducing water usage.\n\nThe funding will be used to expand the platform across the Southeast, hire 30 new employees at the Hattiesburg headquarters, and develop new features for sustainable farming practices."
