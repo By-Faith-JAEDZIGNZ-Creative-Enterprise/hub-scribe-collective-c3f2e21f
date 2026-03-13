@@ -111,7 +111,7 @@ export const stories: Story[] = [
     category: "business",
     author: "Sarah Chen",
     date: "Jan 30, 2026",
-    image: "/featured-business.jpg",
+    image: "/story-tech-hub.jpg",
     slug: "emerging-tech-hub-ranking",
     content: "Hattiesburg has been named one of the top 10 emerging technology hubs in the American South by TechForward Magazine's annual rankings.\n\nThe report cited the city's growing startup ecosystem, the University of Southern Mississippi's computer science and engineering programs, and an affordable cost of living that's attracting remote workers and entrepreneurs from larger metros."
   },
