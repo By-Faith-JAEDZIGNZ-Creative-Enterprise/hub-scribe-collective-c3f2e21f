@@ -158,7 +158,7 @@ export const stories: Story[] = [
     category: "culture",
     author: "Jordan Blake",
     date: "Jan 28, 2026",
-    image: "/featured-culture.jpg",
+    image: "/story-book-award.jpg",
     slug: "local-author-book-award",
     content: "Hattiesburg native Ciara Jennings has been nominated for the National Book Award for her debut novel 'Red Clay Lullabies,' a sweeping multigenerational saga set in the Pine Belt region of Mississippi.\n\nJennings, a graduate of Hattiesburg High School and USM's creative writing program, drew on family stories and local history to craft the novel."
   },
