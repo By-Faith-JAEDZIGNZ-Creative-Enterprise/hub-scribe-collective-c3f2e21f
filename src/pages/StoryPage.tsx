@@ -29,6 +29,7 @@ const StoryPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title={story.title} description={story.excerpt} path={`/story/${slug}`} type="article" publishedTime={story.date} author={story.author} image={story.image} />
       <Navbar />
       <main className="pt-16">
         {/* Article Header */}
