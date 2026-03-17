@@ -16,11 +16,17 @@ const Index = () => {
       <WelcomeLightbox />
       <Navbar />
       <main className="pt-16">
+        {/* 1. Lead story hero — the newest original feature */}
         <HeroSection />
+        {/* 2. Trending ticker */}
         <TrendingTicker />
-        <LatestNews />
+        {/* 3. More featured & original stories */}
         <FeaturedStories />
+        {/* 4. Latest curated news */}
+        <LatestNews />
+        {/* 5. Newsletter CTA */}
         <NewsletterSignup variant="banner" />
+        {/* 6. Category deep dives */}
         <CategoryHighlights />
       </main>
       <Footer />

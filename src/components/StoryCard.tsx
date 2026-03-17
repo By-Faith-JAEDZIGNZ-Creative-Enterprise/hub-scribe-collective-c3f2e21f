@@ -44,6 +44,11 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-6">
           <div className="flex items-center gap-2">
+            {story.original && (
+              <span className="category-badge px-2 py-0.5 rounded-sm bg-primary/20 text-primary">
+                Original
+              </span>
+            )}
             <span className={`category-badge px-2.5 py-1 rounded-sm ${categoryColors[story.category] || "bg-muted text-muted-foreground"}`}>
               {story.category}
             </span>
