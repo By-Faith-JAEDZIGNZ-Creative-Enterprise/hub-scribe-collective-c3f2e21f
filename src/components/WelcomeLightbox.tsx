@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { X, ArrowRight, Sparkles } from "lucide-react";
+import { X, ArrowRight, Newspaper } from "lucide-react";
 import logoSubmark from "@/assets/logo-submark.png";
 
 const WelcomeLightbox = () => {
@@ -47,7 +47,7 @@ const WelcomeLightbox = () => {
           <img src={logoSubmark} alt="Hattiesburg Hub" className="h-20 w-auto mb-5" />
 
           <div className="inline-flex items-center gap-1.5 bg-primary/[0.08] border border-primary/15 rounded-full px-3 py-1 mb-4">
-            <Sparkles className="w-3 h-3 text-primary/70" />
+            <Newspaper className="w-3 h-3 text-primary/70" />
             <span className="font-display text-[9px] font-semibold tracking-[0.2em] text-primary/70 uppercase">
               Welcome
             </span>

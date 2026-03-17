@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Mail, Phone, CheckCircle, Sparkles, User } from "lucide-react";
+import { ArrowRight, Mail, Phone, CheckCircle, Newspaper, User } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import logoFull from "@/assets/logo-full.png";
@@ -92,7 +92,7 @@ const SignupPage = () => {
         ) : (
           <div className="animate-fade-in-up w-full">
             <div className="inline-flex items-center gap-2 bg-primary/[0.08] border border-primary/15 rounded-full px-3.5 py-1.5 mb-6">
-              <Sparkles className="w-3.5 h-3.5 text-primary/70" />
+              <Newspaper className="w-3.5 h-3.5 text-primary/70" />
               <span className="font-display text-[10px] font-semibold tracking-[0.2em] text-primary/70 uppercase">
                 Coming Soon
               </span>

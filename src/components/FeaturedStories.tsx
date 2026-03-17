@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Flame } from "lucide-react";
 import StoryCard from "./StoryCard";
 import { featuredStories, stories } from "@/data/stories";
 
@@ -20,7 +20,7 @@ const FeaturedStories = () => {
         {/* Section header */}
         <div className="flex items-center gap-4 mb-8">
           <div className="flex items-center gap-3">
-            <Sparkles className="w-4 h-4 text-primary" />
+            <Flame className="w-4 h-4 text-primary" />
             <h2 className="font-display text-xl font-bold text-foreground">More Featured Stories</h2>
           </div>
           <div className="flex-1 h-[1px] bg-border/50" />
