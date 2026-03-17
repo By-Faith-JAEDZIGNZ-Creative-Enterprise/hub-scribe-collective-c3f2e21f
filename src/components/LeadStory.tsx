@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import StoryCard from "./StoryCard";
 import { stories } from "@/data/stories";
 
