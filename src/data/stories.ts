@@ -6,11 +6,13 @@ export interface Story {
   author: string;
   date: string;
   image: string;
+  images?: string[];
   slug: string;
   content?: string;
   featured?: boolean;
   external?: boolean;
   externalUrl?: string;
+  original?: boolean;
 }
 
 export const categories = [
