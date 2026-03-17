@@ -1,44 +1,55 @@
+import { Link } from "react-router-dom";
+import { ArrowRight, Sparkles } from "lucide-react";
 import StoryCard from "./StoryCard";
 import { featuredStories, stories } from "@/data/stories";
 
 const FeaturedStories = () => {
-  const mainStory = featuredStories[0];
-  const sideStories = featuredStories.slice(1, 4);
-  const recentStories = stories.slice(3, 6);
+  // Skip the lead story (already in hero), show rest of featured + recent originals
+  const remainingFeatured = featuredStories.slice(1, 5);
+  const recentOriginals = stories.filter((s) => s.original && !s.featured).slice(0, 3);
+  const displayStories = [...recentOriginals, ...remainingFeatured];
+
+  if (displayStories.length === 0) return null;
+
+  const topRow = displayStories.slice(0, 2);
+  const bottomRow = displayStories.slice(2, 5);
 
   return (
-    <section className="py-16 bg-hub-deep">
+    <section className="py-14 bg-hub-deep">
       <div className="container mx-auto px-4">
         {/* Section header */}
-        <div className="flex items-center gap-4 mb-10">
-          <h2 className="font-display text-2xl font-bold text-foreground">Featured</h2>
+        <div className="flex items-center gap-4 mb-8">
+          <div className="flex items-center gap-3">
+            <Sparkles className="w-4 h-4 text-primary" />
+            <h2 className="font-display text-xl font-bold text-foreground">More Featured Stories</h2>
+          </div>
           <div className="flex-1 h-[1px] bg-border/50" />
-          <span className="font-display text-xs font-medium tracking-wide text-muted-foreground">This Week</span>
+          <Link
+            to="/category/community"
+            className="group flex items-center gap-2 font-display text-xs font-medium tracking-wide text-muted-foreground hover:text-primary transition-colors"
+          >
+            View All
+            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+          </Link>
         </div>
 
-        {/* Main Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Large featured story */}
-          <div className="lg:col-span-7">
-            <StoryCard story={mainStory} variant="large" />
-          </div>
-
-          {/* Side stories */}
-          <div className="lg:col-span-5 flex flex-col gap-6">
-            {sideStories.map((story) => (
-              <StoryCard key={story.id} story={story} variant="horizontal" />
+        {/* Top row: 2-up cards */}
+        {topRow.length > 0 && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {topRow.map((story) => (
+              <StoryCard key={story.id} story={story} />
             ))}
+          </div>
+        )}
 
-            {/* Divider */}
-            <div className="h-[1px] bg-border/50" />
-
-            {/* More Stories heading */}
-            <h3 className="font-display text-xs font-medium tracking-wide text-muted-foreground">More Stories</h3>
-            {recentStories.map((story) => (
+        {/* Bottom row: 3-up cards */}
+        {bottomRow.length > 0 && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {bottomRow.map((story) => (
               <StoryCard key={story.id} story={story} variant="horizontal" />
             ))}
           </div>
-        </div>
+        )}
       </div>
     </section>
   );
