@@ -18,7 +18,7 @@ const Navbar = () => {
             <img
               src={logoSubmark}
               alt="Hattiesburg Hub"
-              className="h-14 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
