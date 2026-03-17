@@ -24,6 +24,102 @@ export const categories = [
 ];
 
 export const stories: Story[] = [
+  // ── ORIGINAL FEATURE STORIES ──
+  {
+    id: "100",
+    title: "From Hand-Washing Clothes to Changing Lives: New Hattiesburg Museum Honors Legacy of Oseola McCarty",
+    excerpt: "Oseola McCarty, a humble washerwoman who saved $280,000 over a lifetime of hand-washing laundry, donated $150,000 to fund scholarships at USM. Her restored home is now Hattiesburg's newest museum.",
+    category: "culture",
+    author: "Joseph Bryant",
+    date: "Mar 17, 2026",
+    image: "/story-mccarty-house-sign.jpg",
+    images: [
+      "/story-mccarty-house-sign.jpg",
+      "/story-mccarty-ribbon-cutting.jpg",
+      "/story-mccarty-exhibit-legacy.jpg",
+      "/story-mccarty-exhibit-education.jpg",
+      "/story-mccarty-guideposts.jpg",
+      "/story-mccarty-statue.jpg",
+      "/story-mccarty-porch-chairs.jpg",
+      "/story-mccarty-porch-fountain.jpg",
+      "/story-mccarty-exhibit-nurse.jpg",
+    ],
+    slug: "oseola-mccarty-house-museum-hattiesburg",
+    featured: true,
+    original: true,
+    content: `Stephanie Bullock Ferguson could hardly contain her emotion as she entered through the doors of the modest wood framed house.
+
+It had been years since she was last there, and the photos, furnishing and fixtures all conveyed the spirit of Oseola McCarty, a tiny, soft voiced woman who called it her home for decades.
+
+"When it walked it was like going back in time. Just absolute excellence," Ferguson said. "It was happy tears, but it was a lot to take in. I was overwhelmed with joy because she would have been so ticked that they had done that for her."
+
+It was McCarty's thrifty nature and desire to positively impact others that created a legacy that continues to touch generations of students, families and communities.
+
+And it all started in this house in Hattiesburg where McCarty lived and worked by taking in laundry. She washed the clothes by hand, continuing a tradition largely replaced by modern conveniences. Year after year McCarty silently saved and invested her money.
+
+By the time she was in her 80s, McCarty's savings had reached $280,000, and it was time to deliver her greatest investment – about $150,000 in scholarships for rising students at the nearby University of Southern Mississippi.
+
+Ferguson knows McCarty's impact firsthand as the first Oseola McCarty Scholar.
+
+"After I met her, she was a complete angel, one of the sweetest people I had ever met," she said. "She just became like another grandmother to me."
+
+McCarty's house originally sat near Hattiesburg High School. The University of Southern Mississippi and the Hattiesburg Convention Commission bought the house in 2016, then moved it to the Sixth Street Museum District.
+
+It was restored and opened to the public in March as the latest amenity in the area devoted to history and culture.
+
+Ferguson remembered the times she spent as a college student sitting on Ms. McCarty's front porch admiring the hydrangeas in front of them.
+
+"I had no idea that somewhere down the line this little house that I'm hanging out in would become a museum," Ferguson said. "It is surreal."
+
+Paul Laughlin, Retired Sr. Vice President & Trust Officer of Trustmark National Bank, recalled the meeting with McCarty that began her philanthropy in 1995. She was 87 years old.
+
+"She said she wanted to leave her money to her church, three favorite cousins and that college out there on Hardy Street – The University of Southern Mississippi," Laughlin said during the ceremony.
+
+At the bank Laughlin placed ten dimes on the table and asked McCarty how she wanted to divide her savings. She placed a dime for Friendship Baptist Church and one each for her cousin.
+
+"She then looked up and said, 'My arthritis won't let me lift the rest, you put them there.'" Laughlin said.
+
+"I placed the remaining dimes on the university's card, sixty percent of her life's savings, so that her scholarships could give others the educational opportunities she never had herself. Out of that simple act, a handful of dimes, grew a legacy of hope."
+
+Ferguson said McCarty created a larger legacy than she ever imagined. She recalled traveling with McCarty to promote the scholarship and share her story, including a visit to New York City.
+
+Through McCarty's gift, Ferguson said she received more than a scholarship. She also found a friend and bonus grandmother.
+
+Beyond being known as the surprise philanthropist from Hattiesburg, Ferguson recalled McCarty as a fun person to be around.
+
+"She was somebody who genuinely enjoyed life, so it didn't take a lot of things to make her happy," Ferguson said. "She was actually pretty funny. She was this little petite lady, but when she laughed, her whole body shook. She had a big smile and a big laugh to be so tiny."
+
+The story of McCarty and her donation captured national and international headlines, inspiring others to also donate to her scholarship fund.
+
+McCarty became an ambassador of goodwill and selflessness. Her collection of honors included the Presidential Citizens Medal, which was awarded by President Bill Clinton during a White House ceremony. The honor is the second-highest civilian award in the United States.
+
+McCarty also pressed the switch to drop the New Years Ball in Times Square and carried the 1996 Olympic Torch.
+
+Ferguson and McCarty appeared on the Today Show, then attended a black tie dinner in her honor. McCarty during the trip maintained her usual reserve, appreciating the visit, but comedically complaining to Ferguson that it was impossible to find grits in the Big Apple.
+
+"She didn't get puffed up. She was still the same loving, Jesus first type person in all the years," Ferguson said.
+
+Ferguson said McCarty also had unique food tastes.
+
+"Nowadays, we'd call her a foodie," she said. "To be so tiny she liked food."
+
+McCarty's favorite dessert was Bluebell ice cream mixed with Kellogg's Cornflakes. It was a treat McCarty passed on to her young friend.
+
+McCarty remained fiercely independent. She never owned a car and walked everywhere. Later in life, managers at the grocery store gave her a shopping cart to make it easier to take her groceries home.
+
+Ferguson said her college benefactor only bought an air conditioner to make it more comfortable for the growing number of visitors to her home following word of her donation.
+
+In just over 30 years, The Oseola McCarty Scholarship Endowment at The University of Southern Mississippi has benefited 142 students. The endowment reached its $1 million mark in 2025.
+
+Ferguson said the scholarship continues to impact her life. She was able to complete college debt free, which enabled her to buy her first home at age 23.
+
+Ms. McCarty died in 1999 nearly a year after seeing Ferguson graduate.
+
+Now an IT professional and small business owner, Ferguson said McCarty's life continues to sow lessons for herself and her family.
+
+"I tell my kids now, do not despise small beginnings," Ferguson said. "Ms. Ola took pride in her work as a laundry lady. Until she retired, she still had people coming for her to handwash their clothes. We've got to have the degrees, of course, but Black excellence in southern Mississippi existed in those roles."`
+  },
+
   // ── COMMUNITY ──
   {
     id: "1",
