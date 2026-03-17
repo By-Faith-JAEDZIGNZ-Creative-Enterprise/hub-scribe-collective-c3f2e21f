@@ -1,57 +1,52 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Sparkles } from "lucide-react";
-import { stories } from "@/data/stories";
+import { ArrowRight } from "lucide-react";
+import heroImage from "@/assets/hero-hattiesburg.jpg";
 
 const HeroSection = () => {
-  // Lead with the newest original story, fallback to first featured
-  const leadStory = stories.find((s) => s.original && s.featured) || stories.find((s) => s.featured);
-
-  if (!leadStory) return null;
-
   return (
-    <section className="relative min-h-[75vh] flex items-end overflow-hidden">
-      {/* Background: Lead story image */}
+    <section className="relative h-[70vh] min-h-[500px] flex items-end overflow-hidden">
+      {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src={leadStory.image}
-          alt={leadStory.title}
+          src={heroImage}
+          alt="Hattiesburg downtown at golden hour"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/30 to-transparent" />
+        <div className="absolute inset-0 bg-primary/5 mix-blend-overlay" />
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 pb-12 md:pb-20">
-        <div className="max-w-3xl">
-          {/* Badge */}
-          <div className="flex items-center gap-3 mb-4 animate-fade-in-up opacity-0 delay-100">
-            <span className="inline-flex items-center gap-1.5 bg-primary/20 backdrop-blur-sm border border-primary/30 text-primary px-3 py-1 rounded-full font-display text-[11px] font-bold tracking-widest uppercase">
-              <Sparkles className="w-3 h-3" />
-              Original Feature
-            </span>
-            <span className="font-display text-xs text-muted-foreground tracking-wide">{leadStory.date}</span>
+      <div className="relative container mx-auto px-4 pb-16 md:pb-24">
+        <div className="max-w-2xl">
+          <div className="flex items-center gap-3 mb-5 animate-fade-in-up opacity-0 delay-100">
+            <div className="w-10 h-[2px] bg-primary" />
+            <span className="font-display text-xs font-medium tracking-widest text-primary/80">Your Community. Your Stories.</span>
           </div>
-
-          {/* Headline — links to the story */}
-          <Link to={`/story/${leadStory.slug}`} className="group block">
-            <h1 className="font-display text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-foreground leading-[1] mb-4 group-hover:text-primary transition-colors duration-300 animate-fade-in-up opacity-0 delay-200">
-              {leadStory.title}
-            </h1>
-          </Link>
-
-          <p className="font-body text-base md:text-lg text-muted-foreground max-w-2xl mb-5 leading-relaxed animate-fade-in-up opacity-0 delay-300">
-            {leadStory.excerpt}
+          <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-foreground leading-[0.95] mb-6 animate-fade-in-up opacity-0 delay-200">
+            The Pulse
+            <br />
+            <span className="text-primary">of the Hub</span>
+            <br />
+            City
+          </h1>
+          <p className="font-body text-base md:text-lg text-muted-foreground max-w-lg mb-8 leading-relaxed animate-fade-in-up opacity-0 delay-300">
+            Hattiesburg's independent source for local news, culture, business, and community stories that matter.
           </p>
-
-          <div className="flex flex-wrap items-center gap-4 animate-fade-in-up opacity-0 delay-400">
-            <span className="font-display text-xs text-hub-text-dim">By {leadStory.author}</span>
+          <div className="flex flex-wrap gap-3 animate-fade-in-up opacity-0 delay-400">
             <Link
-              to={`/story/${leadStory.slug}`}
-              className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-md font-display text-sm font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)]"
+              to="/category/community"
+              className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-display text-sm font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)]"
             >
-              Read Full Story
+              Latest Stories
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </Link>
+            <Link
+              to="/category/culture"
+              className="inline-flex items-center gap-2 border border-foreground/20 text-foreground px-6 py-3 rounded-md font-display text-sm font-medium tracking-wide hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300"
+            >
+              Explore Culture
             </Link>
           </div>
         </div>

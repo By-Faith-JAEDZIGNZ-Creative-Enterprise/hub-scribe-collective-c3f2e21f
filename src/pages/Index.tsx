@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import LeadStory from "@/components/LeadStory";
 import TrendingTicker from "@/components/TrendingTicker";
 import LatestNews from "@/components/LatestNews";
 import FeaturedStories from "@/components/FeaturedStories";
@@ -16,17 +17,12 @@ const Index = () => {
       <WelcomeLightbox />
       <Navbar />
       <main className="pt-16">
-        {/* 1. Lead story hero — the newest original feature */}
         <HeroSection />
-        {/* 2. Trending ticker */}
         <TrendingTicker />
-        {/* 3. More featured & original stories */}
-        <FeaturedStories />
-        {/* 4. Latest curated news */}
+        <LeadStory />
         <LatestNews />
-        {/* 5. Newsletter CTA */}
+        <FeaturedStories />
         <NewsletterSignup variant="banner" />
-        {/* 6. Category deep dives */}
         <CategoryHighlights />
       </main>
       <Footer />
