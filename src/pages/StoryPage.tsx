@@ -131,8 +131,8 @@ const StoryPage = () => {
         </div>
 
         {/* Article Content */}
-        <div className="container mx-auto px-4 py-10">
-          <div className="max-w-3xl">
+        <div className="container mx-auto px-4 py-10 max-w-4xl">
+          <div>
             {/* Meta */}
             <div className="flex items-center gap-6 mb-8 pb-6 border-b border-border/50">
               <div className="flex items-center gap-2 text-muted-foreground text-sm font-body">
