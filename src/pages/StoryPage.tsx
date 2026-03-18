@@ -105,7 +105,7 @@ const StoryPage = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
           </div>
           <div className="absolute bottom-0 left-0 right-0">
-            <div className="container mx-auto px-4 pb-8">
+            <div className="container mx-auto px-4 pb-8 max-w-4xl">
               <Link
                 to={`/category/${story.category}`}
                 className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300 font-display text-xs font-medium tracking-wide mb-4"
@@ -113,15 +113,17 @@ const StoryPage = () => {
                 <ArrowLeft className="w-4 h-4" />
                 Back to {story.category}
               </Link>
-              {story.original && (
-                <span className="inline-flex items-center gap-1.5 bg-primary/20 text-primary px-2.5 py-1 rounded-sm font-display text-[10px] font-bold tracking-widest uppercase mr-2">
-                  HattiesburgHub Original
+              <div>
+                {story.original && (
+                  <span className="inline-flex items-center gap-1.5 bg-primary/20 text-primary px-2.5 py-1 rounded-sm font-display text-[10px] font-bold tracking-widest uppercase mr-2">
+                    HattiesburgHub Original
+                  </span>
+                )}
+                <span className={`category-badge px-2.5 py-1 rounded-sm ${categoryColors[story.category] || "bg-muted text-muted-foreground"}`}>
+                  {story.category}
                 </span>
-              )}
-              <span className={`category-badge px-2.5 py-1 rounded-sm ${categoryColors[story.category] || "bg-muted text-muted-foreground"}`}>
-                {story.category}
-              </span>
-              <h1 className="font-display text-3xl md:text-5xl font-bold text-foreground mt-3 leading-tight max-w-3xl">
+              </div>
+              <h1 className="font-display text-3xl md:text-5xl font-bold text-foreground mt-3 leading-tight">
                 {story.title}
               </h1>
             </div>
@@ -129,8 +131,8 @@ const StoryPage = () => {
         </div>
 
         {/* Article Content */}
-        <div className="container mx-auto px-4 py-10">
-          <div className="max-w-3xl">
+        <div className="container mx-auto px-4 py-10 max-w-4xl">
+          <div>
             {/* Meta */}
             <div className="flex items-center gap-6 mb-8 pb-6 border-b border-border/50">
               <div className="flex items-center gap-2 text-muted-foreground text-sm font-body">
