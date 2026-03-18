@@ -161,7 +161,7 @@ const StoryPage = () => {
 
             {/* Photo Gallery inserted mid-article */}
             {story.images && story.images.length > 1 && (
-              <PhotoGallery images={story.images} title={story.title} />
+              <PhotoGallery images={story.images} title={story.title} photoCredit={story.photoCredit} />
             )}
 
             {/* Content - remaining */}
