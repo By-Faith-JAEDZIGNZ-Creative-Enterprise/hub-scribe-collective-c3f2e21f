@@ -13,6 +13,7 @@ export interface Story {
   external?: boolean;
   externalUrl?: string;
   original?: boolean;
+  photoCredit?: string;
 }
 
 export const categories = [
@@ -47,6 +48,7 @@ export const stories: Story[] = [
     slug: "oseola-mccarty-house-museum-hattiesburg",
     featured: true,
     original: true,
+    photoCredit: "Photos by Stephanie Bullock Ferguson, the first Oseola McCarty Scholar at The University of Southern Mississippi. Ferguson traveled with Ms. McCarty to promote the scholarship fund and remained close to Ms. McCarty for the rest of her life. Ferguson returned to Hattiesburg to mark the opening of the museum and celebrate her friend and academic patron.",
     content: `Stephanie Bullock Ferguson could hardly contain her emotion as she entered through the doors of the modest wood framed house.
 
 It had been years since she was last there, and the photos, furnishing and fixtures all conveyed the spirit of Oseola McCarty, a tiny, soft voiced woman who called it her home for decades.
