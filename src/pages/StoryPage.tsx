@@ -95,14 +95,14 @@ const StoryPage = () => {
       <Navbar />
       <main className="pt-16">
         {/* Article Header */}
-        <div className="relative">
-          <div className="aspect-[21/9] max-h-[500px] overflow-hidden">
+        <div className="relative w-full">
+          <div className="w-full h-[50vh] md:h-[60vh] overflow-hidden">
             <img
               src={story.image}
               alt={story.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
           </div>
           <div className="absolute bottom-0 left-0 right-0">
             <div className="container mx-auto px-4 pb-8 max-w-4xl">
