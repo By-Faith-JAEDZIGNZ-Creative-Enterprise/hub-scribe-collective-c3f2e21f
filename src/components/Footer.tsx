@@ -22,7 +22,7 @@ const Footer = () => {
               <img
                 src={logoFull}
                 alt="Hattiesburg Hub"
-                className="h-28 md:h-36 w-auto drop-shadow-[0_0_30px_hsl(217,91%,60%,0.15)]"
+                className="h-36 md:h-44 w-auto drop-shadow-[0_0_30px_hsl(217,91%,60%,0.15)]"
               />
             </Link>
           </div>
