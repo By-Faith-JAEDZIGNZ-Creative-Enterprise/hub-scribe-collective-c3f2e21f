@@ -15,7 +15,7 @@ const categoryColors: Record<string, string> = {
   opinion: "bg-muted text-muted-foreground",
 };
 
-const PhotoGallery = ({ images, title }: { images: string[]; title: string }) => {
+const PhotoGallery = ({ images, title, photoCredit }: { images: string[]; title: string; photoCredit?: string }) => {
   const [current, setCurrent] = useState(0);
 
   if (images.length <= 1) return null;
@@ -69,6 +69,13 @@ const PhotoGallery = ({ images, title }: { images: string[]; title: string }) =>
           </button>
         ))}
       </div>
+
+      {/* Photo Credit */}
+      {photoCredit && (
+        <p className="mt-3 text-xs text-muted-foreground font-body italic leading-relaxed">
+          📷 {photoCredit}
+        </p>
+      )}
     </div>
   );
 };
