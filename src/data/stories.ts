@@ -13,6 +13,7 @@ export interface Story {
   external?: boolean;
   externalUrl?: string;
   original?: boolean;
+  photoCredit?: string;
 }
 
 export const categories = [
