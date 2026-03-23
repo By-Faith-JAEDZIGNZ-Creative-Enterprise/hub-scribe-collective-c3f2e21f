@@ -34,9 +34,8 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
         last_name: lastName.trim() || null,
       });
 
-    setLoading(false);
-
     if (error) {
+      setLoading(false);
       if (error.code === "23505") {
         toast.info("You're already subscribed!");
       } else {
@@ -44,6 +43,22 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
       }
       return;
     }
+
+    try {
+      await fetch("https://hooks.zapier.com/hooks/catch/26939793/up0rm3u/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
+        body: JSON.stringify({
+          email: result.data,
+          first_name: firstName.trim() || undefined,
+        }),
+      });
+    } catch (err) {
+      console.error("Zapier webhook error:", err);
+    }
+
+    setLoading(false);
 
     setSubmitted(true);
     toast.success("You're on the list! Welcome to the Hub.");
