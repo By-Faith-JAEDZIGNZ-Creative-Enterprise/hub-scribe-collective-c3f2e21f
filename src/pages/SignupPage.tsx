@@ -49,6 +49,19 @@ const SignupPage = () => {
           throw error;
         }
       } else {
+        try {
+          await fetch("https://hooks.zapier.com/hooks/catch/26939793/up0rm3u/", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            mode: "no-cors",
+            body: JSON.stringify({
+              email: email,
+              first_name: firstName.trim() || undefined,
+            }),
+          });
+        } catch (err) {
+          console.error("Zapier webhook error:", err);
+        }
         setDone(true);
       }
     } catch {
