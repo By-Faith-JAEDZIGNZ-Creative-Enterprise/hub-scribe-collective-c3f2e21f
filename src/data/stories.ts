@@ -527,6 +527,13 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
   },
 ];
 
+// Sort helper: newest dates first
+const parseDate = (d: string) => new Date(d.replace(/^(\w+)\s(\d+),\s(\d+)$/, '$1 $2, $3')).getTime();
+const byDateDesc = (a: Story, b: Story) => parseDate(b.date) - parseDate(a.date);
+
+// Sort all stories by date so newest always float to top
+stories.sort(byDateDesc);
+
 export const trendingStories = stories.filter(s => s.external).slice(0, 5);
 export const featuredStories = [
   ...stories.filter(s => s.featured && s.original),
