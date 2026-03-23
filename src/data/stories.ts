@@ -358,6 +358,71 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
 
   // ── EXTERNAL / CURATED NEWS ──
   {
+    id: "29",
+    title: "Tatum Park Welcomes Hundreds of Kids for Hattiesburg Diamond Youth Baseball Opener",
+    excerpt: "Hattiesburg Diamond Youth Baseball kicked off its 2026 season at Tatum Park with more than 350 kids participating across five age-group teams, from Tee-ball to Majors.",
+    category: "sports",
+    author: "WDAM",
+    date: "Mar 21, 2026",
+    image: "/story-tatum-park-baseball.jpg",
+    slug: "tatum-park-youth-baseball-opener",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/03/21/tatum-park-welcomes-hundreds-kids-hattiesburg-diamond-youth-baseball-opener/",
+    content: "Hattiesburg Diamond Youth Baseball has kicked off its 2026 season on March 21 at Tatum Park with more than 350 kids participating.\n\nThe group welcomes children ages 4 to 12 and divides them into five teams by age: Tee-ball for ages 4 and 5, 'Midgets' for ages 5 and 6, 'Peewees' for ages 7 and 8, 'Minors' for ages 9 and 10, and 'Majors' for ages 11 and 12.\n\nLatrell Crosby, a player for the 'Majors' team, says he will always remember his time in youth baseball as he prepares to take his career to the next level. 'Basically, all my life I been playing in Tatum, and I been having a lot of fun,' Crosby said."
+  },
+  {
+    id: "30",
+    title: "Nighttime Closures on U.S. 49 in Hattiesburg Begin March 23 for Railroad Repairs",
+    excerpt: "Drivers should prepare for overnight closures on U.S. Highway 49 starting March 23, as Norfolk Southern begins railroad bridge repairs expected to last about a month.",
+    category: "community",
+    author: "WDAM",
+    date: "Mar 19, 2026",
+    image: "/story-us49-closures.jpg",
+    slug: "us49-nighttime-closures-hattiesburg",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/03/19/nighttime-closures-us-49-hattiesburg-begin-march-23-railroad-repairs/",
+    content: "Drivers in Hattiesburg should prepare for overnight traffic changes starting next week, as crews begin work that will impact part of U.S. Highway 49 for about a month.\n\nThe Mississippi Department of Transportation says the closures are tied to railroad bridge repairs by Norfolk Southern. The project will require closing U.S. 49 in both directions between West Pine Street and Country Club Road.\n\nMotorists can expect these closures to take place each night from Monday to Thursday, from 9 p.m. to 6 a.m. The repairs are anticipated to take about one month."
+  },
+  {
+    id: "31",
+    title: "Southern Miss Routs Troy 12-4 at Pete Taylor Park",
+    excerpt: "The Golden Eagles improved to 19-5 on the season with a dominant 12-4 victory over the Troy Trojans at Pete Taylor Park in Hattiesburg.",
+    category: "sports",
+    author: "ESPN",
+    date: "Mar 22, 2026",
+    image: "/story-usm-troy-baseball.jpg",
+    slug: "southern-miss-troy-baseball",
+    external: true,
+    externalUrl: "https://www.espn.com/college-baseball/game/_/gameId/401853423"
+  },
+  {
+    id: "32",
+    title: "Mississippi's Dr. Daniel Edney Under Consideration to Lead CDC",
+    excerpt: "Mississippi State Health Officer Dr. Daniel Edney, a vaccine proponent who has led the state's health department since 2022, is under serious consideration to become the new director of the CDC.",
+    category: "community",
+    author: "Nick Judin, MS Free Press",
+    date: "Mar 22, 2026",
+    image: "/story-edney-cdc.jpg",
+    slug: "edney-cdc-director-consideration",
+    external: true,
+    externalUrl: "https://www.mississippifreepress.org/mississippi-state-health-officer-dr-daniel-edney-a-vaccine-proponent-is-under-consideration-to-lead-the-cdc/",
+    photoCredit: "MFP Photo by Heather Harrison",
+    content: "Dr. Daniel P. Edney, Mississippi's state health officer and head of the Mississippi State Department of Health, is now under serious consideration to lead the U.S. Centers for Disease Control as its new director, The Washington Post reported.\n\nEdney has served in the role of MSDH chief since 2022. During his tenure, Mississippi's overall health ranking improved from the bottom of the pack to No. 48.\n\nAs state health officer, Edney has long championed vaccines and supported robust immunization mandates for children. If selected, he would report directly to HHS Secretary Robert F. Kennedy Jr."
+  },
+  {
+    id: "33",
+    title: "Mississippi State Baseball Completes Commanding SEC Sweep of Vanderbilt",
+    excerpt: "The No. 6 Bulldogs swept Vanderbilt for the first time since 2000, capped by a 17-7 run-rule victory, drawing two of the largest on-campus crowds in NCAA history.",
+    category: "sports",
+    author: "Sam Sklar, Clarion Ledger",
+    date: "Mar 22, 2026",
+    image: "/story-msstate-vandy-sweep.jpg",
+    slug: "mississippi-state-vanderbilt-sweep",
+    external: true,
+    externalUrl: "https://www.clarionledger.com/story/sports/college/mississippi-state/2026/03/22/mississippi-state-baseball-vanderbilt-sec-series-ryan-mcpherson/89124641007/",
+    content: "Mississippi State baseball swept Vanderbilt for the first time since 2000, culminating in a 17-7 run-rule victory. The No. 6 Bulldogs (20-4, 4-2 SEC) defeated Vanderbilt on March 20 (4-2), March 21 (7-2), and March 22 (17-7).\n\nThe bullpen allowed just two runs in 10 innings all series. Tomas Valincius struck out a career-high 14 batters in seven innings in Game 2.\n\nThe first two games drew two of the largest crowds in NCAA history for an on-campus game, with attendances of 14,649 and 14,834. The Bulldogs are 16-0 at Dudy Noble Field in 2026 and have won 18 straight at home."
+  },
+  {
     id: "21",
     title: "Cheapest Gas Stations in Hattiesburg",
     excerpt: "CheapInsurance.com compiled a list of the cheapest gas stations in Hattiesburg, helping local drivers find the best fuel prices across the Hub City.",
@@ -461,6 +526,13 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     content: "A surprise $6,000 teacher pay raise gained approval in the Mississippi Senate on Wednesday after the chamber amended a bill that originally dealt with the sale or lease of unused school property.\n\nSenate Education Committee Chairman Sen. Dennis DeBar, R-Leakesville, presented an amendment to House Bill 1395 that adds language to raise salaries over the next three years by $6,000 for regular teachers, $2,000 for assistant teachers, $6,000 for licensed special education educators teaching special education classes — plus an additional $3,000 supplement — and $2,000 for college and university educators.\n\n'Today's a good day for teachers, teacher assistants, professors and special education teachers as well,' DeBar told reporters Wednesday after the Senate passed the pay raise. The Senate unanimously passed H.B. 1395."
   },
 ];
+
+// Sort helper: newest dates first
+const parseDate = (d: string) => new Date(d.replace(/^(\w+)\s(\d+),\s(\d+)$/, '$1 $2, $3')).getTime();
+const byDateDesc = (a: Story, b: Story) => parseDate(b.date) - parseDate(a.date);
+
+// Sort all stories by date so newest always float to top
+stories.sort(byDateDesc);
 
 export const trendingStories = stories.filter(s => s.external).slice(0, 5);
 export const featuredStories = [
