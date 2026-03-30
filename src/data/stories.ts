@@ -37,6 +37,8 @@ export const stories: Story[] = [
     images: [
       "/story-sixth-street-smith-drug.jpg",
       "/story-sixth-street-aamhm.jpg",
+      "/story-sixth-street-smith-drug-malt.jpg",
+      "/story-sixth-street-mccarty-museum.png",
     ],
     slug: "sixth-street-museum-district-hattiesburg",
     featured: true,
