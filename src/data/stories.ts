@@ -27,6 +27,80 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "102",
+    title: "Living History: Sixth Street Museum District Showcases Hattiesburg's Past, Inspires the Future",
+    excerpt: "The Sixth Street Museum District in Hattiesburg's Mobile/Bouie Neighborhood showcases the city's historic African American center of culture and business, featuring the African American Military History Museum, Eureka School, Smith Drug Company, Oseola McCarty House and the forthcoming Moeller Military Vehicle Museum.",
+    category: "culture",
+    author: "Joseph Bryant",
+    date: "Mar 30, 2026",
+    image: "/story-sixth-street-smith-drug.jpg",
+    images: [
+      "/story-sixth-street-smith-drug.jpg",
+      "/story-sixth-street-aamhm.jpg",
+    ],
+    slug: "sixth-street-museum-district-hattiesburg",
+    featured: true,
+    original: true,
+    photoCredit: "Photos courtesy of the Hattiesburg Sixth Street Museum District",
+    content: `A drive down Sixth Street in Hattiesburg offers a glimpse of the past and displays a path leading to the restoration of a vibrant historic community.
+
+The Sixth Street Museum District in the Mobile/Bouie Neighborhood showcases the city's historic African American center of culture and business that spans more than a century.
+
+The district is among several attractions that generates interest locally and far beyond to bolster Hattiesburg's status as a hub for cultural tourism.
+
+"In Hattiesburg we don't have a mountain, we don't have a beach and we don't have a mouse," said Rick Taylor, executive director of the Hattiesburg Convention Commission, referring to cities such as Orlando with major attractions such as Disney World. "So you've got to figure out what you have that attracts people. You've got to work all the angles, and that's what Hattiesburg has been very good at."
+
+A blend of attractions has benefited the city. Visitors in 2024 contributed $582 million to the Hattiesburg economy from a variety of dining, shopping, hotel and cultural attractions.
+
+The Convention Commission operates Hattiesburg's Sixth Street Museum District. The historic Eureka School was the first project for the burgeoning museum district in 2006. The commission acquired the property, which was threatened with demolition, and began the long process of renovation.
+
+"We made a deal with the city and the public schools that said if you turn it over we'd renovate it," Taylor said.
+
+The school opened in 1921 as a high school for African American students. The school was also built on the same site as the first school for African Americans in Hattiesburg. Renovations were completed in 2018.
+
+Multiple projects began to take shape along Sixth Street.
+
+The African American Military History Museum opened its doors in 2009. Through hundreds of artifacts, photos and displays, the museum housed in a former USO club building illustrates the contributions of African American soldiers from the American Revolution through today.
+
+The facility preserves the stories of pioneers including Jesse L. Brown, a Hattiesburg native who became America's first Black naval aviator. The story of Ruth Bailey Earl, also of Hattiesburg, is honored as one of more than 500 nurses who served during World War II.
+
+The USO building opened in 1942. The building was built as a gathering place for Black soldiers who were stationed at nearby Camp Shelby. The military base at one time was technically the largest city in Mississippi because of all the soldiers it housed.
+
+The building after the war remained a hub of activity as a community center, a library and school. A local effort then began to convert the building into a military museum harkening to its original military use.
+
+That project brought an unexpected reward. "In the process of renovating it and building a museum inside we discovered that it was the only USO of its style remaining in the United States," Taylor said. Taylor said that in fact, the largest and most rare relic of the museum is the building itself.
+
+Further down the street sits the historic Smith Drug Company, a company with a century-old connection to the community. Pharmacist E. Hammond Smith operated his drugstore for 55 years before retiring in 1980 and selling the company to James A. Cohen.
+
+The city of Hattiesburg bought the Smith Drug building, with the commission restoring it to its vintage look and reopening it in 2022.
+
+"With lots of stories within its walls and a proud neighborhood as its backdrop, we believe that a building such as this with a rich history deserves an equally bright future," Mayor Toby Barker declared in 2020 as the city celebrated plans for the site.
+
+The drug store established in 1925 is now a living museum where visitors on Saturdays can come look and observe the historic building and also taste its serving of old fashioned ice cream milkshakes, floats and malts.
+
+The latest cultural jewel opened in March with the dedication of the Oseola McCarty House. McCarty made international headlines and was heralded as an example of generosity with her surprise donation to create scholarships to support students at the University of Southern Mississippi.
+
+McCarty lived a simple life in her wood-framed home and diligently saved her earnings as a washerwoman until she amassed a small fortune. In her 80s, she gave it all away to help others, including $150,000 in scholarships for rising students. McCarty's story motivated others to contribute to the foundation which has now assisted 142 students.
+
+McCarty's house was moved to the Sixth Street District, restored and opened as a memorial to her.
+
+"It's just something we feel is important. It speaks to the south, it speaks to Mississippi in terms that we have a generous spirit and Ms. Oseola epitomizes that far beyond what she could have imagined," Taylor said. "It's a story that other people need to hear and think about in their own lives."
+
+The district continues to grow, including the opening of the McCarty House and the forthcoming Moeller Military Vehicle Museum.
+
+Each project has paved the way for the next. In fact, the military vehicle museum was inspired by a positive visit to the African American Military History Museum. Dr. Don Moeller from Georgia quietly toured the museum and returned with a major proposal to donate his collection of more than a dozen rare military vehicles.
+
+The Hattiesburg Convention Commission already owned property across the street from the military museum, which makes the two exhibits natural companions, Taylor said.
+
+Moeller had just two requirements, that the vehicles be kept inside and that they remained accessible to children, the most curious visitors.
+
+"These vehicles have to be available for children to climb on," Taylor said. "I think that's fantastic. That's what people want to do."
+
+The new museum facility is built, with design work ongoing for the inside layout.
+
+"It's been that support from unexpected areas," Taylor said. "It has been great for us, great for our community and great for our future."`
+  },
+  {
     id: "101",
     title: "Surpassing Expectations: Hattiesburg Zoo Creates Model for Growth, Popularity and Stability",
     excerpt: "Now beginning its 76th year of operation, the Hattiesburg Zoo continues to evolve with its exhibits, programs and a financial model — including the Serengeti Springs water park — designed to ensure its success and stability.",
