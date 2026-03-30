@@ -358,6 +358,71 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
 
   // ── EXTERNAL / CURATED NEWS ──
   {
+    id: "34",
+    title: "Traveling Choir Brings Palm Sunday Concert Back to Hattiesburg",
+    excerpt: "Road Trip Manager Demetrius 'MeMe' Marsalis and the Benjamin Cone III & Worship Choir return to the Pine Belt for their fourth annual Palm Sunday Concert.",
+    category: "culture",
+    author: "Hailey Lanham, WDAM",
+    date: "Mar 26, 2026",
+    image: "/story-palm-sunday-choir.jpg",
+    slug: "palm-sunday-concert-hattiesburg",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/03/26/traveling-choir-brings-palm-sunday-concert-back-hattiesburg/",
+    content: "Road Trip Manager Demetrius 'MeMe' Marsalis and choir member Ramone Shelby join WDAM 7's Hailey Lanham to talk about the Benjamin Cone III & Worship Choir's upcoming Palm Sunday Concert IV in the Pine Belt."
+  },
+  {
+    id: "35",
+    title: "Work Starts on Asbury Hospice House Expansion in Hattiesburg",
+    excerpt: "A groundbreaking ceremony was held for the Asbury Hospice House expansion, a $3 million project that will add family areas, children's play spaces, a pavilion, and a larger pharmacy.",
+    category: "community",
+    author: "Sethanie Smith, WJTV",
+    date: "Mar 25, 2026",
+    image: "/story-asbury-hospice.jpg",
+    slug: "asbury-hospice-house-expansion-hattiesburg",
+    external: true,
+    externalUrl: "https://www.wjtv.com/living-local/focused-on-health/work-starts-on-asbury-hospice-house-expansion-in-hattiesburg/",
+    content: "A groundbreaking ceremony was held on Wednesday for the expansions on the Asbury Hospice House in Hattiesburg.\n\nAccording to the Forrest Health Foundation, the additions to the South 40th Avenue facility will include a larger family area, children's play areas, pavilion for special family occasions and a larger onsite pharmacy.\n\n'We are proud to have reached the point where we can begin construction on this next phase at Asbury,' said Martha Dearman, executive director for the Foundation. 'Every family deserves a peaceful, supportive environment during end-of-life care.'\n\nOfficials said $3 million was raised for the project, which got underway about three weeks ago. It's slated for completion in the spring of 2027."
+  },
+  {
+    id: "36",
+    title: "Local Businesses Gear Up for HUBFEST Weekend",
+    excerpt: "After more than three decades, HUBFEST continues to bring big crowds and big business to downtown Hattiesburg, with an estimated 25,000-30,000 people expected and a $1.5 million economic impact.",
+    category: "business",
+    author: "WDAM",
+    date: "Mar 25, 2026",
+    image: "/story-hubfest-businesses.jpg",
+    slug: "local-businesses-hubfest-weekend",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/03/25/local-businesses-gear-up-hubfest-weekend/",
+    content: "After more than three decades, HUBFEST continues to bring big crowds and big business to downtown Hattiesburg, and this year is expected to be no different.\n\n'We see anywhere from 25 to 30,000 people coming,' Area Development Partnership Hattiesburg's (ADP) Director of Communications and Events, Vanessa Henson, said.\n\nBeyond live music, food, and nearly 200 vendors, it delivers a major economic boost. ADP estimates this weekend could generate a $1.5 million impact for Hattiesburg.\n\nLocal business owners like Southern Prohibition Brewing owner Ben Green and newcomers Wax Fantastic Records and eYrthbeat Coffee Company say they're gearing up for what promises to be a big weekend.\n\nAfter last year's cancellation, the ADP says they're ready to welcome everyone back."
+  },
+  {
+    id: "37",
+    title: "Fleetwood Mac Tribute Band to Perform at Hattiesburg's Saenger Theater",
+    excerpt: "Rumours ATL: A Fleetwood Mac Tribute will bring the sounds of the legendary band to the Saenger Theater in Hattiesburg on October 9, 2026.",
+    category: "culture",
+    author: "Sethanie Smith, WJTV",
+    date: "Mar 24, 2026",
+    image: "/story-fleetwood-mac-tribute.jpg",
+    slug: "fleetwood-mac-tribute-saenger-hattiesburg",
+    external: true,
+    externalUrl: "https://www.wjtv.com/entertainment-news/fleetwood-mac-tribute-band-to-perform-in-hattiesburg/",
+    content: "Fans of Fleetwood Mac won't want to miss this! Rumours ATL: A Fleetwood Mac Tribute will come to the Saenger Theater in Hattiesburg on October 9, 2026.\n\nThe Atlanta-based tribute band has built a reputation for recreating the sound and stage presence of Fleetwood Mac's golden era. Audiences can expect hits like 'Rhiannon,' 'Songbird,' and 'Go Your Own Way,' performed with the same harmonies and energy that made the originals legendary.\n\nTickets for the show are on sale on Ticketmaster."
+  },
+  {
+    id: "38",
+    title: "Hattiesburg Native Returns to Hometown on Band's National Tour",
+    excerpt: "Brandon Miller, lead singer and guitarist for A Foreigner's Journey to Boston, brings his music back to Hattiesburg with a concert at Brewsky's on March 28.",
+    category: "culture",
+    author: "WDAM",
+    date: "Mar 24, 2026",
+    image: "/story-brandon-miller-concert.jpg",
+    slug: "hattiesburg-native-band-national-tour",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/03/24/hattiesburg-native-returns-hometown-bands-national-tour/",
+    content: "Brandon Miller, lead singer and guitarist for A Foreigner's Journey to Boston, brings his music back to his home town with a concert at Brewsky's March 28.\n\nMiller, a Hattiesburg native, is touring nationally with the band and made sure to include a hometown stop on the tour."
+  },
+  {
     id: "29",
     title: "Tatum Park Welcomes Hundreds of Kids for Hattiesburg Diamond Youth Baseball Opener",
     excerpt: "Hattiesburg Diamond Youth Baseball kicked off its 2026 season at Tatum Park with more than 350 kids participating across five age-group teams, from Tee-ball to Majors.",
