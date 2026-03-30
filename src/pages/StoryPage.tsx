@@ -84,6 +84,7 @@ const StoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const story = stories.find((s) => s.slug === slug);
   const relatedStories = stories.filter((s) => s.slug !== slug && s.category === story?.category).slice(0, 3);
+  const originalReads = stories.filter((s) => s.slug !== slug && s.original).slice(0, 3);
 
   if (!story) {
     return (
