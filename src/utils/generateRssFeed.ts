@@ -1,6 +1,20 @@
-import { stories } from "@/data/stories";
+// Standalone RSS generation script (no Vite/TS aliases)
+// This is imported by the Vite plugin at build time
 
-export function generateRssFeed(): string {
+export interface RssStory {
+  id: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  author: string;
+  date: string;
+  image: string;
+  slug: string;
+  external?: boolean;
+  externalUrl?: string;
+}
+
+export function generateRssFeed(stories: RssStory[]): string {
   const siteUrl = "https://www.hattiesburghub.com";
   const feedTitle = "Hattiesburg Hub — Local News & Community Stories";
   const feedDescription =
@@ -13,9 +27,10 @@ export function generateRssFeed(): string {
   const items = sortedStories
     .slice(0, 20)
     .map((story) => {
-      const link = story.external && story.externalUrl
-        ? story.externalUrl
-        : `${siteUrl}/story/${story.slug}`;
+      const link =
+        story.external && story.externalUrl
+          ? story.externalUrl
+          : `${siteUrl}/story/${story.slug}`;
       const imageUrl = story.image.startsWith("http")
         ? story.image
         : `${siteUrl}${story.image}`;
