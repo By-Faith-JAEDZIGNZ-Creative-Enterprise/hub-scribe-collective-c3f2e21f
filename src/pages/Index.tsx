@@ -21,6 +21,7 @@ const Index = () => {
         <HeroSection />
         <TrendingTicker />
         <LeadStory />
+        <OriginalStories />
         <LatestNews />
         <FeaturedStories />
         <NewsletterSignup variant="banner" />

@@ -173,6 +173,21 @@ const StoryPage = () => {
             </div>
           </div>
 
+          {/* Original Reads */}
+          {originalReads.length > 0 && (
+            <div className="mt-16 pt-12 border-t border-border/50">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-1 h-6 bg-primary rounded-full" />
+                <h2 className="font-display text-xl font-bold text-foreground">More Original Reads</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {originalReads.map((s) => (
+                  <StoryCard key={s.id} story={s} />
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Related Stories */}
           {relatedStories.length > 0 && (
             <div className="mt-16 pt-12 border-t border-border/50">
