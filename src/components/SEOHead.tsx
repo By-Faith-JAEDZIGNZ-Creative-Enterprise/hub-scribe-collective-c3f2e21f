@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://hattiesburghub.com";
+const SITE_URL = "https://www.hattiesburghub.com";
 const SITE_NAME = "Hattiesburg Hub";
-const DEFAULT_DESCRIPTION = "Hattiesburg's independent source for local news, culture, business, sports, and community stories covering the Hub City and Pine Belt region of Mississippi.";
-const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
+const DEFAULT_DESCRIPTION = "Hattiesburg Hub is your go-to source for local news, community stories, and everything happening in Hattiesburg, MS.";
+const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 
 interface SEOHeadProps {
   title?: string;
