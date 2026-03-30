@@ -27,6 +27,61 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "101",
+    title: "Surpassing Expectations: Hattiesburg Zoo Creates Model for Growth, Popularity and Stability",
+    excerpt: "Now beginning its 76th year of operation, the Hattiesburg Zoo continues to evolve with its exhibits, programs and a financial model — including the Serengeti Springs water park — designed to ensure its success and stability.",
+    category: "community",
+    author: "Joseph Bryant",
+    date: "Mar 30, 2026",
+    image: "/story-zoo-giraffe-feeding.jpg",
+    images: [
+      "/story-zoo-giraffe-feeding.jpg",
+      "/story-zoo-tiger-keeper.jpg",
+      "/story-zoo-colobus.jpg",
+      "/story-zoo-emu.jpg",
+    ],
+    slug: "hattiesburg-zoo-growth-model",
+    featured: true,
+    original: true,
+    photoCredit: "Photos courtesy of the Hattiesburg Convention Commission",
+    content: `There aren't many cities the size of Hattiesburg where residents can boast of being able to take a short stroll to visit the local flamingos, spot a rare Malayan tiger or even feed a giraffe.
+
+Yet all that and more is found at the Hattiesburg Zoo. Now beginning its 76th year of operation, the zoo continues to evolve with its exhibits, programs and a financial model designed to ensure its success and stability.
+
+"Our entire community recognizes that a city of our size typically doesn't have a zoo," said Rick Taylor, executive director of the Hattiesburg Convention Commission, the organization that manages the city-owned zoo.
+
+The zoo in recent years has undergone a major $5.1 million expansion to include new giraffe and hyena exhibits. Those improvements were paid by the Convention Commission. Operators then stepped back to evaluate ways to secure the financial viability of the institution and ways to pay for future improvements.
+
+"We said, 'How do we keep growing, and how do we keep expanding it,'" Taylor recalled. "Obviously all of these things cost, and costs go up every year."
+
+The answer was the creation of the Serengeti Springs water park. The water park, which opened in 2024, was designed as a draw that would attract visitors and generate revenue to support the zoo. The water park sits at Kamper Park adjacent to the zoo.
+
+"The goal of the water park is to save those profits and build it up to a multimillion dollar level," Taylor said. "What we're doing is saving the money we are earning from the water park for that next big step, that next big expansion."
+
+Taylor said Serengeti Springs accomplishes two goals by providing a new amenity for residents and visitors while at the same time securing a strong revenue stream to support the zoo.
+
+Serengeti Springs is a draw to both families with children and adults seeking fun in the water with a lazy river, water slides and other features. There's even an adults only area that features a swim up bar and a happy hour.
+
+Serengeti Springs and the adjacent zoo are seemingly vastly different experiences with one focusing on leisurely waves and splashes, while the other offers a tour of nature and exotic animals large and small.
+
+Nevertheless, there is an inseparable relationship between the two sites. The novel plan worked. And as a result, the Hattiesburg Zoo is one of just a few zoos to operate debt free.
+
+Work is underway to create a new zoo grand entrance, a new gift shop and expanded educational space. Much of the $600,000 to 700,000 in new improvements will be financed by the Serengeti Springs revenue.
+
+"The zoo itself operates in the black which is rare for zoos," Taylor said, noting that only 11 percent of zoos in the world have that distinction.
+
+The scene was starkly different in 2010 when the zoo was as endangered as some of the animals who lived there. Financially, the zoo was a burden on the city and faced closure. The Convention Commission then took over operations in hopes of saving the animal park.
+
+The commission then found new efficiencies to save the zoo and then expanded its potential by building Serengeti Springs. The zoo looks much different than it did when it opened in 1950, and Taylor said it has become a unified effort to continue to preserve and improve it.
+
+"We knew that this was unique and important to the citizens of Hattiesburg to keep it and for their children and their children's children to have some of those same memories of a local zoo," Taylor said. "It's important to our community and we're passionate about it because of that."
+
+Taylor said a master plan also calls for expanding the zoo to several more acres of available land. It is all part of a long-term vision.
+
+"It is working and we foresee it continuing to work," he said. "That water park is not only going to keep the zoo solvent but it's going to keep the zoo being able to grow and get bigger and better. We've been very pleased with the results."`
+  },
+
+  {
     id: "100",
     title: "From Hand-Washing Clothes to Changing Lives: New Hattiesburg Museum Honors Legacy of Oseola McCarty",
     excerpt: "Oseola McCarty, a humble washerwoman who saved $280,000 over a lifetime of hand-washing laundry, donated $150,000 to fund scholarships at USM. Her restored home is now Hattiesburg's newest museum.",
