@@ -9,6 +9,7 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 import Footer from "@/components/Footer";
 import WelcomeLightbox from "@/components/WelcomeLightbox";
 import SEOHead from "@/components/SEOHead";
+import OriginalStories from "@/components/OriginalStories";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <HeroSection />
         <TrendingTicker />
         <LeadStory />
+        <OriginalStories />
         <LatestNews />
         <FeaturedStories />
         <NewsletterSignup variant="banner" />
