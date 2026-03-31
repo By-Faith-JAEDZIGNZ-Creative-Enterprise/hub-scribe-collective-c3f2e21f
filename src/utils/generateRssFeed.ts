@@ -48,12 +48,11 @@ export function generateRssFeed(stories: RssStory[]): string {
       return `    <item>
       <title><![CDATA[${story.title}]]></title>
       <link>${escapeXml(link)}</link>
-      <guid isPermaLink="false">${escapeXml(story.id)}</guid>
+      <guid isPermaLink="true">${escapeXml(link)}</guid>
       <pubDate>${pubDate}</pubDate>
       <description><![CDATA[${story.excerpt}]]></description>
       <category>${escapeXml(story.category)}</category>
-      <author>${escapeXml(story.author)}</author>
-      <enclosure url="${escapeXml(imageUrl)}" type="image/jpeg" />
+      <enclosure url="${escapeXml(imageUrl)}" length="0" type="image/jpeg" />
     </item>`;
     })
     .join("\n");
