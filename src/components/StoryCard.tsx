@@ -71,7 +71,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   if (variant === "horizontal") {
     return (
       <CardWrapper story={story} className="group flex gap-4 items-start">
-        <div className="w-28 h-20 flex-shrink-0 overflow-hidden rounded-md">
+        <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-md">
           <img
             src={story.image}
             alt={story.title}
