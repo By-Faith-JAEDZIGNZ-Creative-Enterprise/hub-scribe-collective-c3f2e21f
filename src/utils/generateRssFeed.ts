@@ -24,6 +24,15 @@ export function generateRssFeed(stories: RssStory[]): string {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
+  function escapeXml(str: string): string {
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&apos;");
+  }
+
   const items = sortedStories
     .slice(0, 20)
     .map((story) => {
@@ -38,13 +47,13 @@ export function generateRssFeed(stories: RssStory[]): string {
 
       return `    <item>
       <title><![CDATA[${story.title}]]></title>
-      <link>${link}</link>
-      <guid isPermaLink="false">${story.id}</guid>
+      <link>${escapeXml(link)}</link>
+      <guid isPermaLink="false">${escapeXml(story.id)}</guid>
       <pubDate>${pubDate}</pubDate>
       <description><![CDATA[${story.excerpt}]]></description>
-      <category>${story.category}</category>
-      <author>${story.author}</author>
-      <enclosure url="${imageUrl}" type="image/jpeg" />
+      <category>${escapeXml(story.category)}</category>
+      <author>${escapeXml(story.author)}</author>
+      <enclosure url="${escapeXml(imageUrl)}" type="image/jpeg" />
     </item>`;
     })
     .join("\n");
