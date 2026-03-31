@@ -100,7 +100,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
         <img
           src={story.image}
           alt={story.title}
-          className="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          className="w-full aspect-[3/2] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
         />
       </div>
       <div className="pt-4">
