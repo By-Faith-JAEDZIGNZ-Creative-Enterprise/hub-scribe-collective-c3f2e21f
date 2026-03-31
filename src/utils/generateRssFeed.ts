@@ -16,7 +16,7 @@ export interface RssStory {
 
 export function generateRssFeed(stories: RssStory[]): string {
   const siteUrl = "https://www.hattiesburghub.com";
-  const feedTitle = "Hattiesburg Hub — Local News & Community Stories";
+  const feedTitle = "Hattiesburg Hub &#8212; Local News &amp; Community Stories";
   const feedDescription =
     "Your go-to source for local news, community stories, and everything happening in Hattiesburg, MS.";
 
