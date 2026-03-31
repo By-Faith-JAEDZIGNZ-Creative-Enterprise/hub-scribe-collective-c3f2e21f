@@ -34,7 +34,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   if (variant === "large") {
     return (
       <CardWrapper story={story} className="group block relative overflow-hidden rounded-lg">
-        <div className="aspect-[4/3] overflow-hidden">
+        <div className="aspect-[16/9] overflow-hidden">
           <img
             src={story.image}
             alt={story.title}
@@ -71,7 +71,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   if (variant === "horizontal") {
     return (
       <CardWrapper story={story} className="group flex gap-4 items-start">
-        <div className="w-28 h-20 flex-shrink-0 overflow-hidden rounded-md">
+        <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-md">
           <img
             src={story.image}
             alt={story.title}
@@ -100,7 +100,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
         <img
           src={story.image}
           alt={story.title}
-          className="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          className="w-full aspect-[3/2] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
         />
       </div>
       <div className="pt-4">

@@ -25,7 +25,7 @@ const LeadStory = () => {
             <img
               src={leadStory.image}
               alt={leadStory.title}
-              className="w-full aspect-[16/10] object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+              className="w-full aspect-[16/9] object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             />
           </Link>
 
