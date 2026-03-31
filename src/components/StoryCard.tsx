@@ -34,7 +34,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   if (variant === "large") {
     return (
       <CardWrapper story={story} className="group block relative overflow-hidden rounded-lg">
-        <div className="aspect-[4/3] overflow-hidden">
+        <div className="aspect-[16/9] overflow-hidden">
           <img
             src={story.image}
             alt={story.title}
