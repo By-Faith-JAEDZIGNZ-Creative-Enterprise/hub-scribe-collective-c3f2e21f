@@ -16,13 +16,22 @@ export interface RssStory {
 
 export function generateRssFeed(stories: RssStory[]): string {
   const siteUrl = "https://www.hattiesburghub.com";
-  const feedTitle = "Hattiesburg Hub — Local News & Community Stories";
+  const feedTitle = "Hattiesburg Hub &#8212; Local News &amp; Community Stories";
   const feedDescription =
     "Your go-to source for local news, community stories, and everything happening in Hattiesburg, MS.";
 
   const sortedStories = [...stories].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
+
+  function escapeXml(str: string): string {
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&apos;");
+  }
 
   const items = sortedStories
     .slice(0, 20)
@@ -38,13 +47,13 @@ export function generateRssFeed(stories: RssStory[]): string {
 
       return `    <item>
       <title><![CDATA[${story.title}]]></title>
-      <link>${link}</link>
-      <guid isPermaLink="false">${story.id}</guid>
+      <link>${escapeXml(link)}</link>
+      <guid isPermaLink="false">${escapeXml(story.id)}</guid>
       <pubDate>${pubDate}</pubDate>
       <description><![CDATA[${story.excerpt}]]></description>
-      <category>${story.category}</category>
-      <author>${story.author}</author>
-      <enclosure url="${imageUrl}" type="image/jpeg" />
+      <category>${escapeXml(story.category)}</category>
+      <author>${escapeXml(story.author)}</author>
+      <enclosure url="${escapeXml(imageUrl)}" type="image/jpeg" />
     </item>`;
     })
     .join("\n");
