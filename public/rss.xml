@@ -5,13 +5,22 @@
     <link>https://www.hattiesburghub.com</link>
     <description>Your go-to source for local news, community stories, and everything happening in Hattiesburg, MS.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Mar 2026 17:32:35 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 08 Apr 2026 18:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.hattiesburghub.com/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://www.hattiesburghub.com/og-image.jpg</url>
       <title>Hattiesburg Hub &#8212; Local News &amp; Community Stories</title>
       <link>https://www.hattiesburghub.com</link>
     </image>
+    <item>
+      <title><![CDATA[From High School to Carnegie Hall: Hattiesburg Choral Students Showcase Their Talents on World-Famous Stage]]></title>
+      <link>https://www.hattiesburghub.com/story/hattiesburg-high-school-carnegie-hall</link>
+      <guid isPermaLink="true">https://www.hattiesburghub.com/story/hattiesburg-high-school-carnegie-hall</guid>
+      <pubDate>Tue, 08 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Performers from the Hattiesburg High School Choir traveled to New York City where they performed at Carnegie Hall, just two years after the program was revived. The community rallied to raise more than $31,000 to fund the trip.]]></description>
+      <category>Culture</category>
+      <enclosure url="https://www.hattiesburghub.com/story-carnegie-hall-outside.jpg" length="0" type="image/jpeg"/>
+    </item>
     <item>
       <title><![CDATA[Living History: Sixth Street Museum District Showcases Hattiesburg's Past, Inspires the Future]]></title>
       <link>https://www.hattiesburghub.com/story/sixth-street-museum-district-hattiesburg</link>
