@@ -27,6 +27,71 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "103",
+    title: "From High School to Carnegie Hall: Hattiesburg Choral Students Showcase Their Talents on World-Famous Stage",
+    excerpt: "Performers from the Hattiesburg High School Choir traveled to New York City where they performed at Carnegie Hall, just two years after the program was revived. The community rallied to raise more than $31,000 to fund the trip.",
+    category: "culture",
+    author: "Joseph Bryant",
+    date: "Apr 8, 2026",
+    image: "/story-carnegie-hall-outside.jpg",
+    images: [
+      "/story-carnegie-hall-outside.jpg",
+      "/story-carnegie-hall-stage.jpg",
+      "/story-carnegie-hall-marquee.jpg",
+      "/story-carnegie-hall-backstage.jpg",
+      "/story-carnegie-hall-mingling.jpg",
+      "/story-carnegie-hall-times-square.jpg",
+      "/story-carnegie-hall-empire-state.jpg",
+    ],
+    slug: "hattiesburg-high-school-carnegie-hall",
+    featured: true,
+    original: true,
+    photoCredit: "Contributed — Hattiesburg Public Schools Choral Arts",
+    content: `The melodic sounds from Hattiesburg High School have drifted down well past the music room to ascend onto the world's most famous stage at Carnegie Hall.
+
+Performers from the Hattiesburg High School Choir recently traveled to New York City where they performed at the celebrated auditorium.
+
+Gary McCullum, director of choral activities for the Hattiesburg Public School District, called his chorus a "beautiful secret" that he dreamed of sharing with everyone. And he did it in just two years since the program was revived after more than a decade.
+
+"It is almost a dream come true from every aspect. I have kids who come from various walks of life, so there are a few students who have never left the state of Mississippi and some who have never flown on an airplane before, so there were a lot of firsts," he said. "We not only got a chance to perform on one of the best performing stages in the world but we also immersed ourselves in the culture."
+
+The performance was on March 16th, where the group performed two pieces from Beethoven, "Hallelujah, from Christ on the Mount of Olives" and "Choral Fantasy." For the latter, the students had to learn German.
+
+McCullum noted the significance of the young performers from Hattiesburg standing on the same stage as legends such as Duke Ellington, Leontyne Price and Frank Sinatra among others.
+
+"They rose to the challenge and surpassed it with flying colors," he said.
+
+The trip went far beyond music to expose students to sites and experiences that will inspire and remain with them forever. Among their Big Apple blitz, the students visited landmarks including the Empire State Building, 9/11 Memorial and Museum, Ellis Island, New York University and the Brooklyn Bridge.
+
+"To be able to afford these opportunities for young scholars to have their eyes opened at such a young age is worth its weight in gold," McCullum said.
+
+McCullum is guided by creating "perfect visibility" for his students. He has delivered. Every year has created increased opportunities for the students, McCullum said.
+
+And the visit to New York and the performance at Carnegie Hall wasn't just for the students themselves.
+
+McCullum said the performers on stage were ambassadors for Hattiesburg where the experience was a high mark, not only for the students, but also the community they represented.
+
+They were supported by an entire community who rallied to make it possible, McCullum said. A campaign to fund the experience raised more than $31,000.
+
+Hattiesburg Mayor Toby Barker even surprised the students by secretly making the trek to New York to see them perform on stage.
+
+"I look up and it is our mayor who is sitting in a box above us," McCullum said. "He runs down and he hugs the kids. He actually left his meeting in D.C. and caught a three-hour train ride to be over just to support the kids in their efforts. That enough is going to be etched in the hearts of these kids for life."
+
+McCullum also noted the support of Calvin Bogan, a Hattiesburg pastor who serves as the group's saxophone player and stage director, who helped craft a campaign to generate support through a unifying slogan. "Our Music Lives," became the hashtag and rallying cry that sent the students to New York.
+
+"We wanted to let the community know that it wasn't just us going but we were taking the spirit of the community with us to New York."
+
+McCullum also cited Hattiesburg Schools Superintendent Robert Williams for rallying support for the effort.
+
+And there's still no time to rest, even after their major appearance in New York. The chorus just last week after New York traveled to Gatlinburg, Tenn. to participate in the Smoky Mountain Music Festival where their performances placed first and second in their competitions.
+
+The performers April 25 will next bring their voices to the Mississippi Arts Experience Exhibit in Meridian where they will give a concert and also record for the first time.
+
+And finally the group on May 16 will present a Disney Showcase where they will bring a piece of the Magic Kingdom home to Hattiesburg High School.
+
+"We have Disney characters who walk around throughout the performance hugging kids and loving on them and taking pictures with them," McCullum said. "It's just an incredible time and an opportunity for us to serve our community in love."`
+  },
+  {
     id: "102",
     title: "Living History: Sixth Street Museum District Showcases Hattiesburg's Past, Inspires the Future",
     excerpt: "The Sixth Street Museum District in Hattiesburg's Mobile/Bouie Neighborhood showcases the city's historic African American center of culture and business, featuring the African American Military History Museum, Eureka School, Smith Drug Company, Oseola McCarty House and the forthcoming Moeller Military Vehicle Museum.",
