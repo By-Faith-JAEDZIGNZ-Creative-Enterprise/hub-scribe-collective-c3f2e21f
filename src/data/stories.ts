@@ -318,6 +318,59 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
 "I tell my kids now, do not despise small beginnings," Ferguson said. "Ms. Ola took pride in her work as a laundry lady. Until she retired, she still had people coming for her to handwash their clothes. We've got to have the degrees, of course, but Black excellence in southern Mississippi existed in those roles."`
   },
 
+  // ── EXTERNAL / CURATED NEWS (NEWEST) ──
+  {
+    id: "104",
+    title: "William Carey Announces Hiring of Longtime Assistant Phillip McCray as New Men's Basketball Head Coach",
+    excerpt: "William Carey University has named Phillip McCray as the new head coach of its men's basketball program. McCray brings years of assistant coaching experience to the role.",
+    category: "sports",
+    author: "The PineBelt News",
+    date: "Apr 9, 2026",
+    image: "/story-placeholder-sports.jpg",
+    slug: "william-carey-mccray-basketball-coach",
+    external: true,
+    externalUrl: "https://www.hubcityspokes.com/william-carey-announces-hiring-longtime-assistant-phillip-mccray-new-mens-basketball-head-coach",
+  },
+  {
+    id: "105",
+    title: "Delta Sigma Theta Inc. Hosts Mental Health Seminar for Parents and Teenagers",
+    excerpt: "The Hattiesburg Alumnae Chapter of Delta Sigma Theta Inc. hosted a mental health seminar promoting emotional awareness, resilience and healthy communication between teenagers and their parents.",
+    category: "community",
+    author: "WDAM",
+    date: "Apr 10, 2026",
+    image: "/story-placeholder-community.jpg",
+    slug: "delta-sigma-theta-mental-health-seminar",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/04/09/delta-sigma-theta-inc-hosts-mental-health-seminar-parents-teenagers/",
+    content: "The Hattiesburg Alumnae Chapter of Delta Sigma Theta Inc. hosted a mental health seminar for parents and teenagers.\n\nParents and their kids were given the opportunity to learn about mental health, coping mechanisms and community-like resources for those who need a listening ear.\n\nOne of the goals of the seminar was to promote emotional awareness, resilience and healthy communication between teenagers and their parents.\n\n\"It's going to be a great path for people who need to establish and say 'Hey, this is what I need to do about taking responsibility today for my mental health and its well-being,'\" Real Life Church Pastor Robert Johnson said.\n\nThe seminar was available to anybody who wanted to attend, free of charge."
+  },
+  {
+    id: "106",
+    title: "History Happened Here: Hattiesburg's Historic Home Walking Tour Showcases Its Architectural Heritage",
+    excerpt: "The Hattiesburg Historic Home Walking Tour features 31 stops highlighting homes built in different eras and reflecting architectural styles including Colonial, Tudor and Classical Revival designs.",
+    category: "culture",
+    author: "WDAM",
+    date: "Apr 10, 2026",
+    image: "/story-placeholder-culture.jpg",
+    slug: "hattiesburg-historic-home-walking-tour",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/04/07/history-happened-here-hattiesburgs-historic-home-walking-tour-showcases-its-architectural-heritage/",
+    content: "Hattiesburg is home to generations of influential residents who built and lived in some of the city's most striking houses.\n\nTo help visitors and locals learn more about that legacy, the city offers the Hattiesburg Historic Home Walking Tour, a route designed to showcase the history and architecture of prominent residences across town.\n\nThe tour includes 31 stops, highlighting homes built in different eras and reflecting a range of architectural styles, including Colonial, Tudor and Classical Revival designs.\n\nAt about halfway through the tour, you'll run into stop number 14 — the Ross Mansion, built in 1903 by prominent physician T.E. Ross for $3,500. The 7,200-square-foot home has been converted into a bed-and-breakfast.\n\nThe tour ends at the Tally House, a 13,000-square-foot Colonial Revival home built in 1907 for former judge J.R. Tally."
+  },
+  {
+    id: "107",
+    title: "AKA Alpha Beta Theta Omega Hosting Community Maternal Baby Shower",
+    excerpt: "Mothers are invited to a Community Maternal Baby Shower hosted by Alpha Kappa Alpha Alpha Beta Theta Omega on April 11 at Sawmill Square Mall, offering free diapers, wipes, clothes and pre- and postnatal resources.",
+    category: "community",
+    author: "WDAM",
+    date: "Apr 10, 2026",
+    image: "/story-placeholder-community.jpg",
+    slug: "aka-community-maternal-baby-shower",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/04/08/aka-alpha-beta-theta-omega-hosting-community-maternal-baby-shower/",
+    content: "Mothers, you aren't alone.\n\nOn Saturday, April 11, mothers are invited to come to a Community Maternal Baby Shower hosted by the Alpha Kappa Alpha Alpha Beta Theta Omega.\n\nThere will be free diapers, wipes, clothes, and more. The event provides pre- and postnatal resources and information for parents.\n\nThe event will be at the Sawmill Square Mall from 11:00 a.m. to 3:00 p.m."
+  },
+
   // ── COMMUNITY ──
   {
     id: "1",
