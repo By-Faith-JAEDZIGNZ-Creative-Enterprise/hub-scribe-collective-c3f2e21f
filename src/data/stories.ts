@@ -27,6 +27,63 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "108",
+    title: "Unforgettable: Street Renamed to Honor Longtime Hattiesburg Education and Civic Icon Dr. Eddie Holloway",
+    excerpt: "The City of Hattiesburg and the University of Southern Mississippi honored Dr. Eddie Holloway — retired dean of students, former city councilman, and lifelong community champion — with the newly christened 'Dr. Eddie Holloway Drive.'",
+    category: "community",
+    author: "Joseph Bryant",
+    date: "April 13, 2026",
+    image: "/story-holloway-unveiling.jpg",
+    images: [
+      "/story-holloway-unveiling.jpg",
+      "/story-holloway-podium.jpg",
+      "/story-holloway-handshake.jpg",
+      "/story-holloway-barker-speaking.jpg",
+      "/story-holloway-audience.jpg",
+      "/story-holloway-crowd-closeup.jpg",
+      "/story-holloway-street-sign.jpg",
+    ],
+    slug: "dr-eddie-holloway-street-dedication",
+    featured: true,
+    original: true,
+    photoCredit: "Contributed — City of Hattiesburg",
+    content: `The presence of Eddie Holloway at the University of Southern Mississippi is now forever enshrined after his 40 years of dedication to the institution and the students it serves.
+
+"We did not know him by the many titles, organizations and boards he has served on in the city," said Mayor Toby Barker, himself a Southern Miss alum. "We knew him because he was Dr. Holloway, the dean of students, the man who treated you like a person, like family whose future he had genuine interest in cultivating."
+
+Holloway, the retired longtime Southern Miss dean of students and former longtime Hattiesburg city councilman, was honored with the newly christened "Dr. Eddie Holloway Drive" spanning from North 40th Avenue to Golden Eagle Avenue.
+
+He retired in 2019 after serving 40 years at the university as dean of students, associate vice president of student affairs and a professor of psychology.
+
+Holloway also served four terms on the Hattiesburg City Council, becoming one of the first Black members elected to the dais. He currently serves on the Hattiesburg Public School District Board of Trustees.
+
+"It's an awesome occasion when you can honor somebody's life work when they are still here to be honored," Southern Miss President Joe Paul said during the recent street dedication ceremony where the audience also saw the unveiling of a bronze plaque featuring Holloway's image.
+
+Paul met Holloway more than 55 years ago in 1971 when Holloway checked him into his dorm as a freshman.
+
+"Here's a man who has served his city so well, has served this university so well and has served his neighborhood so well for a lifetime," Paul said.
+
+Holloway's association with Southern Miss began when he entered as an undergraduate student. He later earned each of his degrees there including two master's degrees and a doctorate.
+
+Taking to the lectern, Holloway was not at a loss for words as he addressed a crowd gathered to celebrate his legacy.
+
+But instead of highlighting his own years of civic and educational leadership, Holloway chose to honor the community and individuals who helped him find success in spite of early tragedy when his mother died while he was young.
+
+"The entire neighborhood and that church and those schools filled every void that you could imagine," he said. "Never did I feel that there was not love in that Mobile Street neighborhood, and it propelled me to this point."
+
+Accepting his honor, Holloway named several people who were influential in his life beginning in kindergarten and accelerating when he needed them the most.
+
+"Church, school door and house door - wherever those three doors meet, success is just a step away," he said.
+
+Holloway said he remained guided by early advice his father told him just after his mother died.
+
+"He said, 'Son, we don't have any money. All I've got is my name, keep it clean,'" Holloway recalled so many years later. "I've tried to do that. But not without the help of all of you."
+
+And throughout his travels, Holloway said he never forgot where home was and where home remains, in Hattiesburg.
+
+"I've had the pleasure to travel the country but I've never been to a place where I was not eager to come back home," he said.`,
+  },
+  {
     id: "103",
     title: "From High School to Carnegie Hall: Hattiesburg Choral Students Showcase Their Talents on World-Famous Stage",
     excerpt: "Performers from the Hattiesburg High School Choir traveled to New York City where they performed at Carnegie Hall, just two years after the program was revived. The community rallied to raise more than $31,000 to fund the trip.",

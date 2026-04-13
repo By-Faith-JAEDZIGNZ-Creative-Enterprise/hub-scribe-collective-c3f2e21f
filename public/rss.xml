@@ -5,13 +5,22 @@
     <link>https://www.hattiesburghub.com</link>
     <description>Your go-to source for local news, community stories, and everything happening in Hattiesburg, MS.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 13 Apr 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.hattiesburghub.com/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://www.hattiesburghub.com/og-image.jpg</url>
       <title>Hattiesburg Hub &#8212; Local News &amp; Community Stories</title>
       <link>https://www.hattiesburghub.com</link>
     </image>
+    <item>
+      <title><![CDATA[Unforgettable: Street Renamed to Honor Longtime Hattiesburg Education and Civic Icon Dr. Eddie Holloway]]></title>
+      <link>https://www.hattiesburghub.com/story/dr-eddie-holloway-street-dedication</link>
+      <guid isPermaLink="true">https://www.hattiesburghub.com/story/dr-eddie-holloway-street-dedication</guid>
+      <pubDate>Sun, 13 Apr 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[The City of Hattiesburg and the University of Southern Mississippi honored Dr. Eddie Holloway — retired dean of students, former city councilman, and lifelong community champion — with the newly christened 'Dr. Eddie Holloway Drive.']]></description>
+      <category>community</category>
+      <enclosure url="https://www.hattiesburghub.com/story-holloway-unveiling.jpg" length="0" type="image/jpeg" />
+    </item>
     <item>
       <title><![CDATA[Delta Sigma Theta Inc. Hosts Mental Health Seminar for Parents and Teenagers]]></title>
       <link>https://www.wdam.com/2026/04/09/delta-sigma-theta-inc-hosts-mental-health-seminar-parents-teenagers/</link>
