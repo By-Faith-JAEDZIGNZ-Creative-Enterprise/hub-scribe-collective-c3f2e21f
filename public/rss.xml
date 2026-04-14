@@ -5,13 +5,22 @@
     <link>https://www.hattiesburghub.com</link>
     <description>Your go-to source for local news, community stories, and everything happening in Hattiesburg, MS.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.hattiesburghub.com/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://www.hattiesburghub.com/og-image.jpg</url>
       <title>Hattiesburg Hub &#8212; Local News &amp; Community Stories</title>
       <link>https://www.hattiesburghub.com</link>
     </image>
+    <item>
+      <title>A Hattiesburg Original: Veteran Sportscaster Finds Purpose Ministering to Athletes</title>
+      <link>https://www.hattiesburghub.com/story/mitchell-williams-fca-profile</link>
+      <description>After 27 years as a beloved WDAM sportscaster, Mitchell Williams walked away from the spotlight to answer a higher calling with the Fellowship of Christian Athletes.</description>
+      <category>Community</category>
+      <pubDate>Tue, 14 Apr 2026 12:00:00 GMT</pubDate>
+      <enclosure url="https://www.hattiesburghub.com/story-williams-portrait.webp" length="0" type="image/webp" />
+      <guid isPermaLink="true">https://www.hattiesburghub.com/story/mitchell-williams-fca-profile</guid>
+    </item>
     <item>
       <title><![CDATA[Unforgettable: Street Renamed to Honor Longtime Hattiesburg Education and Civic Icon Dr. Eddie Holloway]]></title>
       <link>https://www.hattiesburghub.com/story/dr-eddie-holloway-street-dedication</link>

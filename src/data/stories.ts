@@ -27,6 +27,82 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "109",
+    title: "A Hattiesburg Original: Veteran Sportscaster Finds Purpose Ministering to Athletes",
+    excerpt: "After 27 years as a beloved WDAM sportscaster, Mitchell Williams walked away from the spotlight to answer a higher calling with the Fellowship of Christian Athletes.",
+    category: "community",
+    author: "Joseph Bryant",
+    date: "April 14, 2026",
+    image: "/story-williams-portrait.webp",
+    images: [
+      "/story-williams-portrait.webp",
+      "/story-williams-team-prayer.webp",
+    ],
+    slug: "mitchell-williams-fca-profile",
+    featured: true,
+    original: true,
+    photoCredit: "Contributed — Fellowship of Christian Athletes",
+    content: `Mitchell Williams' name, image and likeness has been a staple around Hattiesburg and south Mississippi for decades.
+
+For 27 years Williams was a trusted presence on television as sportscaster and director at WDAM TV where his voice was instantly recognized.
+
+Then he walked away from it all to answer a calling to use his skills for an even greater purpose. Williams left his broadcast career to communicate another message with the Fellowship of Christian Athletes.
+
+"I have always been in ministry since I was a young adult but my vocation was being a broadcaster," Williams said.
+
+Was it hard to leave the spotlight?
+
+"Absolutely not," Williams responded without hesitation. "I had nothing to do with it."
+
+Today he is just as well known for his second career as Multi Area Director for the Southeast Mississippi Chapter of Fellowship of Christian Athletes and as football team pastor for the University of Southern Mississippi's Golden Eagles.
+
+"I've always believed that God gives us a certain amount of influence, and how we use it will determine or widen whatever journey we are going," he said.
+
+Williams said his decision to change careers was the result of a lingering desire to do more to impact the athletes he covered. As a sportscaster, he noticed a disturbing theme year after year.
+
+"I would always ask questions in Mississippi. 'Where was the child last year who put up so many points?' And they would give me these answers that didn't make any sense, but were consistent. 'He's in jail or she's having her second child,'" Williams recalled.
+
+Those answers continued to disturb him.
+
+"I was struggling inwardly. You say you're a Christian and you're a hypocrite, because all these kids you are covering, you're not even sure of their eternity," he said.
+
+A turning point began when he was asked to handle publicity for a summer camp presented by Steve McNair, the former NFL MVP and Hattiesburg native. When tragedy struck, McNair's mother asked Williams to lead her son's funeral when he was killed in 2009.
+
+"His mother called me the night he was killed about 2 a.m. and asked us to put together his funeral," Williams said.
+
+Williams tried to say no to the tall task, but Lucille McNair insisted that he coordinate the community memorial to the hometown athlete.
+
+Thousands of people filled Reed Green Colosseum where celebrity athletes and well known singers paid tribute to the fallen player.
+
+"The Lord was shaping all that into what I do now," Williams said.
+
+The impact of the funeral never dissipated. Williams a little over a year later knew it was time to make a change.
+
+"After the funeral it kept eating me up," he said.
+
+Williams prayed and fasted to seek an answer. Eventually, he met Bill Buckner the then state FCA director who had an incurable case of leukemia. Buckner asked Williams about using his influence and working for the organization.
+
+He then went back home, talked to his family and quit his broadcast job. It was not glamorous.
+
+"I had to raise my own salary, we had no car, no budget, nothing," Williams said.
+
+In the beginning there was $55,000 that needed to be raised to support the entire organization that served eight schools. And he had just one staff member.
+
+Since then, FCA has grown to include 36 employees and a $3.2 million budget. Under Williams' watch, the organization serves 120 middle and high schools, five community colleges and six universities.
+
+The impact continues to grow as individuals are touched one on one.
+
+"We believe the Gospel of the Lord Jesus Christ is being shared from Meridian to the Coast at least once a day somewhere and we think it's over 20,000 hearing the Gospel through FCA right now."
+
+Williams, a member of the Southern Miss M-Club Athletic Hall of Fame, remains a sought-after speaker at events from church gatherings to conferences.
+
+After decades of success in the broadcast booth and on the sidelines with both a microphone and a Bible, Williams maintains a modest outlook.
+
+With his list of accolades and titles, Williams said he remains guided by a simple mandate.
+
+"I am a son, a husband, a father and most of all a servant," he said. "If I am anything other than that, I have failed."`,
+  },
+  {
     id: "108",
     title: "Unforgettable: Street Renamed to Honor Longtime Hattiesburg Education and Civic Icon Dr. Eddie Holloway",
     excerpt: "The City of Hattiesburg and the University of Southern Mississippi honored Dr. Eddie Holloway — retired dean of students, former city councilman, and lifelong community champion — with the newly christened 'Dr. Eddie Holloway Drive.'",
