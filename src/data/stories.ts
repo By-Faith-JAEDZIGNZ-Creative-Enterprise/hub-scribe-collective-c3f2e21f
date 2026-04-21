@@ -453,6 +453,19 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
 
   // ── EXTERNAL / CURATED NEWS (NEWEST) ──
   {
+    id: "110",
+    title: "Meet Cider, Holly and Juniper, the Hattiesburg Zoo's Newest Residents",
+    excerpt: "The Hattiesburg Zoo has welcomed three baby spider monkeys — Cider, Holly and Juniper — who will be housed in an indoor viewing area at the Asbury Discovery Center until they are ready to be introduced to the zoo's larger spider monkey enclosure.",
+    category: "community",
+    author: "WDAM",
+    date: "Apr 20, 2026",
+    image: "/story-placeholder-community.jpg",
+    slug: "hattiesburg-zoo-spider-monkeys-cider-holly-juniper",
+    external: true,
+    externalUrl: "https://www.wdam.com/2026/04/20/meet-cider-holly-juniper-hattiesburg-zoos-newest-residents/",
+    content: "The Hattiesburg Zoo has welcomed three baby spider monkeys, named Cider, Holly and Juniper, to the zoo family.\n\nThey will be living in an indoor viewing area at the Asbury Discovery Center until they are ready to be introduced into the zoo's outdoor spider monkey enclosure.\n\nThe monkeys are part of the broader spider monkey group that first arrived in the city in 2025 after being rescued from an illegal pet trade smuggling attempt. Zookeepers say the new arrivals are adjusting well and are expected to acclimate to the busy zoo environment in the coming weeks."
+  },
+  {
     id: "104",
     title: "William Carey Announces Hiring of Longtime Assistant Phillip McCray as New Men's Basketball Head Coach",
     excerpt: "William Carey University has named Phillip McCray as the new head coach of its men's basketball program. McCray brings years of assistant coaching experience to the role.",
