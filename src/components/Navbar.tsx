@@ -43,6 +43,14 @@ const Navbar = () => {
                 {cat.name}
               </Link>
             ))}
+            <Link
+              to="/events"
+              className={`glow-underline font-display text-[13px] font-medium tracking-wide transition-colors ${
+                location.pathname === "/events" ? "text-primary" : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              Events
+            </Link>
           </div>
 
           {/* Right side */}
@@ -81,6 +89,13 @@ const Navbar = () => {
                 {cat.name}
               </Link>
             ))}
+            <Link
+              to="/events"
+              onClick={() => setMobileOpen(false)}
+              className="font-display text-sm font-medium text-muted-foreground hover:text-primary py-2.5 px-3 rounded-md hover:bg-muted/50 transition-all"
+            >
+              Events
+            </Link>
           </div>
         </div>
       )}
