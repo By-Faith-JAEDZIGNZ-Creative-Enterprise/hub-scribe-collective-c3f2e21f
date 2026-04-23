@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { X, ArrowRight, Sparkles, Shuffle } from "lucide-react";
 import { stories } from "@/data/stories";
+import { supabase } from "@/integrations/supabase/client";
 
 /**
  * Surfaces the most recent ORIGINAL story to homepage visitors.
@@ -14,19 +15,27 @@ const toTimestamp = (date: string): number => {
   return Number.isNaN(t) ? 0 : t;
 };
 
+const ORIGINALS_CHANNEL = "originals-feed";
+const ORIGINALS_EVENT = "new-original";
+const LAST_KNOWN_KEY = "latest-original-last-known-id";
+
 const LatestOriginalLightbox = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+  // bumps whenever realtime tells us a new original is live; forces re-derivation
+  const [refreshTick, setRefreshTick] = useState(0);
 
   // All originals sorted newest-first by actual date — resilient to array order in stories.ts.
-  // Recomputed from live `stories` data, so a freshly added original is reflected immediately.
+  // Recomputed from live `stories` data so a freshly added original is reflected immediately.
+  // `refreshTick` is included so realtime broadcasts force a re-derivation on all sessions.
   const originals = useMemo(
     () =>
       stories
         .filter((s) => s.original)
         .slice()
         .sort((a, b) => toTimestamp(b.date) - toTimestamp(a.date)),
-    []
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [refreshTick]
   );
   const latestOriginal = originals[0];
   const current = originals[index];
@@ -41,6 +50,46 @@ const LatestOriginalLightbox = () => {
       const timer = setTimeout(() => setOpen(true), 1800);
       return () => clearTimeout(timer);
     }
+  }, [latestOriginal?.id]);
+
+  // ── Realtime hook ─────────────────────────────────────────────────────────
+  // Subscribe to a shared broadcast channel. When ANY open session detects a
+  // new latest-original id (vs the last-known id stored locally), it broadcasts
+  // to every other session, which then forces a re-derivation and re-trigger.
+  useEffect(() => {
+    const channel = supabase.channel(ORIGINALS_CHANNEL, {
+      config: { broadcast: { self: false } },
+    });
+
+    channel
+      .on("broadcast", { event: ORIGINALS_EVENT }, (payload) => {
+        const incomingId = (payload?.payload as { id?: string } | undefined)?.id;
+        if (!incomingId) return;
+        // Clear any prior dismissal for this id so the lightbox re-opens instantly,
+        // then bump the tick to force a fresh derivation from `stories`.
+        localStorage.removeItem(`latest-original-dismissed:${incomingId}`);
+        localStorage.setItem(LAST_KNOWN_KEY, incomingId);
+        setRefreshTick((t) => t + 1);
+        setIndex(0);
+        setOpen(true);
+      })
+      .subscribe((status) => {
+        if (status !== "SUBSCRIBED" || !latestOriginal) return;
+        // First session to notice a brand-new latest original announces it.
+        const lastKnown = localStorage.getItem(LAST_KNOWN_KEY);
+        if (lastKnown !== latestOriginal.id) {
+          localStorage.setItem(LAST_KNOWN_KEY, latestOriginal.id);
+          channel.send({
+            type: "broadcast",
+            event: ORIGINALS_EVENT,
+            payload: { id: latestOriginal.id },
+          });
+        }
+      });
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
   }, [latestOriginal?.id]);
 
   const dismiss = () => {
