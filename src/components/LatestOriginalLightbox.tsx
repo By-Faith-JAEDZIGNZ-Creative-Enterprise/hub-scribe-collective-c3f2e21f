@@ -8,24 +8,40 @@ import { stories } from "@/data/stories";
  * Auto-updates when a new original is added: storage key is keyed to the latest
  * original story id, so a fresh original re-triggers the lightbox for returning users.
  */
+// Robust date parser — accepts "April 14, 2026", "Apr 14, 2026", or ISO. Falls back to 0.
+const toTimestamp = (date: string): number => {
+  const t = Date.parse(date);
+  return Number.isNaN(t) ? 0 : t;
+};
+
 const LatestOriginalLightbox = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  // All originals in newest-first order (already sorted in stories.ts)
-  const originals = useMemo(() => stories.filter((s) => s.original), []);
+  // All originals sorted newest-first by actual date — resilient to array order in stories.ts.
+  // Recomputed from live `stories` data, so a freshly added original is reflected immediately.
+  const originals = useMemo(
+    () =>
+      stories
+        .filter((s) => s.original)
+        .slice()
+        .sort((a, b) => toTimestamp(b.date) - toTimestamp(a.date)),
+    []
+  );
   const latestOriginal = originals[0];
   const current = originals[index];
 
+  // Re-trigger the lightbox whenever the latest original's id changes (new upload).
   useEffect(() => {
     if (!latestOriginal) return;
+    setIndex(0); // always start on the newest original
     const storageKey = `latest-original-dismissed:${latestOriginal.id}`;
     const dismissed = localStorage.getItem(storageKey);
     if (!dismissed) {
       const timer = setTimeout(() => setOpen(true), 1800);
       return () => clearTimeout(timer);
     }
-  }, [latestOriginal]);
+  }, [latestOriginal?.id]);
 
   const dismiss = () => {
     if (latestOriginal) {
