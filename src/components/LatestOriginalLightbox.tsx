@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { X, ArrowRight, Sparkles } from "lucide-react";
+import { X, ArrowRight, Sparkles, Shuffle } from "lucide-react";
 import { stories } from "@/data/stories";
 
 /**
@@ -10,9 +10,12 @@ import { stories } from "@/data/stories";
  */
 const LatestOriginalLightbox = () => {
   const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
 
-  // Pick the latest original story (originals are listed newest-first at top of stories.ts)
-  const latestOriginal = stories.find((s) => s.original);
+  // All originals in newest-first order (already sorted in stories.ts)
+  const originals = useMemo(() => stories.filter((s) => s.original), []);
+  const latestOriginal = originals[0];
+  const current = originals[index];
 
   useEffect(() => {
     if (!latestOriginal) return;
@@ -31,7 +34,13 @@ const LatestOriginalLightbox = () => {
     setOpen(false);
   };
 
-  if (!open || !latestOriginal) return null;
+  const showNext = () => {
+    setIndex((i) => (i + 1) % originals.length);
+  };
+
+  if (!open || !current) return null;
+
+  const hasMore = originals.length > 1;
 
   return (
     <div
@@ -65,52 +74,76 @@ const LatestOriginalLightbox = () => {
         </button>
 
         {/* Hero image */}
-        <Link to={`/story/${latestOriginal.slug}`} onClick={dismiss} className="block relative aspect-[16/9] overflow-hidden group">
+        <Link
+          to={`/story/${current.slug}`}
+          onClick={dismiss}
+          key={current.id}
+          className="block relative aspect-[16/9] overflow-hidden group animate-fade-in-up"
+          style={{ animationDuration: "0.4s" }}
+        >
           <img
-            src={latestOriginal.image}
-            alt={latestOriginal.title}
+            src={current.image}
+            alt={current.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
           <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-primary/95 backdrop-blur-sm rounded-full px-3 py-1 shadow-lg">
             <Sparkles className="w-3 h-3 text-primary-foreground" />
             <span className="font-display text-[10px] font-semibold tracking-[0.2em] text-primary-foreground uppercase">
-              New Original
+              {index === 0 ? "New Original" : "Original"}
             </span>
           </div>
         </Link>
 
         {/* Content */}
-        <div className="relative px-6 pt-5 pb-6">
+        <div key={`${current.id}-body`} className="relative px-6 pt-5 pb-6 animate-fade-in-up" style={{ animationDuration: "0.4s" }}>
           <p className="font-display text-[10px] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">
-            {latestOriginal.category} · {latestOriginal.date}
+            {current.category} · {current.date}
           </p>
           <h2
             id="latest-original-title"
             className="font-display text-xl md:text-2xl font-bold text-foreground leading-tight mb-3"
           >
-            {latestOriginal.title}
+            {current.title}
           </h2>
           <p className="text-muted-foreground font-body text-sm leading-relaxed mb-5 line-clamp-3">
-            {latestOriginal.excerpt}
+            {current.excerpt}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-2">
             <Link
-              to={`/story/${latestOriginal.slug}`}
+              to={`/story/${current.slug}`}
               onClick={dismiss}
               className="flex-1 bg-primary text-primary-foreground rounded-lg py-3 px-4 font-display text-sm font-medium tracking-wide hover:opacity-90 transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)] flex items-center justify-center gap-2"
             >
               Read the Story
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <button
-              onClick={dismiss}
-              className="sm:w-auto px-4 py-3 text-muted-foreground hover:text-foreground font-body text-sm transition-colors"
-            >
-              Not now
-            </button>
+            {hasMore && (
+              <button
+                onClick={showNext}
+                className="sm:w-auto px-4 py-3 rounded-lg border border-border bg-muted/30 text-foreground hover:border-primary/50 hover:text-primary hover:bg-muted/50 font-display text-sm font-medium tracking-wide transition-all flex items-center justify-center gap-2"
+              >
+                <Shuffle className="w-3.5 h-3.5" />
+                Show another
+              </button>
+            )}
           </div>
+
+          {hasMore && (
+            <div className="flex items-center justify-center gap-1.5 mt-4">
+              {originals.slice(0, Math.min(originals.length, 6)).map((_, i) => (
+                <span
+                  key={i}
+                  className={`h-1 rounded-full transition-all ${
+                    i === index % Math.min(originals.length, 6)
+                      ? "w-6 bg-primary"
+                      : "w-1.5 bg-border"
+                  }`}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
