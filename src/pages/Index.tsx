@@ -4,10 +4,11 @@ import LeadStory from "@/components/LeadStory";
 import TrendingTicker from "@/components/TrendingTicker";
 import LatestNews from "@/components/LatestNews";
 import FeaturedStories from "@/components/FeaturedStories";
+import FeaturedEvents from "@/components/FeaturedEvents";
 import CategoryHighlights from "@/components/CategoryHighlights";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import Footer from "@/components/Footer";
-import WelcomeLightbox from "@/components/WelcomeLightbox";
+import LatestOriginalLightbox from "@/components/LatestOriginalLightbox";
 import SEOHead from "@/components/SEOHead";
 import OriginalStories from "@/components/OriginalStories";
 
@@ -15,7 +16,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead path="/" />
-      <WelcomeLightbox />
+      <LatestOriginalLightbox />
       <Navbar />
       <main className="pt-16">
         <HeroSection />
@@ -23,6 +24,7 @@ const Index = () => {
         <LeadStory />
         <OriginalStories />
         <LatestNews />
+        <FeaturedEvents />
         <FeaturedStories />
         <NewsletterSignup variant="banner" />
         <CategoryHighlights />
