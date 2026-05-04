@@ -27,6 +27,67 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "119",
+    title: "Hattiesburg Continues Its $45 Million Plan to Overhaul Troubled Sewer System Five Years After Consent Order",
+    excerpt: "More than five years after a federal judge approved a sweeping consent order, Hattiesburg presses on with a 16-year, $45 million overhaul of its aging wastewater system.",
+    category: "community",
+    author: "Joseph Bryant",
+    date: "May 4, 2026",
+    image: "/story-sewer-roadwork.jpg",
+    images: [
+      "/story-sewer-roadwork.jpg",
+      "/story-sewer-creek.jpg",
+      "/story-sewer-excavator.jpg",
+    ],
+    slug: "hattiesburg-sewer-overhaul-consent-order",
+    featured: true,
+    original: true,
+    photoCredit: "Each of these images came from the City of Hattiesburg",
+    content: `It has been more than five years since a federal judge officially approved an agreement to deliver sweeping upgrades to the beleaguered Hattiesburg wastewater system and solidify a commitment to improve environmental conditions.
+
+The central issue surrounds the city's aged sewerage system, which resulted in hundreds of sewage overflows that polluted the waterway.
+
+The city's own internal survey showed about 900 unreported sewage overflows between January 2012 and September 2016. Overflows occur during heavy rain that overwhelms the aged system.
+
+An agreement between the city, the U.S. Environmental Protection Agency, and the Mississippi Department of Environmental Quality outlines a long-term $45 million plan of action to overhaul Hattiesburg's sewerage system.
+
+Hattiesburg continues an aggressive 16-year overhaul plan that includes improvements to city infrastructure and preventative maintenance that extends from city facilities directly into neighborhoods.
+
+Mayor Toby Barker has called improvements a "once in a generation opportunity to invest in aging infrastructure."
+
+The consent agreement signed by U.S. District Court Senior Judge Keith Starrett in January 2021 concluded years of negotiation with federal regulators over how to improve the city's wastewater system and control sanitary sewage overflows.
+
+Action to improve the city's system actually began several years earlier, in 2012, when the Gulf Restoration Network, an environmental advocacy organization now known as Healthy Gulf, sued the city for discharging pollutants into the Leaf and Bowie Rivers in violation of the federal Clean Water Act.
+
+That lawsuit resulted in a consent agreement with the city before state and federal officials later lodged their own suit against the city, which resulted in the current consent agreement and long-term plan of action.
+
+Improvements under the current consent agreement are designed to touch the larger infrastructure and reach into individual homes.
+
+The city's largest water and sewerage initiative to date began in late 2023 with 18 months of major infrastructure projects that included replacing water and sewerage lines along Martin Luther King Avenue. The work was among nine projects funded by the American Rescue Plan Act and matched with state dollars.
+
+The $4 million initiative includes replacing undersized and aging sewerage mains, water mains, and water service lines.
+
+Ward 5 Councilman Nicholas Brown, who represents the area, told the Hattiesburg Hub the work continues to bring needed infrastructure improvements.
+
+"The steps that have been taken are necessary and we are working closely with our water and sewer department to stay in compliance," he said. "The water and sewer projects that have been completed and are underway in Ward 5 since I took office were much needed and are very helpful in maintaining compliance."
+
+The city in 2024 also launched its "Clean Start Initiative" to repair or replace deteriorated, broken, or improperly connected sewerage service lines in low to moderate-income homes. The program is limited, however, with just about $200,000.
+
+"The goal of this program is to significantly reduce the inflow and infiltration of stormwater into the sewer system," Barker said at the time. "We believe this is a mutually beneficial opportunity for both our residents to improve sewer infrastructure issues they may be facing on their own properties and for the city to enhance its overall sewer treatment program."
+
+The city estimates it will spend about $3 million a year on its long-term improvement plan.
+
+The city in late 2025 announced more than $4 million in loan forgiveness from the state to aid in major sewer improvements along the North Main Street corridor.
+
+The $5.48 million project includes replacing and repairing nearly 9,700 linear feet of sewerage lines across the North Main Street area.
+
+Of that amount, $4 million will be forgiven by the Mississippi Department of Environmental Quality's Water Pollution Control Revolving Loan Fund. That means the city will only be responsible for $1.48 million.
+
+These upgrades will improve reliability and enhance capacity within Hattiesburg's wastewater collection system.
+
+Work is expected to be complete by 2028.`,
+  },
+  {
     id: "109",
     title: "A Hattiesburg Original: Veteran Sportscaster Finds Purpose Ministering to Athletes",
     excerpt: "After 27 years as a beloved WDAM sportscaster, Mitchell Williams walked away from the spotlight to answer a higher calling with the Fellowship of Christian Athletes.",
