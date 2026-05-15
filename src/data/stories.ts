@@ -27,6 +27,51 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "127",
+    title: "William Carey University Honors a Unique Past While Forging Advancements for the Present and Future",
+    excerpt: "A new Heritage Plaza enshrines the legacy of Mississippi Woman's College as William Carey University presses forward with major advancements in medical education and primary care.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "May 15, 2026",
+    image: "/story-wcu-heritage-plaza-ceremony.png",
+    images: [
+      "/story-wcu-heritage-plaza-ceremony.png",
+      "/story-wcu-heritage-plaza-seal.png",
+      "/story-wcu-heritage-plaza-burnett.png",
+    ],
+    slug: "william-carey-university-heritage-plaza-rededication",
+    featured: true,
+    original: true,
+    photoCredit: "Photos courtesy of William Carey University. Top: Alumni and employees gather for the rededication ceremony for Mississippi Woman's College Heritage Plaza. Middle: A 400-pound marble replica of the Mississippi Woman's College official seal rests in the center of the new plaza. Bottom: College President Ben Burnett, Ph.D. officially rededicates the new Mississippi Woman's College Heritage Plaza.",
+    content: `A 400-pound marble medallion at the entrance of an outdoor plaza harkens back to the earliest days of a longtime Hattiesburg institution.
+
+While the name has changed and its student population has expanded in the last century, the memory and founding principles of the old Mississippi Woman's College remain enshrined at William Carey University.
+
+A plaza was recently dedicated to honor the predecessor school to William Carey which stood in the same location at the present university. A replica of the school's official seal rests in the center of the Mississippi Woman's College Heritage Plaza.
+
+"For generations, the legacy of Mississippi Woman's College has lived on through its graduates whose lives of faith, service, leadership and scholarship helped shape not only our institution but communities across Mississippi and beyond," said Karen Golson, William Carey University's director of advancement.
+
+The Mississippi Woman's College operated from 1911 until 1940, when the campus closed and its facilities were used as housing for nearby Camp Shelby during World War II.
+
+Following the war, the school reopened in 1946. The school became coeducational in 1954 and its name was changed to William Carey College in honor of the 18th century English missionary.
+
+"Now, as William Carey University, we remain deeply grateful for the foundation built by Mississippi Woman's College and the women who carried its mission into the world," Golson said.
+
+The first plaza honoring the school's history built in 2007 was destroyed by a tornado in 2017.
+
+Both structures were constructed as a gift by the Gillespie family in honor of Margaret Lou Hemeter Gillespie, a 1931 graduate of Mississippi Woman's College.
+
+William Carey honors its past while also continuing to advance with programs to meet present and future needs, particularly when it comes to healthcare.
+
+The university's College of Osteopathic Medicine is consistently listed as a national leader in primary care. The college in April was ranked among the best graduate schools of medicine by U.S. News & World Report.
+
+The medical school since opening in 2010 has graduated more than 1,300 physicians.
+
+University leaders in April dedicated the second phase of the $20 million Charles W. Pickering Institute of Primary Care. The 70,000 square foot facility will further the college's mission to increase the number of primary care physicians in Mississippi and throughout the Gulf South.
+
+"I am overjoyed at this news, and I believe that transformation for better healthcare is being kindled for Mississippi," said Dr. Italo Subbarao, dean of the College of Osteopathic Medicine. "This was the promise we made when this school was first started; that we would endeavor to be part of the solution for Mississippi's physician shortage."`,
+  },
+  {
     id: "126",
     title: "Southern Miss Delivers $1.3 Billion Statewide Economic Impact, New Report Shows",
     excerpt: "A newly released report from USM's Trent Lott National Center confirms the university generated $1.3 billion in statewide economic impact last year, supporting more than 10,000 jobs.",
