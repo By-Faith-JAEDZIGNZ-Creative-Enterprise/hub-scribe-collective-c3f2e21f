@@ -27,6 +27,44 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "126",
+    title: "Southern Miss Delivers $1.3 Billion Statewide Economic Impact, New Report Shows",
+    excerpt: "A newly released report from USM's Trent Lott National Center confirms the university generated $1.3 billion in statewide economic impact last year, supporting more than 10,000 jobs.",
+    category: "business",
+    author: "Hattiesburg Hub Staff",
+    date: "May 15, 2026",
+    image: "/story-usm-administration-building.jpg",
+    images: [
+      "/story-usm-administration-building.jpg",
+      "/story-usm-economic-impact-cover.png",
+    ],
+    slug: "southern-miss-1-3-billion-economic-impact-report",
+    featured: true,
+    original: true,
+    photoCredit: "Images courtesy of The University of Southern Mississippi",
+    content: `The University of Southern Mississippi generated $1.3 billion in economic impact to the state last year, a newly released economic report confirms.
+
+The analysis from USM's Trent Lott National Center for Economic Development and Entrepreneurship highlights the university's pivotal role as both an employer and center of economic growth.
+
+Spending supported more than 10,000 jobs around the state and produced $438 million in labor income. Southern Miss itself employs 4,469 faculty and staff.
+
+"Southern Miss is transforming lives through education while strengthening Mississippi's economy in tangible and lasting ways," Southern Miss President Joe Paul said. "This report highlights the impact our university has on communities throughout the state and reflects the collective contributions of our students, faculty, staff and alumni."
+
+Dollars counted in the analysis included operations, student and visitor spending, capital investment and the "alumni dividend," the portion of increased labor income associated with a USM degree.
+
+The report details economic impact in two metropolitan areas that anchor Southern Miss campuses in the Hattiesburg Metropolitan Statistical Area and the Gulfport–Biloxi Metropolitan Statistical Area.
+
+The university's presence in the Hattiesburg area accounted for $853 million in total economic impact that supported 6,745 jobs and generated $283.7 million in labor income.
+
+"Taken together, the findings underscore USM's role as a cornerstone institution for Mississippi, supporting high-quality employment, strengthening household incomes, and contributing to regional competitiveness through education, research, and workforce development," researchers concluded in their report. "The economic impacts described in this report occur annually and represent an ongoing contribution to the state's economy and quality of life."
+
+The Gulfport–Biloxi area benefited with $227.3 million in total economic impact including supporting 1,820 jobs and generating $78.1 million in labor income.
+
+Additionally Southern Miss contributed $48.9 million in state taxes and $23.4 million in local taxes last year.
+
+"The findings demonstrate the university's broad economic footprint and its continued importance to the state's economy," said Brian Henson, director of the Trent Lott National Center. "Through its operations, research activity, students, visitors, and talent development, Southern Miss supports jobs, strengthens business activity, and serves as a powerful driver of economic growth and opportunity throughout Mississippi."`,
+  },
+  {
     id: "119",
     title: "Hattiesburg Continues Its $45 Million Plan to Overhaul Troubled Sewer System Five Years After Consent Order",
     excerpt: "More than five years after a federal judge approved a sweeping consent order, Hattiesburg presses on with a 16-year, $45 million overhaul of its aging wastewater system.",
