@@ -27,6 +27,57 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "128",
+    title: "\"Never Give Up:\" Johnny DuPree Reflects on 40 Years of Breaking Barriers and Making Mississippi History Again",
+    excerpt: "From Hattiesburg's first Black mayor to newly elected state senator, Johnny DuPree reflects on four decades of public service, family, faith and the motto that has carried him through every campaign.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "May 18, 2026",
+    image: "/story-johnny-dupree-public-safety-complex.jpg",
+    images: ["/story-johnny-dupree-public-safety-complex.jpg"],
+    slug: "johnny-dupree-never-give-up-mississippi-history",
+    featured: true,
+    original: true,
+    photoCredit: "Former Hattiesburg Mayor and current Mississippi State Senator Johnny DuPree stands outside the Johnny L. DuPree Public Safety Complex, dedicated in his honor by the Hattiesburg City Council in 2024. Photo by Hattiesburg Hub.",
+    content: `Some call him Senator, while a few call him Dr. DuPree, and still many more call him Mr. Mayor.
+
+No matter the title, Johnny DuPree answers to each of them.
+
+"People call me mayor and then they apologize and I say, 'being a father, a husband and mayor of the city of Hattiesburg are my greatest accomplishments, so I'll answer to that anytime,'" the former longtime mayor turned state senator said.
+
+For nearly 40 years DuPree has been at the center of political and civic life in his hometown. And he made history and has broken barriers along the way.
+
+It began in 1987 when he was appointed to the Hattiesburg school board, then an elected seat to the Forrest County Board of Supervisors.
+
+In 2001 he was elected mayor of Hattiesburg, becoming the first Black person to lead the city and its longest serving. He served four terms, losing his bid for a fifth term in 2017. Still not ready to retire, DuPree dared to enter state politics.
+
+DuPree also made history as the first Black person to run as a major party's candidate for governor of Mississippi since Reconstruction, a period shortly after the Civil War. He also ran for secretary of state and then for Congress.
+
+DuPree lost those races yet remained undeterred. Finally in late 2025 he ran and won a seat as a Mississippi state senator, representing Hattiesburg and now its surrounding communities.
+
+DuPree earned his bachelor's and master's degrees from the University of Southern Mississippi, then a PhD from Jackson State University.
+
+As a state senator, DuPree said he brings experience from each of his offices as a mayor, school board member and county leader to the state capital.
+
+"My motto is 'never give up.' That's our family's motto and we live by that," DuPree said. "You have to understand that all we've been able to accomplish has been by the grace of God."
+
+His years as mayor brought unprecedented challenges. As mayor, DuPree led the city during two tornadoes, the devastation of Hurricane Katrina and a downturn in the economy.
+
+The city under his leadership achieved an unemployment rate significantly lower than both national and state averages. DuPree is also credited with significant city infrastructure improvements.
+
+The Hattiesburg City Council in 2024 dedicated the public safety complex in honor of the former mayor.
+
+DuPree learned early on the value of work and the honor of keeping his commitments. His mother worked domestic jobs to support her family. Her young son was the oldest child and did what he could to help.
+
+His first job was as a newspaper carrier for Ms. Lillie's Newspaper Stand, where he delivered the Hattiesburg American.
+
+She told him that the papers must be delivered, rain or shine. There were no excuses.
+
+Now 72, DuPree said the lesson learned decades ago has guided him throughout his professional life and personal life.
+
+"It doesn't matter the circumstances," DuPree said. "It matters how you approach and deal with the circumstances. Or do you allow the circumstances to deal with you?"`,
+  },
+  {
     id: "127",
     title: "William Carey University Honors a Unique Past While Forging Advancements for the Present and Future",
     excerpt: "A new Heritage Plaza enshrines the legacy of Mississippi Woman's College as William Carey University presses forward with major advancements in medical education and primary care.",
