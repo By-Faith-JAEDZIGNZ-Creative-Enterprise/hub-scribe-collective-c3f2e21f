@@ -121,6 +121,36 @@ export const events: HubEvent[] = [
     location: "Hattiesburg Saenger Theater",
     url: "https://www.visithburg.org/events/that-arena-rock-show/",
   },
+  {
+    id: "evt-storywalk-2026",
+    title: "StoryWalk",
+    category: "community",
+    startDate: "2026-05-23",
+    startTime: "9:00 AM",
+    endTime: "12:00 PM",
+    location: "Downtown Hattiesburg",
+    url: "https://www.wjtv.com/news/pine-belt/storywalk-returns-to-downtown-hattiesburg-in-may-2026/",
+  },
+  {
+    id: "evt-twilight-night-2026",
+    title: "Twilight Night",
+    category: "community",
+    startDate: "2026-06-06",
+    startTime: "6:00 PM",
+    endTime: "9:00 PM",
+    location: "Hattiesburg Zoo",
+    url: "https://www.wjtv.com/news/pine-belt/experience-the-hattiesburg-zoo-after-dark-at-twilight-nights/",
+  },
+  {
+    id: "evt-dog-days-5k-2026",
+    title: "Dog Days 5K Run and 2-Mile Walk @ FestivalSouth",
+    category: "community",
+    startDate: "2026-06-13",
+    startTime: "7:30 AM",
+    endTime: "9:30 AM",
+    location: "Kamper Park",
+    url: "https://www.visithburg.org/events/dog-days-5k-run-and-2-mile-walk-festivalsouth2/",
+  },
 ];
 
 export const categoryStyles: Record<HubEvent["category"], { label: string; classes: string }> = {
