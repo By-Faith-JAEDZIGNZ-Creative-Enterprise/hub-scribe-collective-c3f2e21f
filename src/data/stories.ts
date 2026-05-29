@@ -27,6 +27,71 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "212",
+    title: "Share Your Vision: Residents Still Have Time to Contribute to Hattiesburg '150 & Beyond' Long-Term Plan",
+    excerpt: "Hattiesburg leaders are crafting a 20-year roadmap for the city's future, and residents have just a few more days to add their input through the 'Hattiesburg 150 & Beyond' comprehensive plan.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "May 29, 2026",
+    image: "/story-comp-plan-session-1.jpg",
+    images: [
+      "/story-comp-plan-session-1.jpg",
+      "/story-comp-plan-session-2.jpg",
+      "/story-comp-plan-session-3.jpg",
+    ],
+    slug: "hattiesburg-150-beyond-comprehensive-plan-input",
+    featured: true,
+    original: true,
+    photoCredit: "Residents review and contribute to the draft 'Hattiesburg 150 & Beyond' comprehensive plan during public input sessions hosted by the City of Hattiesburg. Photos courtesy of the City of Hattiesburg.",
+    content: `Hattiesburg leaders are crafting a plan that will guide the city's development for the next 20 years, and residents have just a few more days to add their input.
+
+The city is finalizing "Hattiesburg 150 & Beyond," the first major long-term comprehensive plan since 2008. The name is a nod to 150 years of the city's existence.
+
+Sunday, May 31 is the final day to submit input through the online survey: https://www.hattiesburgplan150.com.
+
+Planning officials for more than a year have hosted a series of public sessions throughout the city, in addition to creating online opportunities to submit input.
+
+"This comprehensive plan serves as the compact between our city leaders, staff, residents, business owners, and community partners regarding the path we will follow to take Hattiesburg from being one of the best cities in Mississippi to becoming the premier city of the Gulf South," the draft plan reads.
+
+Authors of Hattiesburg 150 & Beyond describe it as the city's roadmap for the future. The goal is to use the plan as a guide to develop policies that strengthen Hattiesburg as a hub for opportunity, lifestyle, innovation and culture.
+
+"When Southerners imagine what a great city should be like, the first city they will think of is Hattiesburg—a great place to live, a great place to work, a great place to play, and a great place to visit for everyone," the document pledges.
+
+The draft plan aims to address key priorities, including infrastructure, land use, housing, transportation, economic development and parks. Future development is intended to be aligned with supporting these core needs.
+
+Goals are short-term and long-term aspirational. For example, planners envision a state-of-the-art indoor central recreation center in the earlier years and then recruiting a professional sports team to town within the next 10 to 15 years.
+
+The plan also highlights the need to devote resources to downtown. That includes supporting existing businesses, while also encouraging further development in the city's core.
+
+To do so, planners suggest controlling sprawl into the western section of town, which often leaves downtown with diminished population to sustain businesses.
+
+"The city will prioritize limiting further retail and residential development on the west side of the city until vacant lots, structures, storefronts, and upper story units have been sufficiently filled such that the urban core is denser in terms of population of both residents and businesses per acre than any area in the Pinebelt outside the urban core," according to the plan. "This prioritization will allow the Pinebelt to retain its urban assets, attract new residents and retain current ones, and allow for efficient delivery of municipal services."
+
+**Securing infrastructure for today and tomorrow**
+
+While not as visible as buildings and parks, the Hattiesburg 150 & Beyond plan stresses the need to upgrade physical infrastructure to support its growth and development. Those improvements include maintaining reliable sewer and water service, and updating other infrastructure including roads and pedestrian pathways.
+
+"Regular maintenance and upgrades of City infrastructure is essential if current levels of service are going to be maintained. The City will continue to upgrade and maintain infrastructure and facilities to provide a steadily improving quality of life to Hattiesburg residents," the plan details.
+
+A federal consent agreement approved in January 2021 set the parameters for the city to improve its wastewater system and control sanitary sewage overflows. The central issue surrounds the city's aged sewerage system, which resulted in hundreds of sewage overflows that polluted the waterway.
+
+The city since then began an aggressive 16-year initiative to improve city infrastructure and increase preventative maintenance related to the sewer system.
+
+The comprehensive plan takes note of the ongoing drainage improvements. One goal includes developing "sponge" infrastructure to align the banks of the Leaf and Bouie Rivers to manage flooding. Sponge infrastructure is a term for land development practices that aid traditional stormwater systems to guide water saturation in the soil. They include linear parks, rain gardens, permeable pavement and even green roofs that support foliage on top of buildings.
+
+**Ensuring housing availability and affordability**
+
+Maintaining and creating adequate and affordable housing is also a major item in the city's long-term plan.
+
+"While Hattiesburg is an affordable place to live relative to other parts of the country, many residents struggle to find a variety of reliable affordable housing options across the city," the draft plan explains. "Expanding the affordable housing supply in this community requires engaging with land use regulations, strengthening relationships with local developers, and educating the public about affordable housing support programs."
+
+City planners recommend "pattern zones," that allow developers to bypass some approval processes by allowing pre-approved plans that are deemed appropriate for multi-purpose housing.
+
+"These pre-approved plans can significantly accelerate construction timelines and remove some of the risk from the development process, which can serve as a significant incentive to build more," according to the draft plan.
+
+Following resident suggestions and feedback made by May 31, the draft comprehensive plan will be finalized and presented to the city council for approval.`,
+  },
+  {
     id: "128",
     title: "\"Never Give Up:\" Johnny DuPree Reflects on 40 Years of Breaking Barriers and Making Mississippi History Again",
     excerpt: "From Hattiesburg's first Black mayor to newly elected state senator, Johnny DuPree reflects on four decades of public service, family, faith and the motto that has carried him through every campaign.",
