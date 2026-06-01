@@ -27,6 +27,49 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "213",
+    title: "Take a Closer Look: Art Exhibit Makes Art from Trash to Deliver a Lasting Message",
+    excerpt: "A new interactive exhibit led by Southern Miss researchers and Gulf Coast artists turns discarded plastic into striking marine sculptures—urging visitors to rethink waste and its impact on oceans and human health.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "May 31, 2026",
+    image: "/story-plastics-exhibit-turtle.jpg",
+    images: [
+      "/story-plastics-exhibit-turtle.jpg",
+      "/story-plastics-exhibit-alligator.jpg",
+    ],
+    slug: "toxic-beauty-plastics-hidden-cost-exhibit",
+    featured: true,
+    original: true,
+    photoCredit: "Sculptures from 'Toxic Beauty: Plastic's Hidden Cost' on display at the Mississippi Aquarium in Gulfport. A life-sized sea turtle crafted from Mardi Gras beads collected during beach cleanups (top) and an alligator head made from an old sneaker (bottom) were created by Ocean Springs artist Demetrius 'MeatThaArtist' Gayden. Photos courtesy of the University of Southern Mississippi School of Ocean Science and Engineering.",
+    content: `A new interactive art exhibit is designed to make viewers think twice about what they toss into the trash, where it ends up and what it could harm.
+
+Organizers from the University of Southern Mississippi's School of Ocean Science and Engineering led a team to present "Toxic Beauty: Plastic's Hidden Cost" at the Mississippi Aquarium in Gulfport.
+
+The initiative is led by Kristina Mojica, Southern Miss associate professor of marine science, and Rachel Lancaster, a marine science doctoral student. The exhibit, which runs through Labor Day Sept. 7, presents works of art from what was previously discarded trash. Displays include a pair of life-sized sea turtles created from foam and scrap cardboard and Mardi Gras beads found during beach cleanups.
+
+"This new recycling art exhibit reflects the power of collaboration and creativity in addressing one of the most pressing challenges facing not only our oceans but also human health," said Jeff Gibula, interim chief executive officer of the Mississippi Aquarium.
+
+The exhibit in Gulfport, 70 miles from the Hattiesburg campus, is intended to generate an impact that flows even further as visitors think about the display and its meaning.
+
+The project assembled local artists, scientists and educators to highlight the impact of plastics on the environment and the animals affected.
+
+Ocean Springs-based artist Demetrius Gayden, known as "MeatThaArtist," created several pieces including the sea turtles.
+
+"This project pushed me outside of my usual medium of acrylics and canvas and into something completely new," Gayden said. "By transforming those materials into art, I hope it encourages people to see the value in repurposing and turning what might be considered trash into something meaningful and impactful."
+
+Another display shows an alligator head lifting up from hiding. A closer look shows that the alligator is made from an old sneaker.
+
+Students from Long Beach High School and Ocean Springs High School also created marine animals from material collected along the Gulf Coast. All materials were sterilized by the Southern Miss School of Ocean Science and Engineering.
+
+Creators also urge visitors to take a survey to gauge the ability of the exhibit to encourage them to become stronger stewards of the environment by taking personal steps to reduce plastic pollution.
+
+Performance art also accompanies the physical exhibit on select days. Through "Plastic, Drastic, Fantastic," Southern Miss dance students illustrate the consequences of misusing plastics as they interact with the audience visiting the exhibit.
+
+"In this partnership with USM, we're not only showcasing innovative works made from reclaimed materials, but we are also inspiring our community to rethink waste, embrace sustainability, and see the beauty in giving new life to what was once discarded," Gibula said. "At Mississippi Aquarium, education and conservation go hand in hand, and this exhibit brings both to life in a truly meaningful way."`,
+  },
+
+  {
     id: "212",
     title: "Share Your Vision: Residents Still Have Time to Contribute to Hattiesburg '150 & Beyond' Long-Term Plan",
     excerpt: "Hattiesburg leaders are crafting a 20-year roadmap for the city's future, and residents have just a few more days to add their input through the 'Hattiesburg 150 & Beyond' comprehensive plan.",
