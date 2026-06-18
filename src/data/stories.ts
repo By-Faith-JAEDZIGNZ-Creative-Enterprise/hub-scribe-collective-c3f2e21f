@@ -27,6 +27,39 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "214",
+    title: "There She Is: Hattiesburg Native Crowned 2026 Miss Mississippi",
+    excerpt: "Hattiesburg has something else to boast about as community native Jane Granberry travels the state as the newly crowned 2026 Miss Mississippi.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "June 14, 2026",
+    image: "/story-miss-mississippi-granberry-crowning.jpg",
+    images: [
+      "/story-miss-mississippi-granberry-crowning.jpg",
+      "/story-miss-mississippi-granberry-signing.jpg",
+    ],
+    slug: "hattiesburg-native-crowned-2026-miss-mississippi",
+    featured: true,
+    original: true,
+    photoCredit: "Jane Granberry of Hattiesburg is crowned 2026 Miss Mississippi on June 13 in Vicksburg (top) and signs her official contract the following morning at the Miss Mississippi Organization headquarters (bottom). Photos courtesy of the Miss Mississippi Corporation.",
+    content: `Hattiesburg has something else to boast about as a community native travels the state as the newly crowned 2026 Miss Mississippi.
+
+Jane Granberry won the crown June 13 in Vicksburg.
+
+"This morning was a dream come true," Granberry wrote on social media just a day after her crowning. "Surrounded by history of the Miss Mississippi Organization and photos of titleholders that came before me, I signed my official contract and connected with a few of the incredible journalists who serve our state."
+
+Granberry competed as Miss Capital City. She was previously a finalist for the Miss Mississippi title in 2024 and 2025. Saturday was finally her day as Granberry walked across the stage cradling a bouquet of flowers as a sparkling crown topped her head and a sash declared her Miss Mississippi 2026.
+
+"Thank you Lord for this opportunity to serve the state I love so dearly," Granberry said, ending her post. "Here we go!"
+
+A graduate of the University of Mississippi, the 24-year-old earned a degree in integrated marketing and communications and a Master of Business Administration.
+
+Granberry's community service initiative is "Literacy Without Limits." Her talent was jazz dancing.
+
+Granberry in September will represent her state and compete for the Miss America 2027 title in West Palm Beach, Florida.`,
+  },
+
+  {
     id: "213",
     title: "Take a Closer Look: Art Exhibit Makes Art from Trash to Deliver a Lasting Message",
     excerpt: "A new interactive exhibit led by Southern Miss researchers and Gulf Coast artists turns discarded plastic into striking marine sculptures—urging visitors to rethink waste and its impact on oceans and human health.",
