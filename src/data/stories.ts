@@ -27,6 +27,73 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "215",
+    title: "A 'Field of Dreams' for Hattiesburg? City Planners Envision Recruiting Minor League Baseball to Town",
+    excerpt: "It has been nearly a century since fans flocked to see the Hattiesburg Pinetoppers, but the city's draft comprehensive plan envisions bringing minor league baseball back to 'Baseburg' within the next 10 to 15 years.",
+    category: "sports",
+    author: "Hattiesburg Hub Staff",
+    date: "June 16, 2026",
+    image: "/story-baseburg-minor-league-vision.jpg",
+    slug: "field-of-dreams-hattiesburg-minor-league-baseball",
+    featured: true,
+    original: true,
+    photoCredit: "Stock illustration. Hattiesburg's draft 'Hattiesburg 150 & Beyond' comprehensive plan envisions attracting a minor league baseball team to the city within the next 10 to 15 years.",
+    content: `It has been nearly a century since fans flocked to see the Hattiesburg Pinetoppers baseball team in action at Kamper Park.
+
+Hattiesburg boasted its own minor league team from around 1905 to 1929. The city will once again be a center of athletics with fans flocking to the stands if a new vision becomes a reality.
+
+"Hattiesburg 150 & Beyond," the city's draft comprehensive plan, includes plans to attract minor league baseball to town within the next 10 to 15 years.
+
+"Hattiesburg has a strong baseball culture developed by the success of the University of Southern Mississippi's Baseball program over the years," according to the draft plan. "A minor league baseball team located in Hattiesburg would represent the culmination of the 'Baseburg' nickname and create a strong non-university cultural touchstone for the city."
+
+'Baseburg' is a nickname that celebrates Hattiesburg's long historic connection to baseball.
+
+The comprehensive plan envisions creating a taskforce to examine how other small metro areas such as Salisbury, MD; Rome, GA; Grand Chute, WI; Lancaster, PA; and Madison, AL have acquired minor league teams.
+
+Recruiting any professional team requires planning, infrastructure and savvy, sports business experts say.
+
+City leaders must consider the economics of attracting a minor league team, including incentives, tax breaks and needed facility upgrades, said Brennan K. Berg, professor and program director of sport management at the University of Mississippi.
+
+"Ultimately, there needs to be public support and enthusiasm for bringing a team to Hattiesburg," he said. "Otherwise, it may be politically unpopular, particularly if incentives are utilized, and the team may not enjoy the consistent support it needs to remain viable long-term."
+
+Hattiesburg's population of nearly 49,000 and a regional population of about 158,014 is a relatively small market. Therefore the team would have to draw fans from communities that extend through southern Mississippi and beyond, Berg explained.
+
+"The challenge for a sport like baseball is the many games that are played each season," Berg said. "So, even for local residents who love the sport, it can be challenging to attend a lot of games and help fill in the seats."
+
+Hattiesburg would need someone with a vision and "some serious financial backing" to champion the task of acquiring a franchise and bringing it to town, said Darin W. White, executive director of the Center for Sports Analytics at Samford University near Birmingham, AL.
+
+The Birmingham region has long hosted the Birmingham Barons in various locations and facilities inside and outside the city.
+
+It is possible, but White noted that the changing business landscape has made it more difficult.
+
+For example, minor league teams have shrunk from 168 down to 120 today since a 2021 restructuring of Minor League Baseball.
+
+While teams previously operated independently, White said Minor League Baseball has since created a consolidated structure where the corporation also handles sponsorship and media rights.
+
+"It is a little more challenging now from a minor league standpoint," he said. "You're seeing the consolidation of the teams, all across sports and it's a more efficient way of being profitable and driving revenue. All that matters from the standpoint if you're Hattiesburg."
+
+Additionally, there are more than 40 cities around the country who formerly hosted teams and likely are seeking to bring new play to their underused ballparks.
+
+"So you're going to be competing with them," White said.
+
+As Hattiesburg considers minor league baseball, both White and Berg said the city should factor its marketability when it comes to attracting other burgeoning sports.
+
+As an alternative, Berg said the city should consider creating more small-scale events in which people participate in a sport activity, such as marathons, 5Ks, triathlons and youth sport tournaments.
+
+Those events often use resources already in place and do not require a large public expenditure, Berg noted.
+
+"These types of events, if marketed and managed well, can bring visitors throughout the year who will stay in Hattiesburg multiple days and spend money with several businesses," Berg said.
+
+White recommends the city considers seeking new leagues such as lacrosse or women's volleyball that could be easier to recruit.
+
+"A city like Hattiesburg would be probably best in trying to find an up and coming sport," White said. "There's a lot of innovation going on right now in sports. When you're a smaller city like Hattiesburg, you've got to be able to think outside the box."
+
+Still, the possibility of bringing professional baseball to Hattiesburg and southern Mississippi could deliver a homerun for the community.
+
+"If a team were attracted to Hattiesburg for the first time in almost a century, it would allow an opportunity for the city to brand itself and all that it has to offer in a new manner," Berg said.`,
+  },
+
+  {
     id: "214",
     title: "There She Is: Hattiesburg Native Crowned 2026 Miss Mississippi",
     excerpt: "Hattiesburg has something else to boast about as community native Jane Granberry travels the state as the newly crowned 2026 Miss Mississippi.",
