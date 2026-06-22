@@ -151,6 +151,26 @@ export const events: HubEvent[] = [
     location: "Kamper Park",
     url: "https://www.visithburg.org/events/dog-days-5k-run-and-2-mile-walk-festivalsouth2/",
   },
+  {
+    id: "evt-dha-round-table-june-2026",
+    title: "DHA Monthly Round Table",
+    category: "community",
+    startDate: "2026-06-04",
+    startTime: "8:30 AM",
+    endTime: "9:30 AM",
+    location: "RSJ Community Arts Center",
+    url: "https://downtownhattiesburg.com/event/dha-monthly-round-table-8/",
+  },
+  {
+    id: "evt-star-spangled-river-2026",
+    title: "Star-Spangled Celebration on the River 2026",
+    category: "community",
+    startDate: "2026-07-02",
+    startTime: "6:00 PM",
+    endTime: "9:30 PM",
+    location: "Chain Park and Petal River Park",
+    url: "https://downtownhattiesburg.com/event/star-spangled-celebration-on-the-river-2026/",
+  },
 ];
 
 export const categoryStyles: Record<HubEvent["category"], { label: string; classes: string }> = {
