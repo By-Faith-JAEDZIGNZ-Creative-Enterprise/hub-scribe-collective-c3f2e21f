@@ -24,4 +24,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://hattiesburghub.com/sitemap.xml
+Sitemap: https://www.hattiesburghub.com/sitemap.xml
