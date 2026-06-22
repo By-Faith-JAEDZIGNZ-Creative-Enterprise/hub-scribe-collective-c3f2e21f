@@ -3,211 +3,211 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hattiesburghub.com/</loc>
+    <loc>https://www.hattiesburghub.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/signup</loc>
+    <loc>https://www.hattiesburghub.com/signup</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- Categories -->
   <url>
-    <loc>https://hattiesburghub.com/category/community</loc>
+    <loc>https://www.hattiesburghub.com/category/community</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/category/business</loc>
+    <loc>https://www.hattiesburghub.com/category/business</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/category/culture</loc>
+    <loc>https://www.hattiesburghub.com/category/culture</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/category/sports</loc>
+    <loc>https://www.hattiesburghub.com/category/sports</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/category/opinion</loc>
+    <loc>https://www.hattiesburghub.com/category/opinion</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Community Stories -->
   <url>
-    <loc>https://hattiesburghub.com/story/downtown-revitalization-project</loc>
+    <loc>https://www.hattiesburghub.com/story/downtown-revitalization-project</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-downtown-revitalization.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-downtown-revitalization.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/community-health-center-opens</loc>
+    <loc>https://www.hattiesburghub.com/story/community-health-center-opens</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-health-center.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-health-center.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/longleaf-trace-tree-planting</loc>
+    <loc>https://www.hattiesburghub.com/story/longleaf-trace-tree-planting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-tree-planting.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-tree-planting.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/library-tech-literacy-program</loc>
+    <loc>https://www.hattiesburghub.com/story/library-tech-literacy-program</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-tech-literacy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-tech-literacy.jpg</image:loc></image:image>
   </url>
 
   <!-- Business Stories -->
   <url>
-    <loc>https://hattiesburghub.com/story/local-tech-startup-funding</loc>
+    <loc>https://www.hattiesburghub.com/story/local-tech-startup-funding</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-tech-startup.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-tech-startup.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/hardy-street-new-businesses</loc>
+    <loc>https://www.hattiesburghub.com/story/hardy-street-new-businesses</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-hardy-street.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-hardy-street.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/credit-union-micro-loans</loc>
+    <loc>https://www.hattiesburghub.com/story/credit-union-micro-loans</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-micro-loans.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-micro-loans.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/emerging-tech-hub-ranking</loc>
+    <loc>https://www.hattiesburghub.com/story/emerging-tech-hub-ranking</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-tech-hub.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-tech-hub.jpg</image:loc></image:image>
   </url>
 
   <!-- Culture Stories -->
   <url>
-    <loc>https://hattiesburghub.com/story/hub-city-music-festival-lineup</loc>
+    <loc>https://www.hattiesburghub.com/story/hub-city-music-festival-lineup</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-music-festival.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-music-festival.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/mural-trail-unveiling</loc>
+    <loc>https://www.hattiesburghub.com/story/mural-trail-unveiling</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-mural-trail.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-mural-trail.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/southern-miss-fences-production</loc>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-fences-production</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-theatre-fences.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-theatre-fences.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/local-author-book-award</loc>
+    <loc>https://www.hattiesburghub.com/story/local-author-book-award</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-book-award.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-book-award.jpg</image:loc></image:image>
   </url>
 
   <!-- Sports Stories -->
   <url>
-    <loc>https://hattiesburghub.com/story/golden-eagles-football-preview</loc>
+    <loc>https://www.hattiesburghub.com/story/golden-eagles-football-preview</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-golden-eagles.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-golden-eagles.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/tigers-state-championship</loc>
+    <loc>https://www.hattiesburghub.com/story/tigers-state-championship</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-basketball-champs.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-basketball-champs.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/usm-soccer-facility</loc>
+    <loc>https://www.hattiesburghub.com/story/usm-soccer-facility</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-soccer-facility.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-soccer-facility.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/youth-flag-football-league</loc>
+    <loc>https://www.hattiesburghub.com/story/youth-flag-football-league</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-flag-football.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-flag-football.jpg</image:loc></image:image>
   </url>
 
   <!-- Opinion Stories -->
   <url>
-    <loc>https://hattiesburghub.com/story/hattiesburgs-young-leaders</loc>
+    <loc>https://www.hattiesburghub.com/story/hattiesburgs-young-leaders</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-young-leaders.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-young-leaders.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/rethink-school-funding</loc>
+    <loc>https://www.hattiesburghub.com/story/rethink-school-funding</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-school-funding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-school-funding.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/invest-in-longleaf-trace</loc>
+    <loc>https://www.hattiesburghub.com/story/invest-in-longleaf-trace</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-longleaf-trace.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-longleaf-trace.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/support-local-journalism</loc>
+    <loc>https://www.hattiesburghub.com/story/support-local-journalism</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hattiesburghub.com/story-local-journalism.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-local-journalism.jpg</image:loc></image:image>
   </url>
 
   <!-- Curated/External Stories -->
   <url>
-    <loc>https://hattiesburghub.com/story/cheapest-gas-stations-hattiesburg</loc>
+    <loc>https://www.hattiesburghub.com/story/cheapest-gas-stations-hattiesburg</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/hattiesburg-pharmacy-owner-tax-offense</loc>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-pharmacy-owner-tax-offense</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/thousands-without-power-mississippi-storms</loc>
+    <loc>https://www.hattiesburghub.com/story/thousands-without-power-mississippi-storms</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/mccarty-house-museum-opening</loc>
+    <loc>https://www.hattiesburghub.com/story/mccarty-house-museum-opening</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/mississippi-tornadoes-snow-forecast</loc>
+    <loc>https://www.hattiesburghub.com/story/mississippi-tornadoes-snow-forecast</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/mississippi-state-primaries-2026</loc>
+    <loc>https://www.hattiesburghub.com/story/mississippi-state-primaries-2026</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/mississippi-abc-alcohol-backlog-bill</loc>
+    <loc>https://www.hattiesburghub.com/story/mississippi-abc-alcohol-backlog-bill</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hattiesburghub.com/story/teacher-pay-raise-mississippi-senate</loc>
+    <loc>https://www.hattiesburghub.com/story/teacher-pay-raise-mississippi-senate</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
