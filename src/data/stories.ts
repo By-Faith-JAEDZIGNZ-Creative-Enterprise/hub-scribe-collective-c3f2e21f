@@ -27,6 +27,57 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "216",
+    title: "The Universal Language: Southern Miss Voices Showcase American Music to International Audiences",
+    excerpt: "If music is the universal language, then student performers from Southern Miss are international ambassadors of good will. The Southern Chorale is in the midst of its international America 250 tour.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "June 25, 2026",
+    image: "/__l5e/assets-v1/1d2d0a3d-0445-4a4b-bb85-73856ccee8dc/southern-miss-chorale.jpeg",
+    slug: "southern-miss-chorale-america-250-european-tour",
+    featured: true,
+    original: true,
+    photoCredit: "Photo courtesy of The University of Southern Mississippi Southern Chorale.",
+    content: `If music is the universal language, then student performers from Southern Miss are international ambassadors of good will.
+
+The University of Southern Mississippi's Southern Chorale is in the midst of its international America 250 tour.
+
+The tour includes venues in Hattiesburg and throughout Mississippi, to finally cross the Atlantic to perform in historic halls in Italy, France, Latvia and Estonia.
+
+The goal is to place the choral ensemble on stages that have long served as a center for artistic exchange and cross culture collaboration.
+
+"This choir is honored to sing regularly for national and international audiences that are equipped to listen with trained ears," conductor Gregory Fuller told the Hattiesburg Hub after landing in Europe just before a performance in Siena, Italy. "We are grateful for listeners that will know the level of preparation needed for the repertoire this choir performs."
+
+The choir is performing an American program that showcases fine art music, gospel, spirituals, Mississippi blues and American popular music tailored for the Chorale by Southern Miss alumnus Jonathan Rodgers.
+
+The performances are an eclectic mix, with the 50-voice group performing familiar pop culture theme songs such as the Love Boat TV series. It goes on to include instantly recognizable tunes from R&B legend Marvin Gaye, to the 1970s brother and sister duo, The Carpenters. The repertoire also includes songs by Mississippi artists and original compositions created for the chorus.
+
+Beyond the perfection displayed on stage, the tour involves a grueling level of planning, practice and travel.
+
+"This trip alone involves contracts with 11 hotels, 15 restaurants, reservations at about 10 attractions along the way, motor coach service and two flights within the tour," Fuller said.
+
+"This is all in addition to concert venues, promotion, and ticket sales, much of which has been facilitated by our European partners and hosts."
+
+Fuller is especially pleased that the tour is the result of previous European appearances that led to current invitations. One encounter fostered the next, he explained.
+
+"These invitations, and other performances on this tour, arose from previous appearances in Europe over the last few years," he said. "The Chorale performed in Tallinn, Estonia in 2023 and was broadcast on Estonian Public Radio.
+
+That performance ended up being the 9th most listened to broadcast of the entire 2023 year. Such popularity generated the invitation to the 'White Nights Festival' in Haapsalu. We are the only amateur ensemble performing at that festival, and we are the headliner on July 4."
+
+The tour concludes at the "White Nights Festival" inside the medieval fortress at Haapsalu Cathedral.
+
+Fuller, who is also a professor and director of choral activities at the Southern Miss School of Music, said some past students live and work in Europe after being strongly influenced by their travels.
+
+"Many broaden their scope as they apply for jobs, some choose relevant research topics based on people and places they've encountered on these trips, and some just discover the importance of delivering a larger picture to the students they now teach," he said.
+
+The Southern Chorale over the last 20 years has performed in Austria, Czech Republic, England, Estonia, France, Hungary, Jamaica, Italy, Latvia, Mexico, Norway, Romania, South Korea, Spain and Sweden, in addition to venues across the United States.
+
+Fuller said the experience of international travel and performing creates lifetime memories for students and inspires them in their next level of professional development.
+
+"I find that international travel, first and foremost, makes the world bigger for these students. Just their idea of what is possible in their future changes," Fuller said. "It is a powerful thing."`,
+  },
+
+  {
     id: "215",
     title: "A 'Field of Dreams' for Hattiesburg? City Planners Envision Recruiting Minor League Baseball to Town",
     excerpt: "It has been nearly a century since fans flocked to see the Hattiesburg Pinetoppers, but the city's draft comprehensive plan envisions bringing minor league baseball back to 'Baseburg' within the next 10 to 15 years.",
