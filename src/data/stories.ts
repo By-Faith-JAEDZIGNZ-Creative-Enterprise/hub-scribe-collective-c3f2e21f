@@ -16,6 +16,8 @@ export interface Story {
   photoCredit?: string;
 }
 
+import southernMissChoraleAsset from "@/assets/southern-miss-chorale.jpeg.asset.json";
+
 export const categories = [
   { name: "Community", slug: "community" },
   { name: "Business", slug: "business" },
