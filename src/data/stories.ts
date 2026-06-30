@@ -33,7 +33,7 @@ export const stories: Story[] = [
     category: "culture",
     author: "Hattiesburg Hub Staff",
     date: "June 25, 2026",
-    image: "/__l5e/assets-v1/1d2d0a3d-0445-4a4b-bb85-73856ccee8dc/southern-miss-chorale.jpeg",
+    image: "/story-southern-miss-chorale.jpg",
     slug: "southern-miss-chorale-america-250-european-tour",
     featured: true,
     original: true,
