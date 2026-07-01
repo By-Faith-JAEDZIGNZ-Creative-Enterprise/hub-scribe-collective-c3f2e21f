@@ -27,6 +27,56 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "217",
+    title: "Hattiesburg Athletic Leaders to Receive Top Coach of the Year Honors",
+    excerpt: "After guiding their students to numerous sports championships, Hattiesburg Athletic Director Jermaine Brown and head track & field coach Charles Green will be honored by the Mississippi Association of Coaches.",
+    category: "sports",
+    author: "Hattiesburg Hub Staff",
+    date: "June 27, 2026",
+    image: "/story-coy-jermaine-brown.jpg",
+    images: [
+      "/story-coy-jermaine-brown.jpg",
+      "/story-coy-charles-green.jpg",
+      "/story-coy-hps-logo.jpg",
+      "/story-coy-mac-logo.png",
+    ],
+    slug: "hattiesburg-coaches-of-the-year-2026",
+    featured: true,
+    original: true,
+    photoCredit: "Photos of Jermaine Brown and Charles Green courtesy of Hattiesburg Public Schools. Hattiesburg Public Schools seal courtesy of Hattiesburg Public Schools. Mississippi Association of Coaches logo courtesy of the Mississippi Association of Coaches.",
+    content: `After guiding their students to numerous sports championships, two Hattiesburg athletic leaders will receive their own awards for their years of mentorship and service in city schools.
+
+Hattiesburg Athletic Director Jermaine Brown and Charles Green, head boys' and girls' cross country and track & field coach, are among the Coach of the Year honorees from the Mississippi Association of Coaches.
+
+"This is quite an honor," said Johnny Mims, executive director of the Mississippi Association of Coaches, noting that just one coach is selected from each sporting category. "We bring in all the coaches that have won from every sport. Obviously their peers thought enough to vote for them because there were other champions and contenders from other classifications."
+
+The Mississippi Association of Coaches is a membership organization that represents coaches throughout the state.
+
+Brown, a native of Hattiesburg, has spent most of his 30-year career in the Hub City after previous posts in Meridian, Biloxi and Forrest County.
+
+Brown, who was principal of Hattiesburg High School from 2013 to 2017, now serves as central office administrator for Hattiesburg Public Schools. He has been associated with 16 state championships at his schools.
+
+Brown's accolades include the 2022 State Career and Technical Education Director of the Year and 2021-2022 District Administrator of the Year. Brown also served a term as president of the Mississippi Athletic Administrators Association.
+
+The latest award adds to the list of accolades for both longtime coaches.
+
+Coach Green took to social media to express his excitement at receiving the recognition as the girls track coach.
+
+"This is truly an honor to be recognized as one of the best amongst my peers," he said on Facebook. "I wouldn't be where I am without having such a dedicated staff supporting me and a hardworking group of athletes performing the way that they do week after week, and a supportive family that allows me to do what I love."
+
+Green in 2018 was named the Boys 5A Track Coach of the Year by the association.
+
+Green, a graduate of Southern Miss, has spent his entire 23-year coaching career in Hattiesburg where he has guided the track teams to a middle school classic title and nine state championships. Those victories include five in boys track and four in girls track.
+
+His 2026 boys and girls teams both won the Classic 6A State Championships. This was the third straight state championship for the girls squad.
+
+Green was also a finalist for 2025 the National High School Athletic Coaches Association Coach of the Year.
+
+Both coaches will be celebrated July 9 during a recognition ceremony presented at the Sheraton Refuge Hotel & Conference Center in Flowood.`,
+  },
+
+
+  {
     id: "216",
     title: "The Universal Language: Southern Miss Voices Showcase American Music to International Audiences",
     excerpt: "If music is the universal language, then student performers from Southern Miss are international ambassadors of good will. The Southern Chorale is in the midst of its international America 250 tour.",
