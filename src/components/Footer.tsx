@@ -114,9 +114,20 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-border/10 py-6 flex flex-col items-center justify-center gap-2">
           <p className="text-hub-text-dim text-[11px] font-body">
             © 2026 Hattiesburg Hub. All rights reserved.
+          </p>
+          <p className="text-muted-foreground/70 text-[11px] font-body tracking-wide">
+            Designed by{" "}
+            <a
+              href="https://jaedzignz.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary/80 hover:text-primary transition-colors duration-300 font-display font-medium tracking-wide"
+            >
+              By Faith JAEDZIGNZ Creative Enterprise
+            </a>
           </p>
           <p className="text-hub-text-dim/50 text-[10px] font-body tracking-wide">
             Made with ♥ in the Hub City
