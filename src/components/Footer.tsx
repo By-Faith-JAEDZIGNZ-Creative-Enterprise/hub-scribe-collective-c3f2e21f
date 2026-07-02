@@ -121,7 +121,7 @@ const Footer = () => {
           <p className="text-muted-foreground/70 text-[11px] font-body tracking-wide">
             Designed by{" "}
             <a
-              href="https://jaedzignz.com"
+              href="https://byfaithjaedzignzcreative.net/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary/80 hover:text-primary transition-colors duration-300 font-display font-medium tracking-wide"
