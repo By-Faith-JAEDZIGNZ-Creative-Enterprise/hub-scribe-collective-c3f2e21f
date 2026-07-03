@@ -30,27 +30,30 @@ const JaeCrest = ({ size = 96, className, href }: JaeCrestProps) => {
           svg:hover .jae-crest { transform: rotate(12deg); }
           svg:hover .jae-crest-ring { transform: rotate(45deg); }
 
-          .jae-crest-seal-stop-light  { stop-color: hsl(var(--hub-electric-glow)); }
-          .jae-crest-seal-stop-mid    { stop-color: hsl(217, 60%, 25%); }
-          .jae-crest-seal-stop-dark   { stop-color: hsl(228, 30%, 8%); }
+          .jae-crest-seal-stop-light  { stop-color: hsl(217, 95%, 42%); }
+          .jae-crest-seal-stop-mid    { stop-color: hsl(220, 70%, 18%); }
+          .jae-crest-seal-stop-dark   { stop-color: hsl(228, 50%, 7%); }
 
           .jae-crest-ring-outer {
             fill: none;
             stroke: hsl(var(--hub-cyan));
-            stroke-opacity: 0.55;
-            stroke-width: 1;
+            stroke-opacity: 0.85;
+            stroke-width: 1.25;
           }
           .jae-crest-ring-inner {
             fill: none;
             stroke: hsl(var(--hub-cyan));
-            stroke-opacity: 0.3;
-            stroke-width: 0.5;
+            stroke-opacity: 0.5;
+            stroke-width: 0.6;
           }
 
-          .jae-crest-text-monogram { fill: hsl(0 0% 100%); }
+          .jae-crest-text-monogram {
+            fill: hsl(0 0% 100%);
+            fill-opacity: 0.96;
+          }
           .jae-crest-text-subtitle {
             fill: hsl(var(--hub-cyan));
-            fill-opacity: 0.85;
+            fill-opacity: 0.95;
           }
           .jae-crest-text-engraved {
             fill: hsl(var(--hub-cyan));
