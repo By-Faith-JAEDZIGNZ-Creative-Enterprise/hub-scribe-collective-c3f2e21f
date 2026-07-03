@@ -7,9 +7,10 @@ interface JaeCrestProps {
 }
 
 /**
- * JAE Royal Crest — circular rotating badge for By Faith JAEDZIGNZ Creative Enterprise.
- * Renders an inline SVG so the hover animations and oklch gradients ship without
- * an extra network request.
+ * JAE Royal Crest — circular badge for By Faith JAEDZIGNZ Creative Enterprise.
+ * Colors are pulled from the site palette so the crest blends with the
+ * Hattiesburg Hub brand (electric blue, cyan, deep navy) and adapts to the
+ * light/dark theme.
  */
 const JaeCrest = ({ size = 96, className, href }: JaeCrestProps) => {
   const svg = (
@@ -28,11 +29,40 @@ const JaeCrest = ({ size = 96, className, href }: JaeCrestProps) => {
           .jae-crest-ring { transition: transform 1s ease; transform-origin: 110px 110px; }
           svg:hover .jae-crest { transform: rotate(12deg); }
           svg:hover .jae-crest-ring { transform: rotate(45deg); }
+
+          .jae-crest-seal-stop-light  { stop-color: hsl(217, 95%, 42%); }
+          .jae-crest-seal-stop-mid    { stop-color: hsl(220, 70%, 18%); }
+          .jae-crest-seal-stop-dark   { stop-color: hsl(228, 50%, 7%); }
+
+          .jae-crest-ring-outer {
+            fill: none;
+            stroke: hsl(var(--hub-cyan));
+            stroke-opacity: 0.85;
+            stroke-width: 1.25;
+          }
+          .jae-crest-ring-inner {
+            fill: none;
+            stroke: hsl(var(--hub-cyan));
+            stroke-opacity: 0.5;
+            stroke-width: 0.6;
+          }
+
+          .jae-crest-text-monogram {
+            fill: hsl(0 0% 100%);
+            fill-opacity: 0.96;
+          }
+          .jae-crest-text-subtitle {
+            fill: hsl(var(--hub-cyan));
+            fill-opacity: 0.95;
+          }
+          .jae-crest-text-engraved {
+            fill: hsl(var(--hub-cyan));
+          }
         `}</style>
         <radialGradient id="jae-crest-seal" cx="35%" cy="30%">
-          <stop offset="0%" stopColor="oklch(0.55 0.22 25)" />
-          <stop offset="55%" stopColor="oklch(0.32 0.18 20)" />
-          <stop offset="100%" stopColor="oklch(0.16 0.09 20)" />
+          <stop offset="0%" className="jae-crest-seal-stop-light" />
+          <stop offset="55%" className="jae-crest-seal-stop-mid" />
+          <stop offset="100%" className="jae-crest-seal-stop-dark" />
         </radialGradient>
         <path
           id="jae-crest-path"
@@ -79,28 +109,14 @@ const JaeCrest = ({ size = 96, className, href }: JaeCrestProps) => {
         </g>
 
         <circle cx="110" cy="110" r={98} fill="url(#jae-crest-seal)" />
-        <circle
-          cx="110"
-          cy="110"
-          r={88}
-          fill="none"
-          stroke="oklch(0.85 0.14 88 / 0.55)"
-          strokeWidth={1}
-        />
-        <circle
-          cx="110"
-          cy="110"
-          r={70}
-          fill="none"
-          stroke="oklch(0.85 0.14 88 / 0.3)"
-          strokeWidth={0.5}
-        />
+        <circle cx="110" cy="110" r={88} className="jae-crest-ring-outer" />
+        <circle cx="110" cy="110" r={70} className="jae-crest-ring-inner" />
 
         <g className="jae-crest-ring">
           <text
             fontSize={11}
             letterSpacing={3}
-            fill="oklch(0.92 0.12 88)"
+            className="jae-crest-text-engraved"
             fontFamily="Cinzel, serif"
             fontWeight={700}
           >
@@ -117,7 +133,7 @@ const JaeCrest = ({ size = 96, className, href }: JaeCrestProps) => {
           fontSize={46}
           fontFamily="Cinzel, serif"
           fontWeight={900}
-          fill="oklch(0.92 0.12 88)"
+          className="jae-crest-text-monogram"
         >
           JAE
         </text>
@@ -128,7 +144,7 @@ const JaeCrest = ({ size = 96, className, href }: JaeCrestProps) => {
           fontSize={8}
           letterSpacing={4}
           fontFamily="Cinzel, serif"
-          fill="oklch(0.85 0.14 88 / 0.8)"
+          className="jae-crest-text-subtitle"
         >
           BY FAITH
         </text>

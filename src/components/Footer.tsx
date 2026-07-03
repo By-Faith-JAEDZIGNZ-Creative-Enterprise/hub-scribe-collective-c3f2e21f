@@ -122,7 +122,7 @@ const Footer = () => {
             <JaeCrest
               size={88}
               href="https://byfaithjaedzignzcreative.net/"
-              className="relative drop-shadow-[0_4px_24px_oklch(0.32_0.18_20/0.35)]"
+              className="relative drop-shadow-[0_4px_24px_hsl(217_91%_50%_/_0.35)]"
             />
           </div>
           <p className="text-muted-foreground/70 text-[11px] font-body tracking-wide text-center">
