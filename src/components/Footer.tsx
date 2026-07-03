@@ -3,6 +3,7 @@ import { categories } from "@/data/stories";
 import { ArrowUpRight, Mail } from "lucide-react";
 import logoFull from "@/assets/logo-full.png";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import JaeCrest from "@/components/JaeCrest";
 
 const Footer = () => {
   return (
