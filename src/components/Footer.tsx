@@ -114,12 +114,18 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-border/10 py-6 flex flex-col items-center justify-center gap-2">
-          <p className="text-hub-text-dim text-[11px] font-body">
-            © 2026 Hattiesburg Hub. All rights reserved.
-          </p>
-          <p className="text-muted-foreground/70 text-[11px] font-body tracking-wide">
+        {/* Design Credit — JAE crest */}
+        <div className="border-t border-border/10 py-8 flex flex-col items-center justify-center gap-3">
+          <div className="relative">
+            {/* Soft glow behind crest */}
+            <div className="absolute inset-0 -m-6 bg-primary/[0.06] rounded-full blur-2xl pointer-events-none" />
+            <JaeCrest
+              size={88}
+              href="https://byfaithjaedzignzcreative.net/"
+              className="relative drop-shadow-[0_4px_24px_oklch(0.32_0.18_20/0.35)]"
+            />
+          </div>
+          <p className="text-muted-foreground/70 text-[11px] font-body tracking-wide text-center">
             Designed by{" "}
             <a
               href="https://byfaithjaedzignzcreative.net/"
@@ -129,6 +135,9 @@ const Footer = () => {
             >
               By Faith JAEDZIGNZ Creative Enterprise
             </a>
+          </p>
+          <p className="text-hub-text-dim text-[11px] font-body">
+            © 2026 Hattiesburg Hub. All rights reserved.
           </p>
           <p className="text-hub-text-dim/50 text-[10px] font-body tracking-wide">
             Made with ♥ in the Hub City
