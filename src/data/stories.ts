@@ -27,6 +27,49 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "223",
+    title: "Hattiesburg Hits a Home Run: Junior Boys World Series Coming to the Hub City in 2027",
+    excerpt: "Hundreds of young baseball players and thousands of fans will converge on Jaycee Park in 2027 as Hattiesburg was selected to host the Junior Boys World Series — a major event expected to pour millions into the local economy.",
+    category: "sports",
+    author: "Hattiesburg Hub Staff",
+    date: "July 18, 2026",
+    image: "/story-hattiesburg-parks-tournament-4.jpg",
+    images: [
+      "/story-hattiesburg-parks-tournament-4.jpg",
+      "/story-hattiesburg-parks-tournament-5.jpg",
+      "/story-hattiesburg-parks-tournament-1.jpg",
+      "/story-hattiesburg-parks-tournament-2.jpg",
+      "/story-hattiesburg-parks-tournament-3.jpg",
+    ],
+    slug: "hattiesburg-junior-boys-world-series-2027",
+    featured: true,
+    original: true,
+    photoCredit: "All images are from the City of Hattiesburg.",
+    content: `Hundreds of young baseball players and thousands of fans will converge on Jaycee Park as Hattiesburg brings another major sporting event to the Hub City.
+
+Hattiesburg was selected to host the 2027 Junior Boys World Series, which brings 13- and 14-year-old players from a dozen states. The games are expected to pour millions into the local economy as visitors emanate from the park and visit Hattiesburg businesses.
+
+"Baseball is part of Hattiesburg's identity, and this selection reflects both the strength of that tradition and the investments we continue to make in facilities for our young athletes," said Mayor Toby Barker. "We look forward to welcoming players and families from across the southeast and giving them a world series experience that reflects the hospitality, energy and community spirit of Hattiesburg."
+
+The announcement was a highlight of the city's Parks and Recreation Week July 13-17. The days included several activities to spotlight greenspaces and amenities throughout the city. The week featured new playground equipment, community events and live music.
+
+The Junior Boys World Series is another effort to solidify Hattiesburg's position as a hub for sports and family recreation and showcase its historic moniker of "Baseburg."
+
+"This event will not only generate meaningful economic impact for our hotels, restaurants and local businesses, but it will also help position Hattiesburg for future tournaments, expanded partnerships and continued investment in our sports facilities," said Marlo Dorsey, executive director and CEO of VisitHATTIESBURG.
+
+Jaycee Park reopened after major renovations in 2023 that were paid from Hattiesburg's 1% sales tax fund. City leaders said results of the investment are already evident with a high-quality space for local athletes that is also attractive to large-scale regional and national events.
+
+The announcement of the games comes at the same time that city planners envision increasing Hattiesburg's sports dominance even further. "Hattiesburg 150 & Beyond," the city's draft comprehensive plan, includes an initiative to bring a minor league baseball team to town within the next 10 to 15 years.
+
+This year's national theme of Parks and Recreation Week is "The Power Of." Working within that theme, activities in Hattiesburg were designed to highlight how parks and recreation amenities connect communities.
+
+"Parks and recreation helps shape how people experience their community," Mayor Barker said. "It gives children places to grow, families places to gather and residents of every age opportunities to connect."
+
+The city and residents in recent days also highlighted new playground improvements at Eastside Park, Jaycee Park and Oseola McCarty Park with a ribbon-cutting ceremony at Eastside.
+
+"These improvements strengthen the neighborhood parks that families rely on throughout Hattiesburg," said Betsy Mercier, parks and recreation director. "The Eastside community build was a special part of this project, and we are thankful for everyone who volunteered their time to help make this new playground possible."`,
+  },
+  {
     id: "217",
     title: "Hattiesburg Athletic Leaders to Receive Top Coach of the Year Honors",
     excerpt: "After guiding their students to numerous sports championships, Hattiesburg Athletic Director Jermaine Brown and head track & field coach Charles Green will be honored by the Mississippi Association of Coaches.",
