@@ -27,6 +27,49 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "224",
+    title: "'A New Beginning': Hattiesburg Residents Celebrate the Opening of New Neighborhood Community Center",
+    excerpt: "What began as a suggestion during a town hall meeting eight years ago is now a reality with the opening of the $1.2 million Katie John Dabbs Community Center on Dabbs Street.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "July 20, 2026",
+    image: "/story-dabbs-center-ribbon-cutting.jpg",
+    images: [
+      "/story-dabbs-center-ribbon-cutting.jpg",
+      "/story-dabbs-center-barker.jpg",
+      "/story-dabbs-center-green.jpg",
+    ],
+    slug: "katie-john-dabbs-community-center-opens",
+    featured: true,
+    original: true,
+    photoCredit: "Photos courtesy of the City of Hattiesburg. Ribbon cutting at the new Katie John Dabbs Community Center; Mayor Toby Barker addresses the crowd; Robert Green, executive director of the Katie John Dabbs Street Neighborhood Association, speaks during the celebration. Dequandra Johnson, Hattiesburg community development division manager, also spoke at the event.",
+    content: `What began as a suggestion during a town hall meeting eight years ago is now a reality with the opening of a long-awaited community center.
+
+Hattiesburg residents joined with city, state and federal representatives to open the doors of the new Katie John Dabbs Community Center.
+
+"It's a new beginning for this community," said Robert Green, executive director of the Katie John Dabbs Street Neighborhood Association. "It's a new opportunity, new services and unity that can happen in this community through this community center."
+
+The $1.2 million initiative transformed the former Pathway Christian Fellowship Church building into a public amenity. The church congregation moved to a new facility in 2021. The city then bought the building to repurpose it for community use.
+
+"This project represents the kind of meaningful investment that strengthens neighborhoods and creates spaces where people can come together," Mayor Toby Barker said during the July 15 celebration. "By giving this building a new purpose, we have preserved an important community asset while creating new opportunities for connection, programming and service."
+
+Officials said the building at 1102 Dabbs Street will serve residents of the surrounding neighborhood and the broader Hattiesburg community.
+
+Barker and others described a vision for the building as a gathering place for seniors, children and families.
+
+"A community center is far more than a building. It is the heartbeat of a neighborhood," the mayor said. "Children will discover new opportunities. Seniors will pass along wisdom, and future leaders will find mentors who challenge them to dream bigger and serve others."
+
+Barker said the project involved a "creative stacking" of federal, state and local funds.
+
+The bulk of funding for the project came through a $950,000 federal Community Development Block Grant. An additional $250,000 was provided through state funding secured in 2022 by State Sen. Juan Barnett and State Rep. Percy Watson.
+
+"You all expressed a need for a community center, not just anywhere, but right here in this neighborhood," said Dequandra Johnson, the city's community development division manager.
+
+Johnson recalled her childhood in Hattiesburg and the various activities that were offered in community gathering places.
+
+"That spirit remains alive today through the many programs and activities offered by our Parks and Recreation Department," she said. "It is my hope that the Katie John Dabbs Community Center becomes that same kind of place for this neighborhood."`,
+  },
+  {
     id: "223",
     title: "Hattiesburg Hits a Home Run: Junior Boys World Series Coming to the Hub City in 2027",
     excerpt: "Hundreds of young baseball players and thousands of fans will converge on Jaycee Park in 2027 as Hattiesburg was selected to host the Junior Boys World Series — a major event expected to pour millions into the local economy.",
