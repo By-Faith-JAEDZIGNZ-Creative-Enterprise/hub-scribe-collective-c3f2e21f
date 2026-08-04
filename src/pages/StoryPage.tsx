@@ -97,6 +97,7 @@ const StoryPage = () => {
 
   const contentParagraphs = (story.content || story.excerpt).split("\n\n");
   const midPoint = Math.ceil(contentParagraphs.length / 3);
+  const credit = formatPhotoCredit(story);
 
   return (
     <div className="min-h-screen bg-background">
@@ -163,7 +164,14 @@ const StoryPage = () => {
 
             {/* Photo Gallery inserted mid-article */}
             {story.images && story.images.length > 1 && (
-              <PhotoGallery images={story.images} title={story.title} photoCredit={story.photoCredit} />
+              <PhotoGallery images={story.images} title={story.title} credit={credit} />
+            )}
+
+            {/* Single-image credit */}
+            {(!story.images || story.images.length <= 1) && credit && (
+              <p className="mt-4 text-xs text-muted-foreground font-body italic leading-relaxed">
+                📷 {credit}
+              </p>
             )}
 
             {/* Content - remaining */}
