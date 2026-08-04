@@ -33,6 +33,76 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "225",
+    title: "Chronicling a Legacy: New Biography Details the Life and Impact of Hattiesburg Philanthropist Oseola McCarty",
+    excerpt: "More than 30 years after a Hattiesburg washerwoman stunned the world by donating $150,000 in scholarships, a new biography from the University Press of Mississippi revisits Oseola McCarty's quiet generosity and enduring legacy.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "August 4, 2026",
+    image: "/story-oseola-mccarty-book-cover.jpg",
+    slug: "oseola-mccarty-gift-of-a-lifetime-biography",
+    featured: true,
+    original: true,
+    photoCaption: "Cover of \"Oseola McCarty and the Gift of a Lifetime\" by Philip D. Hearn and David Gerald Tisdale",
+    photoSource: "University Press of Mississippi",
+    photoLicense: "Used with permission",
+    content: `It has been more than 30 years since a quiet, elderly woman inspired millions with her donation to provide a college education for deserving students.
+
+An upcoming biography on Oseola McCarty will remind some of her generosity while introducing her to many others.
+
+McCarty, who earned a living washing laundry by hand, silently saved and invested her modest income. When she was 87 years old, McCarty donated $150,000 in scholarships for rising students at the University of Southern Mississippi.
+
+"Oseola McCarty and the Gift of a Lifetime" was written by Philip D. Hearn and David G. Tisdale. The book from the University Press of Mississippi will be released in February and is already available for pre-order.
+
+"It's amazing her story still resonates today after three decades," said David Tisdale, who is senior writer in the Southern Miss Office of University Communications.
+
+The book was the concept of Phil Hearn, who was an associate director for news and research writer for the Office of University Relations at the University of Southern Mississippi.
+
+Tisdale took over the project when Hearn became ill and continued the book after Hearn's death in 2024. Before his passing, he requested that Tisdale complete the book.
+
+"It was a bittersweet honor," Tisdale said of Hearn, his friend and former colleague. "I was honored he would ask me to wrap it up."
+
+McCarty made headlines and inspired the world with her surprise gift given her simple lifestyle and small earnings.
+
+While the school was close to her own house, for McCarty attending Southern Miss in her youth was only a pleasant dream that was denied both by the era in which she lived in Mississippi and by her own life's commitments.
+
+Ronnie Agnew was managing editor of The Hattiesburg American when a news release about McCarty's donation came to the newsroom through a Southern Miss press release. It was written by former university PR writer Sharon Wertz.
+
+It was on a weekend and Agnew knew the story was special and needed to go out. He called Wertz on a Saturday with excitement about the contents in the news release.
+
+"The Oseola McCarty story remains one of my favorites," said Agnew, who soon wrote a version of the story for The American. After the newspaper published the university's news release, news of McCarty's gift quickly spread throughout the region, then the country, and eventually the world.
+
+Rick Bragg, then a reporter for the New York Times, won a Pulitzer Prize in part for his version of McCarty's story.
+
+"Ms. McCarty was a remarkable woman but was much too humble to realize the significance, both monetary and symbolic, of the funds she amassed and selflessly designated for scholarships," Agnew said. "She never gave it a second's thought. In her view, it was the right thing to do."
+
+The Oseola McCarty Scholarship Endowment has benefited more than 140 students at Southern Miss. The endowment reached a milestone by reaching $1 million in 2025.
+
+The new book discusses McCarty's life, the history of Southern Miss, and also looks forward 30 years at her legacy.
+
+"My hope is for the book to bring renewed attention to the incredible gift she made and continued support for that scholarship fund," Tisdale said. "It is really an honor for me to be a part of this project."
+
+Stephanie Bullock Ferguson was the first Oseola McCarty Scholar. Ferguson got to know McCarty well as she traveled with her to promote the scholarship and share her story.
+
+"After I met her, she was a complete angel, one of the sweetest people I had ever met," Ferguson told the Hattiesburg Hub in an earlier story about McCarty's house becoming a museum. "She just became like another grandmother to me."
+
+Tisdale also met McCarty and joined other university staff members during visits to her home.
+
+Tisdale said McCarty, who left school early in life to help take care of an ill relative, dreamed of becoming a nurse. The woman who washed clothes for a living admired the white uniforms of the healthcare workers.
+
+Years later, McCarty's generosity has helped others achieve their educational and career goals, including a recent student who majored in nursing, Tisdale said.
+
+"That dream lives on in the students who benefited from her gift," he said. "Just the power of that gift, that even though she didn't get to do the things that she dreamed about, she helped someone else for it and that's an incredible testament to her."
+
+McCarty's collection of honors included the Presidential Citizens Medal, which was awarded by President Bill Clinton during a White House ceremony. The honor is the second-highest civilian award in the United States.
+
+McCarty also carried the 1996 Olympic Torch and pressed the switch to drop the New Year's Ball in Times Square.
+
+Still the honors didn't change her. McCarty only bought an air conditioner to make it more comfortable for the growing number of visitors to her home following word of her donation.
+
+"I just hope people will take the lesson of generosity and thinking about others and maybe at least emulate a little bit of her example," Tisdale said. "I think we would have a better world if we just looked to her as an example of how we should carry ourselves."`,
+  },
+  {
     id: "224",
     title: "'A New Beginning': Hattiesburg Residents Celebrate the Opening of New Neighborhood Community Center",
     excerpt: "What began as a suggestion during a town hall meeting eight years ago is now a reality with the opening of the $1.2 million Katie John Dabbs Community Center on Dabbs Street.",
