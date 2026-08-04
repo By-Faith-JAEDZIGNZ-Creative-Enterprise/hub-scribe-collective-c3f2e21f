@@ -6,6 +6,7 @@ import StoryCard from "@/components/StoryCard";
 import { stories } from "@/data/stories";
 import { ArrowLeft, Clock, User, ChevronLeft, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import { formatPhotoCredit } from "@/utils/photoCredit";
 
 const categoryColors: Record<string, string> = {
   community: "bg-primary/15 text-primary",
@@ -15,7 +16,7 @@ const categoryColors: Record<string, string> = {
   opinion: "bg-muted text-muted-foreground",
 };
 
-const PhotoGallery = ({ images, title, photoCredit }: { images: string[]; title: string; photoCredit?: string }) => {
+const PhotoGallery = ({ images, title, credit }: { images: string[]; title: string; credit?: string | null }) => {
   const [current, setCurrent] = useState(0);
 
   if (images.length <= 1) return null;
@@ -71,9 +72,9 @@ const PhotoGallery = ({ images, title, photoCredit }: { images: string[]; title:
       </div>
 
       {/* Photo Credit */}
-      {photoCredit && (
+      {credit && (
         <p className="mt-3 text-xs text-muted-foreground font-body italic leading-relaxed">
-          📷 {photoCredit}
+          📷 {credit}
         </p>
       )}
     </div>
@@ -96,6 +97,7 @@ const StoryPage = () => {
 
   const contentParagraphs = (story.content || story.excerpt).split("\n\n");
   const midPoint = Math.ceil(contentParagraphs.length / 3);
+  const credit = formatPhotoCredit(story);
 
   return (
     <div className="min-h-screen bg-background">
@@ -162,7 +164,14 @@ const StoryPage = () => {
 
             {/* Photo Gallery inserted mid-article */}
             {story.images && story.images.length > 1 && (
-              <PhotoGallery images={story.images} title={story.title} photoCredit={story.photoCredit} />
+              <PhotoGallery images={story.images} title={story.title} credit={credit} />
+            )}
+
+            {/* Single-image credit */}
+            {(!story.images || story.images.length <= 1) && credit && (
+              <p className="mt-4 text-xs text-muted-foreground font-body italic leading-relaxed">
+                📷 {credit}
+              </p>
             )}
 
             {/* Content - remaining */}
