@@ -13,7 +13,13 @@ export interface Story {
   external?: boolean;
   externalUrl?: string;
   original?: boolean;
+  /** Legacy free-form credit line (still supported) */
   photoCredit?: string;
+  /** Structured attribution fields — preferred */
+  photographer?: string;
+  photoSource?: string;
+  photoCaption?: string;
+  photoLicense?: string;
 }
 
 export const categories = [
