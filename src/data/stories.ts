@@ -33,6 +33,63 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "226",
+    title: "History Alive: Southern Miss Professor Voices Netflix Series Showcasing America's Founding",
+    excerpt: "Andrew Wiest, a University of Southern Mississippi distinguished professor of history, lends his voice to \"The American Experiment,\" a five-part Netflix series from Tom Hanks' Playtone marking the nation's 250th anniversary.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "August 13, 2026",
+    image: "/story-american-experiment-key-art.jpg",
+    images: [
+      "/story-american-experiment-key-art.jpg",
+      "/story-andrew-wiest-portrait.jpg",
+    ],
+    slug: "andrew-wiest-netflix-american-experiment",
+    featured: true,
+    original: true,
+    photoCaption: "Key art for \"The American Experiment\" and Andrew Wiest, distinguished professor of history at the University of Southern Mississippi",
+    photoSource: "Netflix Media Center and the University of Southern Mississippi",
+    photoLicense: "Used for editorial purposes",
+    content: `A Hattiesburg historian is using his voice to bring America's history to life in a new documentary series marking the nation's 250th anniversary.
+
+Andrew Wiest, University of Southern Mississippi distinguished professor of history, is a featured voice in "The American Experiment," a series on Netflix. The series tells the story of America's founding.
+
+"It was a true honor to stand in as the voice for such important people and pieces of our history that would be seen by such a wide audience," he said. "The 250th anniversary of our country is a supremely important event, and it's humbling to look back on where we came from."
+
+Wiest was given about seven pages of dialogue from the Declaration of Independence, the Constitution and the words of several historic figures read.
+
+The series was produced by Playtone, a production company founded by actor Tom Hanks.
+
+The Playtone team, including Sarah Huisenga of Luminant Media, one of the series' lead producers, directed him on how to add emphasis and feeling to the voiceovers.
+
+"You would think reading a few lines from the Declaration of Independence would be easy," Wiest said. "Well, I can tell you that it wasn't."
+
+Wiest joined a notable cast in the five-part series that includes American political figures, a former first lady, two former vice presidents and a U.S. senator.
+
+Actor Martin Sheen is cast as the voice of George Washington. Sheen has plenty of practice portraying a president. He played the fictional president Josiah "Jed" Bartlet on The West Wing television series, which aired on NBC from 1999 to 2006.
+
+Wiest recorded his segments on the Southern Miss campus at the Center for Oral History and Cultural Heritage.
+
+The entire process was designed to bring history back to life and immerse viewers in pivotal moments of America's founding.
+
+"We really need to know the history and intent of that time to understand the challenges we are facing to keep democracy alive and well in the modern world," Wiest said.
+
+Film producers said they wanted strong historical experts as voices in the film.
+
+Wiest is founding director of the Dale Center for the Study of War and Society at Southern Miss. He is also co-founder of the Southern Miss Center for the Study of the National Guard.
+
+Wiest has previously been involved in historic productions.
+
+His book "The Boys of '67" about the Vietnam War inspired the National Geographic documentary "Brothers in War." Wiest served as lead historian for the film, which was nominated for an Emmy.
+
+Wiest was also chief historical consultant for the documentary "Vietnam in HD," which won the New York Film Festival's Gold World Medal.
+
+Chris Winstead, dean of the College of Arts and Sciences, praised Wiest for his success in presenting history to a wider audience.
+
+"To have his voice in a series produced by some of the biggest names in historical documentary filmmaking is just further evidence that Dr. Wiest continues setting the bar not only in his scholarship, but in his ability to engage the public in history," Winstead said.`,
+  },
+  {
+
     id: "225",
     title: "Chronicling a Legacy: New Biography Details the Life and Impact of Hattiesburg Philanthropist Oseola McCarty",
     excerpt: "More than 30 years after a Hattiesburg washerwoman stunned the world by donating $150,000 in scholarships, a new biography from the University Press of Mississippi revisits Oseola McCarty's quiet generosity and enduring legacy.",
