@@ -16,10 +16,25 @@ const categoryColors: Record<string, string> = {
   opinion: "bg-muted text-muted-foreground",
 };
 
-const PhotoGallery = ({ images, title, credit }: { images: string[]; title: string; credit?: string | null }) => {
+const PhotoGallery = ({
+  images,
+  title,
+  credit,
+  alts = [],
+  captions = [],
+}: {
+  images: string[];
+  title: string;
+  credit?: string | null;
+  alts?: string[];
+  captions?: string[];
+}) => {
   const [current, setCurrent] = useState(0);
 
   if (images.length <= 1) return null;
+
+  const altFor = (i: number) => alts[i]?.trim() || captions[i]?.trim() || `${title} — photo ${i + 1} of ${images.length}`;
+  const captionFor = (i: number) => captions[i]?.trim();
 
   return (
     <div className="my-10">
@@ -29,32 +44,43 @@ const PhotoGallery = ({ images, title, credit }: { images: string[]; title: stri
       </div>
 
       {/* Main image */}
-      <div className="relative rounded-lg overflow-hidden bg-hub-deep">
-        <img
-          src={images[current]}
-          alt={`${title} - Photo ${current + 1}`}
-          className="w-full max-h-[500px] object-contain mx-auto"
-        />
-        {images.length > 1 && (
-          <>
-            <button
-              onClick={() => setCurrent((c) => (c - 1 + images.length) % images.length)}
-              className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 backdrop-blur flex items-center justify-center text-foreground hover:bg-background transition-colors"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => setCurrent((c) => (c + 1) % images.length)}
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 backdrop-blur flex items-center justify-center text-foreground hover:bg-background transition-colors"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-background/80 backdrop-blur px-3 py-1 rounded-full text-xs text-foreground font-body">
-              {current + 1} / {images.length}
-            </div>
-          </>
+      <figure className="m-0">
+        <div className="relative rounded-lg overflow-hidden bg-hub-deep">
+          <img
+            src={images[current]}
+            alt={altFor(current)}
+            className="w-full max-h-[500px] object-contain mx-auto"
+          />
+          {images.length > 1 && (
+            <>
+              <button
+                aria-label="Previous photo"
+                onClick={() => setCurrent((c) => (c - 1 + images.length) % images.length)}
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 backdrop-blur flex items-center justify-center text-foreground hover:bg-background transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button
+                aria-label="Next photo"
+                onClick={() => setCurrent((c) => (c + 1) % images.length)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 backdrop-blur flex items-center justify-center text-foreground hover:bg-background transition-colors"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-background/80 backdrop-blur px-3 py-1 rounded-full text-xs text-foreground font-body">
+                {current + 1} / {images.length}
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* Per-image caption */}
+        {captionFor(current) && (
+          <figcaption className="mt-3 text-sm text-foreground/80 font-body leading-relaxed">
+            {captionFor(current)}
+          </figcaption>
         )}
-      </div>
+      </figure>
 
       {/* Thumbnails */}
       <div className="flex gap-2 mt-3 overflow-x-auto pb-2">
@@ -62,11 +88,12 @@ const PhotoGallery = ({ images, title, credit }: { images: string[]; title: stri
           <button
             key={i}
             onClick={() => setCurrent(i)}
+            aria-label={`Show photo ${i + 1}: ${altFor(i)}`}
             className={`w-16 h-16 flex-shrink-0 rounded-md overflow-hidden border-2 transition-all ${
               i === current ? "border-primary opacity-100" : "border-transparent opacity-60 hover:opacity-90"
             }`}
           >
-            <img src={img} alt={`Thumbnail ${i + 1}`} className="w-full h-full object-cover" />
+            <img src={img} alt="" aria-hidden="true" className="w-full h-full object-cover" />
           </button>
         ))}
       </div>
@@ -78,6 +105,7 @@ const PhotoGallery = ({ images, title, credit }: { images: string[]; title: stri
         </p>
       )}
     </div>
+
   );
 };
 
@@ -164,7 +192,13 @@ const StoryPage = () => {
 
             {/* Photo Gallery inserted mid-article */}
             {story.images && story.images.length > 1 && (
-              <PhotoGallery images={story.images} title={story.title} credit={credit} />
+              <PhotoGallery
+                images={story.images}
+                title={story.title}
+                credit={credit}
+                alts={story.imageAlts}
+                captions={story.imageCaptions}
+              />
             )}
 
             {/* Single-image credit */}

@@ -7,6 +7,10 @@ export interface Story {
   date: string;
   image: string;
   images?: string[];
+  /** Descriptive alt text per gallery image (same order as `images`) */
+  imageAlts?: string[];
+  /** Caption shown under each gallery image (same order as `images`) */
+  imageCaptions?: string[];
   slug: string;
   content?: string;
   featured?: boolean;
@@ -48,6 +52,24 @@ export const stories: Story[] = [
       "/story-american-experiment-still-3.jpg",
       "/story-american-experiment-still-4.jpg",
       "/story-american-experiment-still-5.jpg",
+    ],
+    imageAlts: [
+      "Key art for the Netflix documentary series \"The American Experiment\"",
+      "Andrew Wiest, distinguished professor of history at the University of Southern Mississippi",
+      "Reenactors in Revolutionary War uniforms firing muskets at night, muzzle flashes and smoke lighting the dark sky",
+      "A Black Continental soldier in a tricorn hat stands with a musket at a Revolutionary War encampment of white canvas tents",
+      "Black-and-white archival photo of U.S. Marines in campaign hats advancing behind the American flag and a Marine Corps standard",
+      "Former Vice President Mike Pence speaking during an on-camera interview for the series",
+      "Painted portrait of Thomas Jefferson seated, Alexander Hamilton standing between them, and George Washington seated opposite",
+    ],
+    imageCaptions: [
+      "Key art for \"The American Experiment,\" the five-part Netflix series produced by Playtone. Courtesy of Netflix Media Center. Used for editorial purposes.",
+      "Andrew Wiest, distinguished professor of history at Southern Miss, recorded his segments at the Center for Oral History and Cultural Heritage. Courtesy of the University of Southern Mississippi. Used for editorial purposes.",
+      "Episode 1: Revolutionary War reenactors fire a volley at night. Courtesy of Netflix Media Center. Used for editorial purposes.",
+      "Episode 3: A Continental soldier at a wartime encampment. Courtesy of Netflix Media Center. Used for editorial purposes.",
+      "Episode 4: Archival imagery of U.S. Marines on parade. Courtesy of Netflix Media Center. Used for editorial purposes.",
+      "Episode 4: Former Vice President Mike Pence, one of several political figures interviewed for the series. Courtesy of Netflix Media Center. Used for editorial purposes.",
+      "Episode 5: A period painting of Thomas Jefferson, Alexander Hamilton and George Washington. Courtesy of Netflix Media Center. Used for editorial purposes.",
     ],
     slug: "andrew-wiest-netflix-american-experiment",
     featured: true,
