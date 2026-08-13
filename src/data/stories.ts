@@ -43,12 +43,17 @@ export const stories: Story[] = [
     images: [
       "/story-american-experiment-key-art.jpg",
       "/story-andrew-wiest-portrait.jpg",
+      "/story-american-experiment-still-1.jpg",
+      "/story-american-experiment-still-2.jpg",
+      "/story-american-experiment-still-3.jpg",
+      "/story-american-experiment-still-4.jpg",
+      "/story-american-experiment-still-5.jpg",
     ],
     slug: "andrew-wiest-netflix-american-experiment",
     featured: true,
     original: true,
-    photoCaption: "Key art for \"The American Experiment\" and Andrew Wiest, distinguished professor of history at the University of Southern Mississippi",
-    photoSource: "Netflix Media Center and the University of Southern Mississippi",
+    photoCaption: "Key art and episodic stills from \"The American Experiment,\" plus Andrew Wiest, distinguished professor of history at the University of Southern Mississippi",
+    photoSource: "Netflix Media Center (assetshare.netflixstudios.com) and the University of Southern Mississippi",
     photoLicense: "Used for editorial purposes",
     content: `A Hattiesburg historian is using his voice to bring America's history to life in a new documentary series marking the nation's 250th anniversary.
 
