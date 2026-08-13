@@ -7,6 +7,10 @@ export interface Story {
   date: string;
   image: string;
   images?: string[];
+  /** Descriptive alt text per gallery image (same order as `images`) */
+  imageAlts?: string[];
+  /** Caption shown under each gallery image (same order as `images`) */
+  imageCaptions?: string[];
   slug: string;
   content?: string;
   featured?: boolean;
