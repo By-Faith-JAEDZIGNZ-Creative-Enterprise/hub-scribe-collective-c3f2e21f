@@ -192,7 +192,13 @@ const StoryPage = () => {
 
             {/* Photo Gallery inserted mid-article */}
             {story.images && story.images.length > 1 && (
-              <PhotoGallery images={story.images} title={story.title} credit={credit} />
+              <PhotoGallery
+                images={story.images}
+                title={story.title}
+                credit={credit}
+                alts={story.imageAlts}
+                captions={story.imageCaptions}
+              />
             )}
 
             {/* Single-image credit */}
