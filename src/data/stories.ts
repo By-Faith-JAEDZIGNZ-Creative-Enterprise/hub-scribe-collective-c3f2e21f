@@ -37,6 +37,47 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "227",
+    title: "London Calling: William Carey Students Immerse Themselves in Music and Culture",
+    excerpt: "Members of the Carey Chorale traded Hattiesburg for England this summer, performing in Canterbury Cathedral, Rochester Cathedral and Trinity College Chapel at Cambridge University.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "August 17, 2026",
+    image: "/story-carey-chorale-london.jpg",
+    slug: "william-carey-chorale-london-tour",
+    featured: true,
+    original: true,
+    photoCaption: "A university choral ensemble performs inside a historic English cathedral, illustrating the Carey Chorale's summer tour of London-area churches",
+    photoSource: "Hattiesburg Hub",
+    photoLicense: "Illustrative image",
+    content: `With the campus open and classes back in session, a select group of students is returning to William Carey University with stories of global travel, music and cultural exchange.
+
+Earlier this summer, William Carey University voice students spent a week participating in workshops and performances at some of England's most well-known historic cathedrals and churches in London and surrounding areas.
+
+Members of the Carey Chorale left Hattiesburg to London where they toured and performed at Canterbury Cathedral, Holy Trinity Church, Rochester Cathedral and Trinity College Chapel at Cambridge University.
+
+"Each church was breathtaking. Walking through them felt like stepping back into history," said Lauren McElhenny, a member of the Carey Chorale. "I have never felt in such perfect sync and harmony with any choir. At our first concert, one of our directors put the experience in perspective when he said, 'Today your voices joined the voices of others who have sung praises to God for hundreds of years, and they will echo in these halls forever.'"
+
+The Carey Chorale is the auditioned choral ensemble at the university. The ensemble throughout the year presents concerts and performs in schools and churches.
+
+The trip was organized by Joel Dunlap, chair of choral activities and performance, and Brian Murphy, coordinator of piano studies. Murphy also performed in the concerts.
+
+"We've talked about giving the Carey Chorale an experience like this, and it was great to see it happen," Dunlap said.
+
+Several members of the Meistersingers of Mississippi, a Hattiesburg-based civic chorus, also traveled with the students.
+
+The university collaborated with Vox Anima of London, a company specializing in providing performance and educational opportunities for visiting choirs. The tour included a master class with Neil Ferris, director of the famed BBC Symphony Chorus, a midday recital, and two performances with the Gesualdo Six, a group considered among the world's leading small vocal ensembles.
+
+The weeklong cultural experience is one student Isiah Routon will always remember.
+
+"On our first day, we took a short walk from our hotel to see Buckingham Palace, Westminster Abbey, Parliament Square and Big Ben," Routon said. "Our concerts in Rochester Cathedral and Trinity College Chapel will always be among the most surreal experiences of my life. Not only did I sing, I also played the historic 300-year-old organs housed at these churches."
+
+The experience struck a similar chord with student Thomas Roper.
+
+"I decided to go because I wanted to immerse myself in a different culture, see places I've only read about, and perform in beautiful and historic spaces," he said. "Each one had unique acoustics, and it was amazing to hear how our sound changed and filled each room. The most important thing I learned is how music can connect people across various cultures and backgrounds."`,
+  },
+  {
+
     id: "226",
     title: "History Alive: Southern Miss Professor Voices Netflix Series Showcasing America's Founding",
     excerpt: "Andrew Wiest, a University of Southern Mississippi distinguished professor of history, lends his voice to \"The American Experiment,\" a five-part Netflix series from Tom Hanks' Playtone marking the nation's 250th anniversary.",
