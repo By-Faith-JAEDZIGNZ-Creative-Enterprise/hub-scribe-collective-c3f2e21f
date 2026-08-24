@@ -14,6 +14,21 @@ export type Database = {
   }
   public: {
     Tables: {
+      newsletter_config: {
+        Row: {
+          key: string
+          value: string
+        }
+        Insert: {
+          key: string
+          value: string
+        }
+        Update: {
+          key?: string
+          value?: string
+        }
+        Relationships: []
+      }
       newsletter_subscribers: {
         Row: {
           email: string
@@ -23,6 +38,7 @@ export type Database = {
           last_name: string | null
           phone_number: string | null
           subscribed_at: string
+          welcome_sent_at: string | null
         }
         Insert: {
           email: string
@@ -32,6 +48,7 @@ export type Database = {
           last_name?: string | null
           phone_number?: string | null
           subscribed_at?: string
+          welcome_sent_at?: string | null
         }
         Update: {
           email?: string
@@ -41,6 +58,7 @@ export type Database = {
           last_name?: string | null
           phone_number?: string | null
           subscribed_at?: string
+          welcome_sent_at?: string | null
         }
         Relationships: []
       }
