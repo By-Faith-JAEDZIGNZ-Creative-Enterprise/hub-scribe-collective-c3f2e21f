@@ -1,0 +1,109 @@
+import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
+import { createClient } from "npm:@supabase/supabase-js@2";
+import { z } from "npm:zod@3";
+import {
+  SITE_URL,
+  fetchLatestStories,
+  sendViaResend,
+  renderDigestEmail,
+  renderAnnouncementEmail,
+} from "../_shared/newsletter-email.ts";
+
+const BodySchema = z.object({
+  mode: z.enum(["digest", "announcement"]).default("digest"),
+  limit: z.number().int().min(1).max(12).default(6),
+});
+
+function json(data: unknown, status = 200): Response {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: { ...corsHeaders, "Content-Type": "application/json" },
+  });
+}
+
+Deno.serve(async (req) => {
+  if (req.method === "OPTIONS") {
+    return new Response("ok", { headers: corsHeaders });
+  }
+  if (req.method !== "POST") {
+    return json({ error: "Method not allowed" }, 405);
+  }
+
+  try {
+    const supabase = createClient(
+      Deno.env.get("SUPABASE_URL") ?? "",
+      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""
+    );
+
+    // Validate cron token against the backend-only config table
+    const token = req.headers.get("x-cron-token") ?? "";
+    const { data: configRow } = await supabase
+      .from("newsletter_config")
+      .select("value")
+      .eq("key", "cron_token")
+      .maybeSingle();
+
+    if (!configRow || !token || token !== configRow.value) {
+      return json({ error: "Unauthorized" }, 401);
+    }
+
+    const parsed = BodySchema.safeParse(await req.json().catch(() => ({})));
+    if (!parsed.success) {
+      return json({ error: parsed.error.flatten().fieldErrors }, 400);
+    }
+    const { mode, limit } = parsed.data;
+
+    const stories = await fetchLatestStories(limit);
+    if (stories.length === 0) {
+      return json({ error: "No stories available from RSS feed" }, 502);
+    }
+
+    const { data: subscribers, error: subError } = await supabase
+      .from("newsletter_subscribers")
+      .select("id, email, first_name")
+      .eq("is_active", true);
+
+    if (subError) {
+      console.error("Subscriber query failed:", subError);
+      return json({ error: "Failed to load subscribers" }, 500);
+    }
+
+    const topTitle = stories[0].title;
+    const subject =
+      mode === "announcement"
+        ? "Introducing the Hub City Digest — Hattiesburg's week, in your inbox"
+        : `Hub City Digest: ${topTitle.length > 60 ? topTitle.slice(0, 57) + "…" : topTitle}`;
+
+    const results: { email: string; ok: boolean; status: number }[] = [];
+
+    for (const sub of subscribers ?? []) {
+      const unsubscribeUrl = `${SITE_URL}/unsubscribe?token=${sub.id}`;
+      const html =
+        mode === "announcement"
+          ? renderAnnouncementEmail({ stories, firstName: sub.first_name, unsubscribeUrl })
+          : renderDigestEmail({ stories, firstName: sub.first_name, unsubscribeUrl });
+
+      const res = await sendViaResend({ to: sub.email, subject, html });
+      results.push({ email: sub.email, ok: res.ok, status: res.status });
+
+      // Small pause between sends to be gentle on the provider
+      await new Promise((r) => setTimeout(r, 300));
+    }
+
+    const sent = results.filter((r) => r.ok).length;
+    const failed = results.filter((r) => !r.ok);
+    console.log(`Newsletter [${mode}] complete: ${sent} sent, ${failed.length} failed`);
+
+    return json({
+      mode,
+      subject,
+      storyCount: stories.length,
+      sent,
+      failed: failed.length,
+      failures: failed,
+    });
+  } catch (err) {
+    console.error("send-weekly-digest error:", err);
+    return json({ error: String(err) }, 500);
+  }
+});
