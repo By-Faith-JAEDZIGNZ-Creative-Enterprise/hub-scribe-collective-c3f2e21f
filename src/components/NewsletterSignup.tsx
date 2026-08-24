@@ -44,18 +44,13 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
       return;
     }
 
+    // Send the in-house welcome email (non-blocking — subscription already saved)
     try {
-      await fetch("https://hooks.zapier.com/hooks/catch/26939793/up0rm3u/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        mode: "no-cors",
-        body: JSON.stringify({
-          email: result.data,
-          first_name: firstName.trim() || undefined,
-        }),
+      await supabase.functions.invoke("newsletter-welcome", {
+        body: { email: result.data },
       });
     } catch (err) {
-      console.error("Zapier webhook error:", err);
+      console.error("Welcome email error:", err);
     }
 
     setLoading(false);

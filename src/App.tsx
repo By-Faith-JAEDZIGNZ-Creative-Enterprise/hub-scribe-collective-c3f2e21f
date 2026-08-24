@@ -8,6 +8,7 @@ import CategoryPage from "./pages/CategoryPage";
 import StoryPage from "./pages/StoryPage";
 import SignupPage from "./pages/SignupPage";
 import EventsPage from "./pages/EventsPage";
+import UnsubscribePage from "./pages/UnsubscribePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/story/:slug" element={<StoryPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/unsubscribe" element={<UnsubscribePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
