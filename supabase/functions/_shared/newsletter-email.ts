@@ -215,3 +215,32 @@ export function renderAnnouncementEmail(params: {
   return shell(content, params.unsubscribeUrl);
 }
 
+export function renderStoryAlertEmail(params: {
+  stories: DigestStory[];
+  firstName: string | null;
+  unsubscribeUrl: string;
+}): string {
+  const greeting = params.firstName ? `Hi ${escapeHtml(params.firstName)},` : "Hi there,";
+  const count = params.stories.length;
+  const heading =
+    count === 1
+      ? `Just published on the <span style="color:${BRAND_BLUE};">Hub</span>`
+      : `${count} new stories on the <span style="color:${BRAND_BLUE};">Hub</span>`;
+  const intro =
+    count === 1
+      ? "Fresh off the press — a brand-new story just went live on Hattiesburg Hub. Here's your first look:"
+      : "Fresh off the press — new stories just went live on Hattiesburg Hub. Here's your first look:";
+  const content = `
+    <p style="margin:0 0 4px;font-family:${FONT_BODY};font-size:14px;color:#111827;">${greeting}</p>
+    <h1 style="margin:0 0 16px;font-family:${FONT_DISPLAY};font-size:26px;font-weight:700;color:#111827;line-height:1.2;">
+      ${heading}
+    </h1>
+    <p style="margin:0 0 24px;font-family:${FONT_BODY};font-size:13px;line-height:1.6;color:#4b5563;">
+      ${intro}
+    </p>
+    ${params.stories.map(storyCard).join("")}
+    ${facebookBlock()}`;
+  return shell(content, params.unsubscribeUrl);
+}
+
+
