@@ -37,6 +37,103 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "229",
+    title: "Envisioning the Possibilities: “Night Off Broadway” to Showcase Future of Historic Hattiesburg Corridor",
+    excerpt: "For one night, an old auto dealership will be transformed into a center of culture and family fun — and a preview of what the entire Broadway Drive corridor could become.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "August 24, 2026",
+    image: "/story-night-off-broadway-hero.jpg",
+    images: [
+      "/story-night-off-broadway-hero.jpg",
+      "/story-night-off-broadway-logo.jpg",
+      "/story-right-down-broadway-plan.png",
+    ],
+    imageAlts: [
+      "Illustrated banner of the “Night Off Broadway” street festival, with the event’s retro roadside sign rising above vendor tents, string lights and families at dusk",
+      "Official “Night Off Broadway” event logo — a retro motel-style sign with an arrow reading “Night Off Broadway” against a maroon street-grid map",
+      "Official logo for “Right Down Broadway: A Master Plan for the Broadway Drive – West Pine Corridor” featuring the plan’s red-and-slate roadside sign mark",
+    ],
+    imageCaptions: [
+      "“Night Off Broadway” takes over the former Courtesy Ford building at 1410 W. Pine Street on Thursday, Aug. 27. Illustration adapted from City of Hattiesburg event artwork.",
+      "The official “Night Off Broadway” event logo. Courtesy of the City of Hattiesburg.",
+      "The official logo for “Right Down Broadway,” the city’s master plan for the Broadway Drive – West Pine corridor. Courtesy of the City of Hattiesburg.",
+    ],
+    slug: "night-off-broadway-corridor-showcase",
+    featured: true,
+    original: true,
+    photoCaption: "Event and master plan artwork for “Night Off Broadway” and “Right Down Broadway”",
+    photoSource: "City of Hattiesburg",
+    photoLicense: "Used with permission; hero banner adapted from city artwork by Hattiesburg Hub",
+    content: `For one night, an old auto dealership will be transformed into a center of culture and family fun and showcase the possibilities for an entire corridor.
+
+On Thursday, Aug. 27 the former Courtesy Ford building at 1410 W. Pine Street will host the city’s “Night Off Broadway!”
+
+The event will feature multiple activities, including carnival games and a pop-up splash pad from the Hattiesburg Fire Department. The evening will also include a community pep rally featuring the Hattiesburg High School band and football team as they begin the next football season.
+
+City leaders touted the night on social media, telling residents to “get ready for a night of community, Tiger pride and possibilities for Broadway.”
+
+Activities are designed to offer a glimpse of what could become of the Hollywood district. Once the heart of the city’s automotive dealerships, the area in recent years has become stagnant and in need of revival.
+
+Much of the district once included motels and drive-thru restaurants, dealerships and a shopping mall. However, the dealerships moved further out of town and changed retail patterns brought increased vacant storefronts.
+
+The city responded in 2024 by creating a “Right Down Broadway” master plan for the district to encourage economic development, improve transportation infrastructure and enhance the quality of life for residents and businesses in the area. The blueprint also identifies opportunities for public open space and parks.
+
+The city council adopted the plan in Jan. 2025, beginning a significant step in redeveloping the corridor.
+
+The Broadway Drive and West Pine Street corridors are critical connections from downtown Hattiesburg to US Highway 49 and Interstate 59. The area is also located near historic Hattiesburg neighborhoods and both the University of Southern Mississippi and William Carey University.
+
+“Although the Broadway Drive corridor has long been known as ‘Hattiesburg’s Automotive Row,’ the departure of auto dealerships to other areas and aging suburban-style development has resulted in much of the corridor’s land being underutilized,” Hattiesburg city planners wrote in their description of the project. “The corridor’s location and available land provide an opportunity to improve residents’ quality of life as well as economic growth within Hattiesburg.”
+
+Additionally, city planners noted that much of the land within the corridor is held in trust and leased to benefit the Hattiesburg Public School District.
+
+The city in 2025 hired Texas-based Asakura Robinson planning, urban design, and landscape architecture firm as a consultant in developing the plan and engaging the community.
+
+“Right Down Broadway outlines a long-term vision for transforming Hattiesburg’s Automotive Row into Hattiesburg’s Creators Corridor,” the firm wrote on its website outlining the project. “The Broadway Drive and West Pine Street corridors represent opportunities for the greater Hattiesburg community to revitalize a key gateway to the city.”
+
+Asakura Robinson helped organize a previous “Night Off Broadway” event where the city created bike lanes, improved crosswalks and intersections to preview the possibilities for the area. Similar to the upcoming event, the previous event included the Hattiesburg High School football team, marching band and a pep rally.
+
+Parks and recreation staff also set up pickleball, giant chess, and an outdoor movie featuring the hit cartoon “Cars” in a nod to the area's automotive history.`,
+  },
+  {
+    id: "228",
+    title: "Making the Final Push: Hattiesburg a Finalist for Nation’s Top Sports Host City",
+    excerpt: "Hattiesburg could soon join the ranks of Wichita, Salt Lake City and Indianapolis with bragging rights as a national leader in sports events — and every vote counts before the Friday deadline.",
+    category: "sports",
+    author: "Hattiesburg Hub Staff",
+    date: "August 24, 2026",
+    image: "/story-best-sports-host-city.jpg",
+    slug: "hattiesburg-finalist-best-sports-host-city",
+    featured: true,
+    original: true,
+    photoCaption: "A championship trophy on the field of a ballpark at dusk, illustrating Hattiesburg’s campaign for national sports-hosting honors",
+    photoSource: "Hattiesburg Hub",
+    photoLicense: "Illustrative image",
+    content: `Hattiesburg could soon join the ranks of cities such as Wichita, Salt Lake City and Indianapolis with bragging rights as a national leader in sports events.
+
+To make it happen, Hattiesburg tourism leaders are in the final days of a campaign where every vote counts and the entire city can win.
+
+The city is a finalist for national recognition as the nation’s Best Sports Host City Award for 2026. The annual competition is presented by SportsTravel, a sports-related industry publication and trade group.
+
+Visit Hattiesburg, the area's tourism agency, is urging everyone to log on and cast their ballots for the Hub City.
+
+“Voting for Hattiesburg takes less than 30 seconds, but the impact will last all year long! Help us claim the title of SportsTravel Best Sports Host City!” Visit Hattiesburg leaders wrote in a series of social media messages urging participation.
+
+Voting ends Friday, Aug. 28. Winners will be celebrated in October during Teams ‘26, a national conference and expo held in Birmingham, Ala., this year.
+
+“Now it's time to win this one together. We're competing against some of the country’s largest sports destinations, and every vote counts,” according to Visit Hattiesburg. “Help us show the world what Hattiesburg can do.”
+
+The SportsTravel Awards honor events, venues and host cities. Wichita, Kansas won the coveted best city award in 2025.
+
+Hattiesburg tourism leaders tout numerous events presented in the city including the 2026 Hattiesburg Half Marathon, which sold out with a record-breaking 1,750 participants.
+
+The campaign for the national award is the latest effort to market Hattiesburg’s sports culture. "Hattiesburg 150 & Beyond," the draft comprehensive plan, envisions increasing the city’s sports dominance even further with the goal of attracting a minor league baseball team to the town within the next 10 to 15 years.
+
+Sports planning in the city is long term. For example, the city in 2023 completed major improvements to Jaycee Park that were paid from Hattiesburg's 1 percent sales tax fund. The effort to create a high-quality athletic space recently paid off earlier this month when Hattiesburg was selected to host the 2027 Junior Boys World Series, which brings 13- and 14-year-old players from a dozen states.
+
+“A sports city isn't built overnight. It's built by investing in championship-caliber facilities. It's built by attracting premier events. It's built by athletes, coaches, volunteers, partners, and fans who show up every time,” Hattiesburg tourism leaders wrote. “That's how Hattiesburg earned its place on the national stage.”`,
+  },
+  {
     id: "227",
     title: "London Calling: William Carey Students Immerse Themselves in Music and Culture",
     excerpt: "Members of the Carey Chorale traded Hattiesburg for England this summer, performing in Canterbury Cathedral, Rochester Cathedral and Trinity College Chapel at Cambridge University.",
