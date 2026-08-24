@@ -14,6 +14,7 @@ export interface DigestStory {
   category: string;
   image: string | null;
   pubDate: string;
+  guid: string;
 }
 
 function escapeHtml(str: string): string {
@@ -44,6 +45,7 @@ function parseRssItems(xml: string, limit: number): DigestStory[] {
       category: extractCdata(block, "category"),
       image: enclosure?.[1] ?? null,
       pubDate: extractCdata(block, "pubDate"),
+      guid: extractCdata(block, "guid"),
     });
   }
   return items.filter((s) => s.title && s.link);
