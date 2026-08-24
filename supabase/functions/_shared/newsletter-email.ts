@@ -215,24 +215,3 @@ export function renderAnnouncementEmail(params: {
   return shell(content, params.unsubscribeUrl);
 }
 
-export function renderWelcomeEmail(params: {
-  firstName: string | null;
-  unsubscribeUrl: string;
-}): string {
-  const greeting = params.firstName ? `Welcome, ${escapeHtml(params.firstName)}!` : "Welcome to the Hub!";
-  const content = `
-    <h1 style="margin:0 0 16px;font-family:${FONT_DISPLAY};font-size:26px;font-weight:700;color:#111827;line-height:1.2;">
-      ${greeting}
-    </h1>
-    <p style="margin:0 0 12px;font-family:${FONT_BODY};font-size:13px;line-height:1.6;color:#4b5563;">
-      You're officially on the list for the <strong>Hub City Digest</strong> — Hattiesburg Hub's weekly newsletter. Once a week, we'll send you the stories that matter most to our city: original reporting, community news, sports, and culture.
-    </p>
-    <p style="margin:0 0 24px;font-family:${FONT_BODY};font-size:13px;line-height:1.6;color:#4b5563;">
-      No spam, ever — just the Hub City, delivered.
-    </p>
-    <div style="text-align:center;margin-bottom:24px;">
-      <a href="${SITE_URL}" style="display:inline-block;background-color:${BRAND_BLUE};color:#ffffff;font-family:${FONT_DISPLAY};font-size:13px;font-weight:600;padding:12px 26px;border-radius:8px;text-decoration:none;">Read the latest stories</a>
-    </div>
-    ${facebookBlock()}`;
-  return shell(content, params.unsubscribeUrl);
-}
