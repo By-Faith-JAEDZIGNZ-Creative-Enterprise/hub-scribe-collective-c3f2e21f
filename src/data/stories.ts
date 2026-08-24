@@ -1393,6 +1393,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     photoCredit: "Photo: AI-generated illustration",
   },
   {
+    id: "222",
     title: "Katie John Dabbs Community Center Opens in Hattiesburg",
     excerpt: "Hattiesburg unveils the new Katie John Dabbs Community Center, a modern gathering space designed to serve residents with programs, events and recreation.",
     category: "community",
