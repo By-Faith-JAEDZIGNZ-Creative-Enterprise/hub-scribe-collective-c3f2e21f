@@ -14,6 +14,7 @@ export interface DigestStory {
   category: string;
   image: string | null;
   pubDate: string;
+  guid: string;
 }
 
 function escapeHtml(str: string): string {
@@ -44,6 +45,7 @@ function parseRssItems(xml: string, limit: number): DigestStory[] {
       category: extractCdata(block, "category"),
       image: enclosure?.[1] ?? null,
       pubDate: extractCdata(block, "pubDate"),
+      guid: extractCdata(block, "guid"),
     });
   }
   return items.filter((s) => s.title && s.link);
@@ -213,24 +215,32 @@ export function renderAnnouncementEmail(params: {
   return shell(content, params.unsubscribeUrl);
 }
 
-export function renderWelcomeEmail(params: {
+export function renderStoryAlertEmail(params: {
+  stories: DigestStory[];
   firstName: string | null;
   unsubscribeUrl: string;
 }): string {
-  const greeting = params.firstName ? `Welcome, ${escapeHtml(params.firstName)}!` : "Welcome to the Hub!";
+  const greeting = params.firstName ? `Hi ${escapeHtml(params.firstName)},` : "Hi there,";
+  const count = params.stories.length;
+  const heading =
+    count === 1
+      ? `Just published on the <span style="color:${BRAND_BLUE};">Hub</span>`
+      : `${count} new stories on the <span style="color:${BRAND_BLUE};">Hub</span>`;
+  const intro =
+    count === 1
+      ? "Fresh off the press — a brand-new story just went live on Hattiesburg Hub. Here's your first look:"
+      : "Fresh off the press — new stories just went live on Hattiesburg Hub. Here's your first look:";
   const content = `
+    <p style="margin:0 0 4px;font-family:${FONT_BODY};font-size:14px;color:#111827;">${greeting}</p>
     <h1 style="margin:0 0 16px;font-family:${FONT_DISPLAY};font-size:26px;font-weight:700;color:#111827;line-height:1.2;">
-      ${greeting}
+      ${heading}
     </h1>
-    <p style="margin:0 0 12px;font-family:${FONT_BODY};font-size:13px;line-height:1.6;color:#4b5563;">
-      You're officially on the list for the <strong>Hub City Digest</strong> — Hattiesburg Hub's weekly newsletter. Once a week, we'll send you the stories that matter most to our city: original reporting, community news, sports, and culture.
-    </p>
     <p style="margin:0 0 24px;font-family:${FONT_BODY};font-size:13px;line-height:1.6;color:#4b5563;">
-      No spam, ever — just the Hub City, delivered.
+      ${intro}
     </p>
-    <div style="text-align:center;margin-bottom:24px;">
-      <a href="${SITE_URL}" style="display:inline-block;background-color:${BRAND_BLUE};color:#ffffff;font-family:${FONT_DISPLAY};font-size:13px;font-weight:600;padding:12px 26px;border-radius:8px;text-decoration:none;">Read the latest stories</a>
-    </div>
+    ${params.stories.map(storyCard).join("")}
     ${facebookBlock()}`;
   return shell(content, params.unsubscribeUrl);
 }
+
+
