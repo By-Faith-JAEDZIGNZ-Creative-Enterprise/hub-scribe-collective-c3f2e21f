@@ -8,13 +8,13 @@ const LeadStory = () => {
   if (!leadStory) return null;
 
   return (
-    <section className="py-12 bg-hub-deep border-b border-border/30">
+    <section className="py-12 bg-hub-deep border-b border-border/40">
       <div className="container mx-auto px-4">
         {/* Section label */}
         <div className="flex items-center gap-3 mb-6">
           <Star className="w-4 h-4 text-primary" />
           <span className="font-display text-xs font-bold tracking-widest text-primary uppercase">Featured Original</span>
-          <div className="flex-1 h-[1px] bg-border/50" />
+          <div className="flex-1 h-px bg-border/40" />
           <span className="font-display text-xs text-muted-foreground">{leadStory.date}</span>
         </div>
 
