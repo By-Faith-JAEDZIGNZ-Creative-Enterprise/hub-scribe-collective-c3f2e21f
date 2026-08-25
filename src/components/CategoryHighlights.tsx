@@ -18,7 +18,7 @@ const CategoryHighlights = () => {
               <div className="flex items-center justify-between mb-5 md:mb-8">
                 <div className="flex items-center gap-3">
                   <div className="w-1 h-6 bg-primary rounded-full" />
-                  <h2 className="font-display text-xl font-bold tracking-tight text-foreground">{cat.name}</h2>
+                  <h2 className="font-display text-lg md:text-xl font-bold tracking-[-0.025em] text-foreground">{cat.name}</h2>
                 </div>
                 <Link
                   to={`/category/${cat.slug}`}

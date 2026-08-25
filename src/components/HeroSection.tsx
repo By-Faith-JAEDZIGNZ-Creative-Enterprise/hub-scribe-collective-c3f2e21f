@@ -25,14 +25,9 @@ const HeroSection = () => {
               <div className="w-8 h-[2px] bg-primary" />
               <span className="font-mono text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-primary">Your Community. Your Stories.</span>
             </div>
-            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-foreground leading-[0.9] tracking-[-0.03em] mb-4 md:mb-6 animate-fade-in-up opacity-0 delay-200">
-              The Pulse
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-hub-electric-glow">of the Hub</span>
-              <br />
-              City
-            </h1>
-            <p className="font-body text-sm sm:text-base md:text-lg text-muted-foreground max-w-lg mb-5 md:mb-8 leading-relaxed animate-fade-in-up opacity-0 delay-300">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-foreground leading-[0.95] tracking-[-0.035em] mb-4 md:mb-6 animate-fade-in-up opacity-0 delay-200">
+...
+            <p className="font-body text-sm sm:text-base md:text-[1.15rem] text-muted-foreground max-w-lg mb-5 md:mb-8 leading-[1.65] animate-fade-in-up opacity-0 delay-300">
               Hattiesburg's independent source for local news, culture, business, and community stories that matter.
             </p>
             <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2.5 md:gap-3 animate-fade-in-up opacity-0 delay-400">

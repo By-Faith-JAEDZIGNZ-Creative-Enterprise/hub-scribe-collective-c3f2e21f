@@ -18,7 +18,7 @@ const OriginalStories = () => {
         <div className="flex items-center justify-between mb-6 md:mb-10">
           <div className="flex items-center gap-3">
             <Feather className="w-4 h-4 text-primary" />
-            <h2 className="font-display text-xl font-bold tracking-tight text-foreground">
+            <h2 className="font-display text-lg md:text-xl font-bold tracking-[-0.025em] text-foreground">
               HattiesburgHub Originals
             </h2>
           </div>
