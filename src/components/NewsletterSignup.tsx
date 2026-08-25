@@ -7,7 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 const emailSchema = z.string().trim().email({ message: "Please enter a valid email" }).max(255);
 
 interface NewsletterSignupProps {
-  variant?: "inline" | "banner";
+  variant?: "inline" | "banner" | "editorial";
 }
 
 const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
@@ -131,52 +131,65 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
     );
   }
 
-  // Inline variant (for footer)
+  // Editorial variant (footer) — ink card on the ivory band, underline inputs
+  const underlineInput =
+    "bg-transparent border-b border-footer-ivory/30 py-3 px-1 font-footer text-sm text-footer-ivory placeholder:text-footer-ivory/40 focus:outline-none focus:border-footer-ivory transition-colors disabled:opacity-50";
+
   return (
-    <form onSubmit={handleSubmit} className="mt-8 max-w-sm mx-auto">
-      <p className="font-body text-xs text-muted-foreground mb-3">Get weekly stories in your inbox</p>
-      <div className="space-y-2">
-        <div className="flex gap-2">
-          <input
-            type="text"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            placeholder="First name"
-            maxLength={100}
-            disabled={loading}
-            className="flex-1 px-4 py-2.5 bg-background/30 border border-border/30 rounded-md font-body text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all disabled:opacity-50"
-          />
-          <input
-            type="text"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            placeholder="Last name"
-            maxLength={100}
-            disabled={loading}
-            className="flex-1 px-4 py-2.5 bg-background/30 border border-border/30 rounded-md font-body text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all disabled:opacity-50"
-          />
-        </div>
-        <div className="flex gap-2">
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="your@email.com"
-            maxLength={255}
-            required
-            disabled={loading}
-            className="flex-1 px-4 py-2.5 bg-background/30 border border-border/30 rounded-md font-body text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all disabled:opacity-50"
-          />
-          <button
-            type="submit"
-            disabled={submitted || loading}
-            className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground px-4 py-2.5 rounded-md font-display text-xs font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] disabled:opacity-70"
-          >
-            {loading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : submitted ? <Check className="w-3.5 h-3.5" /> : "Subscribe"}
-          </button>
-        </div>
-      </div>
-    </form>
+    <div className="bg-footer-ink text-footer-ivory p-8 md:p-10">
+      <h3 className="font-display text-2xl font-bold tracking-tight mb-2">Weekly Digest</h3>
+      <p className="font-footer text-sm text-footer-ivory/50 mb-8">
+        The best of Hattiesburg, delivered to your inbox every week.
+      </p>
+      <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input
+          type="text"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          placeholder="First Name"
+          aria-label="First name"
+          maxLength={100}
+          disabled={loading}
+          className={underlineInput}
+        />
+        <input
+          type="text"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+          placeholder="Last Name"
+          aria-label="Last name"
+          maxLength={100}
+          disabled={loading}
+          className={underlineInput}
+        />
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email Address"
+          aria-label="Email address"
+          maxLength={255}
+          required
+          disabled={loading}
+          className={`${underlineInput} md:col-span-2`}
+        />
+        <button
+          type="submit"
+          disabled={submitted || loading}
+          className="md:col-span-2 mt-4 inline-flex items-center justify-center gap-2 border border-footer-ivory py-4 font-footer font-bold uppercase tracking-widest text-xs hover:bg-footer-ivory hover:text-footer-ink transition-all duration-300 disabled:opacity-70"
+        >
+          {loading ? (
+            <Loader2 className="w-4 h-4 animate-spin" />
+          ) : submitted ? (
+            <>
+              <Check className="w-4 h-4" /> Subscribed
+            </>
+          ) : (
+            "Subscribe"
+          )}
+        </button>
+      </form>
+    </div>
   );
 };
 
