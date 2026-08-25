@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.hattiesburghub.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.hattiesburghub.com/signup</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.hattiesburghub.com/events</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Categories -->
+  <url>
+    <loc>https://www.hattiesburghub.com/signup</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://www.hattiesburghub.com/category/community</loc>
     <changefreq>daily</changefreq>
@@ -44,8 +41,433 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Community Stories -->
+  <url>
+    <loc>https://www.hattiesburghub.com/story/night-off-broadway-corridor-showcase</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-night-off-broadway-hero.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-finalist-best-sports-host-city</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-best-sports-host-city.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/william-carey-chorale-london-tour</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-carey-chorale-london.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/andrew-wiest-netflix-american-experiment</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-american-experiment-key-art.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/oseola-mccarty-gift-of-a-lifetime-biography</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-oseola-mccarty-book-cover.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/katie-john-dabbs-community-center-opens</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-dabbs-center-ribbon-cutting.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-junior-boys-world-series-2027</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-hattiesburg-parks-tournament-4.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-coaches-of-the-year-2026</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-coy-jermaine-brown.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-chorale-america-250-european-tour</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-southern-miss-chorale.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/field-of-dreams-hattiesburg-minor-league-baseball</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-baseburg-minor-league-vision.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-native-crowned-2026-miss-mississippi</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-miss-mississippi-granberry-crowning.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/toxic-beauty-plastics-hidden-cost-exhibit</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-plastics-exhibit-turtle.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-150-beyond-comprehensive-plan-input</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-comp-plan-session-1.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/johnny-dupree-never-give-up-mississippi-history</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-johnny-dupree-public-safety-complex.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/william-carey-university-heritage-plaza-rededication</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-wcu-heritage-plaza-ceremony.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-1-3-billion-economic-impact-report</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-usm-administration-building.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-sewer-overhaul-consent-order</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-sewer-roadwork.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/mitchell-williams-fca-profile</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-williams-portrait.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/dr-eddie-holloway-street-dedication</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-holloway-unveiling.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-high-school-carnegie-hall</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-carnegie-hall-outside.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/sixth-street-museum-district-hattiesburg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-sixth-street-smith-drug.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-zoo-growth-model</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-zoo-giraffe-feeding.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/oseola-mccarty-house-museum-hattiesburg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-mccarty-house-sign.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-mississippi-state-biloxi-showdown-october</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-southern-miss-state-biloxi.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/fastest-growing-home-prices-hattiesburg-metro</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-hattiesburg-home-prices.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/usm-welcomes-students-back-campus-hattiesburg</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-usm-students-back-campus.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/only-mississippi-team-little-league-world-series</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-little-league-world-series-mississippi.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/katie-john-dabbs-community-center-opens-hattiesburg</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-katie-john-dabbs-community-center.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/miss-hospitality-contestants-give-back-hattiesburg-community</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-miss-hospitality-community.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/mississippi-families-turn-grief-into-action-fentanyl</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-mississippi-fentanyl-families.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/usm-mississippi-state-adapted-swim-camp-hattiesburg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-usm-adapted-swim-camp.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/jamba-joloff-opens-downtown-hattiesburg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-jamba-joloff-downtown.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-memorial-day-ceremony-fallen-service-members</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-memorial-day-ceremony.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-regionals-ncaa-baseball-field</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-hattiesburg-regional-baseball.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/new-welcome-center-downtown-hattiesburg</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-downtown-welcome-center.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/wcu-students-brighten-pocket-alley-vibrant-art</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-wcu-pocket-alley-art.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-hundred-honors-sworn-officers-awards-banquet</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-hattiesburg-hundred-officer-awards.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-baseball-2026-sun-belt-regular-season-title</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-southern-miss-sun-belt-title.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/wcu-softball-naia-opening-round-championship</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-wcu-softball-naia.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-celebrates-opening-new-multi-use-path</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-hattiesburg-multi-use-path.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/wcu-college-osteopathic-medicine-class-2026-graduation</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-wcu-osteopathic-graduation.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-cycles-annual-memorial-ride-hpd-officers</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-hattiesburg-cycles-memorial-ride.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-high-seniors-announce-college-plans</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-hhs-seniors-college-signing.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-zoo-malayan-tiger-bunga-passing</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-malayan-tiger-bunga-memorial.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/visit-hattiesburg-record-breaking-tourism-growth</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-visit-hattiesburg-tourism.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/annual-parade-champions-hub-city-students-athletes</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-parade-of-champions.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-zoo-malayan-tiger-bunga-health-battle</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-malayan-tiger-bunga.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-pitching-doubleheader-sweep-ulm</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-southern-miss-baseball-sweep.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/pine-belt-students-world-robotics-championship-bound</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-pine-belt-robotics-championship.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-zoo-endangered-species-day-events</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-zoo-endangered-species-day.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/construction-underway-hattiesburg-fire-station-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-fire-station-2-construction.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/forrest-county-center-125-million-upgrade-emergency-staging</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-forrest-county-center-upgrade.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/rufus-2026-ukc-squirrel-hunt-world-champion-hattiesburg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-rufus-squirrel-hunt-champion.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/usm-announces-spring-2026-graduation-dates</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-usm-spring-2026-graduation.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-teen-cellist-national-youth-orchestra-carnegie-hall</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-teen-cellist-nyo.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-texas-state-baseball-game-3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-southern-miss-baseball-tx-state.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/us-highway-49-new-pavement-drivers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-us49-new-pavement.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/history-makers-future-shapers-educators-appreciation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-educators-appreciation.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/pine-belt-playoff-schedule-11-teams</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-pine-belt-playoffs.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-zoo-spider-monkeys-cider-holly-juniper</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-zoo-spider-monkeys-trio.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/william-carey-mccray-basketball-coach</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-mccray-basketball-coach.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/delta-sigma-theta-mental-health-seminar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-delta-sigma-mental-health.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-historic-home-walking-tour</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-historic-home-walking-tour.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/aka-community-maternal-baby-shower</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-aka-baby-shower.jpg</image:loc></image:image>
+  </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/downtown-revitalization-project</loc>
     <changefreq>monthly</changefreq>
@@ -70,8 +492,6 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.hattiesburghub.com/story-tech-literacy.jpg</image:loc></image:image>
   </url>
-
-  <!-- Business Stories -->
   <url>
     <loc>https://www.hattiesburghub.com/story/local-tech-startup-funding</loc>
     <changefreq>monthly</changefreq>
@@ -96,8 +516,6 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.hattiesburghub.com/story-tech-hub.jpg</image:loc></image:image>
   </url>
-
-  <!-- Culture Stories -->
   <url>
     <loc>https://www.hattiesburghub.com/story/hub-city-music-festival-lineup</loc>
     <changefreq>monthly</changefreq>
@@ -122,8 +540,6 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.hattiesburghub.com/story-book-award.jpg</image:loc></image:image>
   </url>
-
-  <!-- Sports Stories -->
   <url>
     <loc>https://www.hattiesburghub.com/story/golden-eagles-football-preview</loc>
     <changefreq>monthly</changefreq>
@@ -148,8 +564,6 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.hattiesburghub.com/story-flag-football.jpg</image:loc></image:image>
   </url>
-
-  <!-- Opinion Stories -->
   <url>
     <loc>https://www.hattiesburghub.com/story/hattiesburgs-young-leaders</loc>
     <changefreq>monthly</changefreq>
@@ -174,46 +588,112 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.hattiesburghub.com/story-local-journalism.jpg</image:loc></image:image>
   </url>
-
-  <!-- Curated/External Stories -->
+  <url>
+    <loc>https://www.hattiesburghub.com/story/palm-sunday-concert-hattiesburg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-palm-sunday-choir.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/asbury-hospice-house-expansion-hattiesburg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-asbury-hospice.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/local-businesses-hubfest-weekend</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-hubfest-businesses.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/fleetwood-mac-tribute-saenger-hattiesburg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-fleetwood-mac-tribute.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-native-band-national-tour</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-brandon-miller-concert.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/tatum-park-youth-baseball-opener</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-tatum-park-baseball.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/us49-nighttime-closures-hattiesburg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-us49-closures.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-troy-baseball</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-usm-troy-baseball.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/edney-cdc-director-consideration</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-edney-cdc.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/mississippi-state-vanderbilt-sweep</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-msstate-vandy-sweep.jpg</image:loc></image:image>
+  </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/cheapest-gas-stations-hattiesburg</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-gas-stations.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/hattiesburg-pharmacy-owner-tax-offense</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-pharmacy-tax.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/thousands-without-power-mississippi-storms</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-storms-power.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/mccarty-house-museum-opening</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-mccarty-house.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/mississippi-tornadoes-snow-forecast</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-tornadoes-weather.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/mississippi-state-primaries-2026</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-ms-primaries.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/mississippi-abc-alcohol-backlog-bill</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-abc-alcohol.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/teacher-pay-raise-mississippi-senate</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.hattiesburghub.com/story-teacher-pay.jpg</image:loc></image:image>
   </url>
 </urlset>
