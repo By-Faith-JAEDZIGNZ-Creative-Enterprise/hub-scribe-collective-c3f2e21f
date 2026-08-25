@@ -35,17 +35,17 @@ const HeroSection = () => {
             <p className="font-body text-sm sm:text-base md:text-lg text-muted-foreground max-w-lg mb-5 md:mb-8 leading-relaxed animate-fade-in-up opacity-0 delay-300">
               Hattiesburg's independent source for local news, culture, business, and community stories that matter.
             </p>
-            <div className="flex flex-wrap gap-2.5 md:gap-3 animate-fade-in-up opacity-0 delay-400">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2.5 md:gap-3 animate-fade-in-up opacity-0 delay-400">
               <Link
                 to="/category/community"
-                className="group inline-flex flex-1 sm:flex-none items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 md:px-6 md:py-3 rounded-xl font-display text-sm font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] active:scale-[0.98]"
+                className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 md:px-6 md:py-3 rounded-xl font-display text-sm font-medium tracking-wide whitespace-nowrap hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] active:scale-[0.98]"
               >
                 Latest Stories
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </Link>
               <Link
                 to="/category/culture"
-                className="inline-flex flex-1 sm:flex-none items-center justify-center gap-2 border border-foreground/20 text-foreground px-5 py-2.5 md:px-6 md:py-3 rounded-xl font-display text-sm font-medium tracking-wide hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300 active:scale-[0.98]"
+                className="inline-flex items-center justify-center gap-2 border border-foreground/20 text-foreground px-5 py-2.5 md:px-6 md:py-3 rounded-xl font-display text-sm font-medium tracking-wide whitespace-nowrap hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300 active:scale-[0.98]"
               >
                 Explore Culture
               </Link>
