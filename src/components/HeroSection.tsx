@@ -19,13 +19,13 @@ const HeroSection = () => {
         </div>
 
         {/* Content */}
-        <div className="relative w-full px-6 md:px-14 pb-12 md:pb-16">
+        <div className="relative w-full px-5 md:px-14 pb-7 md:pb-16">
           <div className="max-w-2xl">
-            <div className="flex items-center gap-3 mb-5 animate-fade-in-up opacity-0 delay-100">
+            <div className="flex items-center gap-3 mb-4 md:mb-5 animate-fade-in-up opacity-0 delay-100">
               <div className="w-8 h-[2px] bg-primary" />
-              <span className="font-mono text-[11px] font-bold uppercase tracking-[0.3em] text-primary">Your Community. Your Stories.</span>
+              <span className="font-mono text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-primary">Your Community. Your Stories.</span>
             </div>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-foreground leading-[0.9] tracking-[-0.03em] mb-6 animate-fade-in-up opacity-0 delay-200">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-foreground leading-[0.9] tracking-[-0.03em] mb-4 md:mb-6 animate-fade-in-up opacity-0 delay-200">
               The Pulse
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-hub-electric-glow">of the Hub</span>
