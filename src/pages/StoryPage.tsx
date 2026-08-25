@@ -131,7 +131,7 @@ const StoryPage = () => {
     <div className="min-h-screen bg-background">
       <SEOHead title={story.title} description={story.excerpt} path={`/story/${slug}`} type="article" publishedTime={story.date} author={story.author} image={story.image} category={story.category} />
       <Navbar />
-      <main className="pt-24 md:pt-28">
+      <main className="pt-36 md:pt-28">
         {/* Article Header */}
         <div className="relative w-full">
           <div className="w-full h-[50vh] md:h-[60vh] overflow-hidden">

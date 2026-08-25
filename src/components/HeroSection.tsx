@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-hattiesburg.jpg";
 const HeroSection = () => {
   return (
     <section className="container mx-auto px-4">
-      <div className="relative h-[68vh] min-h-[480px] max-h-[760px] flex items-end overflow-hidden rounded-[2rem] border border-border/40 shadow-[0_24px_64px_-24px_hsl(var(--foreground)/0.25)]">
+      <div className="relative h-[58vh] min-h-[400px] md:h-[68vh] md:min-h-[480px] max-h-[760px] flex items-end overflow-hidden rounded-3xl md:rounded-[2rem] border border-border/40 shadow-[0_24px_64px_-24px_hsl(var(--foreground)/0.25)]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img

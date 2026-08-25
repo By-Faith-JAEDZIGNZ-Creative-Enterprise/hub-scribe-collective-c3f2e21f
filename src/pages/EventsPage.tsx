@@ -98,7 +98,7 @@ const EventsPage = () => {
       />
       <Navbar />
 
-      <main className="pt-24 md:pt-28">
+      <main className="pt-36 md:pt-28">
         {/* Hero */}
         <section className="relative overflow-hidden border-b border-border/40">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
