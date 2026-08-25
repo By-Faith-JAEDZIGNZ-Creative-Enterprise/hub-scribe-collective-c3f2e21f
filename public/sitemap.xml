@@ -696,4 +696,24 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.hattiesburghub.com/story-teacher-pay.jpg</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>

@@ -8,6 +8,8 @@ Hattiesburg Hub is a hyper-local news publication covering the Hub City — Hatt
 
 - [Home](/): Latest original and curated local news from Hattiesburg, MS.
 - [Events](/events): Community events calendar for Hattiesburg and the Pine Belt.
+- [About](/about): Mission, coverage areas, and team.
+- [Contact](/contact): News tips, story submissions, and advertising inquiries.
 - [Community](/category/community): Neighborhood, city government, and civic news.
 - [Business](/category/business): Local business, development, and economy news.
 - [Culture](/category/culture): Arts, music, food, and local culture.
