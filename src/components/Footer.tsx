@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="relative container mx-auto px-4">
 
         {/* Hero Logo Section */}
-        <div className="pt-24 pb-16 flex flex-col items-center text-center">
+        <div className="pt-20 pb-14 flex flex-col items-center text-center">
           <div className="relative mb-10">
             {/* Glow ring behind logo */}
             <div className="absolute inset-0 -m-8 bg-primary/[0.06] rounded-full blur-[60px] pointer-events-none" />
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
 
         {/* Design Credit — JAE crest */}
-        <div className="border-t border-border/10 py-8 flex flex-col items-center justify-center gap-3">
+        <div className="border-t border-border/10 py-10 flex flex-col items-center justify-center gap-3">
           <div className="relative">
             {/* Soft glow behind crest */}
             <div className="absolute inset-0 -m-6 bg-primary/[0.06] rounded-full blur-2xl pointer-events-none" />

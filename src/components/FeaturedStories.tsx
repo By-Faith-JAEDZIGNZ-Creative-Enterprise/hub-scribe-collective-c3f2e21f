@@ -21,9 +21,9 @@ const FeaturedStories = () => {
         <div className="flex items-center gap-4 mb-8">
           <div className="flex items-center gap-3">
             <Flame className="w-4 h-4 text-primary" />
-            <h2 className="font-display text-xl font-bold text-foreground">More Featured Stories</h2>
+            <h2 className="font-display text-xl font-bold tracking-tight text-foreground">More Featured Stories</h2>
           </div>
-          <div className="flex-1 h-[1px] bg-border/50" />
+          <div className="flex-1 h-px bg-border/40" />
           <Link
             to="/category/community"
             className="group flex items-center gap-2 font-display text-xs font-medium tracking-wide text-muted-foreground hover:text-primary transition-colors"

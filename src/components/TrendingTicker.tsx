@@ -12,7 +12,7 @@ const TrendingTicker = () => {
         <div className="relative flex-shrink-0 z-20">
           {/* Gradient plate behind the label extends to the right, so items fade into it */}
           <div className="absolute inset-y-0 left-0 w-[220px] bg-gradient-to-r from-background via-background/95 to-transparent pointer-events-none" />
-          <div className="relative bg-gradient-to-r from-primary/20 via-primary/10 to-transparent text-primary pl-4 pr-6 py-1 font-display text-xs font-medium tracking-wide flex items-center gap-2">
+          <div className="relative bg-gradient-to-r from-primary/20 via-primary/10 to-transparent text-primary pl-4 pr-6 py-1.5 font-display text-xs font-medium tracking-wider flex items-center gap-2">
             <TrendingUp className="w-3.5 h-3.5" />
             Trending
           </div>

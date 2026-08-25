@@ -16,8 +16,8 @@ const LatestNews = () => {
         {/* Section header */}
         <div className="flex items-center gap-4 mb-10">
           <div className="flex items-center gap-3">
-            <div className="w-1.5 h-8 bg-primary rounded-full" />
-            <h2 className="font-display text-2xl font-bold text-foreground">Latest News</h2>
+            <div className="w-1 h-6 bg-primary rounded-full" />
+            <h2 className="font-display text-xl font-bold tracking-tight text-foreground">Latest News</h2>
           </div>
           <div className="flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full">
             <span className="relative flex h-2 w-2">
@@ -26,7 +26,7 @@ const LatestNews = () => {
             </span>
             <span className="font-display text-xs font-medium tracking-wide text-primary">Just In</span>
           </div>
-          <div className="flex-1 h-[1px] bg-border/50" />
+          <div className="flex-1 h-px bg-border/40" />
         </div>
 
         {/* Top story - full width hero */}
@@ -48,7 +48,7 @@ const LatestNews = () => {
         {/* Remaining stories - grid */}
         {remaining.length > 0 && (
           <>
-            <div className="h-[1px] bg-border/30 mb-8" />
+            <div className="h-px bg-border/40 mb-8" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {remaining.map((story) => (
                 <StoryCard key={story.id} story={story} />

@@ -17,12 +17,12 @@ const OriginalStories = () => {
         {/* Section header */}
         <div className="flex items-center justify-between mb-10">
           <div className="flex items-center gap-3">
-            <Feather className="w-5 h-5 text-primary" />
-            <h2 className="font-display text-2xl font-bold text-foreground">
+            <Feather className="w-4 h-4 text-primary" />
+            <h2 className="font-display text-xl font-bold tracking-tight text-foreground">
               HattiesburgHub Originals
             </h2>
           </div>
-          <div className="hidden sm:block flex-1 h-[1px] bg-border/40 mx-6" />
+          <div className="hidden sm:block flex-1 h-px bg-border/40 mx-6" />
           <span className="font-body text-xs text-muted-foreground italic hidden sm:block">
             In-depth local journalism
           </span>
