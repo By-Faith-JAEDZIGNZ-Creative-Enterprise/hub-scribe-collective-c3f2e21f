@@ -14,19 +14,27 @@ interface SEOHeadProps {
   publishedTime?: string;
   author?: string;
   category?: string;
+  noindex?: boolean;
 }
+
+// Keep titles ≤60 chars and descriptions ≤160 chars for clean SERP display,
+// truncating at a word boundary so snippets never cut mid-word.
+const truncate = (s: string, max: number) =>
+  s.length <= max ? s : s.slice(0, max - 1).replace(/\s+\S*$/, "") + "…";
 
 const SEOHead = ({
   title,
-  description = DEFAULT_DESCRIPTION,
+  description: rawDescription = DEFAULT_DESCRIPTION,
   path = "/",
   image = DEFAULT_IMAGE,
   type = "website",
   publishedTime,
   author,
   category,
+  noindex = false,
 }: SEOHeadProps) => {
-  const fullTitle = title ? `${title} — ${SITE_NAME}` : `${SITE_NAME} — Hattiesburg Local News & Community Stories`;
+  const description = truncate(rawDescription, 160);
+  const fullTitle = truncate(title ? `${title} — ${SITE_NAME}` : `${SITE_NAME} — Hattiesburg Local News & Community Stories`, 60);
   const canonicalUrl = `${SITE_URL}${path}`;
 
   // Ensure image is absolute URL
@@ -49,7 +57,9 @@ const SEOHead = ({
 
     // Standard meta
     setMeta("name", "description", description);
-    setMeta("name", "robots", "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1");
+    setMeta("name", "robots", noindex
+      ? "noindex, follow"
+      : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1");
 
     // Open Graph
     setMeta("property", "og:title", fullTitle);
@@ -190,7 +200,7 @@ const SEOHead = ({
     return () => {
       document.querySelectorAll('script[data-seo-jsonld]').forEach(el => el.remove());
     };
-  }, [fullTitle, description, canonicalUrl, absoluteImage, type, publishedTime, author, category]);
+  }, [fullTitle, description, canonicalUrl, absoluteImage, type, publishedTime, author, category, noindex]);
 
   return null;
 };

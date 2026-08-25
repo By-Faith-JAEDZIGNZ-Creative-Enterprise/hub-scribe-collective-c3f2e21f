@@ -40,7 +40,7 @@ const PhotoGallery = ({
     <div className="my-10">
       <div className="flex items-center gap-3 mb-4">
         <div className="w-1 h-5 bg-primary rounded-full" />
-        <h3 className="font-display text-sm font-medium tracking-wide text-muted-foreground uppercase">Photo Gallery</h3>
+        <h2 className="font-display text-sm font-medium tracking-wide text-muted-foreground uppercase">Photo Gallery</h2>
       </div>
 
       {/* Main image */}

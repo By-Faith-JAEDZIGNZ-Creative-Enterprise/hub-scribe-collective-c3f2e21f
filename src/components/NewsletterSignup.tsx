@@ -118,6 +118,7 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
                 </div>
                 <button
                   type="submit"
+                  aria-label={submitted ? "Subscribed" : "Subscribe"}
                   disabled={submitted || loading}
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-lg font-display text-sm font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] disabled:opacity-70"
                 >
