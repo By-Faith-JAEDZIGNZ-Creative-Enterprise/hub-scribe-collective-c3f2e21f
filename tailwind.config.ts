@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         display: ['Space Grotesk', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
+        footer: ['"DM Sans"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -61,6 +62,11 @@ export default {
           "surface-hover": "hsl(var(--hub-surface-hover))",
           cyan: "hsl(var(--hub-cyan))",
           "text-dim": "hsl(var(--hub-text-dim))",
+        },
+        footer: {
+          ivory: "hsl(var(--footer-ivory))",
+          ink: "hsl(var(--footer-ink))",
+          "ink-soft": "hsl(var(--footer-ink-soft))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
