@@ -15,10 +15,10 @@ const FeaturedStories = () => {
   const bottomRow = displayStories.slice(2, 5);
 
   return (
-    <section className="py-14 bg-hub-deep">
+    <section className="py-10 md:py-14 bg-hub-deep">
       <div className="container mx-auto px-4">
         {/* Section header */}
-        <div className="flex items-center gap-4 mb-8">
+        <div className="flex items-center gap-4 mb-6 md:mb-8">
           <div className="flex items-center gap-3">
             <Flame className="w-4 h-4 text-primary" />
             <h2 className="font-display text-xl font-bold tracking-tight text-foreground">More Featured Stories</h2>
@@ -35,7 +35,7 @@ const FeaturedStories = () => {
 
         {/* Top row: 2-up cards */}
         {topRow.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mb-6 md:mb-8">
             {topRow.map((story) => (
               <StoryCard key={story.id} story={story} />
             ))}
@@ -44,7 +44,7 @@ const FeaturedStories = () => {
 
         {/* Bottom row: 3-up cards */}
         {bottomRow.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {bottomRow.map((story) => (
               <StoryCard key={story.id} story={story} variant="horizontal" />
             ))}

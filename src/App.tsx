@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
 import StoryPage from "./pages/StoryPage";
 import SignupPage from "./pages/SignupPage";
+import SearchPage from "./pages/SearchPage";
 import EventsPage from "./pages/EventsPage";
 import UnsubscribePage from "./pages/UnsubscribePage";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/category/:slug" element={<CategoryPage />} />
           <Route path="/story/:slug" element={<StoryPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/search" element={<SearchPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/unsubscribe" element={<UnsubscribePage />} />
           <Route path="*" element={<NotFound />} />

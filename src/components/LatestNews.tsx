@@ -11,10 +11,10 @@ const LatestNews = () => {
   if (latestExternal.length === 0) return null;
 
   return (
-    <section className="py-16 bg-hub-deep">
+    <section className="py-10 md:py-16 bg-hub-deep">
       <div className="container mx-auto px-4">
         {/* Section header */}
-        <div className="flex items-center gap-4 mb-10">
+        <div className="flex items-center gap-4 mb-6 md:mb-10">
           <div className="flex items-center gap-3">
             <div className="w-1 h-6 bg-primary rounded-full" />
             <h2 className="font-display text-xl font-bold tracking-tight text-foreground">Latest News</h2>
@@ -31,14 +31,14 @@ const LatestNews = () => {
 
         {/* Top story - full width hero */}
         {topStory && (
-          <div className="mb-8">
+          <div className="mb-6 md:mb-8">
             <StoryCard story={topStory} variant="large" />
           </div>
         )}
 
         {/* Second row - 2 columns */}
         {secondRow.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mb-6 md:mb-8">
             {secondRow.map((story) => (
               <StoryCard key={story.id} story={story} />
             ))}
@@ -48,8 +48,8 @@ const LatestNews = () => {
         {/* Remaining stories - grid */}
         {remaining.length > 0 && (
           <>
-            <div className="h-px bg-border/40 mb-8" />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <div className="h-px bg-border/40 mb-6 md:mb-8" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 md:gap-6">
               {remaining.map((story) => (
                 <StoryCard key={story.id} story={story} />
               ))}
@@ -58,7 +58,7 @@ const LatestNews = () => {
         )}
 
         {/* Source attribution */}
-        <div className="mt-8 pt-6 border-t border-border/30 flex items-center gap-2 text-xs text-muted-foreground font-body">
+        <div className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-border/30 flex items-center gap-2 text-xs text-muted-foreground font-body">
           <ExternalLink className="w-3.5 h-3.5" />
           <span>Stories sourced from local and state news outlets. Click to read full articles on their original sites.</span>
         </div>

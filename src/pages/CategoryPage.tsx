@@ -24,7 +24,7 @@ const CategoryPage = () => {
     <div className="min-h-screen bg-background">
       <SEOHead title={category.name} description={`Latest ${category.name.toLowerCase()} news and stories from Hattiesburg.`} path={`/category/${slug}`} />
       <Navbar />
-      <main className="pt-24 md:pt-28">
+      <main className="pt-36 md:pt-28">
         {/* Category Header */}
         <div className="bg-hub-deep border-b border-border/50">
           <div className="container mx-auto px-4 py-12">
