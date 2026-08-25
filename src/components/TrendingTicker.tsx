@@ -2,43 +2,53 @@ import { Link } from "react-router-dom";
 import { trendingStories } from "@/data/stories";
 import { TrendingUp } from "lucide-react";
 
-const TrendingTicker = () => {
-  const doubled = [...trendingStories, ...trendingStories];
+const TickerSet = () => (
+  <div className="flex items-center">
+    {trendingStories.map((story, i) => (
+      <div key={story.id} className="flex items-center">
+        <Link
+          to={`/story/${story.slug}`}
+          className="group flex items-center px-6 md:px-8"
+        >
+          <span className="font-mono text-[10px] text-muted-foreground/60 mr-4 transition-colors group-hover:text-primary">
+            {String(i + 1).padStart(2, "0")}
+          </span>
+          <span className="font-body text-xs md:text-[13px] font-medium text-muted-foreground tracking-tight transition-colors duration-300 group-hover:text-foreground">
+            {story.title}
+          </span>
+        </Link>
+        <span className="text-border select-none" aria-hidden="true">|</span>
+      </div>
+    ))}
+  </div>
+);
 
+const TrendingTicker = () => {
   return (
     <div className="container mx-auto px-4 mt-4 md:mt-6">
-      <div className="relative border-y border-border/40 py-2.5 md:py-3 overflow-hidden">
-        <div className="flex items-center">
-          {/* Trending label — sits on top of a soft gradient plate */}
-          <div className="relative flex-shrink-0 z-20">
-            {/* Gradient plate behind the label extends to the right, so items fade into it */}
-            <div className="absolute inset-y-0 left-0 w-[150px] md:w-[220px] bg-gradient-to-r from-background via-background/95 to-transparent pointer-events-none" />
-            <div className="relative text-primary pl-1 pr-4 md:pr-6 py-1.5 font-mono text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] flex items-center gap-2">
-              <TrendingUp className="w-3.5 h-3.5" />
-              Trending&nbsp;//
+      <div className="relative flex items-center h-12 md:h-14 border-y border-border/60 bg-card/40 backdrop-blur-sm overflow-hidden">
+        {/* Trending label plate */}
+        <div className="relative z-30 flex items-center h-full px-4 md:px-6 bg-card border-r border-border/60 flex-shrink-0">
+          <div className="flex items-center gap-2.5 md:gap-3">
+            <div className="relative">
+              <div className="absolute inset-0 bg-primary blur-sm opacity-20" />
+              <div className="relative bg-primary/10 border border-primary/30 p-1.5 rounded">
+                <TrendingUp className="w-3.5 h-3.5 text-primary" strokeWidth={2.5} />
+              </div>
             </div>
-          </div>
-
-          {/* Scrolling ticker */}
-          <div className="flex animate-ticker whitespace-nowrap">
-            {doubled.map((story, i) => (
-              <Link
-                key={`${story.id}-${i}`}
-                to={`/story/${story.slug}`}
-                className="inline-flex items-center gap-3 px-4 md:px-6 text-xs md:text-sm text-muted-foreground hover:text-primary transition-colors duration-300 font-body"
-              >
-                <span className="text-foreground font-mono font-semibold text-[11px] md:text-xs">{String(i % trendingStories.length + 1).padStart(2, '0')}</span>
-                {story.title}
-                <span className="text-border/50">|</span>
-              </Link>
-            ))}
+            <span className="font-mono text-[10px] md:text-[11px] font-bold tracking-[0.2em] text-primary uppercase whitespace-nowrap">
+              Trending&nbsp;//
+            </span>
           </div>
         </div>
 
-        {/* Left fade — items dissolve into the background gradient as they approach Trending */}
-        <div className="absolute left-[104px] md:left-[130px] top-0 bottom-0 w-14 md:w-32 bg-gradient-to-r from-background via-background/90 to-transparent z-[15] pointer-events-none" />
-        {/* Right fade — smooth disappear on the trailing edge */}
-        <div className="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-background via-background/80 to-transparent z-[5] pointer-events-none" />
+        {/* Marquee — edges dissolve via mask for a frictionless loop */}
+        <div className="relative flex-1 overflow-hidden h-full ticker-mask">
+          <div className="animate-ticker flex items-center h-full w-max whitespace-nowrap">
+            <TickerSet />
+            <TickerSet />
+          </div>
+        </div>
       </div>
     </div>
   );

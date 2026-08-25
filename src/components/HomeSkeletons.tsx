@@ -24,11 +24,15 @@ export const HeroSkeleton = () => (
 
 export const TickerSkeleton = () => (
   <div className="container mx-auto px-4 mt-4 md:mt-6" aria-label="Loading trending stories">
-    <div className="border-y border-border/40 py-2.5 md:py-3 flex items-center gap-4 overflow-hidden">
-      <Shimmer className="h-5 w-28 flex-shrink-0" />
-      <Shimmer className="h-4 w-64 flex-shrink-0" />
-      <Shimmer className="h-4 w-52 flex-shrink-0 hidden sm:block" />
-      <Shimmer className="h-4 w-72 flex-shrink-0 hidden md:block" />
+    <div className="flex items-center h-12 md:h-14 border-y border-border/60 bg-card/40 overflow-hidden">
+      <div className="flex items-center h-full px-4 md:px-6 border-r border-border/60 flex-shrink-0">
+        <Shimmer className="h-6 w-28" />
+      </div>
+      <div className="flex items-center gap-10 px-8 overflow-hidden">
+        <Shimmer className="h-4 w-64 flex-shrink-0" />
+        <Shimmer className="h-4 w-52 flex-shrink-0 hidden sm:block" />
+        <Shimmer className="h-4 w-72 flex-shrink-0 hidden md:block" />
+      </div>
     </div>
   </div>
 );
