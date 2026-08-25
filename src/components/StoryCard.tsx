@@ -33,12 +33,12 @@ const categoryColors: Record<string, string> = {
 const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   if (variant === "large") {
     return (
-      <CardWrapper story={story} className="group block relative overflow-hidden rounded-lg">
+      <CardWrapper story={story} className="group block relative overflow-hidden rounded-xl border border-border/40 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
         <div className="aspect-[16/9] overflow-hidden">
           <img
             src={story.image}
             alt={story.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700 ease-out"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
         </div>
@@ -71,11 +71,11 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   if (variant === "horizontal") {
     return (
       <CardWrapper story={story} className="group flex gap-4 items-start">
-        <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-md">
+        <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg border border-border/40">
           <img
             src={story.image}
             alt={story.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+            className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500 ease-out"
           />
         </div>
         <div className="flex-1 min-w-0">
@@ -95,15 +95,15 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   }
 
   return (
-    <CardWrapper story={story} className="group block">
-      <div className="overflow-hidden rounded-lg">
+    <CardWrapper story={story} className="group block transition-transform duration-500 ease-out hover:-translate-y-1">
+      <div className="overflow-hidden rounded-xl border border-border/40 shadow-[var(--shadow-card)] group-hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
         <img
           src={story.image}
           alt={story.title}
-          className="w-full aspect-[3/2] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          className="w-full aspect-[3/2] object-cover group-hover:scale-[1.04] transition-transform duration-700 ease-out"
         />
       </div>
-      <div className="pt-4">
+      <div className="pt-4 px-0.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className={`category-badge px-2.5 py-0.5 rounded-sm ${categoryColors[story.category] || "bg-muted text-muted-foreground"}`}>
@@ -111,9 +111,9 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
             </span>
             {story.external && <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />}
           </div>
-          <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+          <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
         </div>
-        <h3 className="font-display text-lg font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
+        <h3 className="font-display text-lg font-semibold tracking-tight text-foreground mt-3 mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
           {story.title}
         </h3>
         <p className="text-muted-foreground text-sm line-clamp-2 font-body leading-relaxed">{story.excerpt}</p>

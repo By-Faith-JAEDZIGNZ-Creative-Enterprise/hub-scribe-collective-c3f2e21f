@@ -10,7 +10,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-border/40 shadow-[0_1px_16px_hsl(var(--foreground)/0.04)]">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link
               to="/"
               className={`glow-underline font-display text-[13px] font-medium tracking-wide transition-colors ${
-                location.pathname === "/" ? "text-primary" : "text-muted-foreground hover:text-foreground"
+                location.pathname === "/" ? "active text-primary" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Home
@@ -37,7 +37,7 @@ const Navbar = () => {
                 key={cat.slug}
                 to={`/category/${cat.slug}`}
                 className={`glow-underline font-display text-[13px] font-medium tracking-wide transition-colors ${
-                  location.pathname === `/category/${cat.slug}` ? "text-primary" : "text-muted-foreground hover:text-foreground"
+                  location.pathname === `/category/${cat.slug}` ? "active text-primary" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {cat.name}
@@ -46,7 +46,7 @@ const Navbar = () => {
             <Link
               to="/events"
               className={`glow-underline font-display text-[13px] font-medium tracking-wide transition-colors ${
-                location.pathname === "/events" ? "text-primary" : "text-muted-foreground hover:text-foreground"
+                location.pathname === "/events" ? "active text-primary" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Events

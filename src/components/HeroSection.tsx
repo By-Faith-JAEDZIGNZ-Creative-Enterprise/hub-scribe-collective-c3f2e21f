@@ -12,8 +12,8 @@ const HeroSection = () => {
           alt="Hattiesburg downtown at golden hour"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-background/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent" />
         <div className="absolute inset-0 bg-primary/5 mix-blend-overlay" />
       </div>
 
@@ -24,7 +24,7 @@ const HeroSection = () => {
             <div className="w-10 h-[2px] bg-primary" />
             <span className="font-display text-xs font-medium tracking-widest text-primary/80">Your Community. Your Stories.</span>
           </div>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-foreground leading-[0.95] mb-6 animate-fade-in-up opacity-0 delay-200">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-foreground leading-[0.95] tracking-[-0.03em] mb-6 animate-fade-in-up opacity-0 delay-200">
             The Pulse
             <br />
             <span className="text-primary">of the Hub</span>
@@ -37,14 +37,14 @@ const HeroSection = () => {
           <div className="flex flex-wrap gap-3 animate-fade-in-up opacity-0 delay-400">
             <Link
               to="/category/community"
-              className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-display text-sm font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)]"
+              className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-display text-sm font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] active:scale-[0.98]"
             >
               Latest Stories
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </Link>
             <Link
               to="/category/culture"
-              className="inline-flex items-center gap-2 border border-foreground/20 text-foreground px-6 py-3 rounded-md font-display text-sm font-medium tracking-wide hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300"
+              className="inline-flex items-center gap-2 border border-foreground/20 text-foreground px-6 py-3 rounded-md font-display text-sm font-medium tracking-wide hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300 active:scale-[0.98]"
             >
               Explore Culture
             </Link>
