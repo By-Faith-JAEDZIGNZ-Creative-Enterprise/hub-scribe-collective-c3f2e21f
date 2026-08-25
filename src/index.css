@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -55,6 +55,11 @@
     --hub-surface-hover: 220 14% 96%;
     --hub-cyan: 190 80% 45%;
     --hub-text-dim: 225 12% 55%;
+
+    /* Footer — Ink & Ivory editorial band (constant across themes) */
+    --footer-ivory: 45 33% 98%;
+    --footer-ink: 0 0% 10%;
+    --footer-ink-soft: 0 0% 42%;
 
     /* Easing + elevation */
     --ease-hub: cubic-bezier(0.22, 1, 0.36, 1);
