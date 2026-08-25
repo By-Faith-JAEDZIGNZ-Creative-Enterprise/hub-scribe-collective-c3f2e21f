@@ -12,10 +12,10 @@ const storySchema = z.object({
 });
 
 interface SubmitStoryProps {
-  category: string;
+  category?: string;
 }
 
-const SubmitStory = ({ category }: SubmitStoryProps) => {
+const SubmitStory = ({ category = "Community" }: SubmitStoryProps) => {
   const [form, setForm] = useState({ name: "", email: "", headline: "", details: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);

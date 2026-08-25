@@ -57,24 +57,24 @@ const Footer = () => {
               <div>
                 <h4 className={linkHead}>About</h4>
                 <ul className="space-y-4">
-                  <li><a href="#" className={linkItem}>Our Mission</a></li>
-                  <li><a href="#" className={linkItem}>Our Team</a></li>
-                  <li><a href="#" className={linkItem}>Contact</a></li>
+                  <li><Link to="/about" className={linkItem}>Our Mission</Link></li>
+                  <li><Link to="/about#team" className={linkItem}>Our Team</Link></li>
+                  <li><Link to="/contact" className={linkItem}>Contact</Link></li>
                 </ul>
               </div>
               <div>
                 <h4 className={linkHead}>Get Involved</h4>
                 <ul className="space-y-4">
-                  <li><a href="#" className={linkItem}>Submit a Story</a></li>
-                  <li><a href="#" className={linkItem}>Advertise</a></li>
-                  <li><a href="#" className={linkItem}>Sponsor</a></li>
+                  <li><Link to="/contact#submit" className={linkItem}>Submit a Story</Link></li>
+                  <li><Link to="/contact#advertise" className={linkItem}>Advertise</Link></li>
+                  <li><Link to="/contact#advertise" className={linkItem}>Sponsor</Link></li>
                 </ul>
               </div>
               <div>
                 <h4 className={linkHead}>Legal</h4>
                 <ul className="space-y-4">
-                  <li><a href="#" className={linkItem}>Privacy Policy</a></li>
-                  <li><a href="#" className={linkItem}>Terms of Use</a></li>
+                  <li><Link to="/privacy" className={linkItem}>Privacy Policy</Link></li>
+                  <li><Link to="/terms" className={linkItem}>Terms of Use</Link></li>
                 </ul>
               </div>
             </div>

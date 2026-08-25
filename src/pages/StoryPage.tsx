@@ -126,10 +126,13 @@ const StoryPage = () => {
   const contentParagraphs = (story.content || story.excerpt).split("\n\n");
   const midPoint = Math.ceil(contentParagraphs.length / 3);
   const credit = formatPhotoCredit(story);
+  // Story dates are editorial strings ("April 27, 2026"); schema.org expects ISO 8601
+  const parsedDate = Date.parse(story.date);
+  const publishedISO = Number.isNaN(parsedDate) ? undefined : new Date(parsedDate).toISOString();
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead title={story.title} description={story.excerpt} path={`/story/${slug}`} type="article" publishedTime={story.date} author={story.author} image={story.image} category={story.category} />
+      <SEOHead title={story.title} description={story.excerpt} path={`/story/${slug}`} type="article" publishedTime={publishedISO} author={story.author} image={story.image} category={story.category} />
       <Navbar />
       <main className="pt-36 md:pt-28">
         {/* Article Header */}
