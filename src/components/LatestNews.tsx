@@ -17,7 +17,7 @@ const LatestNews = () => {
         <div className="flex items-center gap-4 mb-6 md:mb-10">
           <div className="flex items-center gap-3">
             <div className="w-1 h-6 bg-primary rounded-full" />
-            <h2 className="font-display text-xl font-bold tracking-tight text-foreground">Latest News</h2>
+            <h2 className="font-display text-lg md:text-xl font-bold tracking-[-0.025em] text-foreground">Latest News</h2>
           </div>
           <div className="flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full">
             <span className="relative flex h-2 w-2">

@@ -54,10 +54,10 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
             </span>
             {story.external && <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />}
           </div>
-          <h3 className="font-display text-xl md:text-3xl font-bold text-foreground mt-2.5 md:mt-3 mb-2 group-hover:text-primary transition-colors duration-300 leading-tight">
+          <h3 className="font-display text-xl md:text-[1.7rem] font-bold text-foreground mt-2.5 md:mt-3 mb-2 group-hover:text-primary transition-colors duration-300 leading-[1.15] tracking-[-0.02em]">
             {story.title}
           </h3>
-          <p className="text-muted-foreground text-sm line-clamp-2 font-body">{story.excerpt}</p>
+          <p className="text-muted-foreground text-sm md:text-[15px] line-clamp-2 font-body leading-[1.6]">{story.excerpt}</p>
           <div className="flex items-center gap-2 mt-3 text-xs text-hub-text-dim font-body">
             <span>{story.author}</span>
             <span className="text-border">·</span>
@@ -85,7 +85,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
             </span>
             {story.external && <ExternalLink className="w-3 h-3 text-muted-foreground" />}
           </div>
-          <h4 className="font-display text-sm font-semibold text-foreground mt-1.5 group-hover:text-primary transition-colors duration-300 leading-snug line-clamp-2">
+          <h4 className="font-display text-[0.95rem] font-semibold text-foreground mt-1.5 group-hover:text-primary transition-colors duration-300 leading-[1.3] tracking-[-0.01em] line-clamp-2">
             {story.title}
           </h4>
           <span className="text-xs text-hub-text-dim font-body">{story.date}</span>
@@ -113,10 +113,10 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
           </div>
           <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
         </div>
-        <h3 className="font-display text-base md:text-lg font-semibold tracking-tight text-foreground mt-2 md:mt-3 mb-1.5 md:mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
+        <h3 className="font-display text-base md:text-[1.15rem] font-semibold tracking-[-0.015em] text-foreground mt-2 md:mt-3 mb-1.5 md:mb-2 group-hover:text-primary transition-colors duration-300 leading-[1.25]">
           {story.title}
         </h3>
-        <p className="text-muted-foreground text-[13px] md:text-sm line-clamp-2 font-body leading-relaxed">{story.excerpt}</p>
+        <p className="text-muted-foreground text-[13px] md:text-sm line-clamp-2 font-body leading-[1.6]">{story.excerpt}</p>
         <div className="flex items-center gap-2 mt-2.5 md:mt-3 text-xs text-hub-text-dim font-body">
           <span>{story.author}</span>
           <span className="text-border">·</span>
