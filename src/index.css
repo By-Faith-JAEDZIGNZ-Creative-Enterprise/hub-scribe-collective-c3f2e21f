@@ -168,17 +168,25 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .skeleton-shimmer {
+  .skeleton-shimmer,
+  .animate-ticker {
     animation: none;
   }
 }
 
 .animate-ticker {
-  animation: ticker-scroll 30s linear infinite;
+  animation: ticker-scroll 44s linear infinite;
+  will-change: transform;
 }
 
 .animate-ticker:hover {
   animation-play-state: paused;
+}
+
+/* Ticker edge mask — headlines dissolve smoothly instead of hitting gradient plates */
+.ticker-mask {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 /* Fade-in-up animation */
