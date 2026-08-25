@@ -145,6 +145,29 @@
   100% { transform: translateX(-50%); }
 }
 
+/* Skeleton shimmer — editorial loading state */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--muted) / 0.6) 25%,
+    hsl(var(--muted-foreground) / 0.14) 50%,
+    hsl(var(--muted) / 0.6) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer {
+    animation: none;
+  }
+}
+
 .animate-ticker {
   animation: ticker-scroll 30s linear infinite;
 }

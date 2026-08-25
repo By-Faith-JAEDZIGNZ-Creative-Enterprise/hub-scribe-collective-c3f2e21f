@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import type { Story } from "@/data/stories";
+import LoadingImage from "@/components/LoadingImage";
 
 interface StoryCardProps {
   story: Story;
@@ -35,10 +36,11 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
     return (
       <CardWrapper story={story} className="group block relative overflow-hidden rounded-2xl border border-border/40 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
         <div className="aspect-[16/9] overflow-hidden">
-          <img
+          <LoadingImage
             src={story.image}
             alt={story.title}
-            className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+            wrapperClassName="w-full h-full"
+            className="w-full h-full object-cover group-hover:scale-[1.04]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
         </div>
@@ -72,10 +74,11 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
     return (
       <CardWrapper story={story} className="group flex gap-4 items-start">
         <div className="w-24 h-[4.5rem] sm:w-32 sm:h-24 flex-shrink-0 overflow-hidden rounded-xl border border-border/40">
-          <img
+          <LoadingImage
             src={story.image}
             alt={story.title}
-            className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500 ease-out"
+            wrapperClassName="w-full h-full"
+            className="w-full h-full object-cover group-hover:scale-[1.04]"
           />
         </div>
         <div className="flex-1 min-w-0">
@@ -97,10 +100,11 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   return (
     <CardWrapper story={story} className="group block transition-transform duration-500 ease-out hover:-translate-y-1">
       <div className="overflow-hidden rounded-2xl border border-border/40 shadow-[var(--shadow-card)] group-hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
-        <img
+        <LoadingImage
           src={story.image}
           alt={story.title}
-          className="w-full aspect-[3/2] object-cover group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+          wrapperClassName="w-full aspect-[3/2]"
+          className="w-full h-full object-cover group-hover:scale-[1.04]"
         />
       </div>
       <div className="pt-3 md:pt-4 px-0.5">
