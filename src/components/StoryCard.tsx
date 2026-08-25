@@ -57,7 +57,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
           <h3 className="font-display text-xl md:text-[1.7rem] font-bold text-foreground mt-2.5 md:mt-3 mb-2 group-hover:text-primary transition-colors duration-300 leading-[1.15] tracking-[-0.02em]">
             {story.title}
           </h3>
-          <p className="text-muted-foreground text-sm line-clamp-2 font-body">{story.excerpt}</p>
+          <p className="text-muted-foreground text-sm md:text-[15px] line-clamp-2 font-body leading-[1.6]">{story.excerpt}</p>
           <div className="flex items-center gap-2 mt-3 text-xs text-hub-text-dim font-body">
             <span>{story.author}</span>
             <span className="text-border">·</span>
