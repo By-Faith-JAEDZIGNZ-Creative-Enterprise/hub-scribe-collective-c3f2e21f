@@ -1,0 +1,23 @@
+# Hattiesburg Hub
+
+> Independent local news, community stories, events, sports, and culture coverage for Hattiesburg, Mississippi and the Pine Belt region.
+
+Hattiesburg Hub is a hyper-local news publication covering the Hub City — Hattiesburg, Mississippi — and the surrounding Pine Belt, including Forrest and Lamar counties. Coverage spans community news, local business, arts and culture, high school and Southern Miss (USM) sports, opinion, and a community events calendar. Original reporting by Hattiesburg Hub staff is published alongside curated stories from regional outlets such as WJTV, WDAM, and The Pine Belt News, with full source attribution.
+
+## Pages
+
+- [Home](/): Latest original and curated local news from Hattiesburg, MS.
+- [Events](/events): Community events calendar for Hattiesburg and the Pine Belt.
+- [Community](/category/community): Neighborhood, city government, and civic news.
+- [Business](/category/business): Local business, development, and economy news.
+- [Culture](/category/culture): Arts, music, food, and local culture.
+- [Sports](/category/sports): Southern Miss, high school, and community sports.
+- [Opinion](/category/opinion): Editorials and community voices.
+
+## Feeds
+
+- [RSS Feed](/rss.xml): RSS 2.0 feed of the latest stories.
+
+## Optional
+
+- [Subscribe](/signup): Newsletter signup for the weekly digest and new-story alerts.
