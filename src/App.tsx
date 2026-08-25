@@ -25,6 +25,7 @@ const App = () => (
           <Route path="/category/:slug" element={<CategoryPage />} />
           <Route path="/story/:slug" element={<StoryPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/search" element={<SearchPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/unsubscribe" element={<UnsubscribePage />} />
           <Route path="*" element={<NotFound />} />
