@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Star } from "lucide-react";
-import StoryCard from "./StoryCard";
 import { stories } from "@/data/stories";
 
 const LeadStory = () => {
@@ -8,51 +7,84 @@ const LeadStory = () => {
   if (!leadStory) return null;
 
   return (
-    <section className="py-12 bg-hub-deep border-b border-border/40">
+    <section className="py-14">
       <div className="container mx-auto px-4">
         {/* Section label */}
         <div className="flex items-center gap-3 mb-6">
           <Star className="w-4 h-4 text-primary" />
           <span className="font-display text-xs font-bold tracking-widest text-primary uppercase">Featured Original</span>
           <div className="flex-1 h-px bg-border/40" />
-          <span className="font-display text-xs text-muted-foreground">{leadStory.date}</span>
+          <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">{leadStory.date}</span>
         </div>
 
-        {/* Lead story layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          {/* Image */}
-          <Link to={`/story/${leadStory.slug}`} className="lg:col-span-7 group block overflow-hidden rounded-lg">
-            <img
-              src={leadStory.image}
-              alt={leadStory.title}
-              className="w-full aspect-[16/9] object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
-            />
-          </Link>
-
-          {/* Text */}
-          <div className="lg:col-span-5">
-            <span className="category-badge px-2.5 py-1 rounded-sm bg-primary/15 text-primary">
-              Original
-            </span>
-            <Link to={`/story/${leadStory.slug}`} className="group block mt-3">
-              <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight group-hover:text-primary transition-colors duration-300">
-                {leadStory.title}
-              </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
+          {/* Featured split card */}
+          <article className="lg:col-span-9 group bg-card/60 border border-border/40 rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
+            {/* Image half */}
+            <Link to={`/story/${leadStory.slug}`} className="md:w-1/2 relative overflow-hidden block">
+              <img
+                src={leadStory.image}
+                alt={leadStory.title}
+                className="w-full h-full min-h-[280px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div className="absolute inset-0 bg-primary/10 mix-blend-overlay pointer-events-none" />
             </Link>
-            <p className="font-body text-muted-foreground mt-3 mb-4 leading-relaxed line-clamp-3">
-              {leadStory.excerpt}
-            </p>
-            <div className="flex items-center gap-3 mb-5 text-xs text-hub-text-dim font-body">
-              <span>By {leadStory.author}</span>
-              <span className="text-border">·</span>
-              <span>{leadStory.category}</span>
+
+            {/* Text half */}
+            <div className="md:w-1/2 p-8 md:p-10 flex flex-col justify-between gap-8">
+              <div>
+                <span className="inline-block px-2.5 py-1 rounded-md bg-primary/15 border border-primary/25 text-primary category-badge mb-5">
+                  Original Series
+                </span>
+                <Link to={`/story/${leadStory.slug}`} className="block">
+                  <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-[1.05] tracking-tight group-hover:text-primary transition-colors duration-300">
+                    {leadStory.title}
+                  </h2>
+                </Link>
+                <p className="font-body text-sm text-muted-foreground mt-4 leading-relaxed line-clamp-3">
+                  {leadStory.excerpt}
+                </p>
+              </div>
+
+              {/* Byline footer */}
+              <div className="flex items-center justify-between pt-6 border-t border-border/40">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-full bg-primary/15 border border-primary/25 flex items-center justify-center">
+                    <span className="font-display text-xs font-bold text-primary">
+                      {leadStory.author.charAt(0)}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="font-display text-[13px] font-semibold text-foreground leading-tight">{leadStory.author}</p>
+                    <p className="font-body text-[11px] text-muted-foreground capitalize">{leadStory.category}</p>
+                  </div>
+                </div>
+                <Link
+                  to={`/story/${leadStory.slug}`}
+                  aria-label={`Read: ${leadStory.title}`}
+                  className="p-2.5 rounded-full border border-border/50 text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
+                >
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </article>
+
+          {/* Hub Briefing callout panel */}
+          <div className="lg:col-span-3 bg-primary rounded-3xl p-8 flex flex-col justify-between gap-8 text-primary-foreground shadow-[0_16px_48px_-16px_hsl(var(--primary)/0.5)]">
+            <div>
+              <h3 className="font-display text-2xl font-bold leading-tight mb-3">
+                The Hub<br />Briefing
+              </h3>
+              <p className="font-body text-xs text-primary-foreground/80 leading-relaxed">
+                Curated local news and community signals, delivered to your inbox every week.
+              </p>
             </div>
             <Link
-              to={`/story/${leadStory.slug}`}
-              className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-md font-display text-sm font-medium tracking-wide hover:bg-hub-electric-glow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)]"
+              to="/signup"
+              className="block w-full text-center bg-background text-foreground py-3 rounded-xl font-display text-xs font-bold uppercase tracking-widest hover:bg-muted transition-colors"
             >
-              Read Full Story
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              Join the Hub
             </Link>
           </div>
         </div>
