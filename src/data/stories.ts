@@ -37,6 +37,52 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "234",
+    title: "Southern Miss Business Development Program Named Among Nation’s Best by TIME",
+    excerpt: "Gulf Blue Navigator, a Southern Miss Research Foundation program that helps startups turn innovative ideas into scalable businesses, ranked No. 52 on TIME and Statista’s inaugural list of America’s best incubators and accelerators.",
+    category: "business",
+    author: "Hattiesburg Hub Staff",
+    date: "August 25, 2026",
+    image: "/story-gulf-blue-navigator.jpg",
+    images: [
+      "/story-gulf-blue-navigator.jpg",
+      "/story-gulf-blue-time-badge.png",
+    ],
+    imageAlts: [
+      "The historic Gulf & Ship Island R.R. Office building in Gulfport, a three-story white stone building with arched windows, home of Southern Miss’ Gulf Blue Navigator program",
+      "Official circular badge reading “America’s Best Incubators & Accelerators — TIME 2026” with the Gulf Blue logo and a TIME and Statista award emblem",
+    ],
+    imageCaptions: [
+      "The historic Gulf & Ship Island R.R. Office building, home of the Gulf Blue Navigator program at the Southern Miss Research Foundation. Photo courtesy of the University of Southern Mississippi.",
+      "Gulf Blue Navigator ranked No. 52 on TIME and Statista’s inaugural 2026 listing of America’s Best Incubators & Accelerators. Badge courtesy of TIME/Statista.",
+    ],
+    slug: "gulf-blue-navigator-time-best-incubators-ranking",
+    featured: true,
+    original: true,
+    photoCaption: "The Gulf & Ship Island R.R. Office building, home of Gulf Blue Navigator, and the program’s TIME 2026 recognition badge",
+    photoSource: "University of Southern Mississippi / TIME and Statista",
+    photoLicense: "Used with permission",
+    content: `A University of Southern Mississippi program that helps startups turn innovative ideas into scalable businesses has earned national recognition as one of America’s best incubators and accelerators.
+
+Gulf Blue Navigator, a program at the Southern Miss Research Foundation, ranked No. 52 among 80 organizations recognized by TIME and Statista in their inaugural 2026 listings.
+
+Gulf Blue Navigator supports companies developing technologies across the “Blue Economy.” Those include maritime systems, aquaculture, coastal resilience, ocean observation, autonomous technologies and advanced manufacturing.
+
+“Being recognized by TIME and Statista as one of America’s best incubators and accelerators is an incredible honor and a meaningful validation of the work our team, partners, mentors and companies have built together,” said Natalie Guess, assistant director of innovation and impact at Southern Miss. “Gulf Blue Navigator was created to provide more than traditional accelerator programming. We connect companies with customers, research expertise, testing and demonstration capabilities, investors, manufacturers, government partners and the resources needed to move technologies from discovery to commercialization and deployment.”
+
+The ranking by TIME and Statista is based on alumni evaluations, peer recommendations, track records and founder outcomes. Statista is a global data and analytics company.
+
+Gulf Blue Navigator has supported companies from across the country and internationally. Participating companies receive strategic mentoring, customer and partner introductions, access to research and testing facilities and opportunities to engage with industry experts and investors.
+
+The TIME listing is the latest recognition for the group. Gulf Blue in May received the Rising Tide Award during the 2026 State of the Coast Symposium from the Gulf Coast Business Council.
+
+“By connecting entrepreneurs with world-class research, industry expertise, federal partners and resources to scale, Gulf Blue is not only advancing the Blue Economy, it is positioning coastal Mississippi as a nationally recognized destination for innovation and technology-driven economic growth,” said Jamie Miller, Gulf Coast Business Council President and CEO.
+
+Business development champions said the recognition underscored Mississippi’s growing innovation ecosystem and its national impact.
+
+“This award belongs to every company, mentor, partner, sponsor and supporter who has helped make Gulf Blue Navigator successful,” Guess said. “We are proud of what has been accomplished, but we are even more excited about what comes next.”`,
+  },
+  {
     id: "229",
     title: "Envisioning the Possibilities: “Night Off Broadway” to Showcase Future of Historic Hattiesburg Corridor",
     excerpt: "For one night, an old auto dealership will be transformed into a center of culture and family fun — and a preview of what the entire Broadway Drive corridor could become.",
