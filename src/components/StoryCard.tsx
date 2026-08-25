@@ -33,7 +33,7 @@ const categoryColors: Record<string, string> = {
 const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   if (variant === "large") {
     return (
-      <CardWrapper story={story} className="group block relative overflow-hidden rounded-xl border border-border/40 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
+      <CardWrapper story={story} className="group block relative overflow-hidden rounded-2xl border border-border/40 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
         <div className="aspect-[16/9] overflow-hidden">
           <img
             src={story.image}
@@ -71,7 +71,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   if (variant === "horizontal") {
     return (
       <CardWrapper story={story} className="group flex gap-4 items-start">
-        <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg border border-border/40">
+        <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-xl border border-border/40">
           <img
             src={story.image}
             alt={story.title}
@@ -96,7 +96,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
 
   return (
     <CardWrapper story={story} className="group block transition-transform duration-500 ease-out hover:-translate-y-1">
-      <div className="overflow-hidden rounded-xl border border-border/40 shadow-[var(--shadow-card)] group-hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
+      <div className="overflow-hidden rounded-2xl border border-border/40 shadow-[var(--shadow-card)] group-hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
         <img
           src={story.image}
           alt={story.title}

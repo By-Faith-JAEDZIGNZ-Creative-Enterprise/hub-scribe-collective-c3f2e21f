@@ -18,7 +18,7 @@ const Index = () => {
       <SEOHead path="/" />
       <LatestOriginalLightbox />
       <Navbar />
-      <main className="pt-16">
+      <main className="pt-24 md:pt-28">
         <HeroSection />
         <TrendingTicker />
         <LeadStory />
