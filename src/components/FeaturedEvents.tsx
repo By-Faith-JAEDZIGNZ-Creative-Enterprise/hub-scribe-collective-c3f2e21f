@@ -38,10 +38,10 @@ const FeaturedEvents = () => {
   if (featured.length === 0) return null;
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-10 md:py-16 bg-background">
       <div className="container mx-auto px-4">
         {/* Section header */}
-        <div className="flex items-center gap-4 mb-10">
+        <div className="flex items-center gap-4 mb-6 md:mb-10">
           <div className="flex items-center gap-3">
             <div className="w-1.5 h-8 bg-primary rounded-full" />
             <h2 className="font-display text-2xl font-bold text-foreground">Upcoming Events</h2>
@@ -61,7 +61,7 @@ const FeaturedEvents = () => {
         </div>
 
         {/* Events grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {featured.map((e) => {
             const start = parseLocalDate(e.startDate);
             const cat = categoryStyles[e.category];
