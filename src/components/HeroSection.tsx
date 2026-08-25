@@ -26,7 +26,10 @@ const HeroSection = () => {
               <span className="font-mono text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-primary">Your Community. Your Stories.</span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-foreground leading-[0.95] tracking-[-0.035em] mb-4 md:mb-6 animate-fade-in-up opacity-0 delay-200">
-...
+              The Pulse
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-hub-electric-glow to-primary">of the Hub</span>
+              City
+            </h1>
             <p className="font-body text-sm sm:text-base md:text-[1.15rem] text-muted-foreground max-w-lg mb-5 md:mb-8 leading-[1.65] animate-fade-in-up opacity-0 delay-300">
               Hattiesburg's independent source for local news, culture, business, and community stories that matter.
             </p>

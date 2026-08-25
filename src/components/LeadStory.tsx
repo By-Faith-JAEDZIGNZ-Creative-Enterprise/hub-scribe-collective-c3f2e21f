@@ -38,7 +38,9 @@ const LeadStory = () => {
                 </span>
                 <Link to={`/story/${leadStory.slug}`} className="block">
                   <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-[1.08] tracking-[-0.025em] group-hover:text-primary transition-colors duration-300">
-...
+                    {leadStory.title}
+                  </h2>
+                </Link>
                 <p className="font-body text-sm md:text-[15px] text-muted-foreground mt-4 leading-[1.65] line-clamp-3">
                   {leadStory.excerpt}
                 </p>
