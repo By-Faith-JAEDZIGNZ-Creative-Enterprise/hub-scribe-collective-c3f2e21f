@@ -35,12 +35,24 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
       });
 
     if (error) {
-      setLoading(false);
       if (error.code === "23505") {
-        toast.info("You're already subscribed!");
-      } else {
-        toast.error("Something went wrong. Please try again.");
+        // Existing row — may have been unsubscribed. Reactivate server-side.
+        try {
+          await supabase.functions.invoke("newsletter-welcome", {
+            body: { email: result.data },
+          });
+        } catch (err) {
+          console.error("Resubscribe error:", err);
+        }
+        setLoading(false);
+        toast.success("You're subscribed! Welcome back to the Hub.");
+        setEmail("");
+        setFirstName("");
+        setLastName("");
+        return;
       }
+      setLoading(false);
+      toast.error("Something went wrong. Please try again.");
       return;
     }
 
