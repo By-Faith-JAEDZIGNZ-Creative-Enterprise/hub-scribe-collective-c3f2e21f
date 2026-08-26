@@ -43,7 +43,14 @@ const SignupPage = () => {
 
       if (error) {
         if (error.code === "23505") {
-          toast({ title: "You're already signed up!", description: "We've got you covered." });
+          try {
+            if (email) {
+              await supabase.functions.invoke("newsletter-welcome", { body: { email } });
+            }
+          } catch (err) {
+            console.error("Resubscribe error:", err);
+          }
+          toast({ title: "You're signed up!", description: "We've got you covered." });
           setDone(true);
         } else {
           throw error;
