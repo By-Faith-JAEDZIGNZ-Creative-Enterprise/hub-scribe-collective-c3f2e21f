@@ -12,6 +12,7 @@ import {
 const BodySchema = z.object({
   mode: z.enum(["digest", "announcement"]).default("digest"),
   limit: z.number().int().min(1).max(12).default(6),
+  test_to: z.string().email().optional(),
 });
 
 function json(data: unknown, status = 200): Response {
@@ -51,21 +52,29 @@ Deno.serve(async (req) => {
     if (!parsed.success) {
       return json({ error: parsed.error.flatten().fieldErrors }, 400);
     }
-    const { mode, limit } = parsed.data;
+    const { mode, limit, test_to } = parsed.data;
 
     const stories = await fetchLatestStories(limit);
     if (stories.length === 0) {
       return json({ error: "No stories available from RSS feed" }, 502);
     }
 
-    const { data: subscribers, error: subError } = await supabase
-      .from("newsletter_subscribers")
-      .select("id, email, first_name")
-      .eq("is_active", true);
+    let subscribers: { id: string; email: string; first_name: string | null }[] | null;
 
-    if (subError) {
-      console.error("Subscriber query failed:", subError);
-      return json({ error: "Failed to load subscribers" }, 500);
+    if (test_to) {
+      // Test mode: send only to the requested address, ignoring the subscriber list
+      subscribers = [{ id: "test", email: test_to, first_name: null }];
+    } else {
+      const { data, error: subError } = await supabase
+        .from("newsletter_subscribers")
+        .select("id, email, first_name")
+        .eq("is_active", true);
+
+      if (subError) {
+        console.error("Subscriber query failed:", subError);
+        return json({ error: "Failed to load subscribers" }, 500);
+      }
+      subscribers = data;
     }
 
     const topTitle = stories[0].title;
