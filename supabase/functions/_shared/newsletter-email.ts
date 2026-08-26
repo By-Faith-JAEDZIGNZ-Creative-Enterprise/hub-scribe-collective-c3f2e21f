@@ -244,3 +244,26 @@ export function renderStoryAlertEmail(params: {
 }
 
 
+
+export function renderWelcomeEmail(params: {
+  firstName: string | null;
+  unsubscribeUrl: string;
+}): string {
+  const greeting = params.firstName ? `Hi ${escapeHtml(params.firstName)},` : "Hi there,";
+  const content = `
+    <p style="margin:0 0 4px;font-family:${FONT_BODY};font-size:14px;color:#111827;">${greeting}</p>
+    <h1 style="margin:0 0 16px;font-family:${FONT_DISPLAY};font-size:26px;font-weight:700;color:#111827;line-height:1.2;">
+      Welcome to the <span style="color:${BRAND_BLUE};">Hub City Digest</span>
+    </h1>
+    <p style="margin:0 0 12px;font-family:${FONT_BODY};font-size:13px;line-height:1.6;color:#4b5563;">
+      You're on the list. Every week we'll send you the stories shaping Hattiesburg — original reporting from our newsroom, community news, sports, and culture.
+    </p>
+    <p style="margin:0 0 24px;font-family:${FONT_BODY};font-size:13px;line-height:1.6;color:#4b5563;">
+      In the meantime, catch up on what's happening right now:
+    </p>
+    <p style="margin:0 0 24px;">
+      <a href="${SITE_URL}" style="display:inline-block;background-color:${BRAND_BLUE};color:#ffffff;font-family:${FONT_DISPLAY};font-size:13px;font-weight:600;padding:12px 26px;border-radius:8px;text-decoration:none;">Read the latest stories</a>
+    </p>
+    ${facebookBlock()}`;
+  return shell(content, params.unsubscribeUrl);
+}
