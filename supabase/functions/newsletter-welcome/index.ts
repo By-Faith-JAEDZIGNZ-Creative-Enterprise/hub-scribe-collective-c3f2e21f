@@ -45,8 +45,19 @@ Deno.serve(async (req) => {
       console.error("Welcome lookup failed:", fetchError);
       return json({ error: "Something went wrong" }, 500);
     }
-    if (!subscriber || !subscriber.is_active) {
+    if (!subscriber) {
       return json({ sent: false, reason: "not_subscribed" });
+    }
+    // Someone who previously unsubscribed is re-subscribing: reactivate them.
+    if (!subscriber.is_active) {
+      const { error: reactivateError } = await supabase
+        .from("newsletter_subscribers")
+        .update({ is_active: true })
+        .eq("id", subscriber.id);
+      if (reactivateError) {
+        console.error("Reactivate failed:", reactivateError);
+        return json({ error: "Something went wrong" }, 500);
+      }
     }
     if (subscriber.welcome_sent_at) {
       return json({ sent: false, reason: "already_welcomed" });
