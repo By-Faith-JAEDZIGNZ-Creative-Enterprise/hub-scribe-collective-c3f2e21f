@@ -3,7 +3,7 @@
 export const SITE_URL = "https://www.hattiesburghub.com";
 export const SITE_URL_FALLBACK = "https://hub-scribe-collective.lovable.app";
 export const FACEBOOK_URL = "https://www.facebook.com/hattiesburghub";
-export const FROM_ADDRESS = "Hattiesburg Hub <digest@hattiesburghub.com>";
+export const FROM_ADDRESS = "Hattiesburg Hub <digest@hattiesburghub-news.com>";
 
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
 
