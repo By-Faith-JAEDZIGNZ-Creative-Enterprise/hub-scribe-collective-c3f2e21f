@@ -65,26 +65,26 @@ const LatestOriginalLightbox = () => {
       .on("broadcast", { event: ORIGINALS_EVENT }, (payload) => {
         const incomingId = (payload?.payload as { id?: string } | undefined)?.id;
         if (!incomingId) return;
-        // Clear any prior dismissal for this id so the lightbox re-opens instantly,
-        // then bump the tick to force a fresh derivation from `stories`.
-        localStorage.removeItem(`latest-original-dismissed:${incomingId}`);
         localStorage.setItem(LAST_KNOWN_KEY, incomingId);
         setRefreshTick((t) => t + 1);
+        // Respect this reader's own dismissal — never force the modal back open.
+        if (localStorage.getItem(`latest-original-dismissed:${incomingId}`)) return;
         setIndex(0);
         setOpen(true);
       })
       .subscribe((status) => {
         if (status !== "SUBSCRIBED" || !latestOriginal) return;
-        // First session to notice a brand-new latest original announces it.
         const lastKnown = localStorage.getItem(LAST_KNOWN_KEY);
-        if (lastKnown !== latestOriginal.id) {
-          localStorage.setItem(LAST_KNOWN_KEY, latestOriginal.id);
-          channel.send({
-            type: "broadcast",
-            event: ORIGINALS_EVENT,
-            payload: { id: latestOriginal.id },
-          });
-        }
+        if (lastKnown === latestOriginal.id) return;
+        localStorage.setItem(LAST_KNOWN_KEY, latestOriginal.id);
+        // Only announce a genuinely new original — a first-time visitor (no
+        // last-known id at all) must not broadcast to everyone else.
+        if (!lastKnown) return;
+        channel.send({
+          type: "broadcast",
+          event: ORIGINALS_EVENT,
+          payload: { id: latestOriginal.id },
+        });
       });
 
     return () => {
