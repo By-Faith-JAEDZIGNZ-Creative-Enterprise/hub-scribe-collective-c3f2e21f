@@ -74,7 +74,7 @@ Deno.serve(async (req) => {
         .select("id, email, first_name", { count: "exact" })
         .eq("is_active", true)
         .order("subscribed_at", { ascending: true })
-        .range(offset, batch_size ? offset + batch_size - 1 : 100000);
+        .range(offset, offset + batch_size - 1);
 
       if (subError) {
         console.error("Subscriber query failed:", subError);
