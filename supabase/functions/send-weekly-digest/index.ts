@@ -13,7 +13,7 @@ const BodySchema = z.object({
   mode: z.enum(["digest", "announcement"]).default("digest"),
   limit: z.number().int().min(1).max(12).default(6),
   test_to: z.string().email().optional(),
-  batch_size: z.number().int().min(1).max(200).optional(),
+  batch_size: z.number().int().min(1).max(200).default(50),
   offset: z.number().int().min(0).default(0),
 });
 
