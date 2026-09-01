@@ -92,18 +92,30 @@ Deno.serve(async (req) => {
 
     const results: { email: string; ok: boolean; status: number }[] = [];
 
-    for (const sub of subscribers ?? []) {
-      const unsubscribeUrl = `${SITE_URL}/unsubscribe?token=${sub.id}`;
-      const html =
-        mode === "announcement"
-          ? renderAnnouncementEmail({ stories, firstName: sub.first_name, unsubscribeUrl })
-          : renderDigestEmail({ stories, firstName: sub.first_name, unsubscribeUrl });
-
-      const res = await sendViaResend({ to: sub.email, subject, html });
-      results.push({ email: sub.email, ok: res.ok, status: res.status });
-
-      // Small pause between sends to be gentle on the provider
-      await new Promise((r) => setTimeout(r, 300));
+    // Send in small parallel chunks so a batch finishes well inside the edge time limit
+    const list = subscribers ?? [];
+    const CHUNK = 5;
+    for (let i = 0; i < list.length; i += CHUNK) {
+      const chunk = list.slice(i, i + CHUNK);
+      const chunkResults = await Promise.all(
+        chunk.map(async (sub) => {
+          const unsubscribeUrl = `${SITE_URL}/unsubscribe?token=${sub.id}`;
+          const html =
+            mode === "announcement"
+              ? renderAnnouncementEmail({ stories, firstName: sub.first_name, unsubscribeUrl })
+              : renderDigestEmail({ stories, firstName: sub.first_name, unsubscribeUrl });
+          try {
+            const res = await sendViaResend({ to: sub.email, subject, html });
+            return { email: sub.email, ok: res.ok, status: res.status };
+          } catch (err) {
+            console.error("Send failed:", sub.email, err);
+            return { email: sub.email, ok: false, status: 0 };
+          }
+        })
+      );
+      results.push(...chunkResults);
+      // Small pause between chunks to be gentle on the provider
+      if (i + CHUNK < list.length) await new Promise((r) => setTimeout(r, 200));
     }
 
     const sent = results.filter((r) => r.ok).length;
