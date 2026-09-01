@@ -43,15 +43,31 @@ const SignupPage = () => {
 
       if (error) {
         if (error.code === "23505") {
+          let reactivateFailed = false;
           try {
             if (email) {
-              await supabase.functions.invoke("newsletter-welcome", { body: { email } });
+              const { error: fnError } = await supabase.functions.invoke("newsletter-welcome", {
+                body: { email },
+              });
+              if (fnError) {
+                console.error("Resubscribe error:", fnError);
+                reactivateFailed = true;
+              }
             }
           } catch (err) {
             console.error("Resubscribe error:", err);
+            reactivateFailed = true;
           }
-          toast({ title: "You're signed up!", description: "We've got you covered." });
-          setDone(true);
+          if (reactivateFailed) {
+            toast({
+              title: "Something went wrong",
+              description: "We couldn't reactivate your subscription. Please try again.",
+              variant: "destructive",
+            });
+          } else {
+            toast({ title: "You're signed up!", description: "We've got you covered." });
+            setDone(true);
+          }
         } else {
           throw error;
         }

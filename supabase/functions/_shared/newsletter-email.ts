@@ -56,6 +56,7 @@ export async function fetchLatestStories(limit = 6): Promise<DigestStory[]> {
     try {
       const res = await fetch(`${base}/rss.xml`, {
         headers: { "User-Agent": "HattiesburgHub-Newsletter/1.0" },
+        signal: AbortSignal.timeout(10_000),
       });
       if (!res.ok) continue;
       const xml = await res.text();
