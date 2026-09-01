@@ -37,14 +37,24 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
     if (error) {
       if (error.code === "23505") {
         // Existing row — may have been unsubscribed. Reactivate server-side.
+        let reactivateFailed = false;
         try {
-          await supabase.functions.invoke("newsletter-welcome", {
+          const { error: fnError } = await supabase.functions.invoke("newsletter-welcome", {
             body: { email: result.data },
           });
+          if (fnError) {
+            console.error("Resubscribe error:", fnError);
+            reactivateFailed = true;
+          }
         } catch (err) {
           console.error("Resubscribe error:", err);
+          reactivateFailed = true;
         }
         setLoading(false);
+        if (reactivateFailed) {
+          toast.error("We couldn't reactivate your subscription. Please try again.");
+          return;
+        }
         toast.success("You're subscribed! Welcome back to the Hub.");
         setEmail("");
         setFirstName("");
