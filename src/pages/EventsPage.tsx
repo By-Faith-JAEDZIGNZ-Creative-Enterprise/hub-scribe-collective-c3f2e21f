@@ -93,7 +93,7 @@ const EventsPage = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Events Calendar"
-        description="Upcoming Hattiesburg events: concerts, festivals, theater, government meetings, and community gatherings — all in one place."
+        description="Upcoming Hattiesburg events: concerts, festivals, theater, government meetings, and community gatherings, all in one place."
         path="/events"
       />
       <Navbar />
@@ -114,7 +114,7 @@ const EventsPage = () => {
               Hattiesburg Events
             </h1>
             <p className="font-body text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              Concerts, festivals, government meetings, and community happenings — your hub for everything coming up across the Pine Belt.
+              Concerts, festivals, government meetings, and community happenings, your hub for everything coming up across the Pine Belt.
             </p>
           </div>
         </section>

@@ -19,7 +19,7 @@ export interface Story {
   original?: boolean;
   /** Legacy free-form credit line (still supported) */
   photoCredit?: string;
-  /** Structured attribution fields — preferred */
+  /** Structured attribution fields, preferred */
   photographer?: string;
   photoSource?: string;
   photoCaption?: string;
@@ -37,6 +37,54 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "235",
+    title: "Southern Miss Christens a New Name and Multimillion Partnership for Its Storied Stadium",
+    excerpt: "“The Rock” is now Renasant Stadium under a 10-year, $13.7 million agreement, believed to be the first naming rights deal for a university sporting venue in Mississippi.",
+    category: "sports",
+    author: "Hattiesburg Hub Staff",
+    date: "September 10, 2026",
+    image: "/story-renasant-stadium.jpg",
+    imageAlts: [
+      "Aerial night view of a packed Southern Miss football stadium with the Golden Eagles end zones lit up",
+    ],
+    slug: "southern-miss-renasant-stadium-naming-rights",
+    featured: true,
+    original: true,
+    photoCaption: "Southern Miss’ storied stadium, now Renasant Stadium, lit up on game night",
+    photoSource: "Southern Miss",
+    photoLicense: "Used with permission",
+    content: `“The Rock” has a new name.
+
+When thousands of fans gathered to cheer on the Southern Miss Golden Eagles to a season opener victory last weekend, they also helped usher in a new era for the storied stadium.
+
+The former M.M. Roberts Stadium, affectionately known as “The Rock” to Southern Miss faithful, was rechristened as Renasant Stadium. The new name represents a 10-year partnership with the banking corporation worth about $13.7 million.
+
+The agreement is believed to be the first naming rights deal in the state of Mississippi for a sporting venue on a university campus.
+
+“Today is an important day for Southern Miss Athletics, as we proudly partner with Renasant on this transformational opportunity,” Southern Miss Director of Athletics Jeremy McClain said, formally announcing the agreement Wednesday. “This partnership signifies tremendous growth for our brands, in Hattiesburg, the Pine Belt, and our entire regional footprint.”
+
+The Mississippi Institutions of Higher Learning Board of Trustees approved the change in late August.
+
+“As college athletics continues to evolve, the need for strong partners does as well, and we are thankful for the commitment of Renasant to the Southern Miss community,” McClain said.
+
+The historic 93-year-old stadium was named for Roberts during its renovation and expansion before the 1976 season. Roberts served as a longtime president of the Board of Trustees of the Mississippi Institutions of Higher Learning from 1960 until 1972. He helped lead fundraising efforts to expand the current stadium.
+
+Still, Roberts was also a self-described racist who worked against racial integration and made statements deriding those efforts. With his historic record under scrutiny, some earlier calls had been made for the university to change the name of one of its most visible structures.
+
+The new title is the third name for the facility. The stadium was originally opened in 1932 as Faulkner Field.
+
+The Renasant naming-rights agreement will remain in place through June 2036. The partnership includes prominent Renasant Stadium identification and signage, plus an annual sponsorship package featuring digital messaging and signage.
+
+“Few places represent the pride, tradition, and spirit of this region more than Southern Miss and The Rock,” said Hoppy Cole, Renasant Senior Executive Vice President and Board Member. “Putting the brand on this stadium is about much more than a name. It’s a statement that we believe in Southern Miss, we believe in the Gulf South region, and we’re proud to invest in the future of both.”
+
+Renasant Bank has humble roots that began in 1904 as a small bank in a Lee County bakery. The banking corporation today operates 279 consumer and commercial banking, mortgage and wealth management offices throughout the Southeast with about $27.0 billion in assets.
+
+Officials said the partnership with Southern Miss also marks one of the largest naming opportunities in the Group of Six Conferences of the FBS.
+
+On the field for the first time at the new Renasant Stadium, the Golden Eagles prevailed against Alcorn State University with a 49-3 victory. The team now travels to Alabama to play Auburn University Saturday.`,
+  },
+
+  {
     id: "234",
     title: "Southern Miss Business Development Program Named Among Nation’s Best by TIME",
     excerpt: "Gulf Blue Navigator, a Southern Miss Research Foundation program that helps startups turn innovative ideas into scalable businesses, ranked No. 52 on TIME and Statista’s inaugural list of America’s best incubators and accelerators.",
@@ -50,7 +98,7 @@ export const stories: Story[] = [
     ],
     imageAlts: [
       "The historic Gulf & Ship Island R.R. Office building in Gulfport, a three-story white stone building with arched windows, home of Southern Miss’ Gulf Blue Navigator program",
-      "Official circular badge reading “America’s Best Incubators & Accelerators — TIME 2026” with the Gulf Blue logo and a TIME and Statista award emblem",
+      "Official circular badge reading “America’s Best Incubators & Accelerators, TIME 2026” with the Gulf Blue logo and a TIME and Statista award emblem",
     ],
     imageCaptions: [
       "The historic Gulf & Ship Island R.R. Office building, home of the Gulf Blue Navigator program at the Southern Miss Research Foundation. Photo courtesy of the University of Southern Mississippi.",
@@ -85,7 +133,7 @@ Business development champions said the recognition underscored Mississippi’s 
   {
     id: "229",
     title: "Envisioning the Possibilities: “Night Off Broadway” to Showcase Future of Historic Hattiesburg Corridor",
-    excerpt: "For one night, an old auto dealership will be transformed into a center of culture and family fun — and a preview of what the entire Broadway Drive corridor could become.",
+    excerpt: "For one night, an old auto dealership will be transformed into a center of culture and family fun, and a preview of what the entire Broadway Drive corridor could become.",
     category: "community",
     author: "Hattiesburg Hub Staff",
     date: "August 24, 2026",
@@ -97,7 +145,7 @@ Business development champions said the recognition underscored Mississippi’s 
     ],
     imageAlts: [
       "Illustrated banner of the “Night Off Broadway” street festival, with the event’s retro roadside sign rising above vendor tents, string lights and families at dusk",
-      "Official “Night Off Broadway” event logo — a retro motel-style sign with an arrow reading “Night Off Broadway” against a maroon street-grid map",
+      "Official “Night Off Broadway” event logo, a retro motel-style sign with an arrow reading “Night Off Broadway” against a maroon street-grid map",
       "Official logo for “Right Down Broadway: A Master Plan for the Broadway Drive – West Pine Corridor” featuring the plan’s red-and-slate roadside sign mark",
     ],
     imageCaptions: [
@@ -144,7 +192,7 @@ Parks and recreation staff also set up pickleball, giant chess, and an outdoor m
   {
     id: "228",
     title: "Making the Final Push: Hattiesburg a Finalist for Nation’s Top Sports Host City",
-    excerpt: "Hattiesburg could soon join the ranks of Wichita, Salt Lake City and Indianapolis with bragging rights as a national leader in sports events — and every vote counts before the Friday deadline.",
+    excerpt: "Hattiesburg could soon join the ranks of Wichita, Salt Lake City and Indianapolis with bragging rights as a national leader in sports events, and every vote counts before the Friday deadline.",
     category: "sports",
     author: "Hattiesburg Hub Staff",
     date: "August 24, 2026",
@@ -416,7 +464,7 @@ Johnson recalled her childhood in Hattiesburg and the various activities that we
   {
     id: "223",
     title: "Hattiesburg Hits a Home Run: Junior Boys World Series Coming to the Hub City in 2027",
-    excerpt: "Hundreds of young baseball players and thousands of fans will converge on Jaycee Park in 2027 as Hattiesburg was selected to host the Junior Boys World Series — a major event expected to pour millions into the local economy.",
+    excerpt: "Hundreds of young baseball players and thousands of fans will converge on Jaycee Park in 2027 as Hattiesburg was selected to host the Junior Boys World Series, a major event expected to pour millions into the local economy.",
     category: "sports",
     author: "Hattiesburg Hub Staff",
     date: "July 18, 2026",
@@ -660,7 +708,7 @@ Granberry in September will represent her state and compete for the Miss America
   {
     id: "213",
     title: "Take a Closer Look: Art Exhibit Makes Art from Trash to Deliver a Lasting Message",
-    excerpt: "A new interactive exhibit led by Southern Miss researchers and Gulf Coast artists turns discarded plastic into striking marine sculptures—urging visitors to rethink waste and its impact on oceans and human health.",
+    excerpt: "A new interactive exhibit led by Southern Miss researchers and Gulf Coast artists turns discarded plastic into striking marine sculptures, urging visitors to rethink waste and its impact on oceans and human health.",
     category: "culture",
     author: "Hattiesburg Hub Staff",
     date: "May 31, 2026",
@@ -729,7 +777,7 @@ Planning officials for more than a year have hosted a series of public sessions 
 
 Authors of Hattiesburg 150 & Beyond describe it as the city's roadmap for the future. The goal is to use the plan as a guide to develop policies that strengthen Hattiesburg as a hub for opportunity, lifestyle, innovation and culture.
 
-"When Southerners imagine what a great city should be like, the first city they will think of is Hattiesburg—a great place to live, a great place to work, a great place to play, and a great place to visit for everyone," the document pledges.
+"When Southerners imagine what a great city should be like, the first city they will think of is Hattiesburg, a great place to live, a great place to work, a great place to play, and a great place to visit for everyone," the document pledges.
 
 The draft plan aims to address key priorities, including infrastructure, land use, housing, transportation, economic development and parks. Future development is intended to be aligned with supporting these core needs.
 
@@ -975,7 +1023,7 @@ Work is expected to be complete by 2028.`,
     slug: "mitchell-williams-fca-profile",
     featured: true,
     original: true,
-    photoCredit: "Contributed — Fellowship of Christian Athletes",
+    photoCredit: "Contributed, Fellowship of Christian Athletes",
     content: `Mitchell Williams' name, image and likeness has been a staple around Hattiesburg and south Mississippi for decades.
 
 For 27 years Williams was a trusted presence on television as sportscaster and director at WDAM TV where his voice was instantly recognized.
@@ -1039,7 +1087,7 @@ With his list of accolades and titles, Williams said he remains guided by a simp
   {
     id: "108",
     title: "Unforgettable: Street Renamed to Honor Longtime Hattiesburg Education and Civic Icon Dr. Eddie Holloway",
-    excerpt: "The City of Hattiesburg and the University of Southern Mississippi honored Dr. Eddie Holloway — retired dean of students, former city councilman, and lifelong community champion — with the newly christened 'Dr. Eddie Holloway Drive.'",
+    excerpt: "The City of Hattiesburg and the University of Southern Mississippi honored Dr. Eddie Holloway, retired dean of students, former city councilman, and lifelong community champion, with the newly christened 'Dr. Eddie Holloway Drive.'",
     category: "community",
     author: "Joseph Bryant",
     date: "April 13, 2026",
@@ -1056,7 +1104,7 @@ With his list of accolades and titles, Williams said he remains guided by a simp
     slug: "dr-eddie-holloway-street-dedication",
     featured: true,
     original: true,
-    photoCredit: "Contributed — City of Hattiesburg",
+    photoCredit: "Contributed, City of Hattiesburg",
     content: `The presence of Eddie Holloway at the University of Southern Mississippi is now forever enshrined after his 40 years of dedication to the institution and the students it serves.
 
 "We did not know him by the many titles, organizations and boards he has served on in the city," said Mayor Toby Barker, himself a Southern Miss alum. "We knew him because he was Dr. Holloway, the dean of students, the man who treated you like a person, like family whose future he had genuine interest in cultivating."
@@ -1113,7 +1161,7 @@ And throughout his travels, Holloway said he never forgot where home was and whe
     slug: "hattiesburg-high-school-carnegie-hall",
     featured: true,
     original: true,
-    photoCredit: "Contributed — Hattiesburg Public Schools Choral Arts",
+    photoCredit: "Contributed, Hattiesburg Public Schools Choral Arts",
     content: `The melodic sounds from Hattiesburg High School have drifted down well past the music room to ascend onto the world's most famous stage at Carnegie Hall.
 
 Performers from the Hattiesburg High School Choir recently traveled to New York City where they performed at the celebrated auditorium.
@@ -1237,7 +1285,7 @@ The new museum facility is built, with design work ongoing for the inside layout
   {
     id: "101",
     title: "Surpassing Expectations: Hattiesburg Zoo Creates Model for Growth, Popularity and Stability",
-    excerpt: "Now beginning its 76th year of operation, the Hattiesburg Zoo continues to evolve with its exhibits, programs and a financial model — including the Serengeti Springs water park — designed to ensure its success and stability.",
+    excerpt: "Now beginning its 76th year of operation, the Hattiesburg Zoo continues to evolve with its exhibits, programs and a financial model, including the Serengeti Springs water park, designed to ensure its success and stability.",
     category: "community",
     author: "Joseph Bryant",
     date: "Mar 30, 2026",
@@ -1402,7 +1450,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
   {
     id: "232",
     title: "Cities With the Fastest-Growing Home Prices in the Hattiesburg Metro Area",
-    excerpt: "Stacker compiled a list of cities with the fastest-growing home prices in the Hattiesburg metro using data from Zillow — see where values are climbing fastest.",
+    excerpt: "Stacker compiled a list of cities with the fastest-growing home prices in the Hattiesburg metro using data from Zillow, see where values are climbing fastest.",
     category: "business",
     author: "Prentiss Headlight",
     date: "August 21, 2026",
@@ -1427,8 +1475,8 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
   },
   {
     id: "230",
-    title: "Only One Mississippi Team Has Ever Played in the Little League World Series — and What a Team It Was",
-    excerpt: "The Hub City's Pineview Little League All-Stars remain the only Mississippi team in history to advance to Williamsport — Rick Cleveland looks back on the legendary 1977 squad.",
+    title: "Only One Mississippi Team Has Ever Played in the Little League World Series, and What a Team It Was",
+    excerpt: "The Hub City's Pineview Little League All-Stars remain the only Mississippi team in history to advance to Williamsport, Rick Cleveland looks back on the legendary 1977 squad.",
     category: "sports",
     author: "Mississippi Today",
     date: "August 18, 2026",
@@ -1805,7 +1853,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
   {
     id: "113",
     title: "New Pavement on U.S. Highway 49: What Drivers Should Know",
-    excerpt: "A fresh layer of asphalt is rolling out along U.S. Highway 49 — here's what drivers should expect during the resurfacing project and how to navigate the work zones safely.",
+    excerpt: "A fresh layer of asphalt is rolling out along U.S. Highway 49, here's what drivers should expect during the resurfacing project and how to navigate the work zones safely.",
     category: "community",
     author: "The Hattiesburg News",
     date: "Apr 21, 2026",
@@ -1841,7 +1889,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
   {
     id: "110",
     title: "Meet Cider, Holly and Juniper, the Hattiesburg Zoo's Newest Residents",
-    excerpt: "The Hattiesburg Zoo has welcomed three baby spider monkeys — Cider, Holly and Juniper — who will be housed in an indoor viewing area at the Asbury Discovery Center until they are ready to be introduced to the zoo's larger spider monkey enclosure.",
+    excerpt: "The Hattiesburg Zoo has welcomed three baby spider monkeys, Cider, Holly and Juniper, who will be housed in an indoor viewing area at the Asbury Discovery Center until they are ready to be introduced to the zoo's larger spider monkey enclosure.",
     category: "community",
     author: "WDAM",
     date: "Apr 20, 2026",
@@ -1887,7 +1935,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     slug: "hattiesburg-historic-home-walking-tour",
     external: true,
     externalUrl: "https://www.wdam.com/2026/04/07/history-happened-here-hattiesburgs-historic-home-walking-tour-showcases-its-architectural-heritage/",
-    content: "Hattiesburg is home to generations of influential residents who built and lived in some of the city's most striking houses.\n\nTo help visitors and locals learn more about that legacy, the city offers the Hattiesburg Historic Home Walking Tour, a route designed to showcase the history and architecture of prominent residences across town.\n\nThe tour includes 31 stops, highlighting homes built in different eras and reflecting a range of architectural styles, including Colonial, Tudor and Classical Revival designs.\n\nAt about halfway through the tour, you'll run into stop number 14 — the Ross Mansion, built in 1903 by prominent physician T.E. Ross for $3,500. The 7,200-square-foot home has been converted into a bed-and-breakfast.\n\nThe tour ends at the Tally House, a 13,000-square-foot Colonial Revival home built in 1907 for former judge J.R. Tally."
+    content: "Hattiesburg is home to generations of influential residents who built and lived in some of the city's most striking houses.\n\nTo help visitors and locals learn more about that legacy, the city offers the Hattiesburg Historic Home Walking Tour, a route designed to showcase the history and architecture of prominent residences across town.\n\nThe tour includes 31 stops, highlighting homes built in different eras and reflecting a range of architectural styles, including Colonial, Tudor and Classical Revival designs.\n\nAt about halfway through the tour, you'll run into stop number 14, the Ross Mansion, built in 1903 by prominent physician T.E. Ross for $3,500. The 7,200-square-foot home has been converted into a bed-and-breakfast.\n\nThe tour ends at the Tally House, a 13,000-square-foot Colonial Revival home built in 1907 for former judge J.R. Tally."
   },
   {
     id: "107",
@@ -1972,7 +2020,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     date: "Feb 12, 2026",
     image: "/story-hardy-street.jpg",
     slug: "hardy-street-new-businesses",
-    content: "The Hardy Street corridor is experiencing a commercial renaissance, with fourteen new businesses opening their doors in the first quarter of 2026 alone—a record for the historic stretch.\n\nNew arrivals include Groundwork Coffee Roasters, a specialty café sourcing beans from Mississippi farms; HubSpace, a co-working facility with 80 desks; and Revival Goods, a locally-sourced home décor shop.\n\n\"Hardy Street has always been the heartbeat of Hattiesburg commerce,\" said Chamber of Commerce president Diane Okafor. \"What we're seeing now is a new generation of entrepreneurs betting on this city.\""
+    content: "The Hardy Street corridor is experiencing a commercial renaissance, with fourteen new businesses opening their doors in the first quarter of 2026 alone, a record for the historic stretch.\n\nNew arrivals include Groundwork Coffee Roasters, a specialty café sourcing beans from Mississippi farms; HubSpace, a co-working facility with 80 desks; and Revival Goods, a locally-sourced home décor shop.\n\n\"Hardy Street has always been the heartbeat of Hattiesburg commerce,\" said Chamber of Commerce president Diane Okafor. \"What we're seeing now is a new generation of entrepreneurs betting on this city.\""
   },
   {
     id: "10",
@@ -2019,7 +2067,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     date: "Feb 14, 2026",
     image: "/story-mural-trail.jpg",
     slug: "mural-trail-unveiling",
-    content: "The Hattiesburg Arts Council has officially unveiled a new downtown mural trail featuring twelve large-scale works by local and regional artists.\n\nThe self-guided walking route stretches from Town Square Park to the Saenger Theater district, with each mural exploring a different facet of Hattiesburg's identity—from its railroad heritage to its vibrant music scene.\n\n\"Public art changes the way people experience a city,\" said Arts Council director Ava Simmons. \"These walls now tell our story.\""
+    content: "The Hattiesburg Arts Council has officially unveiled a new downtown mural trail featuring twelve large-scale works by local and regional artists.\n\nThe self-guided walking route stretches from Town Square Park to the Saenger Theater district, with each mural exploring a different facet of Hattiesburg's identity, from its railroad heritage to its vibrant music scene.\n\n\"Public art changes the way people experience a city,\" said Arts Council director Ava Simmons. \"These walls now tell our story.\""
   },
   {
     id: "13",
@@ -2066,7 +2114,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     date: "Feb 17, 2026",
     image: "/story-basketball-champs.jpg",
     slug: "tigers-state-championship",
-    content: "The Hattiesburg High Tigers are state champions. In a dramatic overtime finish at the Mississippi Coliseum in Jackson, the Tigers defeated Meridian High 68-65 to claim the 6A boys basketball title—the school's first state championship in 15 years.\n\nSenior guard Jaylen Carter scored 28 points, including the go-ahead three-pointer with 12 seconds remaining in overtime."
+    content: "The Hattiesburg High Tigers are state champions. In a dramatic overtime finish at the Mississippi Coliseum in Jackson, the Tigers defeated Meridian High 68-65 to claim the 6A boys basketball title, the school's first state championship in 15 years.\n\nSenior guard Jaylen Carter scored 28 points, including the go-ahead three-pointer with 12 seconds remaining in overtime."
   },
   {
     id: "16",
@@ -2101,7 +2149,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     date: "Feb 18, 2026",
     image: "/story-young-leaders.jpg",
     slug: "hattiesburgs-young-leaders",
-    content: "I've lived in Hattiesburg for over 40 years, and I've never seen anything quite like what's happening now. A new generation of leaders is emerging—not from the traditional power structures, but from the streets, the campuses, and the community organizations that have always been the true backbone of this city.\n\nThese young people are starting businesses, organizing neighborhood cleanups, running for local office, and most importantly, they're staying."
+    content: "I've lived in Hattiesburg for over 40 years, and I've never seen anything quite like what's happening now. A new generation of leaders is emerging, not from the traditional power structures, but from the streets, the campuses, and the community organizations that have always been the true backbone of this city.\n\nThese young people are starting businesses, organizing neighborhood cleanups, running for local office, and most importantly, they're staying."
   },
   {
     id: "18",
@@ -2112,7 +2160,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     date: "Feb 11, 2026",
     image: "/story-school-funding.jpg",
     slug: "rethink-school-funding",
-    content: "Every year, Mississippi's education funding formula leaves districts like Hattiesburg scrambling to do more with less. As an educator who has spent 25 years in Forrest County classrooms, I've watched this pattern repeat itself while our students pay the price.\n\nIt's time for a community-driven conversation about equitable school funding—one that puts students, not politics, at the center."
+    content: "Every year, Mississippi's education funding formula leaves districts like Hattiesburg scrambling to do more with less. As an educator who has spent 25 years in Forrest County classrooms, I've watched this pattern repeat itself while our students pay the price.\n\nIt's time for a community-driven conversation about equitable school funding, one that puts students, not politics, at the center."
   },
   {
     id: "19",
@@ -2123,7 +2171,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     date: "Feb 3, 2026",
     image: "/story-longleaf-trace.jpg",
     slug: "invest-in-longleaf-trace",
-    content: "The Longleaf Trace is more than a trail—it's where Hattiesburg comes together. Runners, cyclists, families, and dog-walkers share this 44-mile corridor every single day.\n\nBut the truth is, we're not investing enough in its upkeep. Sections are deteriorating, lighting is inadequate, and the northern extensions remain unpaved. If we truly value this asset, our budget should reflect it."
+    content: "The Longleaf Trace is more than a trail, it's where Hattiesburg comes together. Runners, cyclists, families, and dog-walkers share this 44-mile corridor every single day.\n\nBut the truth is, we're not investing enough in its upkeep. Sections are deteriorating, lighting is inadequate, and the northern extensions remain unpaved. If we truly value this asset, our budget should reflect it."
   },
   {
     id: "20",
@@ -2134,7 +2182,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     date: "Jan 22, 2026",
     image: "/story-local-journalism.jpg",
     slug: "support-local-journalism",
-    content: "When was the last time you read a story about your neighborhood—your actual neighborhood—in a major news outlet? For most of us, the answer is never.\n\nThat's why local journalism matters. It's the only form of media that holds our city council accountable, covers our school board meetings, and tells the stories of the people who live next door."
+    content: "When was the last time you read a story about your neighborhood, your actual neighborhood, in a major news outlet? For most of us, the answer is never.\n\nThat's why local journalism matters. It's the only form of media that holds our city council accountable, covers our school board meetings, and tells the stories of the people who live next door."
   },
 
   // ── EXTERNAL / CURATED NEWS ──
@@ -2356,7 +2404,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     slug: "mississippi-abc-alcohol-backlog-bill",
     external: true,
     externalUrl: "https://www.supertalk.fm/mississippi-house-passes-bill-to-bypass-abc-warehouse-amid-alcohol-backlog/",
-    content: "With less than a month remaining in Mississippi's legislative session, access to alcohol — or the lack thereof — has moved to the forefront at the capitol as the state battles what one lawmaker calls a 'total mess' of a backlog in wine and spirits.\n\nLocal liquor store owners, members of the state's hospitality industry, and restaurants have reported shortages in alcohol due to a conveyor belt software failure at the Mississippi Alcoholic Beverage Control's warehouse in Gluckstadt.\n\nUnder the plan, licensed alcohol permit holders would be allowed to buy alcohol directly from manufacturers or other authorized sellers — rather than going through ABC — for the next two years. The House passed the Emergency Alcohol Distribution Act in a bipartisan 112-2 vote."
+    content: "With less than a month remaining in Mississippi's legislative session, access to alcohol, or the lack thereof, has moved to the forefront at the capitol as the state battles what one lawmaker calls a 'total mess' of a backlog in wine and spirits.\n\nLocal liquor store owners, members of the state's hospitality industry, and restaurants have reported shortages in alcohol due to a conveyor belt software failure at the Mississippi Alcoholic Beverage Control's warehouse in Gluckstadt.\n\nUnder the plan, licensed alcohol permit holders would be allowed to buy alcohol directly from manufacturers or other authorized sellers, rather than going through ABC, for the next two years. The House passed the Emergency Alcohol Distribution Act in a bipartisan 112-2 vote."
   },
   {
     id: "28",
@@ -2369,7 +2417,7 @@ Now an IT professional and small business owner, Ferguson said McCarty's life co
     slug: "teacher-pay-raise-mississippi-senate",
     external: true,
     externalUrl: "https://www.mississippifreepress.org/6000-teacher-pay-raise-gains-mississippi-senates-approval/",
-    content: "A surprise $6,000 teacher pay raise gained approval in the Mississippi Senate on Wednesday after the chamber amended a bill that originally dealt with the sale or lease of unused school property.\n\nSenate Education Committee Chairman Sen. Dennis DeBar, R-Leakesville, presented an amendment to House Bill 1395 that adds language to raise salaries over the next three years by $6,000 for regular teachers, $2,000 for assistant teachers, $6,000 for licensed special education educators teaching special education classes — plus an additional $3,000 supplement — and $2,000 for college and university educators.\n\n'Today's a good day for teachers, teacher assistants, professors and special education teachers as well,' DeBar told reporters Wednesday after the Senate passed the pay raise. The Senate unanimously passed H.B. 1395."
+    content: "A surprise $6,000 teacher pay raise gained approval in the Mississippi Senate on Wednesday after the chamber amended a bill that originally dealt with the sale or lease of unused school property.\n\nSenate Education Committee Chairman Sen. Dennis DeBar, R-Leakesville, presented an amendment to House Bill 1395 that adds language to raise salaries over the next three years by $6,000 for regular teachers, $2,000 for assistant teachers, $6,000 for licensed special education educators teaching special education classes, plus an additional $3,000 supplement, and $2,000 for college and university educators.\n\n'Today's a good day for teachers, teacher assistants, professors and special education teachers as well,' DeBar told reporters Wednesday after the Senate passed the pay raise. The Senate unanimously passed H.B. 1395."
   },
 ];
 

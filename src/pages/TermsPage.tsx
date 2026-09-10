@@ -28,7 +28,7 @@ const TermsPage = () => (
         <Section title="Using this site">
           <p>
             By accessing Hattiesburg Hub, you agree to use the site for lawful, personal,
-            non-commercial purposes. You may share links to our stories freely — in fact, we
+            non-commercial purposes. You may share links to our stories freely, in fact, we
             encourage it.
           </p>
         </Section>

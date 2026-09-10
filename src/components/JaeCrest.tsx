@@ -7,7 +7,7 @@ interface JaeCrestProps {
 }
 
 /**
- * JAE Royal Crest — circular badge for By Faith JAEDZIGNZ Creative Enterprise.
+ * JAE Royal Crest, circular badge for By Faith JAEDZIGNZ Creative Enterprise.
  * Colors are pulled from the site palette so the crest blends with the
  * Hattiesburg Hub brand (electric blue, cyan, deep navy) and adapts to the
  * light/dark theme.
@@ -20,7 +20,7 @@ const JaeCrest = ({ size = 96, className, href }: JaeCrestProps) => {
       width={size}
       height={size}
       role="img"
-      aria-label="JAE royal crest — By Faith JAEDZIGNZ Creative Enterprise"
+      aria-label="JAE royal crest, By Faith JAEDZIGNZ Creative Enterprise"
       className={cn("select-none", className)}
     >
       <defs>

@@ -34,7 +34,7 @@ const SEOHead = ({
   noindex = false,
 }: SEOHeadProps) => {
   const description = truncate(rawDescription, 160);
-  const fullTitle = truncate(title ? `${title} — ${SITE_NAME}` : `${SITE_NAME} — Hattiesburg Local News & Community Stories`, 60);
+  const fullTitle = truncate(title ? `${title}, ${SITE_NAME}` : `${SITE_NAME}, Hattiesburg Local News & Community Stories`, 60);
   const canonicalUrl = `${SITE_URL}${path}`;
 
   // Ensure image is absolute URL
@@ -159,7 +159,7 @@ const SEOHead = ({
       jsonLdItems.push({
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        name: `${catName} — ${SITE_NAME}`,
+        name: `${catName}, ${SITE_NAME}`,
         description,
         url: canonicalUrl,
         isPartOf: {

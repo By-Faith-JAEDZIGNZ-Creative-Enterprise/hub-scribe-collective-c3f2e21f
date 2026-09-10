@@ -99,7 +99,7 @@ const SearchPage = () => {
                 What are you looking for?
               </p>
               <p className="font-body text-sm text-muted-foreground">
-                Search across every story on the Hub — originals and curated coverage.
+                Search across every story on the Hub, originals and curated coverage.
               </p>
             </div>
           )}

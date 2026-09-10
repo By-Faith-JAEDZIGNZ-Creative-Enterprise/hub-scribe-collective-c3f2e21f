@@ -42,7 +42,7 @@ const TrendingTicker = () => {
           </div>
         </div>
 
-        {/* Marquee — edges dissolve via mask for a frictionless loop */}
+        {/* Marquee, edges dissolve via mask for a frictionless loop */}
         <div className="relative flex-1 overflow-hidden h-full ticker-mask">
           <div className="animate-ticker flex items-center h-full w-max whitespace-nowrap">
             <TickerSet />

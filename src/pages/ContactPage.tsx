@@ -23,7 +23,7 @@ const ContactPage = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact Us"
-        description="Contact Hattiesburg Hub — send a news tip, submit a story, or ask about advertising and sponsorships in Hattiesburg, MS and the Pine Belt."
+        description="Contact Hattiesburg Hub, send a news tip, submit a story, or ask about advertising and sponsorships in Hattiesburg, MS and the Pine Belt."
         path="/contact"
       />
       <Navbar />
@@ -34,8 +34,7 @@ const ContactPage = () => {
             Talk to the Hub.
           </h1>
           <p className="text-lg leading-[1.65] text-muted-foreground max-w-2xl mb-12">
-            News tips, corrections, event listings, story ideas, and partnership inquiries —
-            we want to hear from you. Every message is read by our staff.
+            News tips, corrections, event listings, story ideas, and partnership inquiries,             we want to hear from you. Every message is read by our staff.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
@@ -68,7 +67,7 @@ const ContactPage = () => {
               <h2 className="font-display text-2xl md:text-3xl font-bold tracking-tight">Submit a Story</h2>
             </div>
             <p className="text-muted-foreground leading-[1.65] mb-8 max-w-2xl">
-              Know something happening in the Hub City? Send it our way — community submissions
+              Know something happening in the Hub City? Send it our way, community submissions
               are the backbone of local journalism.
             </p>
             <SubmitStory />

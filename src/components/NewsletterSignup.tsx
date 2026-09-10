@@ -36,7 +36,7 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
 
     if (error) {
       if (error.code === "23505") {
-        // Existing row — may have been unsubscribed. Reactivate server-side.
+        // Existing row, may have been unsubscribed. Reactivate server-side.
         let reactivateFailed = false;
         try {
           const { error: fnError } = await supabase.functions.invoke("newsletter-welcome", {
@@ -66,7 +66,7 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
       return;
     }
 
-    // Send the in-house welcome email (non-blocking — subscription already saved)
+    // Send the in-house welcome email (non-blocking, subscription already saved)
     try {
       await supabase.functions.invoke("newsletter-welcome", {
         body: { email: result.data },
@@ -154,7 +154,7 @@ const NewsletterSignup = ({ variant = "inline" }: NewsletterSignupProps) => {
     );
   }
 
-  // Editorial variant (footer) — ink card on the ivory band, underline inputs
+  // Editorial variant (footer), ink card on the ivory band, underline inputs
   const underlineInput =
     "bg-transparent border-b border-footer-ivory/30 py-3 px-1 font-footer text-sm text-footer-ivory placeholder:text-footer-ivory/40 focus:outline-none focus:border-footer-ivory transition-colors disabled:opacity-50";
 
