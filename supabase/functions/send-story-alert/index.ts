@@ -117,7 +117,7 @@ Deno.serve(async (req) => {
     const results: { email: string; ok: boolean; status: number }[] = [];
     const list = subscribers ?? [];
     // Resend allows ~2 requests per second, so pace sends in pairs.
-    const CHUNK = 2;
+    const CHUNK = 5;
 
     for (let i = 0; i < list.length; i += CHUNK) {
       const chunk = list.slice(i, i + CHUNK);
@@ -145,7 +145,7 @@ Deno.serve(async (req) => {
         })
       );
       results.push(...chunkResults);
-      if (i + CHUNK < list.length) await new Promise((r) => setTimeout(r, 1100));
+      if (i + CHUNK < list.length) await new Promise((r) => setTimeout(r, 700));
     }
 
 
