@@ -59,7 +59,7 @@ const UnsubscribePage = () => {
                   Unsubscribe from the Hub City Digest?
                 </h1>
                 <p className="text-muted-foreground font-body text-sm mb-8 leading-relaxed">
-                  You'll stop receiving our weekly newsletter. We'll miss you — but no hard feelings.
+                  You'll stop receiving our weekly newsletter. We'll miss you, but no hard feelings.
                 </p>
                 <button
                   onClick={handleUnsubscribe}
@@ -92,7 +92,7 @@ const UnsubscribePage = () => {
                   You've been unsubscribed
                 </h1>
                 <p className="text-muted-foreground font-body text-sm mb-8 leading-relaxed">
-                  You won't receive the Hub City Digest anymore. You can still read every story on the site — and if you change your mind, resubscribing takes ten seconds.
+                  You won't receive the Hub City Digest anymore. You can still read every story on the site, and if you change your mind, resubscribing takes ten seconds.
                 </p>
                 <div className="space-y-3">
                   <Link
@@ -123,7 +123,7 @@ const UnsubscribePage = () => {
                   Already unsubscribed
                 </h1>
                 <p className="text-muted-foreground font-body text-sm mb-8 leading-relaxed">
-                  This address is already off the list — no further action needed.
+                  This address is already off the list, no further action needed.
                 </p>
                 <Link
                   to="/"

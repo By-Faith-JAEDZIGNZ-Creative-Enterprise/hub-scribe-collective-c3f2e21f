@@ -35,15 +35,14 @@ const AboutPage = () => {
           <div className="space-y-6 text-lg leading-[1.65] text-muted-foreground">
             <p>
               Hattiesburg Hub is an independent, hyper-local news publication for Hattiesburg,
-              Mississippi and the surrounding Pine Belt — including Forrest and Lamar counties.
+              Mississippi and the surrounding Pine Belt, including Forrest and Lamar counties.
               We exist to cover the stories that shape daily life here: city government and
               neighborhood news, local business and development, arts and culture, high school
               and Southern Miss athletics, and the events that bring this community together.
             </p>
             <p>
               Alongside original reporting from our staff, we curate the most important stories
-              from trusted regional outlets — including WJTV, WDAM, and The Pine Belt News —
-              always with full credit and a direct link to the original source, so readers never
+              from trusted regional outlets, including WJTV, WDAM, and The Pine Belt News,               always with full credit and a direct link to the original source, so readers never
               miss the news that matters to the Hub City.
             </p>
           </div>
@@ -91,7 +90,7 @@ const AboutPage = () => {
             </p>
             <p>
               Have a tip, a correction, or a story the Hub should tell?{" "}
-              <Link to="/contact" className="text-primary story-link">Get in touch</Link> — we
+              <Link to="/contact" className="text-primary story-link">Get in touch</Link>, we
               read every submission.
             </p>
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm">

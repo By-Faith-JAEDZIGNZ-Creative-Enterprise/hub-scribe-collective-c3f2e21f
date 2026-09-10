@@ -93,7 +93,7 @@ export const events: HubEvent[] = [
   },
   {
     id: "evt-moe-born-to-fly",
-    title: "moe. — Born to Fly Tour",
+    title: "moe., Born to Fly Tour",
     category: "culture",
     startDate: "2026-05-15",
     startTime: "8:00 PM",

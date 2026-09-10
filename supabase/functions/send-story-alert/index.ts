@@ -80,15 +80,33 @@ Deno.serve(async (req) => {
 
     newStories = newStories.slice(0, MAX_ALERT_STORIES);
 
-    const { data: subscribers, error: subError } = await supabase
+    const body = await req.json().catch(() => ({}));
+    const batchSize: number = Number(body?.batch_size) > 0 ? Number(body.batch_size) : 50;
+    const offset: number = Number(body?.offset) > 0 ? Number(body.offset) : 0;
+    // Optional retry list: resend only to these addresses (e.g. throttled sends)
+    const onlyEmails: string[] | null = Array.isArray(body?.only_emails) ? body.only_emails : null;
+
+    let query = supabase
       .from("newsletter_subscribers")
-      .select("id, email, first_name")
-      .eq("is_active", true);
+      .select("id, email, first_name", { count: "exact" })
+      .eq("is_active", true)
+      .order("subscribed_at", { ascending: true });
+
+    query = onlyEmails
+      ? query.in("email", onlyEmails)
+      : query.range(offset, offset + batchSize - 1);
+
+    const { data: subscribers, error: subError, count } = await query;
 
     if (subError) {
       console.error("Subscriber query failed:", subError);
       return json({ error: "Failed to load subscribers" }, 500);
     }
+
+    const totalActive = onlyEmails
+      ? subscribers?.length ?? 0
+      : count ?? (subscribers?.length ?? 0);
+
 
     const topTitle = newStories[0].title;
     const subject =
@@ -97,32 +115,55 @@ Deno.serve(async (req) => {
         : `${newStories.length} new stories just published on Hattiesburg Hub`;
 
     const results: { email: string; ok: boolean; status: number }[] = [];
+    const list = subscribers ?? [];
+    // Resend allows ~2 requests per second, so pace sends in pairs.
+    const CHUNK = 5;
 
-    for (const sub of subscribers ?? []) {
-      const unsubscribeUrl = `${SITE_URL}/unsubscribe?token=${sub.id}`;
-      const html = renderStoryAlertEmail({
-        stories: newStories,
-        firstName: sub.first_name,
-        unsubscribeUrl,
-      });
-
-      const res = await sendViaResend({ to: sub.email, subject, html });
-      results.push({ email: sub.email, ok: res.ok, status: res.status });
-
-      // Small pause between sends to be gentle on the provider
-      await new Promise((r) => setTimeout(r, 300));
+    for (let i = 0; i < list.length; i += CHUNK) {
+      const chunk = list.slice(i, i + CHUNK);
+      const chunkResults = await Promise.all(
+        chunk.map(async (sub) => {
+          const unsubscribeUrl = `${SITE_URL}/unsubscribe?token=${sub.id}`;
+          const html = renderStoryAlertEmail({
+            stories: newStories,
+            firstName: sub.first_name,
+            unsubscribeUrl,
+          });
+          for (let attempt = 0; attempt < 3; attempt++) {
+            try {
+              const res = await sendViaResend({ to: sub.email, subject, html });
+              if (res.ok || res.status !== 429) {
+                return { email: sub.email, ok: res.ok, status: res.status };
+              }
+              await new Promise((r) => setTimeout(r, 1200 * (attempt + 1)));
+            } catch (err) {
+              console.error("Send failed:", sub.email, err);
+              return { email: sub.email, ok: false, status: 0 };
+            }
+          }
+          return { email: sub.email, ok: false, status: 429 };
+        })
+      );
+      results.push(...chunkResults);
+      if (i + CHUNK < list.length) await new Promise((r) => setTimeout(r, 700));
     }
 
-    // Advance the marker to the newest story regardless of individual send
-    // failures, so one bad run doesn't re-alert forever.
-    await supabase
-      .from("newsletter_config")
-      .upsert({ key: MARKER_KEY, value: newestGuid }, { onConflict: "key" });
+
+    const processedEnd = offset + list.length;
+    const nextOffset = processedEnd < totalActive ? processedEnd : null;
+
+    // Only advance the marker once the final batch has gone out, so a chained
+    // run keeps alerting on the same set of new stories.
+    if (nextOffset === null && !onlyEmails) {
+      await supabase
+        .from("newsletter_config")
+        .upsert({ key: MARKER_KEY, value: newestGuid }, { onConflict: "key" });
+    }
 
     const sent = results.filter((r) => r.ok).length;
     const failed = results.filter((r) => !r.ok);
     console.log(
-      `Story alert complete: ${newStories.length} new stories, ${sent} sent, ${failed.length} failed`
+      `Story alert batch @${offset}: ${newStories.length} new stories, ${sent} sent, ${failed.length} failed`
     );
 
     return json({
@@ -131,7 +172,12 @@ Deno.serve(async (req) => {
       sent,
       failed: failed.length,
       failures: failed,
+      offset,
+      processed: list.length,
+      totalActive,
+      nextOffset,
     });
+
   } catch (err) {
     console.error("send-story-alert error:", err);
     return json({ error: String(err) }, 500);

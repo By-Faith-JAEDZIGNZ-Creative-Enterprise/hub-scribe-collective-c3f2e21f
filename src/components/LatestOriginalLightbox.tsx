@@ -9,7 +9,7 @@ import { supabase } from "@/integrations/supabase/client";
  * Auto-updates when a new original is added: storage key is keyed to the latest
  * original story id, so a fresh original re-triggers the lightbox for returning users.
  */
-// Robust date parser — accepts "April 14, 2026", "Apr 14, 2026", or ISO. Falls back to 0.
+// Robust date parser, accepts "April 14, 2026", "Apr 14, 2026", or ISO. Falls back to 0.
 const toTimestamp = (date: string): number => {
   const t = Date.parse(date);
   return Number.isNaN(t) ? 0 : t;
@@ -25,7 +25,7 @@ const LatestOriginalLightbox = () => {
   // bumps whenever realtime tells us a new original is live; forces re-derivation
   const [refreshTick, setRefreshTick] = useState(0);
 
-  // All originals sorted newest-first by actual date — resilient to array order in stories.ts.
+  // All originals sorted newest-first by actual date, resilient to array order in stories.ts.
   // Recomputed from live `stories` data so a freshly added original is reflected immediately.
   // `refreshTick` is included so realtime broadcasts force a re-derivation on all sessions.
   const originals = useMemo(
@@ -67,7 +67,7 @@ const LatestOriginalLightbox = () => {
         if (!incomingId) return;
         localStorage.setItem(LAST_KNOWN_KEY, incomingId);
         setRefreshTick((t) => t + 1);
-        // Respect this reader's own dismissal — never force the modal back open.
+        // Respect this reader's own dismissal, never force the modal back open.
         if (localStorage.getItem(`latest-original-dismissed:${incomingId}`)) return;
         setIndex(0);
         setOpen(true);
@@ -77,7 +77,7 @@ const LatestOriginalLightbox = () => {
         const lastKnown = localStorage.getItem(LAST_KNOWN_KEY);
         if (lastKnown === latestOriginal.id) return;
         localStorage.setItem(LAST_KNOWN_KEY, latestOriginal.id);
-        // Only announce a genuinely new original — a first-time visitor (no
+        // Only announce a genuinely new original, a first-time visitor (no
         // last-known id at all) must not broadcast to everyone else.
         if (!lastKnown) return;
         channel.send({

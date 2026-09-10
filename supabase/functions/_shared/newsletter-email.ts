@@ -52,22 +52,30 @@ function parseRssItems(xml: string, limit: number): DigestStory[] {
 }
 
 export async function fetchLatestStories(limit = 6): Promise<DigestStory[]> {
+  const candidates: DigestStory[][] = [];
   for (const base of [SITE_URL, SITE_URL_FALLBACK]) {
     try {
-      const res = await fetch(`${base}/rss.xml`, {
-        headers: { "User-Agent": "HattiesburgHub-Newsletter/1.0" },
+      const res = await fetch(`${base}/rss.xml?t=${Date.now()}`, {
+        headers: { "User-Agent": "HattiesburgHub-Newsletter/1.0", "Cache-Control": "no-cache" },
         signal: AbortSignal.timeout(10_000),
       });
       if (!res.ok) continue;
-      const xml = await res.text();
-      const stories = parseRssItems(xml, limit);
-      if (stories.length > 0) return stories;
+      const stories = parseRssItems(await res.text(), limit);
+      if (stories.length > 0) candidates.push(stories);
     } catch (err) {
       console.error(`RSS fetch failed for ${base}:`, err);
     }
   }
-  return [];
+  if (candidates.length === 0) return [];
+
+  // CDN caches can leave one origin stale, so use whichever feed is freshest.
+  const freshness = (s: DigestStory[]) => {
+    const t = Date.parse(s[0]?.pubDate ?? "");
+    return Number.isNaN(t) ? 0 : t;
+  };
+  return candidates.sort((a, b) => freshness(b) - freshness(a))[0];
 }
+
 
 export async function sendViaResend(params: {
   to: string;

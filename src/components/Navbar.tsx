@@ -76,7 +76,7 @@ const Navbar = () => {
                 <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-primary">Live</span>
               </div>
 
-              {/* Desktop search — expands in place */}
+              {/* Desktop search, expands in place */}
               {searchOpen ? (
                 <form
                   onSubmit={submitSearch}
@@ -120,7 +120,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile search — always visible */}
+          {/* Mobile search, always visible */}
           <div className="md:hidden border-t border-border/40 px-3 py-2">
             <form
               onSubmit={submitSearch}
@@ -146,7 +146,7 @@ const Navbar = () => {
             </form>
           </div>
 
-          {/* Mobile Menu — expands inside the glass pill */}
+          {/* Mobile Menu, expands inside the glass pill */}
           {mobileOpen && (
             <div className="md:hidden border-t border-border/50">
               <div className="px-4 py-3 flex flex-col gap-0.5">

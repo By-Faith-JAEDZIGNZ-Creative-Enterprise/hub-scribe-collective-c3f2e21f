@@ -40,8 +40,7 @@ const Index = () => {
       }, Math.max(0, MIN_SKELETON_MS - elapsed));
     };
 
-    // The homepage is "ready" once the hero image has decoded —
-    // everything below it fades in per-image via LoadingImage.
+    // The homepage is "ready" once the hero image has decoded,     // everything below it fades in per-image via LoadingImage.
     const img = new Image();
     img.onload = reveal;
     img.onerror = reveal;

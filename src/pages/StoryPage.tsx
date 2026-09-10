@@ -33,7 +33,7 @@ const PhotoGallery = ({
 
   if (images.length <= 1) return null;
 
-  const altFor = (i: number) => alts[i]?.trim() || captions[i]?.trim() || `${title} — photo ${i + 1} of ${images.length}`;
+  const altFor = (i: number) => alts[i]?.trim() || captions[i]?.trim() || `${title}, photo ${i + 1} of ${images.length}`;
   const captionFor = (i: number) => captions[i]?.trim();
 
   return (

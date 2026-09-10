@@ -28,7 +28,7 @@ const PrivacyPage = () => (
         <Section title="Information we collect">
           <p>
             When you subscribe to the Hattiesburg Hub newsletter or submit a story, we collect the
-            information you provide directly — typically your name and email address. We also
+            information you provide directly, typically your name and email address. We also
             collect standard usage data through Google Analytics (such as pages visited and
             approximate location) to understand how readers use the site.
           </p>
