@@ -104,25 +104,54 @@ Deno.serve(async (req) => {
             mode === "announcement"
               ? renderAnnouncementEmail({ stories, firstName: sub.first_name, unsubscribeUrl })
               : renderDigestEmail({ stories, firstName: sub.first_name, unsubscribeUrl });
-          try {
-            const res = await sendViaResend({ to: sub.email, subject, html });
-            return { email: sub.email, ok: res.ok, status: res.status };
-          } catch (err) {
-            console.error("Send failed:", sub.email, err);
-            return { email: sub.email, ok: false, status: 0 };
+          for (let attempt = 0; attempt < 3; attempt++) {
+            try {
+              const res = await sendViaResend({ to: sub.email, subject, html });
+              if (res.ok || res.status !== 429) {
+                return { email: sub.email, ok: res.ok, status: res.status };
+              }
+              await new Promise((r) => setTimeout(r, 1200 * (attempt + 1)));
+            } catch (err) {
+              console.error("Send failed:", sub.email, err);
+              return { email: sub.email, ok: false, status: 0 };
+            }
           }
+          return { email: sub.email, ok: false, status: 429 };
         })
       );
       results.push(...chunkResults);
-      // Small pause between chunks to be gentle on the provider
-      if (i + CHUNK < list.length) await new Promise((r) => setTimeout(r, 200));
+      // Stay under the provider's per-second rate limit
+      if (i + CHUNK < list.length) await new Promise((r) => setTimeout(r, 700));
     }
 
     const sent = results.filter((r) => r.ok).length;
     const failed = results.filter((r) => !r.ok);
-    console.log(`Newsletter [${mode}] complete: ${sent} sent, ${failed.length} failed`);
+    console.log(
+      `Newsletter [${mode}] batch @${offset}: ${sent} sent, ${failed.length} failed`
+    );
 
     const processedEnd = offset + (subscribers?.length ?? 0);
+    const nextOffset = processedEnd < totalActive ? processedEnd : null;
+
+    // Automatically continue with the next batch so a single call reaches
+    // every active subscriber without manual paging.
+    if (nextOffset !== null && !test_to) {
+      const selfUrl = `${Deno.env.get("SUPABASE_URL")}/functions/v1/send-weekly-digest`;
+      const chain = fetch(selfUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-cron-token": token,
+          Authorization: `Bearer ${Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""}`,
+        },
+        body: JSON.stringify({ mode, limit, batch_size, offset: nextOffset }),
+      }).catch((err) => console.error("Batch chaining failed:", err));
+
+      // deno-lint-ignore no-explicit-any
+      const runtime = (globalThis as any).EdgeRuntime;
+      if (runtime?.waitUntil) runtime.waitUntil(chain);
+      else await chain;
+    }
 
     return json({
       mode,
@@ -134,8 +163,10 @@ Deno.serve(async (req) => {
       offset,
       processed: subscribers?.length ?? 0,
       totalActive,
-      nextOffset: processedEnd < totalActive ? processedEnd : null,
+      nextOffset,
+      chained: nextOffset !== null && !test_to,
     });
+
   } catch (err) {
     console.error("send-weekly-digest error:", err);
     return json({ error: String(err) }, 500);
