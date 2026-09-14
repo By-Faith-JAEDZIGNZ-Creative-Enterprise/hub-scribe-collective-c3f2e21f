@@ -37,6 +37,61 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "236",
+    title: "Hattiesburg Residents Face Higher Trash Fees Under 2027 City Budget",
+    excerpt: "Mayor Toby Barker's proposed budget projects flat revenue growth, raises monthly garbage collection from $17 to $21, and adds $1,200 raises for full-time city employees.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "September 12, 2026",
+    image: "/story-city-budget-2027.jpg",
+    imageAlts: [
+      "Hattiesburg Mayor Toby Barker speaking about the city budget",
+    ],
+    slug: "hattiesburg-2027-city-budget-garbage-fee-increase",
+    featured: true,
+    original: true,
+    photoCaption: "Hattiesburg Mayor Toby Barker",
+    photoSource: "City of Hattiesburg",
+    photoLicense: "Used with permission",
+    content: `Hattiesburg Mayor Toby Barker has presented a proposed 2027 city budget, which projects flat revenue growth and includes an increase in residents' monthly trash collection fees.
+
+The budget anticipates $79.66 million in revenue, $2.8 million less than originally projected for the current fiscal year. The 2026 budget was later amended to reflect a lower revenue estimate of $79.5 million.
+
+Barker was candid about his forecast for next year, saying the numbers were modest and required difficult decisions, including the proposed garbage fee increase.
+
+“As part of every budget process, we endeavor to be transparent about how your money is spent and what our priorities are in terms of city services,” Barker said in a video posted Wednesday on his Facebook page explaining the budget to residents.
+
+“This year was kind of a lean year with a lot of our general fund recurring revenues sitting at the same levels as they were last year.”
+
+Residents will pay $4 more a month for garbage service in 2027, with the fee increasing from $17 to $21. Barker said the increase is necessary to keep pace with sanitation costs, which have outgrown revenue from the current fee.
+
+“While no one wants to pay more, at some point the cost of things tends to go up,” he said.
+
+The increase is projected to generate between $500,000 and $600,000 in additional revenue, which will be used largely to purchase new equipment and improve service.
+
+Barker said the garbage fee increase would be the first adjustment in 18 years.
+
+“But over 18 years the fee has remained the same but the cost of running sanitation has increased a lot to $3.8 million,” he said. “So while no one wants an increase, it's been needed for some time.”
+
+The 2027 budget anticipates $68.1 million in spending and an $11.5 million year-end cash balance.
+
+The budget also includes annual raises of $1,200 for full-time city employees, including police officers and firefighters. Barker said the raises would keep Hattiesburg's starting salaries for first responders among the highest-paid in southern Mississippi.
+
+Additionally, the city's minimum wage will increase to $15 an hour, benefiting employees in departments including parks and recreation and public works.
+
+The city's fiscal year begins Oct. 1.
+
+Barker said the city will likely evaluate other fees in the future, including recycling and sewer rates, to help pay for ongoing infrastructure improvements.
+
+“We tell you these things on the front end so you can ask questions, plan ahead and hold us accountable,” he said.
+
+Hattiesburg is continuing an aggressive 16-year overhaul plan that includes infrastructure improvements and preventive maintenance extending from city facilities into neighborhoods.
+
+A consent agreement signed by a federal judge in January 2021 concluded years of negotiations with federal regulators over improvements to the city's wastewater system and efforts to control sanitary sewer overflows.
+
+The city previously estimated that it would spend about $3 million annually on its long-term improvement plan.`,
+  },
+  {
     id: "235",
     title: "Southern Miss Christens a New Name and Multimillion Partnership for Its Storied Stadium",
     excerpt: "“The Rock” is now Renasant Stadium under a 10-year, $13.7 million agreement, believed to be the first naming rights deal for a university sporting venue in Mississippi.",
