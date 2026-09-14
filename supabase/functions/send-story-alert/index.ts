@@ -152,6 +152,26 @@ Deno.serve(async (req) => {
     const processedEnd = offset + list.length;
     const nextOffset = processedEnd < totalActive ? processedEnd : null;
 
+    // Automatically continue with the next batch so a single call reaches every
+    // active subscriber without manual paging.
+    if (nextOffset !== null && !onlyEmails) {
+      const selfUrl = `${Deno.env.get("SUPABASE_URL")}/functions/v1/send-story-alert`;
+      const chain = fetch(selfUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-cron-token": token,
+          Authorization: `Bearer ${Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""}`,
+        },
+        body: JSON.stringify({ batch_size: batchSize, offset: nextOffset }),
+      }).catch((err) => console.error("Batch chaining failed:", err));
+
+      // deno-lint-ignore no-explicit-any
+      const runtime = (globalThis as any).EdgeRuntime;
+      if (runtime?.waitUntil) runtime.waitUntil(chain);
+      else await chain;
+    }
+
     // Only advance the marker once the final batch has gone out, so a chained
     // run keeps alerting on the same set of new stories.
     if (nextOffset === null && !onlyEmails) {
