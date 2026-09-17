@@ -1,5 +1,6 @@
 // Standalone RSS generation script (no Vite/TS aliases)
 // This is imported by the Vite plugin at build time
+import { storyImageUrl } from "./storyImageUrl";
 
 export interface RssStory {
   id: string;
@@ -40,9 +41,7 @@ export function generateRssFeed(stories: RssStory[]): string {
         story.external && story.externalUrl
           ? story.externalUrl
           : `${siteUrl}/story/${story.slug}`;
-      const imageUrl = story.image.startsWith("http")
-        ? story.image
-        : `${siteUrl}${story.image}`;
+      const imageUrl = storyImageUrl(story.image);
       const pubDate = new Date(story.date).toUTCString();
 
       return `    <item>

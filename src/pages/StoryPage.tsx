@@ -7,6 +7,7 @@ import { stories } from "@/data/stories";
 import { ArrowLeft, Clock, User, ChevronLeft, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { formatPhotoCredit } from "@/utils/photoCredit";
+import { storyImageUrl } from "@/utils/storyImageUrl";
 
 const categoryColors: Record<string, string> = {
   community: "bg-primary/15 text-primary",
@@ -47,7 +48,7 @@ const PhotoGallery = ({
       <figure className="m-0">
         <div className="relative rounded-lg overflow-hidden bg-hub-deep">
           <img
-            src={images[current]}
+            src={storyImageUrl(images[current])}
             alt={altFor(current)}
             className="w-full max-h-[500px] object-contain mx-auto"
           />
@@ -93,7 +94,7 @@ const PhotoGallery = ({
               i === current ? "border-primary opacity-100" : "border-transparent opacity-60 hover:opacity-90"
             }`}
           >
-            <img src={img} alt="" aria-hidden="true" className="w-full h-full object-cover" />
+            <img src={storyImageUrl(img)} alt="" aria-hidden="true" className="w-full h-full object-cover" />
           </button>
         ))}
       </div>
@@ -126,20 +127,21 @@ const StoryPage = () => {
   const contentParagraphs = (story.content || story.excerpt).split("\n\n");
   const midPoint = Math.ceil(contentParagraphs.length / 3);
   const credit = formatPhotoCredit(story);
+  const imageUrl = storyImageUrl(story.image);
   // Story dates are editorial strings ("April 27, 2026"); schema.org expects ISO 8601
   const parsedDate = Date.parse(story.date);
   const publishedISO = Number.isNaN(parsedDate) ? undefined : new Date(parsedDate).toISOString();
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead title={story.title} description={story.excerpt} path={`/story/${slug}`} type="article" publishedTime={publishedISO} author={story.author} image={story.image} category={story.category} />
+      <SEOHead title={story.title} description={story.excerpt} path={`/story/${slug}`} type="article" publishedTime={publishedISO} author={story.author} image={imageUrl} category={story.category} />
       <Navbar />
       <main className="pt-36 md:pt-28">
         {/* Article Header */}
         <div className="relative w-full">
           <div className="w-full h-[50vh] md:h-[60vh] overflow-hidden">
             <img
-              src={story.image}
+              src={imageUrl}
               alt={story.title}
               className="w-full h-full object-cover"
             />

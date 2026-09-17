@@ -2,6 +2,7 @@
 // Social crawlers (Facebook, iMessage, X, LinkedIn) do not run JavaScript, so the
 // tags set at runtime by SEOHead are invisible to them. These static files give
 // each story page its own headline, description and photo in link previews.
+import { storyImageUrl } from "./storyImageUrl";
 
 export interface SocialStory {
   title: string;
@@ -34,9 +35,7 @@ function truncate(s: string, max: number): string {
 }
 
 function absoluteImage(image?: string): string {
-  if (!image) return DEFAULT_IMAGE;
-  if (image.startsWith("http")) return image;
-  return `${SITE_URL}${image.startsWith("/") ? "" : "/"}${image}`;
+  return image ? storyImageUrl(image) : DEFAULT_IMAGE;
 }
 
 /**

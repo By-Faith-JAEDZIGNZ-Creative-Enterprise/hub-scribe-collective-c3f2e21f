@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { storyImageUrl } from "@/utils/storyImageUrl";
 
 const SITE_URL = "https://www.hattiesburghub.com";
 const SITE_NAME = "Hattiesburg Hub";
@@ -38,7 +39,7 @@ const SEOHead = ({
   const canonicalUrl = `${SITE_URL}${path}`;
 
   // Ensure image is absolute URL
-  const absoluteImage = image.startsWith("http") ? image : `${SITE_URL}${image}`;
+  const absoluteImage = storyImageUrl(image);
 
   useEffect(() => {
     // Title
