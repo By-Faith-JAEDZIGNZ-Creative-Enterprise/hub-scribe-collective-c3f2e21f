@@ -63,7 +63,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), mode === "development" && componentTagger(), rssPlugin()].filter(Boolean),
+  plugins: [react(), mode === "development" && componentTagger(), rssPlugin(), socialPagesPlugin()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
