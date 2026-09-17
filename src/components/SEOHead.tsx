@@ -11,6 +11,7 @@ interface SEOHeadProps {
   description?: string;
   path?: string;
   image?: string;
+  imageAlt?: string;
   type?: "website" | "article";
   publishedTime?: string;
   author?: string;
@@ -28,6 +29,7 @@ const SEOHead = ({
   description: rawDescription = DEFAULT_DESCRIPTION,
   path = "/",
   image = DEFAULT_IMAGE,
+  imageAlt,
   type = "website",
   publishedTime,
   author,
@@ -67,8 +69,11 @@ const SEOHead = ({
     setMeta("property", "og:description", description);
     setMeta("property", "og:url", canonicalUrl);
     setMeta("property", "og:image", absoluteImage);
-    setMeta("property", "og:image:width", "1456");
-    setMeta("property", "og:image:height", "816");
+    setMeta("property", "og:image:secure_url", absoluteImage);
+    setMeta("property", "og:image:type", absoluteImage.toLowerCase().endsWith(".png") ? "image/png" : "image/jpeg");
+    setMeta("property", "og:image:width", "1200");
+    setMeta("property", "og:image:height", "630");
+    setMeta("property", "og:image:alt", imageAlt || title || SITE_NAME);
     setMeta("property", "og:type", type);
     setMeta("property", "og:site_name", SITE_NAME);
     setMeta("property", "og:locale", "en_US");
@@ -78,6 +83,7 @@ const SEOHead = ({
     setMeta("name", "twitter:title", fullTitle);
     setMeta("name", "twitter:description", description);
     setMeta("name", "twitter:image", absoluteImage);
+    setMeta("name", "twitter:image:alt", imageAlt || title || SITE_NAME);
 
     // Article-specific
     if (type === "article" && publishedTime) {
@@ -98,6 +104,15 @@ const SEOHead = ({
       document.head.appendChild(canonical);
     }
     canonical.setAttribute("href", canonicalUrl);
+
+    // Legacy crawler hint used by some social and messaging previews.
+    let imageSrc = document.querySelector('link[rel="image_src"]') as HTMLLinkElement | null;
+    if (!imageSrc) {
+      imageSrc = document.createElement("link");
+      imageSrc.setAttribute("rel", "image_src");
+      document.head.appendChild(imageSrc);
+    }
+    imageSrc.setAttribute("href", absoluteImage);
 
     // JSON-LD
     const existingLd = document.querySelectorAll('script[data-seo-jsonld]');
@@ -201,7 +216,7 @@ const SEOHead = ({
     return () => {
       document.querySelectorAll('script[data-seo-jsonld]').forEach(el => el.remove());
     };
-  }, [fullTitle, description, canonicalUrl, absoluteImage, type, publishedTime, author, category, noindex]);
+  }, [fullTitle, description, canonicalUrl, absoluteImage, imageAlt, title, type, publishedTime, author, category, noindex]);
 
   return null;
 };

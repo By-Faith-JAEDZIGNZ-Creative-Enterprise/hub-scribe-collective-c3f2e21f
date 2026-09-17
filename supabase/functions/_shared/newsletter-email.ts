@@ -17,6 +17,10 @@ export interface DigestStory {
   guid: string;
 }
 
+export function socialPreviewImageForStory(story: DigestStory): string | null {
+  return normalizeEmailImageUrl(story.image);
+}
+
 function escapeHtml(str: string): string {
   return str
     .replace(/&/g, "&amp;")
@@ -172,8 +176,9 @@ function shell(content: string, unsubscribeUrl: string | null): string {
 }
 
 function storyCard(story: DigestStory): string {
-  const img = story.image
-    ? `<a href="${escapeHtml(story.link)}"><img src="${escapeHtml(story.image)}" alt="${escapeHtml(story.title)}" width="536" style="width:100%;max-width:536px;border-radius:8px;display:block;margin-bottom:12px;" /></a>`
+  const image = socialPreviewImageForStory(story);
+  const img = image
+    ? `<a href="${escapeHtml(story.link)}"><img src="${escapeHtml(image)}" alt="${escapeHtml(story.title)}" width="536" style="width:100%;max-width:536px;border-radius:8px;display:block;margin-bottom:12px;" /></a>`
     : "";
   return `
   <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #edf1f7;">
