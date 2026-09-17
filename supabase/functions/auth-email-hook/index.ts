@@ -243,63 +243,45 @@ async function handleWebhook(req: Request): Promise<Response> {
     plainText: true,
   })
 
-  // Enqueue email for async processing by the dispatcher (process-email-queue).
-  const supabase = createClient(
-    Deno.env.get('SUPABASE_URL')!,
-    Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
-  )
-
-  const messageId = crypto.randomUUID()
-
-  // Log pending BEFORE enqueue so we have a record even if enqueue crashes
-  await supabase.from('email_send_log').insert({
-    message_id: messageId,
-    template_name: emailType,
-    recipient_email: payload.data.email,
-    status: 'pending',
-  })
-
-  const { error: enqueueError } = await supabase.rpc('enqueue_email', {
-    queue_name: 'auth_emails',
-    payload: {
-      run_id,
-      message_id: messageId,
-      to: payload.data.email,
-      from: `${SITE_NAME} <noreply@${FROM_DOMAIN}>`,
-      sender_domain: SENDER_DOMAIN,
-      subject: EMAIL_SUBJECTS[emailType] || 'Notification',
-      html,
-      text,
-      purpose: 'transactional',
-      label: emailType,
-      queued_at: new Date().toISOString(),
-    },
-  })
-
-  if (enqueueError) {
-    console.error('Failed to enqueue auth email', {
-      code: enqueueError.code,
-      message: enqueueError.message,
-      run_id,
-      emailType,
-    })
-    await supabase.from('email_send_log').insert({
-      message_id: messageId,
-      template_name: emailType,
-      recipient_email: payload.data.email,
-      status: 'failed',
-      error_message: 'Failed to enqueue email',
-    })
-    return new Response(JSON.stringify({ error: 'Failed to enqueue email' }), {
+  // Send directly via the Resend connector gateway (same path the newsletter uses).
+  const resendKey = Deno.env.get('RESEND_API_KEY')
+  if (!resendKey) {
+    console.error('RESEND_API_KEY not configured', { run_id })
+    return new Response(JSON.stringify({ error: 'Email sending not configured' }), {
       status: 500,
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     })
   }
 
-  console.log('Auth email enqueued', { emailType, email_redacted: redactEmail(payload.data.email), run_id })
+  const sendRes = await fetch('https://connector-gateway.lovable.dev/resend/emails', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${apiKey}`,
+      'X-Connection-Api-Key': resendKey,
+    },
+    body: JSON.stringify({
+      from: FROM_ADDRESS,
+      to: [payload.data.email],
+      subject: EMAIL_SUBJECTS[emailType] || 'Notification',
+      html,
+      text,
+    }),
+  })
+
+  if (!sendRes.ok) {
+    const body = await sendRes.text()
+    console.error('Failed to send auth email', { status: sendRes.status, body, run_id, emailType })
+    return new Response(JSON.stringify({ error: 'Failed to send email' }), {
+      status: 500,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    })
+  }
+
+  console.log('Auth email sent', { emailType, email_redacted: redactEmail(payload.data.email), run_id })
 
   return new Response(
-    JSON.stringify({ success: true, queued: true }),
+    JSON.stringify({ success: true, sent: true }),
     { status: 200, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
   )
 }
