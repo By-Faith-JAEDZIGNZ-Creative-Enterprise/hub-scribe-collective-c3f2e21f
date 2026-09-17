@@ -39,7 +39,8 @@ const EMAIL_TEMPLATES: Record<string, React.ComponentType<any>> = {
 const SITE_NAME = "Hattiesburg Hub"
 const SENDER_DOMAIN = "notify.hattiesburghub.com"
 const ROOT_DOMAIN = "hattiesburghub.com"
-const FROM_DOMAIN = "hattiesburghub.com" // Domain shown in From address (may be root or sender subdomain)
+const FROM_DOMAIN = "hattiesburghub-news.com" // Verified Resend sending domain
+const FROM_ADDRESS = `${SITE_NAME} <digest@${FROM_DOMAIN}>`
 
 function redactEmail(email: string | null | undefined): string {
   if (!email) return '***'
