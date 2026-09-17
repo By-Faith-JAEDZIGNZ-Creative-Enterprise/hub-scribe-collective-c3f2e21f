@@ -37,6 +37,59 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "237",
+    title: "Southern Miss Students Explore Energy Production, Challenges in Southern Africa",
+    excerpt: "Six Southern Miss students joined faculty on the university's first study abroad program in Africa, a nearly month-long tour of Zambia and Namibia focused on energy production and conservation.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "September 17, 2026",
+    image: "/__l5e/assets-v1/9d9b444d-9e10-412c-9e7a-00d6e0ebe4cf/usm-africa-study-abroad.jpg",
+    imageAlts: [
+      "Southern Miss faculty and students in the inaugural Africa Study Abroad program visiting with U.S. Embassy staff",
+    ],
+    slug: "southern-miss-students-africa-study-abroad-energy",
+    featured: true,
+    original: true,
+    photoCaption: "Faculty and students in the inaugural Africa Study Abroad program visit with Max Arcand and Karlene Jennings from the U.S. Embassy (center).",
+    photoSource: "Southern Miss",
+    photoLicense: "Used with permission",
+    content: `University of Southern Mississippi students recently returned to campus with firsthand knowledge of how energy production, conservation, and challenges facing countries thousands of miles away can have a direct impact on the global economy.
+
+Six Southern Miss students in the School of Biological, Environmental and Earth Sciences joined faculty members in an immersive visit to Zambia and Namibia as part of the university's first study abroad program in Africa.
+
+The goal of the nearly month-long tour, July 2 to 25, was to understand how countries with vast energy resources balance the use of those assets with conservation strategies.
+
+"For the students, it was an eye-opening experience to be on the continent for the first time and to learn about energy and sustainability issues in other countries," said Mac Alford, professor of botany and coordinator of the summer program. "It also offered research benefits for both the students and accompanying faculty."
+
+Sandra Moss, who is pursuing a Ph.D. in science, technology, engineering and mathematics education, said the visit brought to life the concepts she has studied.
+
+"Understanding how countries produce, manage and transition their energy systems is key to understanding sustainability and climate resilience," Moss said. "Reading about these topics is helpful, but getting the chance to learn directly from the people designing and implementing large-scale energy projects in Namibia and Zambia was an opportunity I couldn't pass up."
+
+Moss' research centers on sustainability and climate change, with a focus on helping K-12 teachers better explain those issues to their students.
+
+Moss said the visit helped her better understand the complexities of mining and energy production, along with the environmental, economic and social trade-offs involved in solving complex problems.
+
+"Although I knew it intellectually, seeing it firsthand honestly brought the realization home," she said. "It reaffirmed my belief that authentic, immersive learning has the power to transform the way we think and is exactly the type of experience I hope to have for K-12 students, meeting them where they are while opening their eyes to the possibilities beyond the classroom."
+
+Jeremy Deans, an associate professor of geology, said Zambia has one of the largest deposits of copper in the world, while Namibia has one of the world's largest uranium mines.
+
+"Southern Africa has a very interesting geologic history, distinct in many ways from much of the history we see in the U.S.," Deans said. "I was able to provide geologic context for our students, as well as help them navigate visits to mines, while also providing background on the geology related to hydroelectric dams."
+
+Deans said the visit also provided students with a valuable cultural exchange.
+
+"They are smaller than the U.S., but bigger than most states," he said. "The contrast between the two countries lies in their population, with Zambia having a larger population and with that the growing pains of infrastructure development. Everywhere we went, they were trying to fix old roads and build new roads with a steady stream of trucks and people trying to get through."
+
+While both countries are major producers of raw materials, they must still buy back finished products. For example, Zambia and Namibia produce raw copper but must purchase more expensive copper wire from other countries.
+
+"These issues are frequently in the news, but seeing it on the ground makes it real and challenges you to understand the local and global system," Deans said.
+
+The program was supported in part by an IDEAS (Increase and Diversify Education Abroad for U.S. Students) grant from the U.S. Department of State.
+
+For Moss, the experience in Africa illustrated the impact of immersive education.
+
+"Our time in Africa showed how the world truly can be the classroom," she said. "Every site visit, conversation and community interaction offered lessons that no lecture alone could provide. I've returned to Southern Miss with new research ideas, new professional connections, and a lot of stories, and examples I can bring into my teaching and work with educators."`,
+  },
+  {
     id: "236",
     title: "Hattiesburg Residents Face Higher Trash Fees Under 2027 City Budget",
     excerpt: "Mayor Toby Barker's proposed budget projects flat revenue growth, raises monthly garbage collection from $17 to $21, and adds $1,200 raises for full-time city employees.",
