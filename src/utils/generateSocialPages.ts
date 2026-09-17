@@ -11,6 +11,8 @@ export interface SocialStory {
   author: string;
   date: string;
   image: string;
+  imageAlts?: string[];
+  photoCaption?: string;
   slug: string;
   content?: string;
   external?: boolean;
@@ -38,6 +40,13 @@ function absoluteImage(image?: string): string {
   return image ? storyImageUrl(image) : DEFAULT_IMAGE;
 }
 
+function imageType(image: string): string {
+  const cleanImage = image.split("?")[0].toLowerCase();
+  if (cleanImage.endsWith(".png")) return "image/png";
+  if (cleanImage.endsWith(".webp")) return "image/webp";
+  return "image/jpeg";
+}
+
 /**
  * Rewrites the head of the built index.html so the crawler-visible metadata
  * matches a single story. Everything else (scripts, styles) stays untouched,
@@ -48,6 +57,8 @@ export function buildStoryHtml(template: string, story: SocialStory): string {
   const title = escapeAttr(truncate(`${story.title}, ${SITE_NAME}`, 70));
   const description = escapeAttr(truncate(story.excerpt || `${story.title} from ${SITE_NAME}.`, 200));
   const image = escapeAttr(absoluteImage(story.image));
+  const imageAlt = escapeAttr(story.imageAlts?.[0] || story.photoCaption || story.title);
+  const imageMime = imageType(image);
   const published = new Date(story.date).toISOString();
 
   const head = `
@@ -62,7 +73,11 @@ export function buildStoryHtml(template: string, story: SocialStory): string {
     <meta property="og:description" content="${description}" />
     <meta property="og:image" content="${image}" />
     <meta property="og:image:secure_url" content="${image}" />
-    <meta property="og:image:alt" content="${escapeAttr(story.title)}" />
+    <meta property="og:image:type" content="${imageMime}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="${imageAlt}" />
+    <link rel="image_src" href="${image}" />
     <meta property="article:published_time" content="${published}" />
     <meta property="article:author" content="${escapeAttr(story.author || SITE_NAME)}" />
     <meta property="article:section" content="${escapeAttr(story.category || "News")}" />
@@ -71,7 +86,7 @@ export function buildStoryHtml(template: string, story: SocialStory): string {
     <meta name="twitter:title" content="${title}" />
     <meta name="twitter:description" content="${description}" />
     <meta name="twitter:image" content="${image}" />
-    <meta name="twitter:image:alt" content="${escapeAttr(story.title)}" />
+    <meta name="twitter:image:alt" content="${imageAlt}" />
 `;
 
   let html = template;
@@ -82,7 +97,8 @@ export function buildStoryHtml(template: string, story: SocialStory): string {
     .replace(/\s*<meta\s+name="description"[^>]*>/gi, "")
     .replace(/\s*<meta\s+property="og:[^"]*"[^>]*>/gi, "")
     .replace(/\s*<meta\s+name="twitter:[^"]*"[^>]*>/gi, "")
-    .replace(/\s*<link\s+rel="canonical"[^>]*>/gi, "");
+    .replace(/\s*<link\s+rel="canonical"[^>]*>/gi, "")
+    .replace(/\s*<link\s+rel="image_src"[^>]*>/gi, "");
 
   return html.replace(/<\/head>/i, `${head}  </head>`);
 }
