@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import type { Story } from "@/data/stories";
 import LoadingImage from "@/components/LoadingImage";
+import { storyImageUrl } from "@/utils/storyImageUrl";
 
 interface StoryCardProps {
   story: Story;
@@ -32,12 +33,13 @@ const categoryColors: Record<string, string> = {
 };
 
 const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
+  const imageUrl = storyImageUrl(story.image);
   if (variant === "large") {
     return (
       <CardWrapper story={story} className="group block relative overflow-hidden rounded-2xl border border-border/40 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
         <div className="aspect-[16/9] overflow-hidden">
           <LoadingImage
-            src={story.image}
+            src={imageUrl}
             alt={story.title}
             wrapperClassName="w-full h-full"
             className="w-full h-full object-cover group-hover:scale-[1.04]"
@@ -75,7 +77,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
       <CardWrapper story={story} className="group flex gap-4 items-start">
         <div className="w-24 h-[4.5rem] sm:w-32 sm:h-24 flex-shrink-0 overflow-hidden rounded-xl border border-border/40">
           <LoadingImage
-            src={story.image}
+            src={imageUrl}
             alt={story.title}
             wrapperClassName="w-full h-full"
             className="w-full h-full object-cover group-hover:scale-[1.04]"
@@ -101,7 +103,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
     <CardWrapper story={story} className="group block transition-transform duration-500 ease-out hover:-translate-y-1">
       <div className="overflow-hidden rounded-2xl border border-border/40 shadow-[var(--shadow-card)] group-hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
         <LoadingImage
-          src={story.image}
+          src={imageUrl}
           alt={story.title}
           wrapperClassName="w-full aspect-[3/2]"
           className="w-full h-full object-cover group-hover:scale-[1.04]"

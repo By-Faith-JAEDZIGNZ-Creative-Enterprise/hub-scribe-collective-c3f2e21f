@@ -43,12 +43,25 @@ function parseRssItems(xml: string, limit: number): DigestStory[] {
       link: extractCdata(block, "link"),
       excerpt: extractCdata(block, "description"),
       category: extractCdata(block, "category"),
-      image: enclosure?.[1] ?? null,
+      image: normalizeEmailImageUrl(enclosure?.[1] ?? null),
       pubDate: extractCdata(block, "pubDate"),
       guid: extractCdata(block, "guid"),
     });
   }
   return items.filter((s) => s.title && s.link);
+}
+
+function normalizeEmailImageUrl(image: string | null): string | null {
+  if (!image) return null;
+  try {
+    const url = new URL(image);
+    if (url.pathname.startsWith("/__l5e/assets-v1/")) {
+      return `${SITE_URL_FALLBACK}${url.pathname}${url.search}`;
+    }
+  } catch {
+    return image;
+  }
+  return image;
 }
 
 export async function fetchLatestStories(limit = 6): Promise<DigestStory[]> {
