@@ -37,6 +37,64 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "238",
+    title: "A Vision in the Sky: Downtown Mural Continues Effort to Inspire and Unite Community",
+    excerpt: "Hattiesburg's newest large-scale public artwork, Scrape the Sky, honors Mississippi poet Etheridge Knight with a vivid mural overlooking The Commons at Gordon's Creek.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "September 21, 2026",
+    image: "/__l5e/assets-v1/46726d67-e1ec-4299-bec4-73a82e817cad/story-scrape-the-sky-mural.jpg",
+    images: [
+      "/__l5e/assets-v1/46726d67-e1ec-4299-bec4-73a82e817cad/story-scrape-the-sky-mural.jpg",
+      "/__l5e/assets-v1/ce19d7fe-e6a7-479b-9be8-34fc9557028f/story-scrape-the-sky-ribbon.jpg",
+    ],
+    imageAlts: [
+      "Scrape the Sky mural painted across a downtown Hattiesburg building near The Commons at Gordon's Creek",
+      "Community leaders holding a ribbon in front of the Scrape the Sky mural in downtown Hattiesburg",
+    ],
+    imageCaptions: [
+      "Scrape the Sky is the 70th major mural commissioned by the Hattiesburg Alliance for Public Art.",
+      "Community leaders celebrate the completion of Scrape the Sky in downtown Hattiesburg.",
+    ],
+    slug: "hattiesburg-scrape-the-sky-mural-etheridge-knight",
+    featured: true,
+    original: true,
+    photoCaption: "Scrape the Sky, a 1,700-square-foot mural at 307 W. Pine Street, celebrates the poetic legacy of Mississippi author Etheridge Knight.",
+    photoSource: "VisitHATTIESBURG / Hattiesburg Alliance for Public Art",
+    photoLicense: "Used with permission",
+    content: `The Hattiesburg streetscape and skyline is brighter with a vivid two-story mural rising from a downtown building.
+
+Scrape the Sky is the 70th major mural commissioned by the Hattiesburg Alliance for Public Art.
+
+The 1,700-square-foot piece celebrates the poetic legacy of Mississippi author Etheridge Knight. The mural is at 307 W. Pine Street overlooking The Commons at Gordon's Creek.
+
+Coastal Mississippi-based artist Julia Reyes painted the piece. She took inspiration from Knight's poem The Cell to create a mural that illustrates how powerful ideas can transcend the boundaries that attempt to contain them.
+
+"Rather than creating a literal representation of the poem, I chose to use it as a catalyst for the imagery," Reyes said. "I wanted to create an environment that feels like a system of patterns, movement, and colorful growth that can be experienced from many different angles and distances, unfolding like a story."
+
+Knight, who died in 1991, is celebrated as a significant poet in American literature. During his lifetime, he received a National Endowment for the Arts grant and a Guggenheim Fellowship. He was also nominated for a Pulitzer Prize for Poetry and the National Book Award.
+
+Reyes' work has been featured across the region. Scrape the Sky is her first completed project in Hattiesburg.
+
+The art was also supported in collaboration with Hattiesburg Poet Laureate Jennifer Peterson and the Academy of American Poets.
+
+Peterson conducted a series of creative workshops in elementary school classrooms, where students explored poetry through writing exercises inspired by public art installations throughout Hattiesburg.
+
+"I've been amazed to see this art come to life through a line of poetry by Knight," Peterson said. "Through both the mural and the creative workshop series, I wanted to draw attention to the importance of poetry in public life."
+
+Peterson said the process helped connect students' own creative experiences to the city's growing public art collection.
+
+"I don't know if one poem or painting can shape our city for the better, but I do know creativity helps us embrace ways of thinking that absolutely can make a difference," she said.
+
+A program of VisitHATTIESBURG, the Hattiesburg Alliance for Public Art began in 2014 through the leadership of community members and donors passionate about publicly sharing art.
+
+The alliance continues to commission and place art throughout the city in parks, neighborhoods, public buildings and businesses while also raising awareness for works of art already in the area.
+
+The organization is partially funded by VisitHATTIESBURG, the Mississippi Arts Commission, the City of Hattiesburg and other local organizations and individuals.
+
+"Public art gives Hattiesburg the opportunity to tell meaningful stories in places where residents and visitors can experience them every day," said VisitHATTIESBURG CEO Marlo Dorsey. "By honoring Etheridge Knight's poetic legacy, Scrape the Sky celebrates Mississippi's literary heritage while inviting new generations to see the arts as a source of imagination, connection, and inspiration."`,
+  },
+  {
     id: "237",
     title: "Southern Miss Students Explore Energy Production, Challenges in Southern Africa",
     excerpt: "Six Southern Miss students joined faculty on the university's first study abroad program in Africa, a nearly month-long tour of Zambia and Namibia focused on energy production and conservation.",
