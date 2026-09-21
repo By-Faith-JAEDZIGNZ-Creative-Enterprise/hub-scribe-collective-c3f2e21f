@@ -1,4 +1,4 @@
 - [x] Add the new story from the uploaded document and photos
 - [x] Verify story/photo rendering before sending
 - [x] Publish the site after security check
-- [ ] Send the new-story email blast and confirm batching finished
+- [x] Send the new-story email blast and confirm batching finished
