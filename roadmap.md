@@ -1,0 +1,4 @@
+- [ ] Add the new story from the uploaded document and photos
+- [ ] Verify story/photo rendering before sending
+- [ ] Publish the site
+- [ ] Send the new-story email blast
