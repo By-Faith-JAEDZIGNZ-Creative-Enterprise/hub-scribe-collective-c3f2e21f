@@ -1,4 +1,4 @@
 - [x] Add bus + Restaurant Week stories
-- [ ] Verify photos render (page + social tags)
-- [ ] Publish
-- [ ] Send new-story email blast
+- [x] Verify photos render (page + social tags)
+- [x] Publish
+- [x] Send new-story email blast
