@@ -37,6 +37,80 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "240",
+    title: "On A Roll: Hattiesburg's Restaurant Week Showcases Mouthwatering Tastes of the City",
+    excerpt: "The ninth annual Hattiesburg Restaurant Week runs October 11-17 with an \"On A Roll\" theme featuring rolled, wrapped and bun-served dishes across the city.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "September 24, 2026",
+    image: "/__l5e/assets-v1/2ba3de32-53eb-413a-bce8-2c89194926a7/story-restaurant-week-on-a-roll.jpg",
+    imageAlts: ["Hattiesburg Restaurant Week On A Roll poster for October 11-17"],
+    slug: "hattiesburg-restaurant-week-on-a-roll-2026",
+    featured: true,
+    original: true,
+    photoCaption: "The ninth annual Hattiesburg Restaurant Week is set for October 11-17.",
+    photoSource: "VisitHATTIESBURG",
+    photoLicense: "Used with permission",
+    content: `A mouthwatering week highlighting the flavors and variety of Hattiesburg's culinary scene is just weeks away.
+
+The ninth annual Restaurant Week is set for October 11-17, organizers just announced. This year's theme is "On A Roll," as area restaurants take the challenge of serving specially rolled or wrapped items for breakfast, lunch, dinner and everything in between.
+
+With nearly 200 local restaurants, Hattiesburg has grown to become a culinary hub for Mississippi.
+
+Restaurant Week is an initiative of VisitHATTIESBURG.
+
+Plans are underway to engage the community with a series of giveaways on social media, and diners are encouraged to share their Restaurant Week experiences on social media with the hashtag #EatHBURG.
+
+"We enjoy partnering with our local restaurants to honor our front-line servers and back-of-the-house teams, who work so hard to keep Hattiesburg on the map as a premier culinary destination," said VisitHATTIESBURG CEO Marlo Dorsey. "We're happy to provide HBURG aprons to these hardworking staff, and send keepsake giveaway items home with our diners."
+
+To match this year's theme of "On A Roll," each restaurant will also offer exclusive dishes featuring something that is rolled, wrapped, layered, swirled, or served on a bun. Organizers said each item will be crafted to satisfy any appetite.
+
+"Hattiesburg Restaurant Week has become one of the most exciting weeks in the city, and we're even more excited to boost the dining experience our great city has to offer," said Kristen Brock, Vice President of Marketing & Programs at VisitHATTIESBURG. "By boosting our local economy in a fun and delicious way, we're welcoming visitors to the city and showing them just how creative we can be."
+
+Dozens of restaurants have signed on for the week-long celebration. Some of this year's exclusive dishes include:
+
+Art of Roux: Cheeseburger Eggrolls
+Brass Hat at the Hotel Indigo: Southern Steak Sliders and Cinnamon Roll Martini
+Equinox Coffee: Cinnamon Roll Latte
+Meador Homestead Bed & Breakfast: Savory British Beef Olives
+Movie Star Restaurant: Yeast Rolls
+Mulukakao: Salame di Cioccolato
+Patio 44: Bacon Jam Pimento Cheese Burger
+SoPro Taproom: Beef Barbacoa Kimbap
+Topher's Burgers & Biscuits: Cinnamon Roll Milkshake
+
+A full list of participating restaurants will be available at www.visithburg.org/eatlocal/.`,
+  },
+  {
+    id: "239",
+    title: "Improved City Buses Expected to Roll Through Hattiesburg in 2027",
+    excerpt: "More than $7.5 million in upgrades, including 14 propane-powered buses, are coming to Hub City Transit with support from the Federal Transit Administration.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "September 24, 2026",
+    image: "/__l5e/assets-v1/df0d62f2-fe73-4cf8-a327-7ccf29ba0c65/story-hub-city-transit-buses.jpg",
+    imageAlts: ["A Hub City Transit bus in Hattiesburg"],
+    slug: "hattiesburg-hub-city-transit-new-propane-buses-2027",
+    featured: true,
+    original: true,
+    photoCaption: "Hub City Transit will replace its fleet in phases with 14 propane-powered buses.",
+    photoSource: "City of Hattiesburg",
+    photoLicense: "Used with permission",
+    content: `More than $7.5 million in major upgrades are coming to Hattiesburg's public transit system.
+
+Funding support from the Federal Transit Administration will help Hub City Transit purchase 14 propane-powered buses to replace vehicles as they reach the end of their useful life, Mayor Toby Barker announced Wednesday.
+
+"This grant allows us to make a significant investment in the future of public transportation in Hattiesburg," Barker said. "Replacing aging vehicles will improve reliability for riders, while the supporting infrastructure and training included in this project will help ensure Hub City Transit is positioned to serve our community well for years to come."
+
+The award, provided through the FTA's Low or No Emission Grant Program, includes $6.45 million in federal funding. The city will provide more than $1 million in local matching funds over five years, which brings the total project investment to about $7.55 million.
+
+The fleet will be replaced in phases. Five new buses are expected in 2027, followed by four in 2028, with the remaining five scheduled for replacement over the following three years.
+
+A transition to propane will reduce emissions compared with diesel and is also expected to lower both fuel and maintenance costs over the life of the vehicles.
+
+The initiative will also pay for facility modifications, maintenance and safety equipment, employee training and other services needed to support the new fleet, city leaders said.`,
+  },
+  {
     id: "238",
     title: "A Vision in the Sky: Downtown Mural Continues Effort to Inspire and Unite Community",
     excerpt: "Hattiesburg's newest large-scale public artwork, Scrape the Sky, honors Mississippi poet Etheridge Knight with a vivid mural overlooking The Commons at Gordon's Creek.",
