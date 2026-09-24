@@ -1,4 +1,4 @@
-- [x] Add the new story from the uploaded document and photos
-- [x] Verify story/photo rendering before sending
-- [x] Publish the site after security check
-- [x] Send the new-story email blast and confirm batching finished
+- [x] Add bus + Restaurant Week stories
+- [ ] Verify photos render (page + social tags)
+- [ ] Publish
+- [ ] Send new-story email blast
