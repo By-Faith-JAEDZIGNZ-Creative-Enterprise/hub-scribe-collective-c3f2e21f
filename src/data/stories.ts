@@ -37,6 +37,51 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "241",
+    title: "William Carey University Touted as a National Leader for Education and Value in New Rankings",
+    excerpt: "William Carey University rose 30 places in Niche.com's 2027 national college rankings, landing in the top fifth of four-year schools and earning four No. 1 rankings in Mississippi.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "September 30, 2026",
+    image: "/__l5e/assets-v1/1619d49c-3485-4298-ae2c-0319d03a5fa3/story-william-carey-niche-rankings.jpg",
+    imageAlts: ["William Carey University official seal, established 1892"],
+    slug: "william-carey-university-niche-2027-rankings",
+    featured: true,
+    original: true,
+    photoCaption: "William Carey University, established in 1892, is based in Hattiesburg.",
+    photoSource: "William Carey University",
+    photoLicense: "Used with permission",
+    content: `William Carey University students, professors and administrators have a reason to celebrate with new rankings that laud the institution as a national leader.
+
+William Carey University rose 30 places in Niche.com's 2027 overall ranking of U.S. colleges and universities, cementing a place in the top fifth among four-year schools in the country. Other nationwide honors for the private Christian college included No. 10 in Best College for Education and No. 12 for Best Christian College.
+
+"It's not just that our team receives high marks from a respected national organization like Niche, it's that they do it every year," said William Carey University President Ben Burnett. "It's the consistency that counts, building on a strong foundation year after year to help students achieve the future they've envisioned."
+
+Niche differs from other ranking organizations in its emphasis on reviews from current students and alumni.
+
+"William Carey is exactly where I belong. I found the most incredible group of caring, godly friends," one student commented on the Niche site. "I have professors who care about me and incredible opportunities. It's a small campus and my professors know me by name. They know my career goals and are willing to help me reach them."
+
+In the state-level assessment, William Carey ranked fourth overall in best colleges in Mississippi and received four No. 1 individual rankings: Best Colleges for Education, Best Colleges for History, Best Christian Colleges and Top Private Universities.
+
+The institution also ranked second among the Safest College Campuses, Best Colleges for Nursing and Best Small Colleges and third among Best Value Colleges, Best Colleges for English and Best College Locations.
+
+Niche since 2002 has used data from the U.S. Department of Education and other public sources to rank four-year colleges and universities. The greatest factors are academics and value, which includes loans and alumni earnings.
+
+Based in Hattiesburg, the university also has campuses in Biloxi and Baton Rouge, Louisiana, along with online learning options.
+
+"William Carey University isn't made up of students who just graduated from high school," a student posted on Niche.com. "It's also for non-traditional students like me, a mom of three kids with disabilities. WCU makes education its top priority and they want their students to succeed."
+
+William Carey each year selects a theme verse from the Bible to guide its mission and focus for the academic year. The university's theme for the current year is "Better Together."
+
+The theme is found in Ecclesiastes 4:9: "Two are better than one, because they have a good return for their labor." Burnett said the theme will guide the institution throughout the year.
+
+"As we look to 2026-27, this verse captures our conviction that God has designed us to thrive not in isolation, but in community, students, faculty, staff, alumni, and friends laboring side by side in shared mission," Burnett said. "At William Carey University, our greatest impact comes when we combine our gifts, strengthen one another, and pursue Christ-centered excellence together."
+
+The university is frequently in national rankings. The university's College of Osteopathic Medicine is consistently listed as a national leader in primary care. In April it was ranked among the best graduate schools of medicine by U.S. News & World Report. The medical school since opening in 2010 has produced more than 1,300 physicians.
+
+Also, university leaders in April dedicated the second phase of the $20 million Charles W. Pickering Institute of Primary Care. The 70,000 square foot facility will bolster the mission to increase the number of primary care physicians in Mississippi and throughout the Gulf South.`,
+  },
+  {
     id: "240",
     title: "On A Roll: Hattiesburg's Restaurant Week Showcases Mouthwatering Tastes of the City",
     excerpt: "The ninth annual Hattiesburg Restaurant Week runs October 11-17 with an \"On A Roll\" theme featuring rolled, wrapped and bun-served dishes across the city.",
