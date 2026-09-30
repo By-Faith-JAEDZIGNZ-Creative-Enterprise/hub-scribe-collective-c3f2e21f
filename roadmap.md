@@ -4,3 +4,8 @@
 - [x] Send new-story email blast
 - [x] Apply the approved refined editorial homepage refresh
 - [x] Verify the refreshed homepage on desktop and mobile
+- [ ] Standardize SEO and metadata across public pages
+- [ ] Make every story share preview use its own accurate lead photo
+- [ ] Resize and verify the branded fallback social image and site icon
+- [ ] Refresh and validate search discovery files
+- [ ] Verify current story preview pages and image responses

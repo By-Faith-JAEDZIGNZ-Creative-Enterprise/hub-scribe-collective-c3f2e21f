@@ -3,7 +3,7 @@ import { storyImageUrl } from "@/utils/storyImageUrl";
 
 const SITE_URL = "https://www.hattiesburghub.com";
 const SITE_NAME = "Hattiesburg Hub";
-const DEFAULT_DESCRIPTION = "Hattiesburg Hub is your go-to source for local news, community stories, and everything happening in Hattiesburg, MS.";
+const DEFAULT_DESCRIPTION = "Independent local news, community stories, events, sports, business, and culture from Hattiesburg, Mississippi and the Pine Belt.";
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 
 interface SEOHeadProps {
@@ -12,6 +12,8 @@ interface SEOHeadProps {
   path?: string;
   image?: string;
   imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   type?: "website" | "article";
   publishedTime?: string;
   author?: string;
@@ -30,6 +32,8 @@ const SEOHead = ({
   path = "/",
   image = DEFAULT_IMAGE,
   imageAlt,
+  imageWidth,
+  imageHeight,
   type = "website",
   publishedTime,
   author,
@@ -37,7 +41,7 @@ const SEOHead = ({
   noindex = false,
 }: SEOHeadProps) => {
   const description = truncate(rawDescription, 160);
-  const fullTitle = truncate(title ? `${title}, ${SITE_NAME}` : `${SITE_NAME}, Hattiesburg Local News & Community Stories`, 60);
+  const fullTitle = truncate(title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} | Local News for Hattiesburg, MS`, 60);
   const canonicalUrl = `${SITE_URL}${path}`;
 
   // Ensure image is absolute URL
@@ -71,8 +75,16 @@ const SEOHead = ({
     setMeta("property", "og:image", absoluteImage);
     setMeta("property", "og:image:secure_url", absoluteImage);
     setMeta("property", "og:image:type", absoluteImage.toLowerCase().endsWith(".png") ? "image/png" : "image/jpeg");
-    setMeta("property", "og:image:width", "1200");
-    setMeta("property", "og:image:height", "630");
+    const removeMeta = (attr: string, key: string) => {
+      document.querySelector(`meta[${attr}="${key}"]`)?.remove();
+    };
+    if (imageWidth && imageHeight) {
+      setMeta("property", "og:image:width", String(imageWidth));
+      setMeta("property", "og:image:height", String(imageHeight));
+    } else {
+      removeMeta("property", "og:image:width");
+      removeMeta("property", "og:image:height");
+    }
     setMeta("property", "og:image:alt", imageAlt || title || SITE_NAME);
     setMeta("property", "og:type", type);
     setMeta("property", "og:site_name", SITE_NAME);
@@ -130,7 +142,12 @@ const SEOHead = ({
         },
         headline: title,
         description,
-        image: absoluteImage,
+        image: {
+          "@type": "ImageObject",
+          url: absoluteImage,
+          ...(imageWidth && imageHeight ? { width: imageWidth, height: imageHeight } : {}),
+          caption: imageAlt || title || SITE_NAME,
+        },
         url: canonicalUrl,
         datePublished: publishedTime,
         dateModified: publishedTime,
@@ -216,7 +233,7 @@ const SEOHead = ({
     return () => {
       document.querySelectorAll('script[data-seo-jsonld]').forEach(el => el.remove());
     };
-  }, [fullTitle, description, canonicalUrl, absoluteImage, imageAlt, title, type, publishedTime, author, category, noindex]);
+  }, [fullTitle, description, canonicalUrl, absoluteImage, imageAlt, imageWidth, imageHeight, title, type, publishedTime, author, category, noindex]);
 
   return null;
 };

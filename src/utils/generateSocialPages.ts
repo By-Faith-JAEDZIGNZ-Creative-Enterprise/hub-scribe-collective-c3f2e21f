@@ -54,8 +54,8 @@ function imageType(image: string): string {
  */
 export function buildStoryHtml(template: string, story: SocialStory): string {
   const url = `${SITE_URL}/story/${story.slug}`;
-  const title = escapeAttr(truncate(`${story.title}, ${SITE_NAME}`, 70));
-  const description = escapeAttr(truncate(story.excerpt || `${story.title} from ${SITE_NAME}.`, 200));
+  const title = escapeAttr(truncate(`${story.title} | ${SITE_NAME}`, 70));
+  const description = escapeAttr(truncate(story.excerpt || `${story.title} from ${SITE_NAME}.`, 160));
   const image = escapeAttr(absoluteImage(story.image));
   const imageAlt = escapeAttr(story.imageAlts?.[0] || story.photoCaption || story.title);
   const imageMime = imageType(image);
@@ -74,8 +74,6 @@ export function buildStoryHtml(template: string, story: SocialStory): string {
     <meta property="og:image" content="${image}" />
     <meta property="og:image:secure_url" content="${image}" />
     <meta property="og:image:type" content="${imageMime}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="${imageAlt}" />
     <link rel="image_src" href="${image}" />
     <meta property="article:published_time" content="${published}" />
