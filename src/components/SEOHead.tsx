@@ -46,6 +46,14 @@ const SEOHead = ({
 
   // Ensure image is absolute URL
   const absoluteImage = storyImageUrl(image);
+  const cleanImagePath = absoluteImage.split("?")[0].toLowerCase();
+  const imageMime = cleanImagePath.endsWith(".png")
+    ? "image/png"
+    : cleanImagePath.endsWith(".webp")
+      ? "image/webp"
+      : "image/jpeg";
+  const resolvedImageWidth = imageWidth ?? (absoluteImage === DEFAULT_IMAGE ? 1200 : undefined);
+  const resolvedImageHeight = imageHeight ?? (absoluteImage === DEFAULT_IMAGE ? 630 : undefined);
 
   useEffect(() => {
     // Title
@@ -74,13 +82,13 @@ const SEOHead = ({
     setMeta("property", "og:url", canonicalUrl);
     setMeta("property", "og:image", absoluteImage);
     setMeta("property", "og:image:secure_url", absoluteImage);
-    setMeta("property", "og:image:type", absoluteImage.toLowerCase().endsWith(".png") ? "image/png" : "image/jpeg");
+    setMeta("property", "og:image:type", imageMime);
     const removeMeta = (attr: string, key: string) => {
       document.querySelector(`meta[${attr}="${key}"]`)?.remove();
     };
-    if (imageWidth && imageHeight) {
-      setMeta("property", "og:image:width", String(imageWidth));
-      setMeta("property", "og:image:height", String(imageHeight));
+    if (resolvedImageWidth && resolvedImageHeight) {
+      setMeta("property", "og:image:width", String(resolvedImageWidth));
+      setMeta("property", "og:image:height", String(resolvedImageHeight));
     } else {
       removeMeta("property", "og:image:width");
       removeMeta("property", "og:image:height");
@@ -145,7 +153,7 @@ const SEOHead = ({
         image: {
           "@type": "ImageObject",
           url: absoluteImage,
-          ...(imageWidth && imageHeight ? { width: imageWidth, height: imageHeight } : {}),
+          ...(resolvedImageWidth && resolvedImageHeight ? { width: resolvedImageWidth, height: resolvedImageHeight } : {}),
           caption: imageAlt || title || SITE_NAME,
         },
         url: canonicalUrl,
@@ -233,7 +241,7 @@ const SEOHead = ({
     return () => {
       document.querySelectorAll('script[data-seo-jsonld]').forEach(el => el.remove());
     };
-  }, [fullTitle, description, canonicalUrl, absoluteImage, imageAlt, imageWidth, imageHeight, title, type, publishedTime, author, category, noindex]);
+  }, [fullTitle, description, canonicalUrl, absoluteImage, imageAlt, imageMime, resolvedImageWidth, resolvedImageHeight, title, type, publishedTime, author, category, noindex]);
 
   return null;
 };

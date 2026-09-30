@@ -60,6 +60,25 @@ export function buildStoryHtml(template: string, story: SocialStory): string {
   const imageAlt = escapeAttr(story.imageAlts?.[0] || story.photoCaption || story.title);
   const imageMime = imageType(image);
   const published = new Date(story.date).toISOString();
+  const articleSchema = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    headline: story.title,
+    description: story.excerpt || `${story.title} from ${SITE_NAME}.`,
+    image: { "@type": "ImageObject", url: image, caption: story.imageAlts?.[0] || story.photoCaption || story.title },
+    datePublished: published,
+    dateModified: published,
+    author: { "@type": "Person", name: story.author || SITE_NAME },
+    publisher: {
+      "@type": "NewsMediaOrganization",
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.png`, width: 512, height: 512 },
+    },
+    articleSection: story.category || "News",
+    inLanguage: "en-US",
+  }).replace(/</g, "\\u003c");
 
   const head = `
     <title>${title}</title>
@@ -85,6 +104,7 @@ export function buildStoryHtml(template: string, story: SocialStory): string {
     <meta name="twitter:description" content="${description}" />
     <meta name="twitter:image" content="${image}" />
     <meta name="twitter:image:alt" content="${imageAlt}" />
+    <script type="application/ld+json">${articleSchema}</script>
 `;
 
   let html = template;
