@@ -38,19 +38,18 @@ const PhotoGallery = ({
   const captionFor = (i: number) => captions[i]?.trim();
 
   return (
-    <div className="my-10">
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-1 h-5 bg-primary rounded-full" />
-        <h2 className="font-display text-sm font-medium tracking-wide text-muted-foreground uppercase">Photo Gallery</h2>
+    <div className="my-14 md:my-20">
+      <div className="mb-5 border-b border-border/60 pb-4">
+        <h2 className="font-display text-xs font-semibold text-muted-foreground uppercase">Photo Gallery</h2>
       </div>
 
       {/* Main image */}
       <figure className="m-0">
-        <div className="relative rounded-lg overflow-hidden bg-hub-deep">
+        <div className="relative rounded-md overflow-hidden bg-hub-deep">
           <img
             src={storyImageUrl(images[current])}
             alt={altFor(current)}
-            className="w-full max-h-[500px] object-contain mx-auto"
+            className="w-full max-h-[560px] object-contain mx-auto"
           />
           {images.length > 1 && (
             <>
@@ -77,20 +76,20 @@ const PhotoGallery = ({
 
         {/* Per-image caption */}
         {captionFor(current) && (
-          <figcaption className="mt-3 text-sm text-foreground/80 font-body leading-relaxed">
+          <figcaption className="mt-4 max-w-2xl text-sm text-muted-foreground font-body italic leading-7">
             {captionFor(current)}
           </figcaption>
         )}
       </figure>
 
       {/* Thumbnails */}
-      <div className="flex gap-2 mt-3 overflow-x-auto pb-2">
+      <div className="flex gap-3 mt-4 overflow-x-auto pb-2">
         {images.map((img, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
             aria-label={`Show photo ${i + 1}: ${altFor(i)}`}
-            className={`w-16 h-16 flex-shrink-0 rounded-md overflow-hidden border-2 transition-all ${
+            className={`w-16 h-16 flex-shrink-0 rounded-sm overflow-hidden border-2 transition-all ${
               i === current ? "border-primary opacity-100" : "border-transparent opacity-60 hover:opacity-90"
             }`}
           >
@@ -101,7 +100,7 @@ const PhotoGallery = ({
 
       {/* Photo Credit */}
       {credit && (
-        <p className="mt-3 text-xs text-muted-foreground font-body italic leading-relaxed">
+        <p className="mt-4 max-w-2xl text-xs text-muted-foreground font-body italic leading-6">
           📷 {credit}
         </p>
       )}
@@ -140,34 +139,34 @@ const StoryPage = () => {
       <main className="pt-36 md:pt-28">
         {/* Article Header */}
         <div className="relative w-full">
-          <div className="w-full h-[50vh] md:h-[60vh] overflow-hidden">
+          <div className="w-full h-[54vh] min-h-[460px] max-h-[760px] md:h-[64vh] overflow-hidden">
             <img
               src={imageUrl}
               alt={story.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 via-42% to-transparent" />
           </div>
           <div className="absolute bottom-0 left-0 right-0">
-            <div className="container mx-auto px-4 pb-8 max-w-4xl">
+            <div className="container mx-auto max-w-5xl px-5 pb-10 sm:px-8 md:pb-14">
               <Link
                 to={`/category/${story.category}`}
-                className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300 font-display text-xs font-medium tracking-wide mb-4"
+                className="mb-6 inline-flex items-center gap-2 font-body text-xs font-medium text-muted-foreground transition-colors duration-300 hover:text-primary"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back to {story.category}
               </Link>
-              <div>
+              <div className="flex flex-wrap items-center gap-2">
                 {story.original && (
-                  <span className="inline-flex items-center gap-1.5 bg-primary/20 text-primary px-2.5 py-1 rounded-sm font-display text-[10px] font-bold tracking-widest uppercase mr-2">
+                  <span className="inline-flex items-center bg-primary/15 text-primary px-2.5 py-1 rounded-sm font-display text-[10px] font-semibold tracking-normal uppercase">
                     HattiesburgHub Original
                   </span>
                 )}
-                <span className={`category-badge px-2.5 py-1 rounded-sm ${categoryColors[story.category] || "bg-muted text-muted-foreground"}`}>
+                <span className={`category-badge px-2.5 py-1 rounded-sm tracking-normal ${categoryColors[story.category] || "bg-muted text-muted-foreground"}`}>
                   {story.category}
                 </span>
               </div>
-              <h1 className="font-display text-3xl md:text-5xl font-bold text-foreground mt-3 leading-tight">
+              <h1 className="mt-5 max-w-4xl font-display text-3xl font-semibold leading-[1.12] text-foreground sm:text-4xl md:text-5xl lg:text-[3.5rem]">
                 {story.title}
               </h1>
             </div>
@@ -175,22 +174,22 @@ const StoryPage = () => {
         </div>
 
         {/* Article Content */}
-        <div className="container mx-auto px-4 py-10 max-w-4xl">
-          <div>
+        <div className="container mx-auto max-w-5xl px-5 py-12 sm:px-8 md:py-16">
+          <div className="mx-auto max-w-3xl">
             {/* Meta */}
-            <div className="flex items-center gap-6 mb-8 pb-6 border-b border-border/50">
-              <div className="flex items-center gap-2 text-muted-foreground text-sm font-body">
+            <div className="mb-12 flex flex-col gap-4 border-y border-border/60 py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8 md:mb-16 md:py-7">
+              <div className="flex items-center gap-2 font-body text-sm font-medium text-foreground/80">
                 <User className="w-4 h-4" />
                 {story.author}
               </div>
-              <div className="flex items-center gap-2 text-muted-foreground text-sm font-body">
+              <div className="flex items-center gap-2 font-body text-sm text-muted-foreground">
                 <Clock className="w-4 h-4" />
                 {story.date}
               </div>
             </div>
 
             {/* Content - first section */}
-            <div className="font-body text-foreground/90 leading-relaxed text-lg space-y-6">
+            <div className="space-y-8 font-body text-[1.0625rem] leading-[1.9] text-foreground/85 md:space-y-9 md:text-lg">
               {contentParagraphs.slice(0, midPoint).map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}
@@ -209,13 +208,13 @@ const StoryPage = () => {
 
             {/* Single-image credit */}
             {(!story.images || story.images.length <= 1) && credit && (
-              <p className="mt-4 text-xs text-muted-foreground font-body italic leading-relaxed">
+              <p className="my-10 border-y border-border/50 py-4 text-xs text-muted-foreground font-body italic leading-6 md:my-14">
                 📷 {credit}
               </p>
             )}
 
             {/* Content - remaining */}
-            <div className="font-body text-foreground/90 leading-relaxed text-lg space-y-6">
+            <div className="space-y-8 font-body text-[1.0625rem] leading-[1.9] text-foreground/85 md:space-y-9 md:text-lg">
               {contentParagraphs.slice(midPoint).map((paragraph, i) => (
                 <p key={i + midPoint}>{paragraph}</p>
               ))}
@@ -224,12 +223,11 @@ const StoryPage = () => {
 
           {/* Original Reads */}
           {originalReads.length > 0 && (
-            <div className="mt-16 pt-12 border-t border-border/50">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-1 h-6 bg-primary rounded-full" />
-                <h2 className="font-display text-xl font-bold text-foreground">More Original Reads</h2>
+            <div className="mt-24 border-t border-border/60 pt-14 md:mt-32 md:pt-16">
+              <div className="mb-10">
+                <h2 className="font-display text-xl font-semibold text-foreground">More Original Reads</h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
                 {originalReads.map((s) => (
                   <StoryCard key={s.id} story={s} />
                 ))}
@@ -239,12 +237,11 @@ const StoryPage = () => {
 
           {/* Related Stories */}
           {relatedStories.length > 0 && (
-            <div className="mt-16 pt-12 border-t border-border/50">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-1 h-6 bg-primary rounded-full" />
-                <h2 className="font-display text-xl font-bold text-foreground">Related Stories</h2>
+            <div className="mt-24 border-t border-border/60 pt-14 md:mt-32 md:pt-16">
+              <div className="mb-10">
+                <h2 className="font-display text-xl font-semibold text-foreground">Related Stories</h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
                 {relatedStories.map((s) => (
                   <StoryCard key={s.id} story={s} />
                 ))}
