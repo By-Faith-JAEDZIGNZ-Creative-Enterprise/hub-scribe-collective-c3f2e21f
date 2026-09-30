@@ -54,12 +54,31 @@ function imageType(image: string): string {
  */
 export function buildStoryHtml(template: string, story: SocialStory): string {
   const url = `${SITE_URL}/story/${story.slug}`;
-  const title = escapeAttr(truncate(`${story.title}, ${SITE_NAME}`, 70));
-  const description = escapeAttr(truncate(story.excerpt || `${story.title} from ${SITE_NAME}.`, 200));
+  const title = escapeAttr(truncate(`${story.title} | ${SITE_NAME}`, 70));
+  const description = escapeAttr(truncate(story.excerpt || `${story.title} from ${SITE_NAME}.`, 160));
   const image = escapeAttr(absoluteImage(story.image));
   const imageAlt = escapeAttr(story.imageAlts?.[0] || story.photoCaption || story.title);
   const imageMime = imageType(image);
   const published = new Date(story.date).toISOString();
+  const articleSchema = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    headline: story.title,
+    description: story.excerpt || `${story.title} from ${SITE_NAME}.`,
+    image: { "@type": "ImageObject", url: image, caption: story.imageAlts?.[0] || story.photoCaption || story.title },
+    datePublished: published,
+    dateModified: published,
+    author: { "@type": "Person", name: story.author || SITE_NAME },
+    publisher: {
+      "@type": "NewsMediaOrganization",
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.png`, width: 512, height: 512 },
+    },
+    articleSection: story.category || "News",
+    inLanguage: "en-US",
+  }).replace(/</g, "\\u003c");
 
   const head = `
     <title>${title}</title>
@@ -74,8 +93,6 @@ export function buildStoryHtml(template: string, story: SocialStory): string {
     <meta property="og:image" content="${image}" />
     <meta property="og:image:secure_url" content="${image}" />
     <meta property="og:image:type" content="${imageMime}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="${imageAlt}" />
     <link rel="image_src" href="${image}" />
     <meta property="article:published_time" content="${published}" />
@@ -87,6 +104,7 @@ export function buildStoryHtml(template: string, story: SocialStory): string {
     <meta name="twitter:description" content="${description}" />
     <meta name="twitter:image" content="${image}" />
     <meta name="twitter:image:alt" content="${imageAlt}" />
+    <script type="application/ld+json">${articleSchema}</script>
 `;
 
   let html = template;

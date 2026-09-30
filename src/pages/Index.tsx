@@ -55,7 +55,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead path="/" />
+      <SEOHead path="/" imageWidth={1200} imageHeight={630} imageAlt="Hattiesburg Hub, The Pulse of the City" />
       <LatestOriginalLightbox />
       <Navbar />
       <main className="pt-32 md:pt-24">
