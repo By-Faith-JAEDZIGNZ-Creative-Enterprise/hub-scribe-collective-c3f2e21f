@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Star } from "lucide-react";
 import { stories } from "@/data/stories";
+import { storyImageUrl } from "@/utils/storyImageUrl";
 
 const LeadStory = () => {
   const leadStory = stories.find((s) => s.original && s.featured);
@@ -23,7 +24,7 @@ const LeadStory = () => {
             {/* Image half */}
             <Link to={`/story/${leadStory.slug}`} className="md:w-1/2 relative overflow-hidden block">
               <img
-                src={leadStory.image}
+                src={storyImageUrl(leadStory.image)}
                 alt={leadStory.title}
                 className="w-full h-full min-h-[200px] md:min-h-[260px] object-cover group-hover:scale-[1.025] transition-transform duration-700 ease-out"
               />
