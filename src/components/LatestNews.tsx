@@ -11,15 +11,15 @@ const LatestNews = () => {
   if (latestExternal.length === 0) return null;
 
   return (
-    <section className="py-10 md:py-16 bg-hub-deep">
+    <section className="py-10 md:py-14 bg-hub-deep">
       <div className="container mx-auto px-4">
         {/* Section header */}
-        <div className="flex items-center gap-4 mb-6 md:mb-10">
+        <div className="flex items-center gap-4 mb-6 md:mb-8">
           <div className="flex items-center gap-3">
-            <div className="w-1 h-6 bg-primary rounded-full" />
-            <h2 className="font-display text-lg md:text-xl font-bold tracking-[-0.025em] text-foreground">Latest News</h2>
+            <div className="w-1 h-5 bg-primary rounded-sm" />
+            <h2 className="font-display text-lg md:text-xl font-bold text-foreground">Latest News</h2>
           </div>
-          <div className="flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full">
+          <div className="flex items-center gap-2 bg-primary/10 px-2.5 py-1 rounded-md">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
@@ -38,7 +38,7 @@ const LatestNews = () => {
 
         {/* Second row - 2 columns */}
         {secondRow.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mb-6 md:mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-7 mb-6 md:mb-8">
             {secondRow.map((story) => (
               <StoryCard key={story.id} story={story} />
             ))}

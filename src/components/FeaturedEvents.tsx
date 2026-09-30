@@ -38,15 +38,15 @@ const FeaturedEvents = () => {
   if (featured.length === 0) return null;
 
   return (
-    <section className="py-10 md:py-16 bg-background">
+    <section className="py-10 md:py-14 bg-background">
       <div className="container mx-auto px-4">
         {/* Section header */}
-        <div className="flex items-center gap-4 mb-6 md:mb-10">
+        <div className="flex items-center gap-4 mb-6 md:mb-8">
           <div className="flex items-center gap-3">
-            <div className="w-1.5 h-8 bg-primary rounded-full" />
-            <h2 className="font-display text-2xl font-bold text-foreground">Upcoming Events</h2>
+            <div className="w-1 h-5 bg-primary rounded-sm" />
+            <h2 className="font-display text-lg md:text-xl font-bold text-foreground">Upcoming Events</h2>
           </div>
-          <div className="flex items-center gap-2 bg-secondary/10 px-3 py-1 rounded-full">
+          <div className="hidden sm:flex items-center gap-2 bg-secondary/10 px-2.5 py-1 rounded-md">
             <CalendarIcon className="w-3 h-3 text-secondary" />
             <span className="font-display text-xs font-medium tracking-wide text-secondary">This Week & Beyond</span>
           </div>
@@ -72,19 +72,19 @@ const FeaturedEvents = () => {
                 href={e.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card/40 hover:bg-card/80 hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_30px_-10px_hsl(var(--primary)/0.4)] hover:-translate-y-1"
+                className="group relative overflow-hidden rounded-lg border border-border/60 bg-card/30 hover:bg-card/70 hover:border-primary/30 transition-all duration-500 hover:shadow-[var(--shadow-card-hover)] hover:-translate-y-0.5"
               >
                 {/* Date band */}
-                <div className="relative px-5 pt-5 pb-4 flex items-start justify-between gap-3 border-b border-border/40">
+                <div className="relative px-4 pt-4 pb-3 flex items-start justify-between gap-3 border-b border-border/40">
                   <div>
                     <div className="font-display text-[10px] tracking-[0.2em] uppercase text-primary font-medium mb-1">
                       {start.toLocaleDateString("en-US", { month: "short" })}
                     </div>
-                    <div className="font-display text-4xl font-bold text-foreground leading-none">
+                    <div className="font-display text-3xl font-bold text-foreground leading-none">
                       {start.getDate()}
                       {multiDay && (
                         <span className="text-muted-foreground/60 text-2xl font-medium">
-                          –{parseLocalDate(e.endDate!).getDate()}
+                           –{parseLocalDate(e.endDate ?? e.startDate).getDate()}
                         </span>
                       )}
                     </div>
@@ -101,7 +101,7 @@ const FeaturedEvents = () => {
                 </div>
 
                 {/* Body */}
-                <div className="px-5 py-4">
+                <div className="px-4 py-4">
                   <h3 className="font-display text-base font-bold text-foreground group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[2.6rem] mb-3">
                     {e.title}
                   </h3>
@@ -131,7 +131,7 @@ const FeaturedEvents = () => {
         <div className="mt-8 text-center sm:hidden">
           <Link
             to="/events"
-            className="inline-flex items-center gap-2 font-display text-sm font-medium px-5 py-2.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center gap-2 font-display text-sm font-medium px-5 py-2.5 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
           >
             View Full Calendar
             <ArrowRight className="w-4 h-4" />

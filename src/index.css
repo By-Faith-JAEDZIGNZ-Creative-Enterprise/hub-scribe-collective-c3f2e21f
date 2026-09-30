@@ -63,8 +63,10 @@
 
     /* Easing + elevation */
     --ease-hub: cubic-bezier(0.22, 1, 0.36, 1);
-    --shadow-card: 0 1px 2px hsl(228 20% 12% / 0.04), 0 8px 24px -8px hsl(228 20% 12% / 0.08);
-    --shadow-card-hover: 0 2px 6px hsl(228 20% 12% / 0.06), 0 20px 44px -12px hsl(217 91% 50% / 0.16);
+    --shadow-nav: 0 8px 24px -16px hsl(228 20% 12% / 0.24);
+    --shadow-feature: 0 18px 42px -26px hsl(228 20% 12% / 0.3);
+    --shadow-card: 0 1px 2px hsl(228 20% 12% / 0.04), 0 6px 18px -12px hsl(228 20% 12% / 0.12);
+    --shadow-card-hover: 0 2px 5px hsl(228 20% 12% / 0.05), 0 14px 30px -18px hsl(217 91% 50% / 0.18);
 
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -119,8 +121,10 @@
     --hub-cyan: 190 80% 55%;
     --hub-text-dim: 225 12% 40%;
 
-    --shadow-card: 0 1px 2px hsl(0 0% 0% / 0.3), 0 8px 24px -8px hsl(0 0% 0% / 0.45);
-    --shadow-card-hover: 0 2px 6px hsl(0 0% 0% / 0.4), 0 20px 44px -12px hsl(217 91% 60% / 0.22);
+    --shadow-nav: 0 8px 24px -16px hsl(0 0% 0% / 0.7);
+    --shadow-feature: 0 18px 42px -26px hsl(0 0% 0% / 0.75);
+    --shadow-card: 0 1px 2px hsl(0 0% 0% / 0.25), 0 6px 18px -12px hsl(0 0% 0% / 0.55);
+    --shadow-card-hover: 0 2px 5px hsl(0 0% 0% / 0.35), 0 14px 30px -18px hsl(217 91% 60% / 0.24);
   }
 }
 
@@ -139,8 +143,8 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    letter-spacing: -0.03em;
-    line-height: 1.15;
+    letter-spacing: 0;
+    line-height: 1.18;
   }
 }
 
@@ -225,7 +229,7 @@
   height: 2px;
   background: hsl(var(--primary));
   box-shadow: 0 0 8px hsl(var(--primary) / 0.5);
-  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: width 0.3s var(--ease-hub);
 }
 .glow-underline:hover::after,
 .glow-underline.active::after {
@@ -245,8 +249,8 @@
 /* Glass effect */
 .glass {
   background: hsl(var(--card) / 0.55);
-  backdrop-filter: blur(24px) saturate(1.4);
-  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  backdrop-filter: blur(20px) saturate(1.25);
+  -webkit-backdrop-filter: blur(20px) saturate(1.25);
 }
 
 /* Glow effects */
@@ -258,4 +262,13 @@
 *:focus-visible {
   outline: 2px solid hsl(var(--primary) / 0.6);
   outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

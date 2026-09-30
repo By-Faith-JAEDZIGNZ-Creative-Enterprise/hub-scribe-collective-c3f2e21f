@@ -12,13 +12,13 @@ const OriginalStories = () => {
   if (originals.length <= 1) return null;
 
   return (
-    <section className="py-10 md:py-16 bg-hub-deep/50 border-y border-border/20">
+    <section className="py-10 md:py-14 bg-hub-deep/40 border-y border-border/30">
       <div className="container mx-auto px-4">
         {/* Section header */}
-        <div className="flex items-center justify-between mb-6 md:mb-10">
+        <div className="flex items-center justify-between mb-6 md:mb-8">
           <div className="flex items-center gap-3">
             <Feather className="w-4 h-4 text-primary" />
-            <h2 className="font-display text-lg md:text-xl font-bold tracking-[-0.025em] text-foreground">
+            <h2 className="font-display text-lg md:text-xl font-bold text-foreground">
               HattiesburgHub Originals
             </h2>
           </div>
@@ -29,7 +29,7 @@ const OriginalStories = () => {
         </div>
 
         {/* Stories grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7">
           {originals.map((story) => (
             <StoryCard key={story.id} story={story} />
           ))}
