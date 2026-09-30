@@ -15,13 +15,13 @@ const FeaturedStories = () => {
   const bottomRow = displayStories.slice(2, 5);
 
   return (
-    <section className="py-10 md:py-14 bg-hub-deep">
+    <section className="py-10 md:py-12 bg-hub-deep">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <div className="flex items-center gap-4 mb-6 md:mb-8">
           <div className="flex items-center gap-3">
             <Flame className="w-4 h-4 text-primary" />
-            <h2 className="font-display text-lg md:text-xl font-bold tracking-[-0.025em] text-foreground">More Featured Stories</h2>
+            <h2 className="font-display text-lg md:text-xl font-bold text-foreground">More Featured Stories</h2>
           </div>
           <div className="flex-1 h-px bg-border/40" />
           <Link

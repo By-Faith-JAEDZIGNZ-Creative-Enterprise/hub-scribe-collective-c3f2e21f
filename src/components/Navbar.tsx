@@ -21,24 +21,24 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-3 md:top-4 left-0 right-0 z-50 px-3 md:px-4">
+    <nav className="fixed top-2 md:top-3 left-0 right-0 z-50 px-3 md:px-4">
       <div className="container mx-auto">
-        <div className="glass rounded-2xl border border-border/40 shadow-[0_8px_32px_-8px_hsl(var(--foreground)/0.15)] overflow-hidden">
-          <div className="flex items-center justify-between h-14 md:h-16 px-4">
+        <div className="glass rounded-lg border border-border/50 shadow-[var(--shadow-nav)] overflow-hidden">
+          <div className="flex items-center justify-between h-12 md:h-14 px-3 md:px-4">
             {/* Logo */}
             <Link to="/" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img
                 src={logoSubmark}
                 alt="Hattiesburg Hub"
-                className="h-12 md:h-14 w-auto"
+                className="h-10 md:h-12 w-auto"
               />
             </Link>
 
             {/* Desktop Nav */}
-            <div className="hidden md:flex items-center gap-7">
+            <div className="hidden md:flex items-center gap-6">
               <Link
                 to="/"
-                className={`glow-underline font-display text-[13px] font-medium tracking-wide transition-colors ${
+                className={`glow-underline font-display text-xs font-semibold transition-colors ${
                   location.pathname === "/" ? "active text-primary" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <Link
                   key={cat.slug}
                   to={`/category/${cat.slug}`}
-                  className={`glow-underline font-display text-[13px] font-medium tracking-wide transition-colors ${
+                  className={`glow-underline font-display text-xs font-semibold transition-colors ${
                     location.pathname === `/category/${cat.slug}` ? "active text-primary" : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
@@ -57,7 +57,7 @@ const Navbar = () => {
               ))}
               <Link
                 to="/events"
-                className={`glow-underline font-display text-[13px] font-medium tracking-wide transition-colors ${
+                className={`glow-underline font-display text-xs font-semibold transition-colors ${
                   location.pathname === "/events" ? "active text-primary" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -80,7 +80,7 @@ const Navbar = () => {
               {searchOpen ? (
                 <form
                   onSubmit={submitSearch}
-                  className="hidden md:flex items-center gap-2 bg-muted/50 border border-border/40 rounded-full pl-3 pr-1.5 h-9 w-60"
+                  className="hidden md:flex items-center gap-2 bg-muted/40 border border-border/50 rounded-md pl-3 pr-1.5 h-8 w-56"
                 >
                   <Search className="w-4 h-4 text-muted-foreground shrink-0" />
                   <input
@@ -95,7 +95,7 @@ const Navbar = () => {
                     type="button"
                     onClick={() => { setSearchOpen(false); setQuery(""); }}
                     aria-label="Close search"
-                    className="p-1.5 rounded-full text-muted-foreground hover:text-foreground transition-colors"
+                    className="p-1.5 rounded-md text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <X className="w-3.5 h-3.5" />
                   </button>
@@ -104,14 +104,14 @@ const Navbar = () => {
                 <button
                   onClick={() => setSearchOpen(true)}
                   aria-label="Open search"
-                  className="hidden md:flex p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-muted/50 transition-all"
+                  className="hidden md:flex p-2 rounded-md text-muted-foreground hover:text-primary hover:bg-muted/50 transition-all"
                 >
                   <Search className="w-4 h-4" />
                 </button>
               )}
 
               <button
-                className="md:hidden p-2 text-foreground"
+                className="md:hidden p-2 rounded-md text-foreground hover:bg-muted/50 transition-colors"
                 onClick={() => setMobileOpen(!mobileOpen)}
                 aria-label={mobileOpen ? "Close menu" : "Open menu"}
               >
@@ -124,7 +124,7 @@ const Navbar = () => {
           <div className="md:hidden border-t border-border/40 px-3 py-2">
             <form
               onSubmit={submitSearch}
-              className="flex items-center gap-2 bg-muted/50 border border-border/40 rounded-full pl-3 pr-1.5 h-9"
+              className="flex items-center gap-2 bg-muted/40 border border-border/50 rounded-md pl-3 pr-1.5 h-9"
             >
               <Search className="w-4 h-4 text-muted-foreground shrink-0" />
               <input
@@ -138,7 +138,7 @@ const Navbar = () => {
                 <button
                   type="submit"
                   aria-label="Search"
-                  className="p-1.5 rounded-full bg-primary text-primary-foreground"
+                  className="p-1.5 rounded-md bg-primary text-primary-foreground"
                 >
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>

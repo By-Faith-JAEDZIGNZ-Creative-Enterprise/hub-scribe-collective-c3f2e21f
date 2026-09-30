@@ -6,16 +6,16 @@ const Shimmer = ({ className }: { className?: string }) => (
 
 export const HeroSkeleton = () => (
   <section className="container mx-auto px-4" aria-label="Loading featured content">
-    <div className="relative h-[58vh] min-h-[400px] md:h-[68vh] md:min-h-[480px] max-h-[760px] overflow-hidden rounded-3xl md:rounded-[2rem] border border-border/40 skeleton-shimmer">
+    <div className="relative h-[50vh] min-h-[370px] md:h-[58vh] md:min-h-[440px] max-h-[640px] overflow-hidden rounded-xl border border-border/50 skeleton-shimmer">
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/10" />
-      <div className="absolute bottom-0 left-0 px-5 md:px-14 pb-7 md:pb-16 w-full max-w-2xl space-y-4 md:space-y-5">
+      <div className="absolute bottom-0 left-0 px-5 md:px-10 pb-7 md:pb-10 w-full max-w-2xl space-y-4">
         <Shimmer className="h-3 w-44" />
         <Shimmer className="h-10 md:h-16 w-3/4" />
         <Shimmer className="h-10 md:h-16 w-1/2" />
         <Shimmer className="h-4 w-2/3" />
         <div className="flex gap-3 pt-2">
-          <Shimmer className="h-11 w-36 rounded-xl" />
-          <Shimmer className="h-11 w-36 rounded-xl" />
+          <Shimmer className="h-10 w-32 rounded-md" />
+          <Shimmer className="h-10 w-32 rounded-md" />
         </div>
       </div>
     </div>
@@ -65,7 +65,7 @@ export const StoryCardSkeleton = ({ horizontal = false }: { horizontal?: boolean
 
 export const LeadStorySkeleton = () => (
   <section className="container mx-auto px-4 py-6 md:py-10" aria-label="Loading top story">
-    <div className="rounded-3xl border border-border/40 overflow-hidden md:flex">
+    <div className="rounded-lg border border-border/50 overflow-hidden md:flex">
       <Shimmer className="md:w-1/2 aspect-[16/10] md:aspect-auto md:min-h-[360px] rounded-none" />
       <div className="md:w-1/2 p-5 md:p-10 flex flex-col justify-between gap-6">
         <div className="space-y-4">

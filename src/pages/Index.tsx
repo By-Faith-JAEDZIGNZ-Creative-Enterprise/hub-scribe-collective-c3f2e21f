@@ -58,7 +58,7 @@ const Index = () => {
       <SEOHead path="/" />
       <LatestOriginalLightbox />
       <Navbar />
-      <main className="pt-36 md:pt-28">
+      <main className="pt-32 md:pt-24">
         {loading ? (
           <div aria-busy="true">
             <HeroSkeleton />

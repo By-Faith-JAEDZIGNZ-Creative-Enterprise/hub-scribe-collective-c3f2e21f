@@ -36,17 +36,17 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   const imageUrl = storyImageUrl(story.image);
   if (variant === "large") {
     return (
-      <CardWrapper story={story} className="group block relative overflow-hidden rounded-2xl border border-border/40 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
+      <CardWrapper story={story} className="group block relative overflow-hidden rounded-lg border border-border/50 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-all duration-500 hover:-translate-y-0.5">
         <div className="aspect-[16/9] overflow-hidden">
           <LoadingImage
             src={imageUrl}
             alt={story.title}
             wrapperClassName="w-full h-full"
-            className="w-full h-full object-cover group-hover:scale-[1.04]"
+            className="w-full h-full object-cover group-hover:scale-[1.025]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+        <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5">
           <div className="flex items-center gap-2">
             {story.original && (
               <span className="category-badge px-2 py-0.5 rounded-sm bg-primary/20 text-primary">
@@ -58,7 +58,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
             </span>
             {story.external && <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />}
           </div>
-          <h3 className="font-display text-xl md:text-[1.7rem] font-bold text-foreground mt-2.5 md:mt-3 mb-2 group-hover:text-primary transition-colors duration-300 leading-[1.15] tracking-[-0.02em]">
+          <h3 className="font-display text-xl md:text-2xl font-bold text-foreground mt-2.5 mb-2 group-hover:text-primary transition-colors duration-300 leading-tight">
             {story.title}
           </h3>
           <p className="text-muted-foreground text-sm md:text-[15px] line-clamp-2 font-body leading-[1.6]">{story.excerpt}</p>
@@ -75,12 +75,12 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   if (variant === "horizontal") {
     return (
       <CardWrapper story={story} className="group flex gap-4 items-start">
-        <div className="w-24 h-[4.5rem] sm:w-32 sm:h-24 flex-shrink-0 overflow-hidden rounded-xl border border-border/40">
+        <div className="w-24 h-[4.5rem] sm:w-28 sm:h-20 flex-shrink-0 overflow-hidden rounded-md border border-border/50">
           <LoadingImage
             src={imageUrl}
             alt={story.title}
             wrapperClassName="w-full h-full"
-            className="w-full h-full object-cover group-hover:scale-[1.04]"
+            className="w-full h-full object-cover group-hover:scale-[1.025]"
           />
         </div>
         <div className="flex-1 min-w-0">
@@ -100,16 +100,16 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
   }
 
   return (
-    <CardWrapper story={story} className="group block transition-transform duration-500 ease-out hover:-translate-y-1">
-      <div className="overflow-hidden rounded-2xl border border-border/40 shadow-[var(--shadow-card)] group-hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
+    <CardWrapper story={story} className="group block transition-transform duration-500 ease-out hover:-translate-y-0.5">
+      <div className="overflow-hidden rounded-lg border border-border/50 shadow-[var(--shadow-card)] group-hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500">
         <LoadingImage
           src={imageUrl}
           alt={story.title}
           wrapperClassName="w-full aspect-[3/2]"
-          className="w-full h-full object-cover group-hover:scale-[1.04]"
+          className="w-full h-full object-cover group-hover:scale-[1.025]"
         />
       </div>
-      <div className="pt-3 md:pt-4 px-0.5">
+      <div className="pt-3 px-0.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className={`category-badge px-2.5 py-0.5 rounded-sm ${categoryColors[story.category] || "bg-muted text-muted-foreground"}`}>
@@ -119,7 +119,7 @@ const StoryCard = ({ story, variant = "default" }: StoryCardProps) => {
           </div>
           <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
         </div>
-        <h3 className="font-display text-base md:text-[1.15rem] font-semibold tracking-[-0.015em] text-foreground mt-2 md:mt-3 mb-1.5 md:mb-2 group-hover:text-primary transition-colors duration-300 leading-[1.25]">
+        <h3 className="font-display text-base md:text-lg font-semibold text-foreground mt-2 mb-1.5 group-hover:text-primary transition-colors duration-300 leading-snug">
           {story.title}
         </h3>
         <p className="text-muted-foreground text-[13px] md:text-sm line-clamp-2 font-body leading-[1.6]">{story.excerpt}</p>
