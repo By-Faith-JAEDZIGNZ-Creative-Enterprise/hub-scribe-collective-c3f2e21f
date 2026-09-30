@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { X, ArrowRight, Sparkles, Shuffle } from "lucide-react";
 import { stories } from "@/data/stories";
 import { supabase } from "@/integrations/supabase/client";
+import { storyImageUrl } from "@/utils/storyImageUrl";
 
 /**
  * Surfaces the most recent ORIGINAL story to homepage visitors.
@@ -147,7 +148,7 @@ const LatestOriginalLightbox = () => {
           style={{ animationDuration: "0.4s" }}
         >
           <img
-            src={current.image}
+            src={storyImageUrl(current.image)}
             alt={current.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
           />

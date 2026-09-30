@@ -3,4 +3,4 @@
 - [x] Publish
 - [x] Send new-story email blast
 - [x] Apply the approved refined editorial homepage refresh
-- [ ] Verify the refreshed homepage on desktop and mobile
+- [x] Verify the refreshed homepage on desktop and mobile

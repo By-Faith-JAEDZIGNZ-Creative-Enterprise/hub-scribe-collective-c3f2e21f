@@ -84,7 +84,7 @@ const FeaturedEvents = () => {
                       {start.getDate()}
                       {multiDay && (
                         <span className="text-muted-foreground/60 text-2xl font-medium">
-                          –{parseLocalDate(e.endDate!).getDate()}
+                           –{parseLocalDate(e.endDate ?? e.startDate).getDate()}
                         </span>
                       )}
                     </div>
