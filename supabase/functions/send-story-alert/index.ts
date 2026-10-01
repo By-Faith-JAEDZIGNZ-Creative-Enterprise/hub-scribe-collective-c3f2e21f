@@ -43,6 +43,14 @@ Deno.serve(async (req) => {
       return json({ error: "Unauthorized" }, 401);
     }
 
+    const body = await req.json().catch(() => ({}));
+    // Optional: alert a specific story (by slug in its link) even if the
+    // marker already covers it, without touching the marker itself.
+    const forceSlug: string | null =
+      typeof body?.force_slug === "string" && body.force_slug.trim()
+        ? body.force_slug.trim()
+        : null;
+
     const stories = await fetchLatestStories(10);
     if (stories.length === 0) {
       return json({ error: "No stories available from RSS feed" }, 502);
