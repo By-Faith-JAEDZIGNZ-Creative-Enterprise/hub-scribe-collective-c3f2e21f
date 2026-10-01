@@ -196,6 +196,41 @@ Deno.serve(async (req) => {
         .upsert({ key: MARKER_KEY, value: newestGuid }, { onConflict: "key" });
     }
 
+    // Once the alert email has fully gone out, ping the Zapier social-posting
+    // Zap (if configured) so the same moment is mirrored on social media.
+    const socialWebhookKey = "zapier_social_webhook";
+    const isFinalSend = nextOffset === null && !onlyEmails;
+    if (isFinalSend) {
+      const { data: hookRow } = await supabase
+        .from("newsletter_config")
+        .select("value")
+        .eq("key", socialWebhookKey)
+        .maybeSingle();
+      if (hookRow?.value) {
+        const ping = fetch(hookRow.value, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            timestamp: new Date().toISOString(),
+            trigger: "story_alert",
+            stories: newStories.map((s) => ({
+              title: s.title,
+              excerpt: s.excerpt,
+              link: s.link,
+              image: s.image,
+              category: s.category,
+              published_at: s.pubDate,
+            })),
+          }),
+        })
+          .then((res) => console.log(`Zapier social webhook: status ${res.status}`))
+          .catch((err) => console.error("Zapier social webhook failed:", err));
+        const runtime = (globalThis as any).EdgeRuntime;
+        if (runtime?.waitUntil) runtime.waitUntil(ping);
+        else await ping;
+      }
+    }
+
     const sent = results.filter((r) => r.ok).length;
     const failed = results.filter((r) => !r.ok);
     console.log(
