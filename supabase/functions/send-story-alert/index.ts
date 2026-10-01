@@ -188,8 +188,9 @@ Deno.serve(async (req) => {
     }
 
     // Only advance the marker once the final batch has gone out, so a chained
-    // run keeps alerting on the same set of new stories.
-    if (nextOffset === null && !onlyEmails) {
+    // run keeps alerting on the same set of new stories. Forced sends (one
+    // specific story, e.g. a catch-up) never touch the marker.
+    if (nextOffset === null && !onlyEmails && !forceSlug) {
       await supabase
         .from("newsletter_config")
         .upsert({ key: MARKER_KEY, value: newestGuid }, { onConflict: "key" });
