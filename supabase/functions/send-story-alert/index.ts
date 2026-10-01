@@ -43,6 +43,14 @@ Deno.serve(async (req) => {
       return json({ error: "Unauthorized" }, 401);
     }
 
+    const body = await req.json().catch(() => ({}));
+    // Optional: alert a specific story (by slug in its link) even if the
+    // marker already covers it, without touching the marker itself.
+    const forceSlug: string | null =
+      typeof body?.force_slug === "string" && body.force_slug.trim()
+        ? body.force_slug.trim()
+        : null;
+
     const stories = await fetchLatestStories(10);
     if (stories.length === 0) {
       return json({ error: "No stories available from RSS feed" }, 502);
@@ -74,13 +82,20 @@ Deno.serve(async (req) => {
     let newStories =
       markerIndex > 0 ? stories.slice(0, markerIndex) : markerIndex === -1 ? [stories[0]] : [];
 
+    if (forceSlug) {
+      const forced = stories.find((s) => (s.guid || s.link || "").includes(forceSlug));
+      if (!forced) {
+        return json({ error: `Story not found in feed: ${forceSlug}` }, 404);
+      }
+      newStories = [forced];
+    }
+
     if (newStories.length === 0) {
       return json({ sent: 0, reason: "no_new_stories" });
     }
 
     newStories = newStories.slice(0, MAX_ALERT_STORIES);
 
-    const body = await req.json().catch(() => ({}));
     const batchSize: number = Number(body?.batch_size) > 0 ? Number(body.batch_size) : 50;
     const offset: number = Number(body?.offset) > 0 ? Number(body.offset) : 0;
     // Optional retry list: resend only to these addresses (e.g. throttled sends)
@@ -163,7 +178,7 @@ Deno.serve(async (req) => {
           "x-cron-token": token,
           Authorization: `Bearer ${Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""}`,
         },
-        body: JSON.stringify({ batch_size: batchSize, offset: nextOffset }),
+        body: JSON.stringify({ batch_size: batchSize, offset: nextOffset, force_slug: forceSlug }),
       }).catch((err) => console.error("Batch chaining failed:", err));
 
       // deno-lint-ignore no-explicit-any
@@ -173,11 +188,47 @@ Deno.serve(async (req) => {
     }
 
     // Only advance the marker once the final batch has gone out, so a chained
-    // run keeps alerting on the same set of new stories.
-    if (nextOffset === null && !onlyEmails) {
+    // run keeps alerting on the same set of new stories. Forced sends (one
+    // specific story, e.g. a catch-up) never touch the marker.
+    if (nextOffset === null && !onlyEmails && !forceSlug) {
       await supabase
         .from("newsletter_config")
         .upsert({ key: MARKER_KEY, value: newestGuid }, { onConflict: "key" });
+    }
+
+    // Once the alert email has fully gone out, ping the Zapier social-posting
+    // Zap (if configured) so the same moment is mirrored on social media.
+    const socialWebhookKey = "zapier_social_webhook";
+    const isFinalSend = nextOffset === null && !onlyEmails && !forceSlug;
+    if (isFinalSend) {
+      const { data: hookRow } = await supabase
+        .from("newsletter_config")
+        .select("value")
+        .eq("key", socialWebhookKey)
+        .maybeSingle();
+      if (hookRow?.value) {
+        const ping = fetch(hookRow.value, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            timestamp: new Date().toISOString(),
+            trigger: "story_alert",
+            stories: newStories.map((s) => ({
+              title: s.title,
+              excerpt: s.excerpt,
+              link: s.link,
+              image: s.image,
+              category: s.category,
+              published_at: s.pubDate,
+            })),
+          }),
+        })
+          .then((res) => console.log(`Zapier social webhook: status ${res.status}`))
+          .catch((err) => console.error("Zapier social webhook failed:", err));
+        const runtime = (globalThis as any).EdgeRuntime;
+        if (runtime?.waitUntil) runtime.waitUntil(ping);
+        else await ping;
+      }
     }
 
     const sent = results.filter((r) => r.ok).length;
