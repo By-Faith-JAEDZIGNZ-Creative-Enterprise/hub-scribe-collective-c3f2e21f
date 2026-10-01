@@ -178,7 +178,7 @@ Deno.serve(async (req) => {
           "x-cron-token": token,
           Authorization: `Bearer ${Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""}`,
         },
-        body: JSON.stringify({ batch_size: batchSize, offset: nextOffset }),
+        body: JSON.stringify({ batch_size: batchSize, offset: nextOffset, force_slug: forceSlug }),
       }).catch((err) => console.error("Batch chaining failed:", err));
 
       // deno-lint-ignore no-explicit-any
