@@ -88,7 +88,14 @@ Deno.serve(async (req) => {
 
     newStories = newStories.slice(0, MAX_ALERT_STORIES);
 
-    const body = await req.json().catch(() => ({}));
+    if (forceSlug) {
+      const forced = stories.find((s) => (s.guid || s.link || "").includes(forceSlug));
+      if (!forced) {
+        return json({ error: `Story not found in feed: ${forceSlug}` }, 404);
+      }
+      newStories = [forced];
+    }
+
     const batchSize: number = Number(body?.batch_size) > 0 ? Number(body.batch_size) : 50;
     const offset: number = Number(body?.offset) > 0 ? Number(body.offset) : 0;
     // Optional retry list: resend only to these addresses (e.g. throttled sends)
