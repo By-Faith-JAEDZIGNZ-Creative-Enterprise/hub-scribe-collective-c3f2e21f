@@ -1,11 +1,8 @@
-- [x] Add bus + Restaurant Week stories
-- [x] Verify photos render (page + social tags)
-- [x] Publish
-- [x] Send new-story email blast
-- [x] Apply the approved refined editorial homepage refresh
-- [x] Verify the refreshed homepage on desktop and mobile
-- [x] Standardize SEO and metadata across public pages
-- [x] Make every story share preview use its own accurate lead photo
-- [x] Resize and verify the branded fallback social image and site icon
-- [x] Refresh and validate search discovery files
-- [x] Verify current story preview pages and image responses
+# Roadmap
+
+- [x] Publish William Carey and Montague Sculpture Park stories; verify photos render on live site
+- [x] Send story alert email blast (Montague) to all active subscribers
+- [x] Catch up William Carey alert (skipped by marker; sent via force_slug, marker untouched)
+- [x] Add zapier_social_webhook hook to send-story-alert (fires story payload once alert fully sent; stored in newsletter_config)
+- [ ] Zapier social posting: waiting on user to create the Zap (Webhooks by Zapier catch hook -> Facebook Pages post) and share the hook URL, then store it in newsletter_config
+- [ ] Facebook direct posting (page ID + page token) remains an alternative if the user provides credentials
