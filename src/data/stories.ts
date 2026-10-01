@@ -37,6 +37,49 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "242",
+    title: "Nationwide Artist Search Underway for New Downtown Art Park",
+    excerpt: "The Hattiesburg Alliance for Public Art is seeking artists nationwide to create the first large-scale sculpture for the new Montague Sculpture Park, with a budget of up to $40,000.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "October 1, 2026",
+    image: "/__l5e/assets-v1/48364be6-1f6c-4c0d-8be8-5cb2ba896c20/story-montague-sculpture-park.jpg",
+    imageAlts: ["Artist rendering of the future Montague Sculpture Park in downtown Hattiesburg, with cyclists, a mural and people seated near sculpture pads"],
+    slug: "montague-sculpture-park-nationwide-artist-search",
+    featured: true,
+    original: true,
+    photoCaption: "A rendering of the coming Montague Sculpture Park in downtown Hattiesburg.",
+    photoSource: "Hattiesburg Alliance for Public Art",
+    photoLicense: "Used with permission",
+    content: `Organizers are looking across the country for artists to create the first piece for a new downtown Hattiesburg sculpture park.
+
+The Hattiesburg Alliance for Public Art is inviting professional artists to submit proposals for a large-scale sculpture that will become part of the new Montague Sculpture Park.
+
+"Montague Sculpture Park gives HAPA an opportunity to bring large-scale sculpture into the heart of Hattiesburg while creating a collection that reflects the people, stories, and ideas that have shaped our city," said Marlo Dorsey, CEO of VisitHATTIESBURG and the Hattiesburg Alliance for Public Art.
+
+The first installation is expected to arrive by February 2027. Montague Sculpture Park will eventually feature eight permanent sculptures, each displayed on a dedicated pad with lighting.
+
+The Hattiesburg Alliance for Public Art will manage the collection through a combination of Calls for Artists and direct commissions over the coming year, with additional opportunities announced as the park develops.
+
+Montague Sculpture Park brings together public leadership, private investment and community partnership. It was conceived by Doug and Becky Montague, who founded the Hattiesburg Alliance for Public Art in 2014.
+
+"My family and I are honored to be involved in bringing Montague Sculpture Park to the Hattiesburg community and creating a lasting space where artists can share their work with residents and visitors," Becky Montague said.
+
+The Alliance seeks an artist or an artist team to design, fabricate and install a sculpture that illustrates industry and its connection to Hattiesburg.
+
+Artists are encouraged to interpret the theme creatively, considering the people, labor, enterprise and industries that have helped shape the city.
+
+"We're excited to see how artists interpret Hattiesburg's history of industry and innovation through their own creative lens," Dorsey said.
+
+The selected artist will receive a project budget of up to $40,000, covering all costs associated with design, materials, fabrication, engineering, transportation, delivery and installation.
+
+The first sculpture will be installed on an 8-foot-by-9-foot prepared sculpture pad and may reach up to 15 feet in height. Proposed works must also consider south Mississippi's climate and demonstrate artistic quality, originality, durability and technical feasibility.
+
+Applications must be submitted electronically by November 20. All concepts must be original work created by the applying artist or artist team. AI-generated designs and images will not be considered.
+
+More details and instructions are available at hburgart.com/artists.`,
+  },
+  {
     id: "241",
     title: "William Carey University Touted as a National Leader for Education and Value in New Rankings",
     excerpt: "William Carey University rose 30 places in Niche.com's 2027 national college rankings, landing in the top fifth of four-year schools and earning four No. 1 rankings in Mississippi.",
