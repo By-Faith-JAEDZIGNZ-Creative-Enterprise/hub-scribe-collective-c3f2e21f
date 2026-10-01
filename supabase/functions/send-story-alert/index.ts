@@ -82,12 +82,6 @@ Deno.serve(async (req) => {
     let newStories =
       markerIndex > 0 ? stories.slice(0, markerIndex) : markerIndex === -1 ? [stories[0]] : [];
 
-    if (newStories.length === 0) {
-      return json({ sent: 0, reason: "no_new_stories" });
-    }
-
-    newStories = newStories.slice(0, MAX_ALERT_STORIES);
-
     if (forceSlug) {
       const forced = stories.find((s) => (s.guid || s.link || "").includes(forceSlug));
       if (!forced) {
@@ -95,6 +89,12 @@ Deno.serve(async (req) => {
       }
       newStories = [forced];
     }
+
+    if (newStories.length === 0) {
+      return json({ sent: 0, reason: "no_new_stories" });
+    }
+
+    newStories = newStories.slice(0, MAX_ALERT_STORIES);
 
     const batchSize: number = Number(body?.batch_size) > 0 ? Number(body.batch_size) : 50;
     const offset: number = Number(body?.offset) > 0 ? Number(body.offset) : 0;
