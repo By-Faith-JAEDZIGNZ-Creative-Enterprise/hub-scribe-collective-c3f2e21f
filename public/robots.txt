@@ -24,4 +24,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://hub-scribe-collective.lovable.app/sitemap.xml
+Sitemap: https://www.hattiesburghub.com/sitemap.xml
