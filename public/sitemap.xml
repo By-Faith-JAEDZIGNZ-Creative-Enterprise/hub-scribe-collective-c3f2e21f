@@ -31,12 +31,12 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.hattiesburghub.com/category/community</loc>
+    <loc>https://www.hattiesburghub.com/category/culture</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.hattiesburghub.com/category/culture</loc>
+    <loc>https://www.hattiesburghub.com/category/community</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
@@ -54,6 +54,15 @@
     <loc>https://www.hattiesburghub.com/category/opinion</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hattiesburghub.com/story/montague-sculpture-park-nationwide-artist-search</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/48364be6-1f6c-4c0d-8be8-5cb2ba896c20/story-montague-sculpture-park.jpg</image:loc>
+      <image:title>Nationwide Artist Search Underway for New Downtown Art Park</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.hattiesburghub.com/story/william-carey-university-niche-2027-rankings</loc>
