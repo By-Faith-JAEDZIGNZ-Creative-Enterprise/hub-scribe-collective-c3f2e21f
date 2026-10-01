@@ -199,7 +199,7 @@ Deno.serve(async (req) => {
     // Once the alert email has fully gone out, ping the Zapier social-posting
     // Zap (if configured) so the same moment is mirrored on social media.
     const socialWebhookKey = "zapier_social_webhook";
-    const isFinalSend = nextOffset === null && !onlyEmails;
+    const isFinalSend = nextOffset === null && !onlyEmails && !forceSlug;
     if (isFinalSend) {
       const { data: hookRow } = await supabase
         .from("newsletter_config")
