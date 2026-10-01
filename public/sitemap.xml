@@ -1,415 +1,517 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/</loc>
+    <loc>https://www.hattiesburghub.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/events</loc>
+    <loc>https://www.hattiesburghub.com/events</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/about</loc>
+    <loc>https://www.hattiesburghub.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/contact</loc>
+    <loc>https://www.hattiesburghub.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/privacy</loc>
+    <loc>https://www.hattiesburghub.com/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/terms</loc>
+    <loc>https://www.hattiesburghub.com/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/category/community</loc>
+    <loc>https://www.hattiesburghub.com/category/community</loc>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/category/business</loc>
+    <loc>https://www.hattiesburghub.com/category/culture</loc>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/category/culture</loc>
+    <loc>https://www.hattiesburghub.com/category/sports</loc>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/category/sports</loc>
+    <loc>https://www.hattiesburghub.com/category/business</loc>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/category/opinion</loc>
+    <loc>https://www.hattiesburghub.com/category/opinion</loc>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/william-carey-university-niche-2027-rankings</loc>
-    <lastmod>2026-09-30</lastmod>
+    <loc>https://www.hattiesburghub.com/story/william-carey-university-niche-2027-rankings</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/1619d49c-3485-4298-ae2c-0319d03a5fa3/story-william-carey-niche-rankings.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/1619d49c-3485-4298-ae2c-0319d03a5fa3/story-william-carey-niche-rankings.jpg</image:loc>
+      <image:title>William Carey University Touted as a National Leader for Education and Value in New Rankings</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-restaurant-week-on-a-roll-2026</loc>
-    <lastmod>2026-09-24</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-restaurant-week-on-a-roll-2026</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/2ba3de32-53eb-413a-bce8-2c89194926a7/story-restaurant-week-on-a-roll.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/2ba3de32-53eb-413a-bce8-2c89194926a7/story-restaurant-week-on-a-roll.jpg</image:loc>
+      <image:title>On A Roll: Hattiesburg's Restaurant Week Showcases Mouthwatering Tastes of the City</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-hub-city-transit-new-propane-buses-2027</loc>
-    <lastmod>2026-09-24</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-hub-city-transit-new-propane-buses-2027</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/df0d62f2-fe73-4cf8-a327-7ccf29ba0c65/story-hub-city-transit-buses.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/df0d62f2-fe73-4cf8-a327-7ccf29ba0c65/story-hub-city-transit-buses.jpg</image:loc>
+      <image:title>Improved City Buses Expected to Roll Through Hattiesburg in 2027</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-scrape-the-sky-mural-etheridge-knight</loc>
-    <lastmod>2026-09-21</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-scrape-the-sky-mural-etheridge-knight</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/46726d67-e1ec-4299-bec4-73a82e817cad/story-scrape-the-sky-mural.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/46726d67-e1ec-4299-bec4-73a82e817cad/story-scrape-the-sky-mural.jpg</image:loc>
+      <image:title>A Vision in the Sky: Downtown Mural Continues Effort to Inspire and Unite Community</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/southern-miss-students-africa-study-abroad-energy</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-students-africa-study-abroad-energy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/9d9b444d-9e10-412c-9e7a-00d6e0ebe4cf/usm-africa-study-abroad.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://hub-scribe-collective.lovable.app/__l5e/assets-v1/9d9b444d-9e10-412c-9e7a-00d6e0ebe4cf/usm-africa-study-abroad.jpg</image:loc>
+      <image:title>Southern Miss Students Explore Energy Production, Challenges in Southern Africa</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-2027-city-budget-garbage-fee-increase</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-2027-city-budget-garbage-fee-increase</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-city-budget-2027.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-city-budget-2027.jpg</image:loc>
+      <image:title>Hattiesburg Residents Face Higher Trash Fees Under 2027 City Budget</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/southern-miss-renasant-stadium-naming-rights</loc>
-    <lastmod>2026-09-10</lastmod>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-renasant-stadium-naming-rights</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-renasant-stadium.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-renasant-stadium.jpg</image:loc>
+      <image:title>Southern Miss Christens a New Name and Multimillion Partnership for Its Storied Stadium</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/gulf-blue-navigator-time-best-incubators-ranking</loc>
-    <lastmod>2026-08-25</lastmod>
+    <loc>https://www.hattiesburghub.com/story/gulf-blue-navigator-time-best-incubators-ranking</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-gulf-blue-navigator.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-gulf-blue-navigator.jpg</image:loc>
+      <image:title>Southern Miss Business Development Program Named Among Nation’s Best by TIME</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/night-off-broadway-corridor-showcase</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://www.hattiesburghub.com/story/night-off-broadway-corridor-showcase</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-night-off-broadway-hero.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-night-off-broadway-hero.jpg</image:loc>
+      <image:title>Envisioning the Possibilities: “Night Off Broadway” to Showcase Future of Historic Hattiesburg Corridor</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-finalist-best-sports-host-city</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-finalist-best-sports-host-city</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-best-sports-host-city.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-best-sports-host-city.jpg</image:loc>
+      <image:title>Making the Final Push: Hattiesburg a Finalist for Nation’s Top Sports Host City</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/william-carey-chorale-london-tour</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://www.hattiesburghub.com/story/william-carey-chorale-london-tour</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-carey-chorale-london.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-carey-chorale-london.jpg</image:loc>
+      <image:title>London Calling: William Carey Students Immerse Themselves in Music and Culture</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/andrew-wiest-netflix-american-experiment</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://www.hattiesburghub.com/story/andrew-wiest-netflix-american-experiment</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-american-experiment-key-art.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-american-experiment-key-art.jpg</image:loc>
+      <image:title>History Alive: Southern Miss Professor Voices Netflix Series Showcasing America's Founding</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/oseola-mccarty-gift-of-a-lifetime-biography</loc>
-    <lastmod>2026-08-04</lastmod>
+    <loc>https://www.hattiesburghub.com/story/oseola-mccarty-gift-of-a-lifetime-biography</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-oseola-mccarty-book-cover.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-oseola-mccarty-book-cover.jpg</image:loc>
+      <image:title>Chronicling a Legacy: New Biography Details the Life and Impact of Hattiesburg Philanthropist Oseola McCarty</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/katie-john-dabbs-community-center-opens</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://www.hattiesburghub.com/story/katie-john-dabbs-community-center-opens</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-dabbs-center-ribbon-cutting.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-dabbs-center-ribbon-cutting.jpg</image:loc>
+      <image:title>'A New Beginning': Hattiesburg Residents Celebrate the Opening of New Neighborhood Community Center</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-junior-boys-world-series-2027</loc>
-    <lastmod>2026-07-18</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-junior-boys-world-series-2027</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-hattiesburg-parks-tournament-4.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-hattiesburg-parks-tournament-4.jpg</image:loc>
+      <image:title>Hattiesburg Hits a Home Run: Junior Boys World Series Coming to the Hub City in 2027</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-coaches-of-the-year-2026</loc>
-    <lastmod>2026-06-27</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-coaches-of-the-year-2026</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-coy-jermaine-brown.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-coy-jermaine-brown.jpg</image:loc>
+      <image:title>Hattiesburg Athletic Leaders to Receive Top Coach of the Year Honors</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/southern-miss-chorale-america-250-european-tour</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-chorale-america-250-european-tour</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-southern-miss-chorale.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-southern-miss-chorale.jpg</image:loc>
+      <image:title>The Universal Language: Southern Miss Voices Showcase American Music to International Audiences</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/field-of-dreams-hattiesburg-minor-league-baseball</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://www.hattiesburghub.com/story/field-of-dreams-hattiesburg-minor-league-baseball</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-baseburg-minor-league-vision.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-baseburg-minor-league-vision.jpg</image:loc>
+      <image:title>A 'Field of Dreams' for Hattiesburg? City Planners Envision Recruiting Minor League Baseball to Town</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-native-crowned-2026-miss-mississippi</loc>
-    <lastmod>2026-06-14</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-native-crowned-2026-miss-mississippi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-miss-mississippi-granberry-crowning.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-miss-mississippi-granberry-crowning.jpg</image:loc>
+      <image:title>There She Is: Hattiesburg Native Crowned 2026 Miss Mississippi</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/toxic-beauty-plastics-hidden-cost-exhibit</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://www.hattiesburghub.com/story/toxic-beauty-plastics-hidden-cost-exhibit</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-plastics-exhibit-turtle.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-plastics-exhibit-turtle.jpg</image:loc>
+      <image:title>Take a Closer Look: Art Exhibit Makes Art from Trash to Deliver a Lasting Message</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-150-beyond-comprehensive-plan-input</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-150-beyond-comprehensive-plan-input</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-comp-plan-session-1.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-comp-plan-session-1.jpg</image:loc>
+      <image:title>Share Your Vision: Residents Still Have Time to Contribute to Hattiesburg '150 &amp; Beyond' Long-Term Plan</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/johnny-dupree-never-give-up-mississippi-history</loc>
-    <lastmod>2026-05-18</lastmod>
+    <loc>https://www.hattiesburghub.com/story/johnny-dupree-never-give-up-mississippi-history</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-johnny-dupree-public-safety-complex.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-johnny-dupree-public-safety-complex.jpg</image:loc>
+      <image:title>&quot;Never Give Up:&quot; Johnny DuPree Reflects on 40 Years of Breaking Barriers and Making Mississippi History Again</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/william-carey-university-heritage-plaza-rededication</loc>
-    <lastmod>2026-05-15</lastmod>
+    <loc>https://www.hattiesburghub.com/story/william-carey-university-heritage-plaza-rededication</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-wcu-heritage-plaza-ceremony.png</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-wcu-heritage-plaza-ceremony.png</image:loc>
+      <image:title>William Carey University Honors a Unique Past While Forging Advancements for the Present and Future</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/southern-miss-1-3-billion-economic-impact-report</loc>
-    <lastmod>2026-05-15</lastmod>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-1-3-billion-economic-impact-report</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-usm-administration-building.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-usm-administration-building.jpg</image:loc>
+      <image:title>Southern Miss Delivers $1.3 Billion Statewide Economic Impact, New Report Shows</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-sewer-overhaul-consent-order</loc>
-    <lastmod>2026-05-04</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-sewer-overhaul-consent-order</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-sewer-roadwork.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-sewer-roadwork.jpg</image:loc>
+      <image:title>Hattiesburg Continues Its $45 Million Plan to Overhaul Troubled Sewer System Five Years After Consent Order</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/mitchell-williams-fca-profile</loc>
-    <lastmod>2026-04-14</lastmod>
+    <loc>https://www.hattiesburghub.com/story/mitchell-williams-fca-profile</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-williams-portrait.webp</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-williams-portrait.webp</image:loc>
+      <image:title>A Hattiesburg Original: Veteran Sportscaster Finds Purpose Ministering to Athletes</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/dr-eddie-holloway-street-dedication</loc>
-    <lastmod>2026-04-13</lastmod>
+    <loc>https://www.hattiesburghub.com/story/dr-eddie-holloway-street-dedication</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-holloway-unveiling.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-holloway-unveiling.jpg</image:loc>
+      <image:title>Unforgettable: Street Renamed to Honor Longtime Hattiesburg Education and Civic Icon Dr. Eddie Holloway</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-high-school-carnegie-hall</loc>
-    <lastmod>2026-04-08</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-high-school-carnegie-hall</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-carnegie-hall-outside.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-carnegie-hall-outside.jpg</image:loc>
+      <image:title>From High School to Carnegie Hall: Hattiesburg Choral Students Showcase Their Talents on World-Famous Stage</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/sixth-street-museum-district-hattiesburg</loc>
-    <lastmod>2026-03-30</lastmod>
+    <loc>https://www.hattiesburghub.com/story/sixth-street-museum-district-hattiesburg</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-sixth-street-smith-drug.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-sixth-street-smith-drug.jpg</image:loc>
+      <image:title>Living History: Sixth Street Museum District Showcases Hattiesburg's Past, Inspires the Future</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburg-zoo-growth-model</loc>
-    <lastmod>2026-03-30</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburg-zoo-growth-model</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-zoo-giraffe-feeding.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-zoo-giraffe-feeding.jpg</image:loc>
+      <image:title>Surpassing Expectations: Hattiesburg Zoo Creates Model for Growth, Popularity and Stability</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/oseola-mccarty-house-museum-hattiesburg</loc>
-    <lastmod>2026-03-17</lastmod>
+    <loc>https://www.hattiesburghub.com/story/oseola-mccarty-house-museum-hattiesburg</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-mccarty-house-sign.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-mccarty-house-sign.jpg</image:loc>
+      <image:title>From Hand-Washing Clothes to Changing Lives: New Hattiesburg Museum Honors Legacy of Oseola McCarty</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/downtown-revitalization-project</loc>
-    <lastmod>2026-02-28</lastmod>
+    <loc>https://www.hattiesburghub.com/story/downtown-revitalization-project</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-downtown-revitalization.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-downtown-revitalization.jpg</image:loc>
+      <image:title>Downtown Revitalization Project Breaks Ground This Spring</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/local-tech-startup-funding</loc>
-    <lastmod>2026-02-25</lastmod>
+    <loc>https://www.hattiesburghub.com/story/local-tech-startup-funding</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-tech-startup.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-tech-startup.jpg</image:loc>
+      <image:title>Local Tech Startup Secures $5M in Series A Funding</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hub-city-music-festival-lineup</loc>
-    <lastmod>2026-02-22</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hub-city-music-festival-lineup</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-music-festival.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-music-festival.jpg</image:loc>
+      <image:title>Hub City Music Festival Announces 2026 Lineup</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/golden-eagles-football-preview</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://www.hattiesburghub.com/story/golden-eagles-football-preview</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-golden-eagles.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-golden-eagles.jpg</image:loc>
+      <image:title>Golden Eagles Football: New Season, New Expectations</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hattiesburgs-young-leaders</loc>
-    <lastmod>2026-02-18</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hattiesburgs-young-leaders</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-young-leaders.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-young-leaders.jpg</image:loc>
+      <image:title>Why Hattiesburg's Next Chapter Belongs to Its Young Leaders</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/tigers-state-championship</loc>
-    <lastmod>2026-02-17</lastmod>
+    <loc>https://www.hattiesburghub.com/story/tigers-state-championship</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-basketball-champs.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-basketball-champs.jpg</image:loc>
+      <image:title>Hattiesburg High Tigers Win State Basketball Championship</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/community-health-center-opens</loc>
-    <lastmod>2026-02-15</lastmod>
+    <loc>https://www.hattiesburghub.com/story/community-health-center-opens</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-health-center.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-health-center.jpg</image:loc>
+      <image:title>New Community Health Center Opens on Mobile Street</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/mural-trail-unveiling</loc>
-    <lastmod>2026-02-14</lastmod>
+    <loc>https://www.hattiesburghub.com/story/mural-trail-unveiling</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-mural-trail.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-mural-trail.jpg</image:loc>
+      <image:title>Hattiesburg Arts Council Unveils New Mural Trail</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/hardy-street-new-businesses</loc>
-    <lastmod>2026-02-12</lastmod>
+    <loc>https://www.hattiesburghub.com/story/hardy-street-new-businesses</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-hardy-street.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-hardy-street.jpg</image:loc>
+      <image:title>Hardy Street Corridor Sees Record New Business Openings</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/rethink-school-funding</loc>
-    <lastmod>2026-02-11</lastmod>
+    <loc>https://www.hattiesburghub.com/story/rethink-school-funding</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-school-funding.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-school-funding.jpg</image:loc>
+      <image:title>It's Time to Rethink How We Fund Public Schools in Forrest County</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/longleaf-trace-tree-planting</loc>
-    <lastmod>2026-02-10</lastmod>
+    <loc>https://www.hattiesburghub.com/story/longleaf-trace-tree-planting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-tree-planting.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-tree-planting.jpg</image:loc>
+      <image:title>Volunteers Plant 500 Trees Along Longleaf Trace</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/usm-soccer-facility</loc>
-    <lastmod>2026-02-09</lastmod>
+    <loc>https://www.hattiesburghub.com/story/usm-soccer-facility</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-soccer-facility.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-soccer-facility.jpg</image:loc>
+      <image:title>USM Women's Soccer Program Adds New Training Facility</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/credit-union-micro-loans</loc>
-    <lastmod>2026-02-08</lastmod>
+    <loc>https://www.hattiesburghub.com/story/credit-union-micro-loans</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-micro-loans.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-micro-loans.jpg</image:loc>
+      <image:title>Pine Belt Credit Union Launches Small Business Micro-Loan Program</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/southern-miss-fences-production</loc>
-    <lastmod>2026-02-06</lastmod>
+    <loc>https://www.hattiesburghub.com/story/southern-miss-fences-production</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-theatre-fences.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-theatre-fences.jpg</image:loc>
+      <image:title>Southern Miss Theatre Opens Season with August Wilson's 'Fences'</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/library-tech-literacy-program</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://www.hattiesburghub.com/story/library-tech-literacy-program</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-tech-literacy.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-tech-literacy.jpg</image:loc>
+      <image:title>Hattiesburg Public Library Launches Free Tech Literacy Program</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/invest-in-longleaf-trace</loc>
-    <lastmod>2026-02-03</lastmod>
+    <loc>https://www.hattiesburghub.com/story/invest-in-longleaf-trace</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-longleaf-trace.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-longleaf-trace.jpg</image:loc>
+      <image:title>The Longleaf Trace Is Our Greatest Asset. Let's Treat It That Way.</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/emerging-tech-hub-ranking</loc>
-    <lastmod>2026-01-30</lastmod>
+    <loc>https://www.hattiesburghub.com/story/emerging-tech-hub-ranking</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-tech-hub.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-tech-hub.jpg</image:loc>
+      <image:title>Hattiesburg Named Among Top 10 Emerging Tech Hubs in the South</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/local-author-book-award</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://www.hattiesburghub.com/story/local-author-book-award</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-book-award.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-book-award.jpg</image:loc>
+      <image:title>Local Author's Debut Novel Earns National Book Award Nomination</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/youth-flag-football-league</loc>
-    <lastmod>2026-01-25</lastmod>
+    <loc>https://www.hattiesburghub.com/story/youth-flag-football-league</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-flag-football.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-flag-football.jpg</image:loc>
+      <image:title>Hattiesburg Youth League Expands to Include Flag Football</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://hub-scribe-collective.lovable.app/story/support-local-journalism</loc>
-    <lastmod>2026-01-22</lastmod>
+    <loc>https://www.hattiesburghub.com/story/support-local-journalism</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.hattiesburghub.com/story-local-journalism.jpg</image:loc></image:image>
+    <image:image>
+      <image:loc>https://www.hattiesburghub.com/story-local-journalism.jpg</image:loc>
+      <image:title>Supporting Local Journalism Is an Act of Civic Duty</image:title>
+    </image:image>
   </url>
 </urlset>
