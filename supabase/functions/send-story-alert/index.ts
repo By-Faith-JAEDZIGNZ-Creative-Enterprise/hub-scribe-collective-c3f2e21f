@@ -198,8 +198,12 @@ Deno.serve(async (req) => {
 
     // Once the alert email has fully gone out, ping the Zapier social-posting
     // Zap (if configured) so the same moment is mirrored on social media.
+    // Forced catch-up sends count too: those stories never received their
+    // first alert, so their social post must not be skipped. Retries to a
+    // specific list (only_emails) skip the ping because the full blast that
+    // already fired it has completed.
     const socialWebhookKey = "zapier_social_webhook";
-    const isFinalSend = nextOffset === null && !onlyEmails && !forceSlug;
+    const isFinalSend = nextOffset === null && !onlyEmails;
     if (isFinalSend) {
       const { data: hookRow } = await supabase
         .from("newsletter_config")
