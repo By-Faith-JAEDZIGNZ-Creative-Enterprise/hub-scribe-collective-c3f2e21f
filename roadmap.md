@@ -6,3 +6,5 @@
 - [x] Add zapier_social_webhook hook to send-story-alert (fires story payload once alert fully sent; stored in newsletter_config)
 - [x] Connect the supplied social Zapier hook and send the approved roundup caption; Facebook publication remains unverified
 - [x] Build and verify the branded roundup graphic generator
+- [ ] Create and verify today's Eagle Scholars branded graphic; submit the authorized Facebook post
+- [ ] Generate individual branded graphics automatically for future story-alert social posts
