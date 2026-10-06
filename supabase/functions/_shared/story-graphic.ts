@@ -17,12 +17,12 @@ export async function renderStoryGraphic(story: GraphicStory, assets: { logo: Ui
   const logo = await Image.decode(assets.logo);
   const canvas = new Image(1200, 900).fill(PAPER);
   const scale = Math.min(1200 / photo.width, 520 / photo.height);
-  photo.resize(Math.max(1, Math.round(photo.width * scale)), Math.max(1, Math.round(photo.height * scale)), Image.RESIZE_BILINEAR);
+  photo.resize(Math.max(1, Math.round(photo.width * scale)), Math.max(1, Math.round(photo.height * scale)));
   canvas.composite(new Image(1200, 520).fill(INK), 0, 0);
   canvas.composite(photo, Math.round((1200 - photo.width) / 2), Math.round((520 - photo.height) / 2));
   canvas.composite(new Image(1200, 6).fill(ELECTRIC), 0, 520);
   logo.crop(Math.round(logo.width * .36), Math.round(logo.height * .215), Math.round(logo.width * .305), Math.round(logo.height * .55));
-  logo.resize(90, 90, Image.RESIZE_BILINEAR);
+  logo.resize(90, 90);
   canvas.composite(logo, 46, 550);
   canvas.composite(Image.renderText(assets.heading, 27, 'HATTIESBURG HUB', INK), 156, 558);
   canvas.composite(Image.renderText(assets.body, 18, `${story.category.toUpperCase()}  /  YOUR CITY. YOUR STORIES.`, INK), 156, 600);
