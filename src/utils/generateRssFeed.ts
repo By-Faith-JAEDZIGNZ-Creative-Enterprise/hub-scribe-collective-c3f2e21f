@@ -13,6 +13,8 @@ export interface RssStory {
   slug: string;
   external?: boolean;
   externalUrl?: string;
+  photoSource?: string;
+  photoCredit?: string;
 }
 
 export function generateRssFeed(stories: RssStory[]): string {
@@ -51,6 +53,7 @@ export function generateRssFeed(stories: RssStory[]): string {
       <pubDate>${pubDate}</pubDate>
       <description><![CDATA[${story.excerpt}]]></description>
       <category>${escapeXml(story.category)}</category>
+      <photoCredit>${escapeXml(story.photoSource || story.photoCredit || '')}</photoCredit>
       <enclosure url="${escapeXml(imageUrl)}" length="0" type="image/jpeg" />
     </item>`;
     })

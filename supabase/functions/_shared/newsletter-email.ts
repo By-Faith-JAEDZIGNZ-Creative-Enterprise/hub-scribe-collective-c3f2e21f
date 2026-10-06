@@ -15,6 +15,7 @@ export interface DigestStory {
   image: string | null;
   pubDate: string;
   guid: string;
+  photoCredit?: string;
 }
 
 export function socialPreviewImageForStory(story: DigestStory): string | null {
@@ -50,6 +51,7 @@ function parseRssItems(xml: string, limit: number): DigestStory[] {
       image: normalizeEmailImageUrl(enclosure?.[1] ?? null),
       pubDate: extractCdata(block, "pubDate"),
       guid: extractCdata(block, "guid"),
+      photoCredit: extractCdata(block, "photoCredit"),
     });
   }
   return items.filter((s) => s.title && s.link);
