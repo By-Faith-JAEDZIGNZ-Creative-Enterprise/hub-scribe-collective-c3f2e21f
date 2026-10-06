@@ -7,7 +7,8 @@ const LOGO = '/__l5e/assets-v1/80fd2163-d5a2-4ab0-9add-40ee038f20e0/logo-submark
 const HEADING = '/__l5e/assets-v1/1cf3b311-a59b-4593-acd6-088b8a207732/heading.ttf';
 const BODY = '/__l5e/assets-v1/d25935d5-aade-44e9-9424-1ce134e1b910/body.ttf';
 export function storyCaption(story: DigestStory) {
-  const excerpt = story.excerpt.replace(/[—–]/g, ', ').slice(0, 250).replace(/\s+\S*$/, '');
+  const clean = story.excerpt.replace(/[—–]/g, ', ');
+  const excerpt = clean.length > 250 ? clean.slice(0, 251).replace(/\s+\S*$/, '') + '…' : clean;
   return `📰 ${story.title.replace(/[—–]/g, ', ')}\n\n${excerpt}\n\nRead the full story: ${story.link}\n\n#HattiesburgHub #Hattiesburg #LocalNews`;
 }
 export async function prepareSocialStory(client: SupabaseClient, story: DigestStory) {
@@ -25,8 +26,16 @@ export async function prepareSocialStory(client: SupabaseClient, story: DigestSt
 }
 export async function postSocialStories(client: SupabaseClient, stories: DigestStory[], prepareOnly = false) {
   const prepared = [];
-  for (const story of stories) prepared.push(await prepareSocialStory(client, story));
+  for (const story of stories) {
+    const key = `social_posted:${new URL(story.link).pathname}`;
+    if (!prepareOnly) {
+      const { data: posted } = await client.from('newsletter_config').select('value').eq('key', key).maybeSingle();
+      if (posted) continue;
+    }
+    prepared.push(await prepareSocialStory(client, story));
+  }
   if (prepareOnly) return { prepared };
+  if (prepared.length === 0) return { accepted: false, skipped: 'already_submitted', prepared };
   const { data } = await client.from('newsletter_config').select('value').eq('key', 'zapier_social_webhook').maybeSingle();
   if (!data?.value) throw new Error('Facebook posting webhook is not configured.');
   const response = await fetch(data.value, {
@@ -34,5 +43,9 @@ export async function postSocialStories(client: SupabaseClient, stories: DigestS
     body: JSON.stringify({ timestamp: new Date().toISOString(), trigger: 'story_alert', post_type: 'photo', caption: prepared[0]?.caption, image: prepared[0]?.image, graphic_url: prepared[0]?.graphic_url, link: prepared[0]?.link, stories: prepared }),
   });
   if (!response.ok) throw new Error(`Facebook workflow rejected the post (${response.status}).`);
+  for (const story of prepared) {
+    const { error } = await client.from('newsletter_config').upsert({ key: `social_posted:${new URL(story.link).pathname}`, value: new Date().toISOString() }, { onConflict: 'key' });
+    if (error) throw error;
+  }
   return { accepted: true, status: response.status, prepared };
 }
