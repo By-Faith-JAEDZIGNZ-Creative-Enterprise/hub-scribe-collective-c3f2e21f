@@ -1,5 +1,6 @@
 import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
 import { createClient } from "npm:@supabase/supabase-js@2";
+import { postSocialStories } from '../_shared/story-social.ts';
 import {
   SITE_URL,
   fetchLatestStories,
@@ -202,37 +203,14 @@ Deno.serve(async (req) => {
     // first alert, so their social post must not be skipped. Retries to a
     // specific list (only_emails) skip the ping because the full blast that
     // already fired it has completed.
-    const socialWebhookKey = "zapier_social_webhook";
     const isFinalSend = nextOffset === null && !onlyEmails;
     if (isFinalSend) {
-      const { data: hookRow } = await supabase
-        .from("newsletter_config")
-        .select("value")
-        .eq("key", socialWebhookKey)
-        .maybeSingle();
-      if (hookRow?.value) {
-        const ping = fetch(hookRow.value, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            timestamp: new Date().toISOString(),
-            trigger: "story_alert",
-            stories: newStories.map((s) => ({
-              title: s.title,
-              excerpt: s.excerpt,
-              link: s.link,
-              image: s.image,
-              category: s.category,
-              published_at: s.pubDate,
-            })),
-          }),
-        })
-          .then((res) => console.log(`Zapier social webhook: status ${res.status}`))
-          .catch((err) => console.error("Zapier social webhook failed:", err));
-        const runtime = (globalThis as any).EdgeRuntime;
-        if (runtime?.waitUntil) runtime.waitUntil(ping);
-        else await ping;
-      }
+      const ping = postSocialStories(supabase, newStories)
+        .then(() => console.log('Zapier branded story graphics accepted'))
+        .catch(err => console.error('Zapier branded post failed:', err instanceof Error ? err.message : 'Unknown error'));
+      const runtime = (globalThis as any).EdgeRuntime;
+      if (runtime?.waitUntil) runtime.waitUntil(ping);
+      else await ping;
     }
 
     const sent = results.filter((r) => r.ok).length;
