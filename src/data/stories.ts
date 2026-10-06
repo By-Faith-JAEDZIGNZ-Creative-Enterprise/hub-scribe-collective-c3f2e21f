@@ -37,6 +37,41 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "243",
+    title: "Outstanding Southern Miss Students Recognized with Scholarship and Leadership Program",
+    excerpt: "Thirteen students from the College of Business and Economic Development at Southern Miss have been named the 2026-2027 Eagle Scholars, earning scholarships of up to $8,000 a year.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "October 6, 2026",
+    image: "/__l5e/assets-v1/8efcce40-f89c-44e3-9f54-a3bc59e99f45/eagle-scholars.jpg",
+    imageAlts: ["The 2026-2027 Eagle Scholars at the University of Southern Mississippi"],
+    slug: "southern-miss-eagle-scholars-2026-2027",
+    featured: true,
+    original: true,
+    photoCaption: "The 2026-2027 Eagle Scholars at the University of Southern Mississippi.",
+    photoSource: "Southern Miss",
+    photoLicense: "Used with permission",
+    content: `Standout students from throughout Mississippi, across the country and around the world are the latest participants in a competitive scholarship and leadership development program at the University of Southern Mississippi.
+
+Thirteen students from the College of Business and Economic Development at Southern Miss are the 2026-2027 Eagle Scholars.
+
+Eagle Scholars receive annual scholarships of up to $8,000, with the possibility of additional support for study abroad or summer school programs.
+
+"I am excited to welcome this year's class of Eagle Scholars and look forward to watching them grow as students, leaders and future professionals," said Russ Willis, director of the EAGLE Scholars Program and associate provost for student success. "This program provides students with meaningful opportunities to develop their leadership skills, build lasting relationships with mentors, and prepare students for success beyond the classroom."
+
+The program is designed to foster the growth and success of motivated undergraduate business students who embody integrity, a strong work ethic, financial need and outstanding academic achievement. It was originally established as a merit scholarship by Hyler Bracey, his wife, Cass Flagg, and Aubrey Sanford.
+
+In addition to financial assistance, scholars take part in a series of leadership and professional development programs tailored to enhance their college experiences.
+
+This year's Eagle Scholars are James Boulton of Daphne, Ala.; Matthew Brown of Lacombe, La.; Kathryn Byrd of Lumberton, Miss.; Garrett Grantham of Mobile, Ala.; Diego Henriquez of La Lima, Honduras; Mary Holmes of Vancleave, Miss.; Riwaaz Kandel of Dhapakel, Nepal; Jeevan Karki of Kanchanpur, Nepal; Chijike Mgbam of Mansfield, Texas; Kye Reese of Petal, Miss.; Alex Rivers of Denham Springs, La.; Hayden Stipe of Covington, La.; and Katherine Stockstill of Carriere, Miss.
+
+"Being a part of the Eagle Scholars Program has provided me with more than just financial support. It has allowed me to grow professionally and build meaningful relationships with mentors in the business industry," said Hayden Stipe, a scholar since 2025. "I am incredibly grateful to be part of a program that invests in students and encourages us to make the most of the opportunities we are given."
+
+The scholarship is eligible for annual renewal, and activities are customized to align with the student's academic progress. Scholars must be a full-time sophomore or junior majoring in a business discipline at Southern Miss with a 3.0 GPA or higher.
+
+The application window for the 2027-28 EAGLE Scholars program is now open and will close on March 1, 2027.`,
+  },
+  {
     id: "242",
     title: "Nationwide Artist Search Underway for New Downtown Art Park",
     excerpt: "The Hattiesburg Alliance for Public Art is seeking artists nationwide to create the first large-scale sculpture for the new Montague Sculpture Park, with a budget of up to $40,000.",
