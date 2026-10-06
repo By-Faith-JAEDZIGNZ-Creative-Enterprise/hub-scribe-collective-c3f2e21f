@@ -15,6 +15,7 @@ import ContactPage from "./pages/ContactPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 import NotFound from "./pages/NotFound";
+import RoundupPage from "./pages/RoundupPage";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/roundup" element={<RoundupPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />

@@ -68,6 +68,7 @@ const Footer = () => {
                   <li><Link to="/contact#submit" className={linkItem}>Submit a Story</Link></li>
                   <li><Link to="/contact#advertise" className={linkItem}>Advertise</Link></li>
                   <li><Link to="/contact#advertise" className={linkItem}>Sponsor</Link></li>
+                  <li><Link to="/roundup" className={linkItem}>Roundup Studio</Link></li>
                 </ul>
               </div>
               <div>
