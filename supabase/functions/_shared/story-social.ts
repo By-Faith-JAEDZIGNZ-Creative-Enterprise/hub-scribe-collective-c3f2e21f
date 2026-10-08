@@ -48,7 +48,7 @@ export async function postSocialStories(client: SupabaseClient, stories: DigestS
     }
   }
   if (prepareOnly) return { prepared, failed };
-  if (prepared.length === 0) return { accepted: false, skipped: 'already_submitted', prepared };
+  if (prepared.length === 0) return { accepted: false, skipped: failed.length > 0 ? 'all_stories_failed' : 'already_submitted', prepared, failed };
   const { data } = await client.from('newsletter_config').select('value').eq('key', 'zapier_social_webhook').maybeSingle();
   if (!data?.value) throw new Error('Facebook posting webhook is not configured.');
   const response = await fetch(data.value, {
