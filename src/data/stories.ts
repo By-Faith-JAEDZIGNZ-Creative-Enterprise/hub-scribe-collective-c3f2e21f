@@ -37,6 +37,43 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "244",
+    title: "'A Mosaic of Freedom' Honors America at 250 and the Area Veterans Who Serve",
+    excerpt: "Hattiesburg's 71st large-scale mural, a 14-foot-tall, 80-foot-wide tribute to local veterans at 315 Main St., was dedicated as part of America250 Mississippi's year-long celebration.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "October 8, 2026",
+    image: "/__l5e/assets-v1/c6182826-3ff8-4770-9fee-43c6f8e17719/mosaic-of-freedom-mural.jpg",
+    imageAlts: ["The 'A Mosaic of Freedom' mural in downtown Hattiesburg, depicting service members in stained-glass style against an American flag backdrop"],
+    slug: "mosaic-of-freedom-mural-veterans-america250",
+    featured: true,
+    original: true,
+    photoCaption: "A section of 'A Mosaic of Freedom,' the new veterans tribute mural at 315 Main St. in downtown Hattiesburg.",
+    photoSource: "Hattiesburg Alliance for Public Art",
+    photoLicense: "Used with permission",
+    content: `Public art in Hattiesburg continues to brighten the city's landscape with the recent dedication of the 71st large-scale mural.
+
+"A Mosaic of Freedom" honors Hattiesburg veterans and their service to the nation and to their community.
+
+Painted by artists Kym Garraway and Emma H. Sullivan, the installation is part of America250 Mississippi's year-long celebration of the nation's anniversary and the theme, "Power of People and Place: Mississippi is the American Story."
+
+"Hattiesburg's story has always been shaped by people who choose to serve," said Hattiesburg Mayor Toby Barker. "Our veterans return home to build businesses, raise families, lead organizations and invest in others. A Mosaic of Freedom honors that continued service while adding another meaningful piece of public art to our city."
+
+The mural spans an exterior brick wall and is 14 feet high and 80 feet wide. It stands at 315 Main St. along the rail line. The prominent location gives residents and visitors a visible tribute to the service and contributions of local veterans.
+
+Property owner Jayson Trawick said he was proud to have his building as the canvas for the newest art. The project is personal to him.
+
+"As a veteran and business owner preparing to retire from military service, I'm incredibly proud that our property can serve as the backdrop for 80 feet of patriotic artwork honoring those who have served our country," Trawick said. "It is especially meaningful to me to pay homage to the veterans who served before me, those who continue to serve today, and the veterans who choose to keep serving their communities long after their military service has ended. This is a path I hope to follow myself."
+
+Veterans after the unveiling gathered for a fish fry and reception at VFW Post 3036.
+
+"On behalf of VFW Post 3036, its auxiliary and the Hattiesburg Veterans Committee, I am honored to salute the partners who made this mural honoring U.S. veterans possible," said Ted Tibbet, chairman of the Hattiesburg Veterans Committee.
+
+The project received support through a Mississippi Arts Commission America250 Mississippi Public Art Grant. The mural is now featured on the HBURG Public Art Trail, which includes more than 120 pieces of public art throughout the city.
+
+"This beautiful, original artwork will stand as a lasting patriotic tribute in downtown Hattiesburg, and having it created on the facade of a building owned by a veteran makes it even more special," said Marlo Dorsey, CEO of VisitHATTIESBURG and the Hattiesburg Alliance for Public Art.`,
+  },
+  {
     id: "243",
     title: "Outstanding Southern Miss Students Recognized with Scholarship and Leadership Program",
     excerpt: "Thirteen students from the College of Business and Economic Development at Southern Miss have been named the 2026-2027 Eagle Scholars, earning scholarships of up to $8,000 a year.",
