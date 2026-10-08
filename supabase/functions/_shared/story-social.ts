@@ -26,16 +26,29 @@ export async function prepareSocialStory(client: SupabaseClient, story: DigestSt
 }
 export async function postSocialStories(client: SupabaseClient, stories: DigestStory[], prepareOnly = false) {
   const prepared = [];
+  const failed: { link: string; reason: string }[] = [];
   for (const story of stories) {
-    const key = `social_posted:${new URL(story.link).pathname}`;
+    let key: string;
+    try {
+      key = `social_posted:${new URL(story.link).pathname}`;
+    } catch {
+      failed.push({ link: story.link, reason: 'Invalid story link.' });
+      continue;
+    }
     if (!prepareOnly) {
       const { data: posted } = await client.from('newsletter_config').select('value').eq('key', key).maybeSingle();
       if (posted) continue;
     }
-    prepared.push(await prepareSocialStory(client, story));
+    try {
+      prepared.push(await prepareSocialStory(client, story));
+    } catch (error) {
+      // External links, missing photos, and overlong headlines skip this story
+      // only; the rest of the batch still posts.
+      failed.push({ link: story.link, reason: error instanceof Error ? error.message : 'Graphic failed.' });
+    }
   }
-  if (prepareOnly) return { prepared };
-  if (prepared.length === 0) return { accepted: false, skipped: 'already_submitted', prepared };
+  if (prepareOnly) return { prepared, failed };
+  if (prepared.length === 0) return { accepted: false, skipped: failed.length > 0 ? 'all_stories_failed' : 'already_submitted', prepared, failed };
   const { data } = await client.from('newsletter_config').select('value').eq('key', 'zapier_social_webhook').maybeSingle();
   if (!data?.value) throw new Error('Facebook posting webhook is not configured.');
   const response = await fetch(data.value, {
@@ -47,5 +60,5 @@ export async function postSocialStories(client: SupabaseClient, stories: DigestS
     const { error } = await client.from('newsletter_config').upsert({ key: `social_posted:${new URL(story.link).pathname}`, value: new Date().toISOString() }, { onConflict: 'key' });
     if (error) throw error;
   }
-  return { accepted: true, status: response.status, prepared };
+  return { accepted: true, status: response.status, prepared, failed };
 }
