@@ -60,5 +60,5 @@ export async function postSocialStories(client: SupabaseClient, stories: DigestS
     const { error } = await client.from('newsletter_config').upsert({ key: `social_posted:${new URL(story.link).pathname}`, value: new Date().toISOString() }, { onConflict: 'key' });
     if (error) throw error;
   }
-  return { accepted: true, status: response.status, prepared };
+  return { accepted: true, status: response.status, prepared, failed };
 }
