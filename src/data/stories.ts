@@ -1,3 +1,5 @@
+import harringtonParkPhoto from "@/assets/harrington-park-photo.jpg.asset.json";
+
 export interface Story {
   id: string;
   title: string;
@@ -36,6 +38,46 @@ export const categories = [
 
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
+  {
+    id: "245",
+    title: "Play Ball! Major Improvements Continue at Historic Smokie Harrington Park",
+    excerpt: "Phase two of renovations at the home of Hattiesburg High School baseball includes an extended artificial turf playing surface, new drainage and sprinkler systems, and a natural grass outfield.",
+    category: "sports",
+    author: "Hattiesburg Hub Staff",
+    date: "October 13, 2026",
+    image: harringtonParkPhoto.url,
+    imageAlts: ["Construction equipment and field renovation work at Smokie Harrington Park in Hattiesburg"],
+    slug: "smokie-harrington-park-baseball-renovations",
+    featured: true,
+    original: true,
+    photoSource: "Hattiesburg Public Schools",
+    photoCaption: "Renovation work at historic Smokie Harrington Park, home of Hattiesburg High School baseball.",
+    content: `A new era is beginning at Hattiesburg's Smokie Harrington Park as major renovations bring modern amenities and enhancements to the historic ballfield.
+
+School leaders said improvements at the home of Hattiesburg High School baseball will enhance experiences for student-athletes and Tiger fans.
+
+Harrington Park is undergoing phase two of work, which includes a new extended artificial turf playing surface. The infield and foul lines will be artificial turf while the outfield will feature natural turf grass. The project will also include new drainage and sprinkler systems.
+
+"We are really excited about the upgrades coming to historic Smokie Harrington Park," said Hattiesburg Public Schools Athletic Director Jermaine Brown. "The field will feature a new artificial turf playing surface extending all the way down the foul line."
+
+The facility in 2013 was severely damaged by a tornado that tore through the region.
+
+School leaders said the improvements honor the facility's history while also investing in the future of student-athletes.
+
+Smokie Harrington Park is home to one of the largest high school baseball stadiums in Mississippi. The stadium opened in 1950 and was renamed to honor William Patrick "Buddy" Harrington Sr.
+
+Harrington served as a Hattiesburg city commissioner who championed building an athletic stadium to attract professional baseball.
+
+He organized the Greater Hattiesburg Association to raise money to build the facility and eventually collected $50,000 to begin the project, according to the Hattiesburg Area Historical Society.
+
+The park over the years has hosted numerous events, including football games, wrestling matches, political events and baseball games from both Southern Miss and William Carey University.
+
+The site also appeared in the 1980 movie "Don't Look Back," a film about legendary baseball great Satchel Paige.
+
+Brown said the ongoing renovation project is part of the school district's commitment to providing students with facilities that support excellence on and off the playing field.
+
+"This will be a tremendous addition for our student-athletes and will help enhance an already special home for Hattiesburg High School baseball," Brown said.`,
+  },
   {
     id: "244",
     title: "'A Mosaic of Freedom' Honors America at 250 and the Area Veterans Who Serve",
