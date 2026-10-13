@@ -1,4 +1,4 @@
-import harringtonParkPhoto from "@/assets/harrington-park-photo.jpg.asset.json";
+import harringtonParkPhoto from "../assets/harrington-park-photo.jpg.asset.json";
 
 export interface Story {
   id: string;
