@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Publish Harrington Park renovation story with supplied Hattiesburg Public Schools photo; verify live page and submit branded Facebook post
+- [x] Publish Harrington Park renovation story with supplied Hattiesburg Public Schools photo; verify live page and submit branded Facebook post
 
 - [x] Publish William Carey and Montague Sculpture Park stories; verify photos render on live site
 - [x] Send story alert email blast (Montague) to all active subscribers
