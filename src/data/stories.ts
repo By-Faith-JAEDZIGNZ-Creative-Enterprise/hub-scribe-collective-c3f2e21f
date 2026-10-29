@@ -40,7 +40,7 @@ export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
     id: "246",
-    title: "'The Greatest Month to Be a Hattiesburger': Downtown Halloween Parade Caps Month Jammed with Activities",
+    title: "“The Greatest Month to Be a Hattiesburger”: Downtown Halloween Parade Caps Month Jammed with Activities",
     excerpt: "Downtown Hattiesburg is decked out for Halloween with trick or treating, a party and a Thursday evening parade on Hardy Street, capping an October Mayor Toby Barker says held 241 listed events.",
     category: "community",
     author: "Hattiesburg Hub Staff",
