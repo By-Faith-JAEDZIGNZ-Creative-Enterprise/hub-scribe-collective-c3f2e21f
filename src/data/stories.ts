@@ -100,7 +100,7 @@ Streets were also filled around town earlier this month during National Night Ou
 
 Members of the Hattiesburg Police Department and Hattiesburg Fire Department were on hand.
 
-In total, Mayor Barker said there were 241 listed events throughout the area in October, from high school and college football homecomings to national awareness days.
+In total, Mayor Barker said there were 241 listed events throughout the area in October, from high school and football homecomings to national awareness days.
 
 "Why do we love this month? It's not about checking a box or posting to our social media all the places we went to," Barker said. "It's about experiencing life in a place we all love. It's about the memories made with people we love and the people we will soon meet."`,
   },
