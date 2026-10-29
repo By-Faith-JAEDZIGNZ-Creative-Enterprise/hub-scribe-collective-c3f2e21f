@@ -39,6 +39,72 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "246",
+    title: "'The Greatest Month to Be a Hattiesburger': Downtown Halloween Parade Caps Month Jammed with Activities",
+    excerpt: "Downtown Hattiesburg is decked out for Halloween with trick or treating, a party and a Thursday evening parade on Hardy Street, capping an October Mayor Toby Barker says held 241 listed events.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "October 29, 2026",
+    image: "/__l5e/assets-v1/e83cd9e0-0cc4-445c-b16e-b39f6cdc6b2b/hattiesburg-october-6.jpg",
+    images: [
+      "/__l5e/assets-v1/e83cd9e0-0cc4-445c-b16e-b39f6cdc6b2b/hattiesburg-october-6.jpg",
+      "/__l5e/assets-v1/329daf39-d210-4886-a33b-c475a79e719f/hattiesburg-october-7.jpg",
+      "/__l5e/assets-v1/1ca7e493-d3cf-435a-b02f-a3a2f8cf4488/hattiesburg-october-1.jpg",
+      "/__l5e/assets-v1/349dd5f5-a8cd-4266-aac0-822083e7a3f4/hattiesburg-october-3.jpg",
+      "/__l5e/assets-v1/72e4dd3a-daf2-4dba-ac26-35f8304e10a9/hattiesburg-october-8.jpg",
+      "/__l5e/assets-v1/85354e29-7db1-4b0d-9c9c-950fbbf87442/hattiesburg-october-5.jpg",
+      "/__l5e/assets-v1/ff523de7-c7b7-435b-b9c1-d74cfd31ff31/hattiesburg-october-4.jpg",
+      "/__l5e/assets-v1/16c4e3a2-38f1-476b-8ed2-4851348995e9/hattiesburg-october-2.jpg",
+    ],
+    imageAlts: [
+      "Two children in Halloween costumes, one in a cat-ear headband and one in a dinosaur costume, trick or treating in downtown Hattiesburg",
+      "A smiling child in a Spider-Man costume on a downtown Hattiesburg street",
+      "Volunteers handing out candy at a decorated table during Trick or Treat on Main Street",
+      "Two Hattiesburg firefighters posing with a young child dressed in firefighter gear",
+      "A woman in an orange shirt holding a smiling baby at a downtown Halloween event",
+      "Business staff handing out treats at a booth decorated with a skeleton and cobwebs",
+      "Volunteers arranging stacks of jack-o'-lantern buckets along a downtown street at night",
+      "Volunteers setting up pumpkin displays on a downtown Hattiesburg sidewalk at night",
+    ],
+    imageCaptions: [
+      "Young trick or treaters show off their costumes in downtown Hattiesburg.",
+      "A young Spider-Man makes the rounds downtown.",
+      "Trick or Treat on Main Street was presented by the City of Hattiesburg and Hattiesburg Parks & Recreation.",
+      "Members of the Hattiesburg Fire Department joined the fun.",
+      "Smiles all around at the downtown festivities.",
+      "Downtown businesses got into the spirit with decorations and treats.",
+      "Volunteers set up pumpkin displays as downtown dressed up for Halloween.",
+      "Pumpkins, so many pumpkins, line the streets of downtown Hattiesburg.",
+    ],
+    slug: "hattiesburg-october-halloween-parade-2026",
+    featured: true,
+    original: true,
+    photoSource: "City of Hattiesburg",
+    photoLicense: "Used with permission",
+    photoCaption: "Young trick or treaters show off their costumes in downtown Hattiesburg.",
+    content: `Downtown Hattiesburg is looking a little more spooky in recent days as ghosts, goblins and pumpkins take over the streets.
+
+Activities abound this week with trick or treating and a Halloween party downtown. The streets are decorated and businesses are ready to continue festivities that have been ongoing all month.
+
+Trick or Treat on Main Street was presented by the City of Hattiesburg and Hattiesburg Parks & Recreation.
+
+Mayor Toby Barker earlier declared October the busiest month of activity and fun for Hattiesburg with a calendar packed with activities.
+
+"In this 31 day window there are both long standing and new traditions," Barker said. "There are outdoor events where you sit and enjoy without breaking a sweat. There are pumpkins, so many pumpkins. It's a magical time, and that's why each year we declare October to be the greatest month to be a Hattiesburger."
+
+The fun continues with a Halloween parade downtown Thursday evening beginning at 5:30 p.m.
+
+The parade begins at South 24th Avenue and travels east along Hardy Street toward Hutchinson Avenue. Hardy Street will close in both directions between Highway 49 and Hutchinson Avenue beginning at 4:45 p.m. Roads will reopen by 7 p.m.
+
+Streets were also filled around town earlier this month during National Night Out. The 42nd annual celebration is a community outreach initiative presented by law enforcement and first responders. There was live music, food, children's activities and a surprise fireworks show.
+
+Members of the Hattiesburg Police Department and Hattiesburg Fire Department were on hand.
+
+In total, Mayor Barker said there were 241 listed events throughout the area in October, from high school and college football homecomings to national awareness days.
+
+"Why do we love this month? It's not about checking a box or posting to our social media all the places we went to," Barker said. "It's about experiencing life in a place we all love. It's about the memories made with people we love and the people we will soon meet."`,
+  },
+  {
     id: "245",
     title: "Play Ball! Major Improvements Continue at Historic Smokie Harrington Park",
     excerpt: "Phase two of renovations at the home of Hattiesburg High School baseball includes an extended artificial turf playing surface, new drainage and sprinkler systems, and a natural grass outfield.",
