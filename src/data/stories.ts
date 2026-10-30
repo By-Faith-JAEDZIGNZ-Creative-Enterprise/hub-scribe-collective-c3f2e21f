@@ -39,6 +39,54 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "247",
+    title: "Historic Auditorium Begins Next Chapter with Renovations and New Name",
+    excerpt: "William Carey University celebrated the newly named Thomas and Miriam Roberson Auditorium at the Thomas Fine Arts Center after a summer renovation made possible by alumnus Dr. Gary Roberson.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "October 30, 2026",
+    image: "/__l5e/assets-v1/b80e82b0-179a-4cab-9a0b-358f00ef9892/wcu-roberson-auditorium-big-band.jpg",
+    images: [
+      "/__l5e/assets-v1/b80e82b0-179a-4cab-9a0b-358f00ef9892/wcu-roberson-auditorium-big-band.jpg",
+      "/__l5e/assets-v1/8e06a0ec-ead9-4333-81b3-9fe4ecfdba53/wcu-thomas-miriam-roberson.jpg",
+    ],
+    imageAlts: [
+      "The Carey Big Band saxophone section performing on stage in the renovated Roberson Auditorium",
+      "Portrait of Thomas and Miriam Roberson",
+    ],
+    imageCaptions: [
+      "The Carey Big Band, under the direction of Kyle Dykes, recently presented their annual fall concert in the newly renovated Roberson Auditorium in Thomas Fine Arts Center.",
+      "Thomas and Miriam Roberson",
+    ],
+    slug: "william-carey-roberson-auditorium-renovation",
+    featured: true,
+    original: true,
+    photoSource: "William Carey University",
+    photoLicense: "Used with permission",
+    photoCaption: "The Carey Big Band, under the direction of Kyle Dykes, recently presented their annual fall concert in the newly renovated Roberson Auditorium in Thomas Fine Arts Center.",
+    content: `A landmark space that for decades has hosted countless events and created memories for students and families begins another chapter with major renovations and a new name.
+
+William Carey University recently celebrated the newly named Thomas and Miriam Roberson Auditorium at the Thomas Fine Arts Center.
+
+The dedication came after a floor-to-ceiling renovation of the auditorium over the summer that was made possible by a gift from Dr. Gary Roberson, a William Carey alumnus and member of the university's alumni hall of fame. The name honors his parents.
+
+"This dedication represents far more than an updated and rejuvenated facility," said William Carey University President Ben Burnett. "Through Dr. Gary Roberson's transformational gift, students will gather in this space for worship, learning, and fellowship for decades to come."
+
+The new name was unveiled during a special homecoming ceremony Oct. 24, exactly 60 years to the day of the auditorium's official opening in 1966.
+
+The ceremony was the highlight of William Carey's Night of Worship, a music program that drew hundreds to celebrate the moment.
+
+Thomas Roberson was born in Meridian and Miriam Roberson was born in Muskogee, Oklahoma. Miriam was a registered nurse, while Thomas began his career with Pitney Bowes in research and development. Together, they built a successful wholesale business serving several states and a thriving real estate rental business.
+
+The Robersons were also remembered for their investment in their community and dedication to instill Christian values of faith, perseverance, service and educational excellence in their children.
+
+"Naming the auditorium in honor of Thomas and Miriam Roberson ensures that their legacy of faith, generosity, and commitment to Christian education will inspire future generations," Burnett said.
+
+Dr. Gary Roberson, his brother David Roberson and David's son, Seth Roberson, are all graduates of William Carey University.
+
+Based in Hattiesburg, William Carey University also has campuses in Biloxi and Baton Rouge, Louisiana, along with online learning options.`,
+  },
+  {
     id: "246",
     title: "“The Greatest Month to Be a Hattiesburger”: Downtown Halloween Parade Caps Month Jammed with Activities",
     excerpt: "Downtown Hattiesburg is decked out for Halloween with trick or treating, a party and a Thursday evening parade on Hardy Street, capping an October Mayor Toby Barker says held 241 listed events.",
