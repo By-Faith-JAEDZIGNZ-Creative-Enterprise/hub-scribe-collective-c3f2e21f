@@ -1,7 +1,7 @@
 # Roadmap
 
 - [x] Publish William Carey Roberson Auditorium story (247) with 2 WCU photos (exclude Joseph's notes); verify photos
-- [ ] Email alert + branded Facebook graphic for stories 246 and 247: waiting for www.hattiesburghub.com to show 247 (Halloween 246 already there)
+- [x] Email alert + branded Facebook graphic for stories 246 and 247 (246 sent Oct 29; 247 sent Oct 30 to 382 subscribers)
 
 - [x] Publish Hattiesburg in October / Halloween parade story (246) with 8 City of Hattiesburg photos; verify photos
 
