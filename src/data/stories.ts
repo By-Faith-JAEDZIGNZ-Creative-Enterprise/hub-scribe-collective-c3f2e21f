@@ -39,6 +39,53 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "248",
+    title: "Hattiesburg Earns National Recognition as a Top Sports Destination",
+    excerpt: "The Hub City was named one of seven top sports host cities in the nation at the 2026 SportsTravel Awards, alongside Houston, Miami, Philadelphia, Phoenix, Monroe-West Monroe and Virginia Beach.",
+    category: "sports",
+    author: "Hattiesburg Hub Staff",
+    date: "November 6, 2026",
+    image: "/__l5e/assets-v1/71f9fcd8-0aec-496a-8cb4-e30505ac55f4/hattiesburg-sportstravel-top-host-city.jpg",
+    imageAlts: ["2026 SportsTravel Awards graphic naming Hattiesburg, Mississippi a top 7 sports host city nationwide"],
+    slug: "hattiesburg-sportstravel-top-sports-host-city-2026",
+    featured: true,
+    original: true,
+    photoSource: "VisitHATTIESBURG",
+    photoLicense: "Used with permission",
+    photoCaption: "Hattiesburg was recognized as a top 7 sports host city nationwide at the 2026 SportsTravel Awards.",
+    content: `Hattiesburg has another national bragging right.
+
+The Hub City has earned a spot among the nation's top sports host cities, reinforcing its growing reputation as a destination for athletic competitions and sports tourism.
+
+Hattiesburg ranked among seven finalists in an annual competition presented by SportsTravel, a sports industry publication.
+
+"Hattiesburg's recognition as a top host city reflects the incredible growth of our sports tourism industry and the shared vision of our community partners," said VisitHattiesburg CEO Marlo Dorsey.
+
+The honors were recently announced at the 2026 SportsTravel Awards during the annual TEAMS Conference and Expo industry event in Birmingham, Ala.
+
+Other finalists recognized as top host cities included Houston, Texas; Monroe-West Monroe, Louisiana; Philadelphia, Pennsylvania; Phoenix, Arizona; and Virginia Beach, Virginia.
+
+The honor celebrates cities that demonstrate excellence in sports event hosting through quality venues, operational expertise and community support.
+
+Hattiesburg earned its distinction among seven finalists from across the country, with Miami, Florida, receiving the top category award.
+
+Hattiesburg tourism leaders highlighted the city's growing appeal as a sports destination, pointing to a robust lineup of events, including the record-breaking 2026 Hattiesburg Half Marathon, which sold out with 1,750 participants.
+
+Highlights include the NCAA Baseball Regional, National Association of Intercollegiate Athletics National Championship Opening Round, Diamond Boys Baseball World Series, Big Rip Classic disc golf tournament, a record-breaking Hattiesburg Half Marathon, and several other championship events.
+
+Those competitions have generated millions of dollars in visitor spending, drawing players, coaches and spectators from across the country.
+
+Building on that economic momentum, the community has invested more than $85 million in sports-related facilities, including the future Hattiesburg Sports & Recreation Event Center, renovations to Reed Green Coliseum, and improvements to city facilities such as Jaycee Park and Timberton Softball Complex.
+
+The national recognition underscores Hattiesburg's growing reputation as a sports destination and its ambitions to expand that reach. The city's draft comprehensive plan, "Hattiesburg 150 & Beyond," outlines a long-term vision for strengthening its sports tourism industry, including an ambitious goal of attracting a minor league baseball team within the next 10 to 15 years.
+
+That vision is already taking shape through strategic investments in athletic facilities. In 2023, the city completed major improvements to Jaycee Park, funded through Hattiesburg's 1 percent sales tax. Those investments are now yielding results. Earlier this month, Hattiesburg was selected to host the 2027 Junior Boys World Series, which will bring 13- and 14-year-old baseball players from a dozen states to the city.
+
+Representatives from VisitHATTIESBURG accepted the award on behalf of community partners responsible for sports tourism growth in the city. VisitHATTIESBURG works particularly closely with the city of Hattiesburg Parks and Recreation Department to create event experiences for tournaments and sporting events.
+
+"We have worked intentionally to attract premier events, and that success would not be possible without the dedication of our venues, stakeholders, universities, volunteers, and local organizers, all of which play an important role in creating championship-caliber experiences," Dorsey said. "We're honored to be recognized on the national stage."`,
+  },
+  {
     id: "247",
     title: "Historic Auditorium Begins Next Chapter with Renovations and New Name",
     excerpt: "William Carey University celebrated the newly named Thomas and Miriam Roberson Auditorium at the Thomas Fine Arts Center after a summer renovation made possible by alumnus Dr. Gary Roberson.",
