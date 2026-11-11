@@ -1,6 +1,7 @@
 import { createClient } from 'npm:@supabase/supabase-js@2';
 import { postSocialStories } from '../_shared/story-social.ts';
 import { fetchLatestStories } from '../_shared/newsletter-email.ts';
+import { authenticateCronRequest } from '../_shared/cron-auth.ts';
 
 Deno.serve(async req => {
   if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
@@ -8,7 +9,11 @@ Deno.serve(async req => {
     const client = createClient(Deno.env.get('SUPABASE_URL') ?? '', Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? '');
     const { data } = await client.from('newsletter_config').select('value').eq('key', 'cron_token').maybeSingle();
     const token = req.headers.get('x-cron-token');
-    if (!token || !data?.value || token !== data.value) return new Response('Unauthorized', { status: 401 });
+    const tokenOk = token && data?.value && token === data.value;
+    if (!tokenOk) {
+      const authFailure = authenticateCronRequest(req);
+      if (authFailure) return authFailure;
+    }
     const body = await req.json();
     const stories = await fetchLatestStories(20);
     const story = stories.find(s => new URL(s.link).pathname === `/story/${body.slug}`);
