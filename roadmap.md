@@ -17,5 +17,8 @@
 - [x] Generate individual branded graphics automatically for future story-alert social posts
 - [ ] Confirm Facebook displays the graphic: requires Zapier Facebook action set to Create Page Photo with image/graphic_url and caption mapped; no Facebook account access available here
 - [x] Publish Mosaic of Freedom story (244); verify photos; send email alert + branded social graphic
+- [x] Publish Behavioral Health Court federal grant story (250) with City of Hattiesburg courtroom photo; verified page and image
+- [x] Schedule story alert + branded Facebook graphic for 8:00 AM Chicago Nov 12 (managed schedule id 3, one-time; delete after it runs)
+- [ ] Delete one-time schedule id 3 after the Nov 12 send completes
 - [ ] Add editor control to choose a roundup collage instead of an individual branded graphic per story
 - [ ] Add preflight check verifying Zapier Facebook image/caption mappings before sending a story graphic
