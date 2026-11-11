@@ -39,6 +39,43 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "250",
+    title: "Federal Grant Bolsters Effort to Assist Residents Facing Addiction and Life Challenges",
+    excerpt: "Hattiesburg was awarded more than $361,000 from the federal Substance Abuse and Mental Health Services Administration to expand treatment and recovery services through the Municipal Court's Behavioral Health Court program.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "November 11, 2026",
+    image: "/__l5e/assets-v1/d9f8220e-6c0a-43ed-bc84-d4bb3504308f/hattiesburg-behavioral-health-court-grant.jpg",
+    imageAlts: ["Hattiesburg Municipal Court courtroom with the City of Hattiesburg seal on the wall"],
+    slug: "federal-grant-hattiesburg-behavioral-health-court",
+    featured: true,
+    original: true,
+    photoSource: "City of Hattiesburg",
+    photoLicense: "Used with permission",
+    photoCaption: "Hattiesburg Municipal Court, home of the city's Behavioral Health Court program.",
+    content: `A federal grant to the city of Hattiesburg will increase services designed to help people address and recover from substance abuse through mental health and long-term treatment.
+
+The city was awarded more than $361,000 from the federal Substance Abuse and Mental Health Services Administration to expand treatment and recovery services through Hattiesburg Municipal Court's Behavioral Health Court program.
+
+The award represents the first year of a five-year initiative, with recommended funding totaling more than $1.8 million through September 2031.
+
+"This investment gives us another opportunity to address the underlying challenges that often bring individuals into our court system," said Mayor Toby Barker.
+
+Hattiesburg's Behavioral Health Court, which was established in 2010, provides an alternative path for eligible individuals facing misdemeanor charges by connecting them with treatment, supervision and support services.
+
+"By expanding access to treatment and recovery services, we can help more people find stability, rebuild their lives and ultimately reduce the likelihood of future involvement with the justice system," Barker said.
+
+The goal is to provide alternatives that combine accountability with access to care and long-term recovery support.
+
+Participants will have access to individualized treatment plans, outpatient and residential treatment, psychiatric care, medication-assisted treatment when appropriate and peer recovery support.
+
+"Behavioral Health Court is built on the understanding that accountability and treatment can work together to create better outcomes," said Municipal Judge Brian Bledsoe. "This funding will allow us to build on that approach by connecting more participants with the resources and support they need to move forward."
+
+The program is operated through a partnership with Pine Belt Mental Healthcare Resource. About 40 people are expected to be served each year with a goal of reaching 200 over the five-year period.
+
+The program also will provide recovery housing assistance to eligible participants transitioning out of residential treatment.`,
+  },
+  {
     id: "249",
     title: "Hattiesburg Man Honored for Decades of Service In and Out of Uniform as City Celebrates Veterans Day",
     excerpt: "Vietnam veteran and retired Chief Warrant Officer Four Harold Robert Hall is Hattiesburg's 2026 Veteran of the Year, honored for 38 years of military service and a lifetime of serving his community.",
