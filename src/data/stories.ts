@@ -39,6 +39,74 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "249",
+    title: "Hattiesburg Man Honored for Decades of Service In and Out of Uniform as City Celebrates Veterans Day",
+    excerpt: "Vietnam veteran and retired Chief Warrant Officer Four Harold Robert Hall is Hattiesburg's 2026 Veteran of the Year, honored for 38 years of military service and a lifetime of serving his community.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "November 11, 2026",
+    image: "/__l5e/assets-v1/7736111c-419d-4262-843a-c0d51225c401/hattiesburg-veteran-of-year-harold-hall.jpg",
+    images: [
+      "/__l5e/assets-v1/7736111c-419d-4262-843a-c0d51225c401/hattiesburg-veteran-of-year-harold-hall.jpg",
+      "/__l5e/assets-v1/62a436c7-a40f-4cca-b13b-478bad4b975a/harold-hall-veterans-day-remarks.jpg",
+    ],
+    imageAlts: [
+      "Harold Robert Hall speaking at a City of Hattiesburg podium outdoors",
+      "Harold Robert Hall delivering remarks beside Mayor Toby Barker",
+    ],
+    imageCaptions: [
+      "Harold Robert Hall, Hattiesburg's 2026 Veteran of the Year.",
+      "Hall shares remarks as Mayor Toby Barker looks on.",
+    ],
+    slug: "hattiesburg-veteran-of-the-year-harold-hall-2026",
+    featured: true,
+    original: true,
+    photoSource: "City of Hattiesburg",
+    photoLicense: "Used with permission",
+    photoCaption: "Harold Robert Hall, Hattiesburg's 2026 Veteran of the Year.",
+    content: `As a young Marine serving in Vietnam, Harold Robert Hall never imagined that one day he would stand to receive honors and salutes from his community.
+
+Hall, a retired Chief Warrant Officer Four in the Mississippi Army National Guard, is this year's Veteran of the Year. The recognition comes from the City of Hattiesburg's Veterans Committee.
+
+"When I returned from Vietnam in August of 1969, I never dreamed that the service I rendered then to include the sights and horrors I experienced there would ever fade. However, I ultimately continued to serve in the military after Vietnam," Hall said.
+
+"I certainly did not expect that one day, more than 50 years after my return from Vietnam, that I would be recognized in such a public way from my total 38 years of military service to our nation."
+
+Hall said he is humbled by the recognition.
+
+Hattiesburg has highlighted an outstanding veteran for the last 32 years.
+
+"Veterans whom the selection Committee chooses to honor each year have then either returned home or relocated and made Hattiesburg their new home and started to serve faithfully in this community," said retired Col. Sheila Varnado, chair of the Hattiesburg Veteran of the Year Selection Committee. "Never one to seek a spotlight, Hall is a quiet, behind the scenes, tireless worker in this community. He has a heart for others and epitomizes a true servant leader."
+
+A Forrest County resident since 1956, Hall served on active duty in the Marine Corps from August 1966 to August 1972.
+
+His service includes a deployment to South Vietnam from December 1967 to August 1969. Stationed on Monkey Mountain near Da Nang, he was there during the 1968 Tet Offensive, one of the largest and deadliest campaigns of the war.
+
+Hall then joined the Mississippi Army National Guard, retiring in 2006 after completing 32 years of service.
+
+Hall continues to serve his community. He helps plan and carry out Hattiesburg's Memorial Day and Veterans Day activities as an active member of the city's Veterans Committee.
+
+Hall also represents Allen B. Carter American Legion Post 24 and Commiskey-Wheat Detachment 1073 of the Marine Corps League, managing communications for both organizations.
+
+An active member of Sacred Heart Catholic Church and the Knights of Columbus, Hall helps prepare blessing bags for people experiencing homelessness.
+
+Military and community service runs in the family for Hall. His mother, Jeanette S. Hall, was a World War II veteran of the Women's Army Corps.
+
+Jeanette Hall was named Hattiesburg's Veteran of the Year in 2003 and also served on the city's Veterans Committee until her death in 2009.
+
+"Chief Warrant Officer Hall's life reflects a commitment to serving wherever he is needed," said Mayor Toby Barker. "From his military career to his work supporting local veterans and families, he has continued to answer the call. We are proud to recognize his service to our country and to Hattiesburg."
+
+Hattiesburg's Wednesday Veterans Day activities include a parade downtown, along with a program and lunch.
+
+"Hattiesburg proudly stands as a military and veterans community," Barker said. "We honor those amongst us who have worn the uniform. We remember those who have lost their lives in defense of our public. We recognize how we individually and collectively have been shaped by those who came before us."
+
+Retired Colonel Michael Gilpin, who is also a Vietnam veteran, is the parade's grand marshal and speaker. Gilpin recently completed a documentary that featured several veterans who returned to Vietnam.
+
+Ted Tibbett, chairman of the Hattiesburg Veterans Committee, noted that Veterans Day is a moment to celebrate veterans, while Memorial Day, which is in May, is a time to honor the men and women who died while serving.
+
+"This is when we say thank you for your service," Tibbett said. "We have a little hoorah, and so our program on that day will be less somber and more celebration of the military service of all the veterans in our community."`,
+  },
+  {
     id: "248",
     title: "Hattiesburg Earns National Recognition as a Top Sports Destination",
     excerpt: "The Hub City was named one of seven top sports host cities in the nation at the 2026 SportsTravel Awards, alongside Houston, Miami, Philadelphia, Phoenix, Monroe-West Monroe and Virginia Beach.",
