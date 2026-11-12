@@ -91,6 +91,14 @@ Deno.serve(async (req) => {
       newStories = [forced];
     }
 
+    // Optional: add extra stories (by slug) to this alert, e.g. a story that
+    // should be bundled into the same blast.
+    const includeSlugs: string[] = Array.isArray(body?.include_slugs) ? body.include_slugs : [];
+    for (const slug of includeSlugs) {
+      const extra = stories.find((s) => (s.guid || s.link || "").includes(slug));
+      if (extra && !newStories.includes(extra)) newStories.push(extra);
+    }
+
     if (newStories.length === 0) {
       return json({ sent: 0, reason: "no_new_stories" });
     }
@@ -179,7 +187,7 @@ Deno.serve(async (req) => {
           "x-cron-token": token,
           Authorization: `Bearer ${Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""}`,
         },
-        body: JSON.stringify({ batch_size: batchSize, offset: nextOffset, force_slug: forceSlug }),
+        body: JSON.stringify({ batch_size: batchSize, offset: nextOffset, force_slug: forceSlug, include_slugs: includeSlugs }),
       }).catch((err) => console.error("Batch chaining failed:", err));
 
       // deno-lint-ignore no-explicit-any

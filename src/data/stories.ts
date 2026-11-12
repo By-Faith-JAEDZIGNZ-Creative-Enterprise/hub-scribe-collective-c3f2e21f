@@ -39,6 +39,51 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "251",
+    title: "Night at the Zoo: Hattiesburg Zoo Upgrades Bring New Cabins and Amenities for Overnight Guests",
+    excerpt: "Camp Capybara has traded tents for permanent wooden cabins that sleep up to 36 campers, and the zoo has added Capybara Cove, a private nursing space for mothers and babies.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "November 12, 2026",
+    image: "/__l5e/assets-v1/d863f97d-960e-409e-bfc8-d4272c55b6a1/hattiesburg-zoo-camp-capybara-cabins-firepit.jpg",
+    images: ["/__l5e/assets-v1/d863f97d-960e-409e-bfc8-d4272c55b6a1/hattiesburg-zoo-camp-capybara-cabins-firepit.jpg", "/__l5e/assets-v1/45b4e116-31f0-43ff-b78b-6d24ff458d3f/hattiesburg-zoo-camp-capybara-sign.jpg", "/__l5e/assets-v1/7036173e-fd7d-49b0-9030-ddca9c8e963a/hattiesburg-zoo-camp-capybara-cabin.jpg", "/__l5e/assets-v1/34da8dbd-b206-415d-9df5-b271d64bd9db/hattiesburg-zoo-capybara-cove.jpg", "/__l5e/assets-v1/d801109f-abe0-4255-9d24-89d2c722c972/hattiesburg-zoo-nursing-station-1.jpg", "/__l5e/assets-v1/e72407e9-92d3-4bb3-95a5-0c4b7439bad7/hattiesburg-zoo-nursing-station-2.jpg", "/__l5e/assets-v1/9db75f89-5362-4bd8-9963-b5fce1aef970/hattiesburg-zoo-nursing-station-3.jpg"],
+    imageAlts: ["New Camp Capybara cabins around the central fire pit at the Hattiesburg Zoo", "Camp Capybara sign reading An Overnight Educational Adventure", "A Camp Capybara cabin porch at the Hattiesburg Zoo", "Capybara Cove, a quiet space for nursing and baby care", "Capybara Cove nursing room with recliner and changing table", "Capybara Cove nursing room entrance and seating", "Capybara Cove changing station"],
+    imageCaptions: ["Camp Capybara's new cabins gather around a central fire pit.", "Camp Capybara offers an overnight educational adventure.", "Each cabin sleeps up to six guests.", "Capybara Cove gives nursing mothers a quiet place at the zoo.", "Inside Capybara Cove.", "Capybara Cove is air-conditioned for comfort.", "A changing station inside Capybara Cove."],
+    slug: "hattiesburg-zoo-camp-capybara-cabins-capybara-cove",
+    featured: true,
+    original: true,
+    photoSource: "Hattiesburg Zoo",
+    photoLicense: "Used with permission",
+    photoCaption: "Camp Capybara's new cabins gather around a central fire pit.",
+    content: `While Hollywood produced a blockbuster hit with "Night at the Museum," Hattiesburg nature enthusiasts and animal lovers can experience a real-life night at the zoo.
+
+The Hattiesburg Zoo has completed renovations to its camping area that make it more comfortable for families to spend the night where their nearest neighbors include some of the world's most rare and exotic creatures.
+
+The zoo has enhanced overnight guest experiences by transforming Camp Capybara from a traditional tent campground into a village with permanent cabins. New amenities feature two private, single-room spaces housed in permanent wooden cabins.
+
+"For years, Camp Capybara has been a popular destination for Boy Scout and Girl Scout troops, homeschool groups, groups of friends and other organizations looking for a unique overnight adventure," said Jeremy Cumpton, the zoo's director of education. "The upgraded accommodation makes the experience even more appealing, combining the fun of camping with the added comfort and convenience of permanent structures."
+
+Each cabin features two sets of bunk beds and can accommodate up to six guests, allowing Camp Capybara to host as many as 36 overnight campers.
+
+The new cabins are designed to provide a charming, rustic atmosphere that complements the zoo's natural surroundings and adds to the overall character of the Camp Capybara experience.
+
+The zoo's addition follows a growing trend of glamorous camping, or "glamping," that features more amenities, even in the outdoors.
+
+And while accommodations have changed, some of the best camping traditions remain. That includes a central fire pit where campers gather.
+
+Nearby, the zoo has also added Capybara Cove, a private nursing station for mothers and babies. The site gives nursing mothers a quiet, comfortable and air-conditioned space to care for their infants while visiting the zoo.
+
+"Whether providing a peaceful retreat for a mother and her baby during a busy day at the zoo or creating lasting memories around a campfire, these improvements reflect the commitment to making every guest experience a little more special," said Demetric Kelly, director of guest experiences and retail.
+
+The camping site is the latest in a series of improvements at the zoo. The zoo in recent years has undergone a major $5.1 million expansion to include new giraffe and hyena exhibits.
+
+The zoo then began work to create a new zoo grand entrance, a new gift shop and expanded educational space. Much of the $600,000 to $700,000 in improvements from that project were financed by revenue from the Serengeti Springs water park.
+
+The water park, which opened in 2024, was created as a draw that would attract more visitors and generate additional revenue to support the zoo. The water park sits at Kamper Park, which is adjacent to the zoo.
+
+"Together, the addition of Capybara Cove and the improvements to Camp Capybara represent the Hattiesburg Zoo's continued investment in amenities that make visits more comfortable, memorable and enjoyable," said Rick Taylor, executive director of the Hattiesburg Convention Commission, which oversees and manages the Hattiesburg Zoo.`,
+  },
+  {
     id: "250",
     title: "Federal Grant Bolsters Effort to Assist Residents Facing Addiction and Life Challenges",
     excerpt: "Hattiesburg was awarded more than $361,000 from the federal Substance Abuse and Mental Health Services Administration to expand treatment and recovery services through the Municipal Court's Behavioral Health Court program.",
