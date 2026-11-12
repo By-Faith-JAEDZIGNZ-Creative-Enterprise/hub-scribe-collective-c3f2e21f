@@ -9,7 +9,7 @@ const BODY = '/__l5e/assets-v1/d25935d5-aade-44e9-9424-1ce134e1b910/body.ttf';
 export function storyCaption(story: DigestStory) {
   const clean = story.excerpt.replace(/[—–]/g, ', ');
   const excerpt = clean.length > 250 ? clean.slice(0, 251).replace(/\s+\S*$/, '') + '…' : clean;
-  return `📰 ${story.title.replace(/[—–]/g, ', ')}\n\nRead the full story: ${story.link}\n\n${excerpt}\n\nRead more: ${story.link}\n\n#HattiesburgHub #Hattiesburg #LocalNews`;
+  return `📰 ${story.title.replace(/[—–]/g, ', ')}\n\nRead the full story: ${story.link}\n\n${excerpt}\n\n#HattiesburgHub #Hattiesburg #LocalNews`;
 }
 export async function prepareSocialStory(client: SupabaseClient, story: DigestStory) {
   if (!story.link.startsWith('https://www.hattiesburghub.com/story/')) throw new Error('Only on-site stories can be posted.');
