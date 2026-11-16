@@ -9,6 +9,8 @@ export interface Story {
   date: string;
   image: string;
   images?: string[];
+  /** Optional focal point for the story-page header photo, e.g. "center 20%" */
+  imagePosition?: string;
   /** Descriptive alt text per gallery image (same order as `images`) */
   imageAlts?: string[];
   /** Caption shown under each gallery image (same order as `images`) */
@@ -38,6 +40,109 @@ export const categories = [
 
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
+  {
+    id: "253",
+    title: "Latest Downtown Mural Honors Legacy of Trailblazing Hattiesburg Native Evelyn Gandy",
+    excerpt: "\"Glass Ceiling,\" Hattiesburg's 58th mural, now stands at Mobile and Batson streets in honor of Evelyn Gandy, the first woman elected to statewide office in Mississippi.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "November 16, 2026",
+    image: "/__l5e/assets-v1/bdb106d6-3cd9-47aa-b436-d26c4292f782/glass-ceiling-mural-ribbon-cutting.jpg",
+    images: ["/__l5e/assets-v1/bdb106d6-3cd9-47aa-b436-d26c4292f782/glass-ceiling-mural-ribbon-cutting.jpg", "/__l5e/assets-v1/cdcb559f-c7b0-4d01-99ff-15a10a9a6de2/glass-ceiling-mural-full-view.jpg", "/__l5e/assets-v1/064d2c44-c438-405b-bace-11de67f301db/glass-ceiling-mural-detail.jpg", "/__l5e/assets-v1/97d9b37b-8806-4e48-be40-7e6f8f77aa0e/gandy-leadership-academy-2026-class.jpg", "/__l5e/assets-v1/e9e24e91-a823-49a0-888a-8e5b046b9ded/glass-ceiling-mural-rep-missy-mcgee.jpg", "/__l5e/assets-v1/f4a4b9c3-61a5-41b1-aec1-648b4648c5f7/glass-ceiling-mural-artist-kym-garraway.jpg", "/__l5e/assets-v1/cc29a3c6-57a3-46ab-a501-9ce4b4a240e5/glass-ceiling-mural-mayor-toby-barker.jpg", "/__l5e/assets-v1/7435f3cb-064a-4b0e-bf2d-34b1fa7fdada/evelyn-gandy-portrait.jpg", "/__l5e/assets-v1/b082df6e-d77f-4503-a30f-4ebd9bb475d5/evelyn-gandy-campaign-poster.jpg"],
+    imageAlts: ["Community leaders and Gandy Leadership Academy students cut a ribbon in front of the Glass Ceiling mural", "The completed Glass Ceiling mural at Mobile and Batson streets in downtown Hattiesburg", "A colorful section of the Glass Ceiling mural with an Evelyn Gandy quote", "The 2026 Gandy Leadership Academy class in front of the mural", "State Rep. Missy McGee speaks at the Glass Ceiling mural dedication", "Speakers and supporters at the Hattiesburg Alliance for Public Art podium during the dedication", "Mayor Toby Barker speaks at the Glass Ceiling mural dedication", "Black and white portrait of Evelyn Gandy", "Framed Elect Evelyn Gandy Your Next Lieutenant Governor campaign poster"],
+    imageCaptions: ["Leaders and Gandy Leadership Academy students cut the ribbon on \"Glass Ceiling,\" Hattiesburg's 58th mural. Photo courtesy of VisitHATTIESBURG.", "The completed mural measures about 55 feet wide by 20 feet high. Photo courtesy of VisitHATTIESBURG.", "A section of \"Glass Ceiling.\" Photo courtesy of VisitHATTIESBURG.", "The 2026 Gandy Leadership Academy class. Photo courtesy of VisitHATTIESBURG.", "State Rep. Missy McGee at the dedication. Photo courtesy of VisitHATTIESBURG.", "Supporters gather at the dedication. Photo courtesy of VisitHATTIESBURG.", "Mayor Toby Barker at the dedication. Photo courtesy of VisitHATTIESBURG.", "Evelyn Gandy served as Mississippi's lieutenant governor from 1976 to 1980. Photo courtesy of Southern Miss.", "A campaign poster from Gandy's run for lieutenant governor. Photo courtesy of Southern Miss."],
+    slug: "evelyn-gandy-glass-ceiling-mural-downtown-hattiesburg",
+    featured: true,
+    original: true,
+    photoSource: "VisitHATTIESBURG (Evelyn Gandy archival photos courtesy of Southern Miss)",
+    photoLicense: "Used with permission",
+    photoCaption: "Leaders and Gandy Leadership Academy students cut the ribbon on \"Glass Ceiling,\" Hattiesburg's 58th mural",
+    content: `Public art continues to abound throughout the city of Hattiesburg as enthusiasts work to provide visual amenities for all to appreciate.
+
+The latest exhibit from the Hattiesburg Alliance for Public Art completes a mural project dedicated to the life of a Hattiesburg native and Southern Miss graduate who broke barriers for women in the state and beyond.
+
+"Supporting artists and making public art accessible throughout our community are at the heart of HAPA's mission to strengthen Hattiesburg's identity as an arts destination," said Marlo Dorsey, Hattiesburg Alliance for Public Art CEO.
+
+The mural standing at the intersection of Mobile and Batson streets recognizes the late Evelyn Gandy and her legacy of public service in Mississippi.
+
+Throughout her career, Gandy held several local and state leadership positions, including serving as Mississippi's lieutenant governor from 1976 to 1980.
+
+Titled "Glass Ceiling," the mural is the result of three years of work and multiple phases, beginning with the first phase in November 2024 and culminating with the recent completion of Hattiesburg's 58th mural.
+
+As the first woman elected to statewide office in Mississippi, Gandy broke glass ceilings to help pave the way for future generations of women in leadership. Gandy, a lawyer, was born in Hattiesburg in 1920.
+
+Gandy was a trailblazer early on as the only woman in her 1943 law school class at the University of Mississippi School of Law. She died in 2007.
+
+The mural devoted to Gandy was completed in partnership with the 19th Amendment Committee and state Rep. Missy McGee's Gandy Leadership Academy, with students from the 2024, 2025 and 2026 classes contributing to the initiative.
+
+"It has been incredibly meaningful to see our Gandy Leadership Academy students contribute to a public art project honoring such an important figure in Mississippi history," McGee said. "I am grateful to HAPA and the 19th Amendment Committee for helping bring the vision to life and giving our students and community a lasting connection to Evelyn Gandy's legacy."
+
+The six-week program meets twice a month and engages Hattiesburg ninth-grade girls through opportunities to help foster a greater sense of self, community awareness and civic engagement.
+
+Pine Belt artist Kym Garraway led the mural's creation, with assistance from Emma Hodges-Sullivan and students representing three Gandy Leadership Academy classes.
+
+Together, the three phases of "Glass Ceiling" form a completed mural measuring about 55 feet wide by 20 feet high. Its prominent location ensures the design will be seen by many, including visitors to nearby spots such as The Lucky Rabbit, Savvy Pair Shoe Boutique, Forrest County Chancery Court, Sugar Daddy's Bakery, Fairley's Wings and The Bottling Company.
+
+Since 2020, the Alliance has worked to grow Hattiesburg's public art with murals, sculptures and utility boxes. The total number of public art pieces in the community now exceeds 100.
+
+"This mural adds to our community's public art collection while serving as a lasting reminder to girls everywhere of what they can accomplish, inspired by Evelyn Gandy's trailblazing legacy," Dorsey said.
+
+The work continues, and organizers are looking across the country for artists to create the first piece for a new downtown Hattiesburg sculpture park.
+
+The sculpture park will eventually feature eight permanent sculptures, each displayed on a dedicated pad with lighting.
+
+The Alliance is inviting professional artists to submit proposals for a large-scale sculpture that will become part of the new Montague Sculpture Park. The first installation is expected to arrive by February 2027.`,
+  },
+  {
+    id: "252",
+    title: "Inspiration in Art: Southern Miss Exhibit Celebrates Bold New Passion and Career Path",
+    excerpt: "Former New Orleans teacher Maryann McClain turned a summer cabinetmaking class into a creative second act. Her woodwork and fabric art is on display through December at Southern Miss's Osher Lifelong Learning Institute.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "November 16, 2026",
+    image: "/__l5e/assets-v1/9803ec15-fb93-48be-a315-a14824bc8475/southern-miss-olli-maryann-mcclain-exhibit.jpg",
+    imagePosition: "center 12%",
+    imageAlts: ["Artist Maryann McClain stands beside a handmade wooden cradle with quilted fabric art on the wall behind her"],
+    slug: "southern-miss-olli-maryann-mcclain-woodwork-fabric-art-exhibit",
+    featured: true,
+    original: true,
+    photoSource: "Southern Miss",
+    photoLicense: "Used with permission",
+    photoCaption: "Maryann McClain with a handcrafted wooden cradle from her exhibit at the Osher Lifelong Learning Institute",
+    content: `For anyone contemplating a career change or pursuing a long-held creative dream, Maryann McClain's journey offers some inspiration.
+
+A former New Orleans teacher, McClain never imagined that a summer cabinetmaking course at a local trade school would change the direction of her life.
+
+But what began as a simple opportunity to learn something new soon developed into a passion for woodworking, opening the door to artistic expression and entrepreneurship.
+
+"I fell in love with it, even though I had no intention of becoming a woodworker," McClain said of her career change to artistry. "I just love putting things together, creating things."
+
+Today, McClain's artistic journey is the focus of "My Creative Journey: Woodwork and Fabric Art," an exhibit on display through December at the University of Southern Mississippi's Osher Lifelong Learning Institute (OLLI).
+
+Following that first summer course, McClain completed a two-year cabinetmaking program and established a woodworking shop in her basement, where she repaired and built furniture. Over time, her creative interests expanded to include sculpture and fabric art.
+
+Her artistic journey continued in Hattiesburg, where she and her husband relocated following the devastation of Hurricane Katrina in 2005.
+
+As newcomers to the area, the McClains joined the Osher Lifelong Learning Institute at Southern Miss to seek educational and recreational programming and an opportunity to make new friends.
+
+They found both.
+
+The Osher Lifelong Learning Institute, or OLLI, offers programming focused on lifelong learning and socialization for adults 50 and older. Membership is open to everyone.
+
+"OLLI is a special place," McClain said. "There's a real sense of community here. I would not have adjusted as well to the move to Hattiesburg without OLLI."
+
+McClain's art has been included in several exhibits over the years, but the Southern Miss show is significant.
+
+"I've had my work exhibited before, but not for my own show," she said. "It's a real honor."
+
+Osher Lifelong Learning Institute Director Paula Mathis described McClain's exhibit as "a beautiful testament to the incredible talent we have at OLLI."
+
+"It's wonderful to showcase Maryann's artistic versatility, bringing together completely different mediums like detailed textile work and beautifully crafted wood," Mathis said. "We're both honored and delighted to share her work with the greater Hattiesburg area."
+
+There are 123 Osher Lifelong Learning Institutes nationwide. Southern Miss is home to the only Osher program in Mississippi, at its campuses in Hattiesburg and Long Beach.
+
+OLLI is based at the Peck House at 321 Dr. Eddie Holloway Drive.`,
+  },
   {
     id: "251",
     title: "Night at the Zoo: Hattiesburg Zoo Upgrades Bring New Cabins and Amenities for Overnight Guests",
