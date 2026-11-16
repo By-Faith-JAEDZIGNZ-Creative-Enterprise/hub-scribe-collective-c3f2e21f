@@ -144,6 +144,7 @@ const StoryPage = () => {
               src={imageUrl}
               alt={story.title}
               className="w-full h-full object-cover"
+              style={story.imagePosition ? { objectPosition: story.imagePosition } : undefined}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 via-42% to-transparent" />
           </div>

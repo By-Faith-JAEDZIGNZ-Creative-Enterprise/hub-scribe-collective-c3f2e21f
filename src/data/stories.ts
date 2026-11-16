@@ -9,6 +9,8 @@ export interface Story {
   date: string;
   image: string;
   images?: string[];
+  /** Optional focal point for the story-page header photo, e.g. "center 20%" */
+  imagePosition?: string;
   /** Descriptive alt text per gallery image (same order as `images`) */
   imageAlts?: string[];
   /** Caption shown under each gallery image (same order as `images`) */
@@ -99,6 +101,7 @@ The Alliance is inviting professional artists to submit proposals for a large-sc
     author: "Hattiesburg Hub Staff",
     date: "November 16, 2026",
     image: "/__l5e/assets-v1/9803ec15-fb93-48be-a315-a14824bc8475/southern-miss-olli-maryann-mcclain-exhibit.jpg",
+    imagePosition: "center 12%",
     imageAlts: ["Artist Maryann McClain stands beside a handmade wooden cradle with quilted fabric art on the wall behind her"],
     slug: "southern-miss-olli-maryann-mcclain-woodwork-fabric-art-exhibit",
     featured: true,
