@@ -41,6 +41,49 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "255",
+    title: "Downtown Hattiesburg Bursts With Music and Activity During Free Grateful Dead Tribute Festival",
+    excerpt: "A free block party, a behind-the-music look with the Grateful Dead's official archivist David Lemieux and a live tribute by The Stolen Faces light up the Saenger Theater tonight starting at 5:15 p.m.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "November 17, 2026",
+    image: "/__l5e/assets-v1/d2128cec-9183-4ff1-902b-d9e3bd88b569/stolen-faces-grateful-dead-tribute.jpg",
+    images: ["/__l5e/assets-v1/d2128cec-9183-4ff1-902b-d9e3bd88b569/stolen-faces-grateful-dead-tribute.jpg", "/__l5e/assets-v1/9a3d7cb9-1bec-4678-87bd-f3431fcb1568/david-lemieux-grateful-dead-archivist.jpg"],
+    imageAlts: ["The Stolen Faces, a Nashville-based Grateful Dead tribute band, performing on stage", "David Lemieux, the Grateful Dead's official audiovisual archivist and legacy manager"],
+    imageCaptions: ["The Stolen Faces, a Nashville-based band that has spent more than a decade exploring the Grateful Dead catalog, close out the evening at the Saenger Theater. Photo courtesy of Southern Miss University Forum.", "David Lemieux, the Grateful Dead's official audiovisual archivist and legacy manager, takes the stage at 6:30 p.m. Photo courtesy of Southern Miss University Forum."],
+    slug: "grateful-dead-tribute-festival-saenger-theater-downtown-hattiesburg",
+    featured: true,
+    original: true,
+    photoSource: "Southern Miss University Forum",
+    photoLicense: "Used with permission",
+    photoCaption: "The Stolen Faces perform a live Grateful Dead tribute",
+    content: `Downtown Hattiesburg comes alive this evening with a celebration of the Grateful Dead at the Saenger Theater.
+
+The event features a block party, an inside look behind the music and a live tribute performance. The evening begins at 5:15 p.m. when the City of Hattiesburg joins with The University of Southern Mississippi's University Forum to present a Grateful Dead celebration. Activities are free.
+
+A block party outside the Saenger gives fans a chance to gather downtown before activities move indoors with a historical presentation and then a live Grateful Dead tribute performance by The Stolen Faces.
+
+"It is a wonderful opportunity to bring Forum to the community and to encourage Southern Miss students, faculty, and staff to visit downtown Hattiesburg and see this premier speaker series through a different lens," said Joyce Inman, dean of the Honors College.
+
+David Lemieux, the Grateful Dead's official audiovisual archivist and legacy manager, will take the stage at 6:30 p.m. for a look at the history, music and archive of one of rock music's most enduring bands.
+
+The event is presented by University Forum and sponsored by the City of Hattiesburg, the Saenger Theater, Prospect on Main and Rock 104.
+
+The city will run the Blue Line on Hub City Transit from campus to the Saenger Theater throughout the evening.
+
+The event grew out of a connection between Lemieux and Andy Reese, a Southern Miss professor of geography and geology who is teaching an Honors course on the Grateful Dead.
+
+"As I prepared for the course, I reached out to David Lemieux to explore materials that would help students better understand the band's music and improvisational style. That conversation developed into an opportunity to bring him to Southern Miss for University Forum," Reese said.
+
+Lemieux has served as the Grateful Dead's audiovisual archivist since 1999 and as the band's legacy manager since 2010.
+
+Lemieux's work has placed him at the center of preserving and sharing the Dead's musical history. He also served as supervising music producer for the Martin Scorsese documentary "Long Strange Trip: The Untold Story of the Grateful Dead." Lemieux also hosts Today in Grateful Dead History on SiriusXM's Grateful Dead Channel.
+
+Following Lemieux's presentation, the Saenger Theater stage will rock with music from The Stolen Faces, a Nashville-based band that has spent more than a decade exploring the Grateful Dead catalog.
+
+More than performing covers of the original music, the band approaches the music with the improvisation and spontaneity that made the Dead's live performances legendary. The band's repertoire includes hundreds of songs from the Grateful Dead's decades-long run.`,
+  },
+  {
     id: "254",
     title: "Smithsonian Traveling Exhibit Coming to Hattiesburg's Sixth Street Museum District",
     excerpt: "\"Spark! Places of Innovation\" opens Dec. 3 at the Historic Eureka School, making Hattiesburg one of six Mississippi communities chosen to host the Smithsonian's Museum on Main Street exhibition.",
