@@ -41,6 +41,55 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "254",
+    title: "Smithsonian Traveling Exhibit Coming to Hattiesburg's Sixth Street Museum District",
+    excerpt: "\"Spark! Places of Innovation\" opens Dec. 3 at the Historic Eureka School, making Hattiesburg one of six Mississippi communities chosen to host the Smithsonian's Museum on Main Street exhibition.",
+    category: "culture",
+    author: "Hattiesburg Hub Staff",
+    date: "November 17, 2026",
+    image: "/__l5e/assets-v1/d042e2dd-44ae-4f60-b776-c92f8aa83b3d/eureka-school-hattiesburg.jpg",
+    images: ["/__l5e/assets-v1/d042e2dd-44ae-4f60-b776-c92f8aa83b3d/eureka-school-hattiesburg.jpg", "/__l5e/assets-v1/a5ea05c4-8d93-41ec-b779-76e95720999d/smithsonian-logo.png", "/__l5e/assets-v1/7d35a7c6-ebde-42a0-bb10-87fb7dfaa1f8/sixth-street-museum-district-logo.jpg"],
+    imageAlts: ["The Historic Eureka School at 410 East Sixth Street in Hattiesburg", "The Smithsonian Institution logo", "The Sixth Street Museum District logo"],
+    imageCaptions: ["The Historic Eureka School will host the Smithsonian's \"Spark! Places of Innovation\" exhibit from Dec. 3 through Jan. 9, 2027. Photo courtesy of the Sixth Street Museum District.", "The Smithsonian Institution's Museum on Main Street program brings exhibitions to smaller communities across the country.", "The Sixth Street Museum District showcases Hattiesburg's historic African American center of culture and business."],
+    slug: "smithsonian-spark-exhibit-eureka-school-hattiesburg",
+    featured: true,
+    original: true,
+    photoSource: "Sixth Street Museum District",
+    photoLicense: "Used with permission",
+    photoCaption: "The Historic Eureka School, site of the Smithsonian's \"Spark! Places of Innovation\" traveling exhibit",
+    content: `Hattiesburg's Sixth Street Museum District is joining with the nation's most recognizable museum to present an exhibit showcasing the innovation and ingenuity of rural America.
+
+The Historic Eureka School, a major landmark of the Sixth Street District, is the site of the Smithsonian Institution's traveling exhibit.
+
+"Spark! Places of Innovation" highlights how residents of small towns have used their resources and talents to address challenges, create opportunities and build stronger futures. The exhibition will open on Dec. 3 and run through Jan. 9, 2027.
+
+"The story of innovation is especially meaningful to us because the Sixth Street Museum District is rooted in the history of a community whose residents demonstrated extraordinary determination, entrepreneurship, creativity and resilience," said Latoya Norman, director of museums for the Sixth Street Museum District. "'Spark!' provides an opportunity not only to celebrate innovation in communities across America, but also to recognize the remarkable individuals and businesses whose contributions helped shape Hattiesburg."
+
+Hattiesburg is one of six Mississippi communities tapped to host the exhibit as part of the Smithsonian's Museum on Main Street program that brings exhibitions and programming to smaller communities and cultural organizations. The Mississippi Humanities Council selected Hattiesburg's district to present the exhibit.
+
+Through photographs, interactive displays, objects and videos, "Spark!" highlights stories from more than 30 communities across the country. The exhibition includes four categories of innovation: social, artistic, technological and cultural.
+
+"We hope this exhibition will inspire visitors to reflect on our history, celebrate our accomplishments and consider the possibilities for our future," Norman said.
+
+The Sixth Street Museum District in the Mobile/Bouie Neighborhood showcases Hattiesburg's historic African American center of culture and business that spans more than a century. The district is among several attractions that generate local and national interest and elevates Hattiesburg's status as a hub for cultural tourism.
+
+The Hattiesburg Convention Commission operates the Museum District. The Eureka School was the first project for the burgeoning museum district in 2006. The commission acquired the property, which was threatened with demolition, and began the long process of renovation.
+
+The district also includes the African American Military History Museum, Smith Drug Co. and the Oseola McCarty House. The Eureka School is located at 410 East Sixth Street and is open from 11 a.m. to 2 p.m. Thursday through Saturday.
+
+"Historic Eureka School is a particularly meaningful setting for this exhibition," Norman said. "As a place that represents the importance of education, opportunity and community progress, it provides an ideal backdrop for conversations about the people and ideas that have influenced our past and will continue to shape our future."
+
+In conjunction with the Smithsonian exhibition, the Sixth Street Museum District will present complementary programming designed to connect the national stories featured in "Spark!" with Hattiesburg's own rich history of innovation and entrepreneurship.
+
+Among the special offerings will be a photographic exhibition celebrating Black entrepreneurship in Hattiesburg during the 1950s and 1960s. The companion exhibition will recognize the businesses, entrepreneurs and community leaders who contributed to the economic and cultural vitality of Hattiesburg.
+
+The Sixth Street Museum District will also host a presentation by the Stennis Institute Jan. 7 to give visitors an opportunity to learn more about their First Impressions program.
+
+"We want visitors of all ages to leave inspired by the realization that innovation doesn't have to begin in a large city or a major corporation," Norman said. "It can begin with one person, one idea and a commitment to making a difference."
+
+The Smithsonian Institution Traveling Exhibition Service has brought the Smithsonian's collections, research and educational resources to communities throughout the United States for more than 70 years.`,
+  },
+  {
     id: "253",
     title: "Latest Downtown Mural Honors Legacy of Trailblazing Hattiesburg Native Evelyn Gandy",
     excerpt: "\"Glass Ceiling,\" Hattiesburg's 58th mural, now stands at Mobile and Batson streets in honor of Evelyn Gandy, the first woman elected to statewide office in Mississippi.",
