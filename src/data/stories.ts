@@ -41,6 +41,49 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "256",
+    title: "Hattiesburg Awarded $2.49 Million Federal Grant to Plan New Railroad Overpasses",
+    excerpt: "A Federal Railroad Administration grant will help the city plan new overpasses and underpasses so residents are no longer trapped when trains block downtown crossings.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "November 19, 2026",
+    image: "/__l5e/assets-v1/db024865-d6d4-4a0a-9d42-d5665b8ce886/hattiesburg-railroad-overpass.jpg",
+    images: ["/__l5e/assets-v1/db024865-d6d4-4a0a-9d42-d5665b8ce886/hattiesburg-railroad-overpass.jpg"],
+    imageAlts: ["A train passes beneath a concrete railroad overpass in Hattiesburg"],
+    imageCaptions: ["A train passes beneath one of Hattiesburg's railroad overpasses. Photo courtesy of the City of Hattiesburg."],
+    slug: "hattiesburg-federal-grant-railroad-overpasses-underpasses",
+    featured: true,
+    original: true,
+    photoSource: "City of Hattiesburg",
+    photoLicense: "Used with permission",
+    photoCaption: "A train passes beneath a Hattiesburg railroad overpass",
+    content: `A new federal grant to the city of Hattiesburg will help efforts to end a longtime problem of residents being trapped as trains cross and block intersections.
+
+The city was recently awarded a grant of nearly $2.49 million from the Federal Railroad Administration's Rail Crossing Elimination Grant Program to help plan railroad underpasses and overpasses.
+
+"If you've ever sat at a railroad crossing downtown and watched the minutes tick by, you know how much a train on the tracks can change your plans," Mayor Toby Barker said. "For some of our neighbors, it means taking a detour of several miles just to get to work, pick up their kids or make it to a doctor's appointment."
+
+Barker said the delays are more than a matter of inconvenience but have safety consequences.
+
+"And if you're waiting on the police or fire department to show up, there can be some real life and death consequences to that," he said.
+
+Barker called the planning effort a next step in the city's work to improve railroad crossings downtown, following the opening of the Hall Avenue overpasses in 2024 and 2025.
+
+"Those provided some real solutions if you're south of downtown. However, if you're north of downtown, for example, trying to take East 4th or East 7th to get to Mobile Street, you have no real options."
+
+Barker said residents in the Mobile-Bouie neighborhood are still waiting on relief.
+
+Barker stressed that the federal money will not pay for actual construction, but would support necessary steps the city must take to competitively pursue grants to pay for the projects.
+
+"With this, we'll study possible locations, ask residents what they experience at these crossings. We'll do the needed environmental work that all the federal projects require and develop preliminary engineering designs," he said. "What we learn will help us decide which improvements to pursue and put us in a better position to seek construction funding later on."
+
+The city wants to create additional routes that remain open when trains block nearby streets, particularly between downtown and neighborhoods east of North Main Street.
+
+Planning will also consider sidewalks and paths for people walking and biking.
+
+"We want solutions that accommodate all users for motorists, pedestrians, bicyclists, wheelchair users and public transit," Barker said. "We want investments that enhance the quality of life of neighborhoods and lead to better residential and commercial development that can be beneficial to all."`,
+  },
+  {
     id: "255",
     title: "Downtown Hattiesburg Bursts With Music and Activity During Free Grateful Dead Tribute Festival",
     excerpt: "A free block party, a behind-the-music look with the Grateful Dead's official archivist David Lemieux and a live tribute by The Stolen Faces light up the Saenger Theater tonight starting at 5:15 p.m.",
