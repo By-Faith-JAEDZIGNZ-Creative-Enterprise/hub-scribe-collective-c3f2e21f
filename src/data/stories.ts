@@ -41,6 +41,48 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "257",
+    title: "Hattiesburg's Toby Barker Tapped for National Leadership Among American Mayors",
+    excerpt: "Mayor Toby Barker is the new second vice president of the National League of Cities, putting him in line to become the group's first president from Mississippi in more than 70 years.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "November 24, 2026",
+    image: "/__l5e/assets-v1/785b06f8-6f3f-4733-9937-ba79f50fd309/toby-barker-national-league-of-cities.jpg",
+    images: ["/__l5e/assets-v1/785b06f8-6f3f-4733-9937-ba79f50fd309/toby-barker-national-league-of-cities.jpg"],
+    imageAlts: ["Mayor Toby Barker speaks at a National League of Cities City Summit podium"],
+    imageCaptions: ["Mayor Toby Barker speaks at the National League of Cities 2026 City Summit in Nashville. Photo courtesy of the City of Hattiesburg."],
+    slug: "toby-barker-national-league-of-cities-second-vice-president",
+    featured: true,
+    original: true,
+    imagePosition: "center 25%",
+    photoSource: "City of Hattiesburg",
+    photoLicense: "Used with permission",
+    photoCaption: "Mayor Toby Barker speaks at the NLC City Summit in Nashville",
+    content: `The city of Hattiesburg is in a national conversation about leadership and innovation, and Mayor Toby Barker has a seat at the head table.
+
+Barker was recently selected as a senior leader of the country's largest association representing more than 2,675 member municipalities and 19,000 cities, towns and villages.
+
+Barker is the new second vice president of the National League of Cities. Barker's elevation gives both Hattiesburg and Mississippi a prominent place in the organization's national leadership.
+
+His election to the role during the group's 2026 City Summit in Nashville places Barker in line to take the reins as president in the 2028-2029 term.
+
+Barker will then become the first National League of Cities president from Mississippi in more than 70 years and just the second from the state in the organization's 100-year history.
+
+Mayor Van R. Johnson II of Savannah was elected the league's president for next year. Officers serve a one-year term.
+
+The nonpartisan organization works with local leaders across the country on issues affecting their communities and the future of municipal government.
+
+Barker was already an active member of the National League of Cities as a member of the association's board of directors. He appeared on the NLC's "CitiesSpeak" podcast in July to discuss proposed federal grant changes and how they might affect local governments.
+
+"It's one of these things that you have to kind of read it twice to see, you know, 'are they really proposing that?'" Barker said during the podcast regarding additional reporting guidelines. "You're talking about more of that in a process that is already very burdensome. And even if you get all these grants, the information, just the time and effort it takes to report on that, you're just talking about adding to that and that's less time that we're not actually going and accomplishing the mission that the grant was given to us in the first place."
+
+During the podcast, Barker urged local leaders to ask Congress to reconsider the changes that he called overly burdensome to area governments.
+
+"I don't think anything is more effective than a mayor or an alderman or council person reaching out to their individual member of Congress and saying and telling that story. This will make our lives harder and not accomplish anything in terms of transparency."
+
+Barker is also a past president of the Mississippi Municipal League.`,
+  },
+  {
     id: "256",
     title: "Hattiesburg Awarded $2.49 Million Federal Grant to Plan New Railroad Overpasses",
     excerpt: "A Federal Railroad Administration grant will help the city plan new overpasses and underpasses so residents are no longer trapped when trains block downtown crossings.",
