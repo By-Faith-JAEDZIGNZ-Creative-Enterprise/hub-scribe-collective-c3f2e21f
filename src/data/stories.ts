@@ -41,6 +41,47 @@ export const categories = [
 export const stories: Story[] = [
   // ── ORIGINAL FEATURE STORIES ──
   {
+    id: "258",
+    title: "Former State Official and Southern Miss Alum Honored for Decades of Service",
+    excerpt: "Southern Miss has dedicated Tom King Plaza to honor the Petal native, former legislator and Southern District transportation commissioner for his longtime service.",
+    category: "community",
+    author: "Hattiesburg Hub Staff",
+    date: "November 25, 2026",
+    image: "/__l5e/assets-v1/73f87783-4ca6-49ca-b8db-6e3e2d9145b1/tom-king-plaza-southern-miss.jpg",
+    images: ["/__l5e/assets-v1/73f87783-4ca6-49ca-b8db-6e3e2d9145b1/tom-king-plaza-southern-miss.jpg"],
+    imageAlts: ["Tom King stands beside the Tom King Plaza sign at Southern Miss with President Joe Paul, friends and family"],
+    imageCaptions: ["Tom King, center left, stands next to the sign honoring him at the new Tom King Plaza at Southern Miss, with University President Joe Paul on the right, surrounded by friends and family. Photo courtesy of Southern Miss."],
+    slug: "tom-king-plaza-southern-miss-honors-former-state-official",
+    featured: true,
+    original: true,
+    photoSource: "Southern Miss",
+    photoLicense: "Used with permission",
+    photoCaption: "Tom King at the dedication of Tom King Plaza at Southern Miss",
+    content: `Southern Miss students traveling to classes and activities will come across a new monument honoring a former student who walked those same paths decades ago and went on to serve decades in state leadership.
+
+The University of Southern Mississippi recently dedicated Tom King Plaza to honor the former Southern District transportation commissioner and Mississippi state legislator for his longtime service to the community, state and his alma mater.
+
+"I'm so grateful for this honor," King said. "Southern Miss means a lot to me, and to be acknowledged on campus like this is very humbling."
+
+King, a native of Petal, earned his bachelor's degree from Southern Miss in 1973.
+
+He was elected to both the Mississippi House of Representatives and Senate and later served as Southern District transportation commissioner and chairman of the Mississippi Transportation Commission.
+
+During his tenure in state government, King supported a variety of infrastructure programs at Southern Miss that benefited the university's Hattiesburg and Gulf Park campuses.
+
+Among his legislative accomplishments, King authored a $300 million bond bill for highways and bridges and the John Paul Frerer Bicycle Act, which promotes cyclist safety on public roads.
+
+He also authored a Senate bill establishing the Mississippi Wireless Communications Commission to enhance communication between emergency responders and law enforcement during natural disasters. King retired from public office in 2023.
+
+King is also an Air Force veteran who served a 13-month tour of duty during the Vietnam War.
+
+The plaza at Southern Miss is the latest in a series of honors recognizing King, including the Southern Miss Alumni Association's Outstanding Service Award in 2003, the Southern Miss Alumni Hall of Fame in 2005 and Hattiesburg's Veteran of the Year in 2011.
+
+"Tom King has been and continues to be a tireless, hard-working, dedicated public servant," said Southern Miss President Joe Paul. "He has been an invaluable advocate for Southern Miss for many years, and it's only fitting that we name our beautifully renovated Library Plaza in his honor."
+
+The newly named plaza recently underwent a full-scale renovation. Improvements included landscaping along with new benches and covered seating.`,
+  },
+  {
     id: "257",
     title: "Hattiesburg's Toby Barker Tapped for National Leadership Among American Mayors",
     excerpt: "Mayor Toby Barker is the new second vice president of the National League of Cities, putting him in line to become the group's first president from Mississippi in more than 70 years.",
